@@ -1,0 +1,265 @@
+anonymus GET /register 200 21378 - 1066.261 ms {} ::1
+anonymus GET /images/background.jpg 404 8340 - 175.660 ms {} ::1
+anonymus GET /images/favicon.png 404 8340 - 132.380 ms {} ::1
+anonymus GET /register 200 21392 - 1117.014 ms {} ::1
+anonymus GET /images/background.jpg 404 8354 - 137.698 ms {} ::1
+anonymus GET /register 304  - 419.342 ms {} ::1
+anonymus GET /register 200 21392 - 339.805 ms {} ::1
+anonymus GET /register 304  - 1184.900 ms {} ::1
+anonymus GET /register 304  - 1269.960 ms {} ::1
+anonymus GET /register 304  - 1150.339 ms {} ::1
+anonymus GET /register 304  - 1076.405 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /register 304  - 437.210 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /register 304  - 289.758 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /register 304  - 247.632 ms {} ::1
+anonymus GET /trest 404 8354 - 65.714 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /trest 404 8354 - 66.457 ms {} ::1
+anonymus GET /trest 404 8354 - 67.318 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 113.872 ms {} ::ffff:127.0.0.1
+anonymus GET /favicon.ico 404 8354 - 896.720 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 90.114 ms {} ::1
+anonymus GET /test 200  - 83.823 ms {} ::1
+anonymus GET /test 200  - 123.930 ms {} ::1
+anonymus GET /test 200  - 3.622 ms {} ::ffff:127.0.0.1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 161.172 ms {} ::1
+anonymus GET /test 200  - 37046.374 ms {} ::ffff:127.0.0.1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 267.113 ms {} ::1
+anonymus GET /test 200  - 211.126 ms {} ::1
+anonymus GET /   -  ms {} ::ffff:192.168.1.34
+anonymus GET /register 200 21392 - 2123.902 ms {} ::ffff:192.168.1.34
+anonymus GET / 200  - 11.657 ms {} ::1
+anonymus GET /test 200  - 252.090 ms {} ::1
+anonymus GET /test 200  - 312.097 ms {} ::1
+anonymus GET /register 200 21392 - 1958.455 ms {} ::1
+anonymus GET /register 200 21409 - 2305.098 ms {} ::1
+anonymus GET /register 200 21560 - 402.316 ms {} ::1
+anonymus GET /register 200 21575 - 256.747 ms {} ::1
+anonymus GET /register 200 21575 - 262.412 ms {} ::1
+anonymus GET /register 200 21575 - 177.563 ms {} ::1
+anonymus GET /register 200 21575 - 187.466 ms {} ::1
+anonymus GET /register 200 21585 - 402.625 ms {} ::1
+anonymus GET /register 200 21576 - 225.827 ms {} ::1
+anonymus GET /register 304  - 3186.977 ms {} ::1
+anonymus GET /register 500 1830 - 2730.038 ms {} ::1
+anonymus GET /register 200 21576 - 2308.726 ms {} ::1
+anonymus GET /register 200 21576 - 2466.801 ms {} ::1
+anonymus POST /ajax/changeLanguage 404 8538 - 142.116 ms {"language":"eng"} ::1
+anonymus GET /users 200 23 - 1.654 ms {} ::1
+anonymus GET /register 200 21576 - 378.821 ms {} ::1
+anonymus GET /register 200 21576 - 2758.034 ms {} ::1
+anonymus POST /ajax/changeLanguage 404 8538 - 102.857 ms {"language":"eng"} ::1
+anonymus GET /register 200 21576 - 2416.364 ms {} ::1
+anonymus POST /ajax/changeLanguage 404 8538 - 106.186 ms {"language":"eng"} ::1
+anonymus GET /register 200 21576 - 2557.253 ms {} ::1
+anonymus POST /ajax/changeLanguage 404 8538 - 123.448 ms {"language":"eng"} ::1
+anonymus GET /register 200 21576 - 2125.238 ms {} ::1
+anonymus POST /ajax/changeLanguage 200  - 42.122 ms {"language":"eng"} ::1
+anonymus GET /register 200 21577 - 2446.245 ms {} ::1
+anonymus POST /ajax/changeLanguage 200  - 3.344 ms {"language":"eng"} ::ffff:127.0.0.1
+anonymus GET /register 200 21576 - 2613.084 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 43.102 ms {"language":"eng"} ::1
+anonymus GET /register 200 21577 - 245.866 ms {} ::1
+anonymus GET /register 200 21585 - 472.015 ms {} ::1
+anonymus GET /register 200 21585 - 2888.382 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 29.721 ms {"language":"tr"} ::1
+anonymus GET /register 200 21585 - 231.521 ms {} ::1
+anonymus GET /register 200 21583 - 435.664 ms {} ::1
+anonymus GET /register 200 21575 - 253.777 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.693 ms {"language":"eng"} ::1
+anonymus GET /register 200 21576 - 219.651 ms {} ::1
+anonymus GET /register 200 21577 - 208.860 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.044 ms {"language":"tr"} ::1
+anonymus GET /register 200 21576 - 242.103 ms {} ::1
+anonymus GET /register 500 9556 - 2628.116 ms {} ::1
+anonymus GET /register 200 21567 - 390.256 ms {} ::1
+anonymus GET /register 200 21572 - 2555.625 ms {} ::1
+anonymus GET /register 500 9523 - 2591.944 ms {} ::1
+anonymus GET /register 200 21554 - 1911.246 ms {} ::1
+anonymus GET /register 500 9492 - 2754.554 ms {} ::1
+anonymus GET /register 500 9344 - 246127.360 ms {} ::1
+anonymus GET /register 500 9353 - 35337.165 ms {} ::ffff:127.0.0.1
+anonymus GET /register 200 21517 - 5430.339 ms {} ::1
+anonymus GET /register 200 21517 - 162078.615 ms {} ::1
+anonymus GET /register 500 8437 - 917.794 ms {} ::1
+anonymus GET /register 500 8437 - 173.425 ms {} ::1
+anonymus GET /register 200 21517 - 2132.340 ms {} ::1
+anonymus GET /register 500 9352 - 2722.713 ms {} ::1
+anonymus GET /register 500 9320 - 293.216 ms {} ::1
+anonymus GET /register 500 9320 - 2867.612 ms {} ::1
+anonymus GET /register 500 9320 - 1954.074 ms {} ::1
+anonymus GET /register 200 21509 - 2421.726 ms {} ::1
+anonymus GET /register 200 21509 - 3035.924 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 33.654 ms {"language":"eng"} ::1
+anonymus GET /register 200 21508 - 250.806 ms {} ::1
+anonymus GET /register 200 21509 - 2060.319 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 37.690 ms {"language":"eng"} ::ffff:127.0.0.1
+anonymus GET /register 200 21508 - 358.139 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 212.924 ms {} ::1
+anonymus GET /test 200  - 251.522 ms {} ::1
+anonymus GET /test 200  - 10225.652 ms {} ::1
+anonymus GET /test 200  - 248.338 ms {} ::1
+anonymus GET /test 200  - 8657.915 ms {} ::1
+anonymus GET /register   -  ms {} ::1
+anonymus GET /register 200 21509 - 2534.700 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 35.364 ms {"language":"eng"} ::1
+anonymus GET /register 200 21508 - 303.613 ms {} ::1
+anonymus GET /test 200  - 3.070 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.888 ms {"language":"eng"} ::1
+anonymus GET /register 304  - 242.911 ms {} ::1
+anonymus GET /register 200 21517 - 468.387 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 2.861 ms {"language":"tr"} ::1
+anonymus GET /register 200 21518 - 345.926 ms {} ::1
+anonymus GET /test 200  - 1.862 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.570 ms {"language":"eng"} ::1
+anonymus GET /register 200 21517 - 260.435 ms {} ::1
+anonymus GET /test 200  - 2.533 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 1.791 ms {"language":"tr"} ::1
+anonymus GET /register 200 21518 - 238.178 ms {} ::1
+anonymus GET /test 200  - 1.823 ms {} ::1
+anonymus GET /register 200 21518 - 223.743 ms {} ::ffff:192.168.1.34
+anonymus GET /register 304  - 224.936 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.401 ms {"language":"eng"} ::ffff:192.168.1.34
+anonymus GET /register 200 21517 - 250.745 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/changeLanguage 200 2 - 3.738 ms {"language":"tr"} ::ffff:192.168.1.34
+anonymus GET /register 200 21518 - 205.874 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/changeLanguage 200 2 - 2.628 ms {"language":"eng"} ::ffff:192.168.1.34
+anonymus GET /register 200 21517 - 229.234 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/changeLanguage 200 2 - 3.646 ms {"language":"tr"} ::ffff:192.168.1.34
+anonymus GET /register 200 21518 - 189.478 ms {} ::ffff:192.168.1.34
+anonymus GET /test 200  - 3.579 ms {} ::ffff:192.168.1.34
+anonymus GET /favicon.ico 404 8480 - 175.229 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/changeLanguage 200 2 - 3.782 ms {"language":"eng"} ::ffff:192.168.1.34
+anonymus GET /register 200 21517 - 319.123 ms {} ::ffff:192.168.1.34
+anonymus GET /test 200  - 3.181 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/changeLanguage 200 2 - 40.865 ms {"language":"eng"} ::1
+anonymus GET /register 200 21517 - 2363.832 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 4.100 ms {"language":"tr"} ::1
+anonymus GET /register 200 21518 - 320.756 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 4.381 ms {"language":"tr"} ::ffff:192.168.1.34
+anonymus GET /register 200 21518 - 526.706 ms {} ::ffff:192.168.1.34
+anonymus GET /test 200  - 209.269 ms {} ::1
+anonymus GET /test 200  - 235.363 ms {} ::1
+anonymus GET /test 200  - 12306.698 ms {} ::1
+anonymus GET /test 200  - 172.684 ms {} ::1
+anonymus GET /test 200  - 3.848 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 7671.727 ms {} ::1
+anonymus GET /test 200  - 29557.026 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 6.560 ms {} ::1
+anonymus GET /test 200  - 6221.916 ms {} ::1
+anonymus GET /test 200  - 92.091 ms {} ::1
+anonymus GET /test 200  - 2.190 ms {} ::1
+anonymus GET /test 200  - 170.302 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 194.215 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 141.833 ms {} ::1
+anonymus GET /test 200  - 121.168 ms {} ::1
+anonymus GET /test 200  - 136.666 ms {} ::1
+anonymus GET /test 200  - 147.762 ms {} ::1
+anonymus GET /test 200  - 4.185 ms {} ::1
+anonymus GET /test 200  - 2979.855 ms {} ::1
+anonymus GET /test 200  - 66775.076 ms {} ::1
+anonymus GET /test 200  - 8847.819 ms {} ::1
+anonymus GET /test 200  - 100.193 ms {} ::1
+anonymus GET /test 200  - 370.494 ms {} ::1
+anonymus GET /test 200  - 300.431 ms {} ::1
+anonymus GET /test 200  - 218.496 ms {} ::1
+anonymus GET /test 200  - 302.832 ms {} ::1
+anonymus GET /test 200  - 290.774 ms {} ::1
+anonymus GET /test 200  - 172.947 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 91659.233 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 127.972 ms {} ::1
+anonymus GET /test 200  - 7.783 ms {} ::1
+anonymus GET /test 200  - 162.320 ms {} ::1
+anonymus GET /test 200  - 237.199 ms {} ::1
+anonymus GET /test 200  - 8271.842 ms {} ::1
+anonymus GET /test 200  - 246.305 ms {} ::1
+anonymus GET /test 200  - 220.135 ms {} ::1
+anonymus GET /test 200  - 12.870 ms {} ::1
+anonymus GET /test 200  - 16.604 ms {} ::1
+anonymus GET /test 200  - 10.697 ms {} ::1
+anonymus GET /test 200  - 48044.259 ms {} ::1
+anonymus GET /test 200  - 37267.239 ms {} ::1
+anonymus GET /test 200  - 276.930 ms {} ::1
+anonymus GET /test 200  - 161.293 ms {} ::1
+anonymus GET /test 200  - 256.050 ms {} ::1
+anonymus GET /test 200  - 233.661 ms {} ::1
+anonymus GET /test 200  - 25.423 ms {} ::1
+anonymus GET /test 200  - 17.093 ms {} ::1
+anonymus GET / 200  - 231.465 ms {} ::1
+anonymus GET / 200  - 232.592 ms {} ::1
+anonymus GET / 200  - 215.190 ms {} ::1
+anonymus GET / 200  - 209.406 ms {} ::1
+anonymus GET / 200  - 231.109 ms {} ::1
+anonymus GET / 200  - 246.049 ms {} ::1
+anonymus GET / 200  - 201.282 ms {} ::1
+anonymus GET / 200  - 218.912 ms {} ::1
+anonymus GET / 200  - 207.946 ms {} ::1
+anonymus GET / 200  - 231.371 ms {} ::1
+anonymus GET / 200  - 96.590 ms {} ::1
+anonymus GET /register 304  - 1114.488 ms {} ::ffff:192.168.1.34
+anonymus GET /test 200  - 251.008 ms {} ::1
+anonymus GET /test 200  - 31.471 ms {} ::1
+anonymus GET /test 200  - 287.011 ms {} ::1
+anonymus GET /test 200  - 265.281 ms {} ::1
+anonymus GET /test 200  - 240.552 ms {} ::1
+anonymus GET /test 200  - 249.485 ms {} ::1
+anonymus GET /test 200  - 109.356 ms {} ::1
+anonymus GET /test 200  - 232.841 ms {} ::1
+anonymus GET /test 200  - 26.053 ms {} ::1
+anonymus GET /test 200  - 498456.835 ms {} ::1
+anonymus GET /test 200  - 127.955 ms {} ::1
+anonymus GET /test 200  - 6521.091 ms {} ::1
+anonymus GET /test 200  - 22.834 ms {} ::1
+anonymus GET /test 200  - 40.508 ms {} ::1
+anonymus GET /test 200  - 243.760 ms {} ::1
+anonymus GET /test 200  - 232.826 ms {} ::1
+anonymus GET /test 200  - 15.808 ms {} ::1
+anonymus GET /test 200  - 115.501 ms {} ::1
+anonymus GET /test 200  - 107.206 ms {} ::1
+anonymus GET /test 200  - 336.736 ms {} ::1
+anonymus GET /test 200  - 161.898 ms {} ::1
+anonymus GET /test 200  - 6.192 ms {} ::1
+anonymus GET /test 200  - 3852.914 ms {} ::1
+anonymus GET /test 200  - 284.712 ms {} ::1
+anonymus GET /test 200  - 310.233 ms {} ::1
+anonymus GET /test 200  - 267.025 ms {} ::1
+anonymus GET /test 200  - 14.186 ms {} ::1
+anonymus GET /test 200  - 313.259 ms {} ::1
+anonymus GET /favicon.ico 404 8480 - 1925.579 ms {} ::1
+anonymus GET /test 200  - 234.006 ms {} ::1
+anonymus GET /test 200  - 289.777 ms {} ::1
+anonymus GET /test 200  - 227.288 ms {} ::1
+anonymus GET /test 200  - 9313.557 ms {} ::1
+anonymus GET /test 200  - 291.701 ms {} ::1
+anonymus GET /test 200  - 223.284 ms {} ::1
+anonymus GET /test 200  - 223.449 ms {} ::1
+anonymus GET /test 200  - 254.684 ms {} ::1
+anonymus GET /test 200  - 275.776 ms {} ::1
+anonymus GET /test 200  - 217.882 ms {} ::1
+anonymus GET /test 200  - 350.843 ms {} ::1
+anonymus GET /test 200  - 222.794 ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 269.998 ms {} ::1
+anonymus GET /test 200  - 221.237 ms {} ::1
+anonymus GET /test 200  - 255.203 ms {} ::1
+anonymus GET /test 200  - 112.892 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 195.936 ms {} ::1
+anonymus GET /test 200  - 2812.472 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 212.662 ms {} ::1
+anonymus GET /test 200  - 5345.508 ms {} ::1
+anonymus GET /test 200  - 2998.716 ms {} ::1
+anonymus GET /test 200  - 138.233 ms {} ::ffff:127.0.0.1
+anonymus GET /test   -  ms {} ::1
+anonymus GET /test 200  - 11944.798 ms {} ::1
+anonymus GET /test 200  - 105561.380 ms {} ::1

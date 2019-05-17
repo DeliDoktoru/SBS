@@ -1,0 +1,6 @@
+'DELETE FROM sbs.test WHERE a= ? AND ,b= ? '
+->"a"
+'DELETE FROM sbs.test WHERE a= ? AND ,b= ? '
+->"a"
+'DELETE FROM sbs.test WHERE a= ? AND b= ? '
+->"a"

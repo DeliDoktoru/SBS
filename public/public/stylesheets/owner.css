@@ -1,0 +1,24 @@
+.ownImage{
+    background-image: url("/public/images/background.jpg");
+    background-repeat:no-repeat;
+    background-position: center top ;
+    background-size: 100% 95%;
+    
+  }
+.con{
+  width: 70%;
+} 
+.cursor-pointer{
+  cursor: pointer;
+} 
+#languages{
+  z-index: 99999;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  width: 66px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 0px;
+}

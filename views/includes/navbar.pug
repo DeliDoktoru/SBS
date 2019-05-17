@@ -1,0 +1,44 @@
+nav.navbar.navbar-expand-lg.navbar-absolute.fixed-top.navbar-transparent
+  .container-fluid
+    .navbar-wrapper
+      .navbar-minimize
+        button#minimizeSidebar.btn.btn-icon.btn-round
+          i.nc-icon.nc-minimal-right.text-center.visible-on-sidebar-mini
+          i.nc-icon.nc-minimal-left.text-center.visible-on-sidebar-regular
+      .navbar-toggle
+        button.navbar-toggler(type='button')
+          span.navbar-toggler-bar.bar1
+          span.navbar-toggler-bar.bar2
+          span.navbar-toggler-bar.bar3
+      a.navbar-brand(href='#pablo') Paper Dashboard 2 PRO
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navigation', aria-controls='navigation-index', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-bar.navbar-kebab
+      span.navbar-toggler-bar.navbar-kebab
+      span.navbar-toggler-bar.navbar-kebab
+    #navigation.collapse.navbar-collapse.justify-content-end
+      form
+        .input-group.no-border
+          input.form-control(type='text', value='', placeholder='Search...')
+          .input-group-append
+            .input-group-text
+              i.nc-icon.nc-zoom-split
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.btn-magnify(href='#pablo')
+            i.nc-icon.nc-layout-11
+            p
+              span.d-lg-none.d-md-block Stats
+        li.nav-item.btn-rotate.dropdown
+          a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='http://example.com/', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.nc-icon.nc-bell-55
+            p
+              span.d-lg-none.d-md-block Some Actions
+          .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+        li.nav-item
+          a.nav-link.btn-rotate(href='#pablo')
+            i.nc-icon.nc-settings-gear-65
+            p
+              span.d-lg-none.d-md-block Account

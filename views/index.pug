@@ -1,0 +1,368 @@
+extends defaultBody
+
+block content
+  .row
+    .col-lg-3.col-md-6.col-sm-6
+      .card.card-stats
+        .card-body
+          .row
+            .col-5.col-md-4
+              .icon-big.text-center.icon-warning
+                i.nc-icon.nc-globe.text-warning
+            .col-7.col-md-8
+              .numbers
+                p.card-category Capacity
+                p.card-title
+                  | 150GB
+                p
+        .card-footer
+          hr
+          .stats
+            i.fa.fa-refresh
+            |  Update Now
+    .col-lg-3.col-md-6.col-sm-6
+      .card.card-stats
+        .card-body
+          .row
+            .col-5.col-md-4
+              .icon-big.text-center.icon-warning
+                i.nc-icon.nc-money-coins.text-success
+            .col-7.col-md-8
+              .numbers
+                p.card-category Revenue
+                p.card-title
+                  | $ 1,345
+                p
+        .card-footer
+          hr
+          .stats
+            i.fa.fa-calendar-o
+            |  Last day
+    .col-lg-3.col-md-6.col-sm-6
+      .card.card-stats
+        .card-body
+          .row
+            .col-5.col-md-4
+              .icon-big.text-center.icon-warning
+                i.nc-icon.nc-vector.text-danger
+            .col-7.col-md-8
+              .numbers
+                p.card-category Errors
+                p.card-title
+                  | 23
+                p
+        .card-footer
+          hr
+          .stats
+            i.fa.fa-clock-o
+            |  In the last hour
+    .col-lg-3.col-md-6.col-sm-6
+      .card.card-stats
+        .card-body
+          .row
+            .col-5.col-md-4
+              .icon-big.text-center.icon-warning
+                i.nc-icon.nc-favourite-28.text-primary
+            .col-7.col-md-8
+              .numbers
+                p.card-category Followers
+                p.card-title
+                  | +45K
+                p
+        .card-footer
+          hr
+          .stats
+            i.fa.fa-refresh
+            |  Update now
+  .row
+    .col-lg-4.col-sm-6
+      .card
+        .card-header
+          .row
+            .col-sm-7
+              .numbers.pull-left
+                | $34,657
+            .col-sm-5
+              .pull-right
+                span.badge.badge-pill.badge-success
+                  | +18%
+        .card-body
+          h6.big-title total earnings in last ten quarters
+          canvas#activeUsers(width='826', height='380')
+        .card-footer
+          hr
+          .row
+            .col-sm-7
+              .footer-title Financial Statistics
+            .col-sm-5
+              .pull-right
+                button.btn.btn-success.btn-round.btn-icon.btn-sm
+                  i.nc-icon.nc-simple-add
+    .col-lg-4.col-sm-6
+      .card
+        .card-header
+          .row
+            .col-sm-7
+              .numbers.pull-left
+                | 169
+            .col-sm-5
+              .pull-right
+                span.badge.badge-pill.badge-danger
+                  | -14%
+        .card-body
+          h6.big-title total subscriptions in last 7 days
+          canvas#emailsCampaignChart(width='826', height='380')
+        .card-footer
+          hr
+          .row
+            .col-sm-7
+              .footer-title View all members
+            .col-sm-5
+              .pull-right
+                button.btn.btn-danger.btn-round.btn-icon.btn-sm
+                  i.nc-icon.nc-button-play
+    .col-lg-4.col-sm-6
+      .card
+        .card-header
+          .row
+            .col-sm-7
+              .numbers.pull-left
+                | 8,960
+            .col-sm-5
+              .pull-right
+                span.badge.badge-pill.badge-warning
+                  | ~51%
+        .card-body
+          h6.big-title total downloads in last 6 years
+          canvas#activeCountries(width='826', height='380')
+        .card-footer
+          hr
+          .row
+            .col-sm-7
+              .footer-title View more details
+            .col-sm-5
+              .pull-right
+                button.btn.btn-warning.btn-round.btn-icon.btn-sm
+                  i.nc-icon.nc-alert-circle-i
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title Global Sales by Top Locations
+          p.card-category All products that were shipped
+        .card-body
+          .row
+            .col-md-6
+              .table-responsive
+                table.table
+                  tbody
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/US.png')
+                      td USA
+                      td.text-right
+                        | 2.920
+                      td.text-right
+                        | 53.23%
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/DE.png')
+                      td Germany
+                      td.text-right
+                        | 1.300
+                      td.text-right
+                        | 20.43%
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/AU.png')
+                      td Australia
+                      td.text-right
+                        | 760
+                      td.text-right
+                        | 10.35%
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/GB.png')
+                      td United Kingdom
+                      td.text-right
+                        | 690
+                      td.text-right
+                        | 7.87%
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/RO.png')
+                      td Romania
+                      td.text-right
+                        | 600
+                      td.text-right
+                        | 5.94%
+                    tr
+                      td
+                        .flag
+                          img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/flags/BR.png')
+                      td Brasil
+                      td.text-right
+                        | 550
+                      td.text-right
+                        | 4.34%
+            .col-md-6.ml-auto.mr-auto
+              #worldMap(style='height: 300px;')
+  .row
+    .col-md-6
+      .card.card-tasks
+        .card-header
+          h4.card-title Tasks
+          h5.card-category Backend development
+        .card-body
+          .table-full-width.table-responsive
+            table.table
+              tbody
+                tr
+                  td
+                    .form-check
+                      label.form-check-label
+                        input.form-check-input(type='checkbox', checked='')
+                        span.form-check-sign
+                  td.img-row
+                    .img-wrapper
+                      img.img-raised(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/faces/ayo-ogunseinde-2.jpg')
+                  td.text-left Sign contract for "What are conference organizers afraid of?"
+                  td.td-actions.text-right
+                    button.btn.btn-info.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Edit Task')
+                      i.nc-icon.nc-ruler-pencil
+                    button.btn.btn-danger.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Remove')
+                      i.nc-icon.nc-simple-remove
+                tr
+                  td
+                    .form-check
+                      label.form-check-label
+                        input.form-check-input(type='checkbox')
+                        span.form-check-sign
+                  td.img-row
+                    .img-wrapper
+                      img.img-raised(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/faces/erik-lucatero-2.jpg')
+                  td.text-left Lines From Great Russian Literature? Or E-mails From My Boss?
+                  td.td-actions.text-right
+                    button.btn.btn-info.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Edit Task')
+                      i.nc-icon.nc-ruler-pencil
+                    button.btn.btn-danger.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Remove')
+                      i.nc-icon.nc-simple-remove
+                tr
+                  td
+                    .form-check
+                      label.form-check-label
+                        input.form-check-input(type='checkbox', checked='')
+                        span.form-check-sign
+                  td.img-row
+                    .img-wrapper
+                      img.img-raised(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/faces/kaci-baum-2.jpg')
+                  td.text-left
+                    | Using dummy content or fake information in the Web design process can result in products with unrealistic
+                  td.td-actions.text-right
+                    button.btn.btn-info.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Edit Task')
+                      i.nc-icon.nc-ruler-pencil
+                    button.btn.btn-danger.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Remove')
+                      i.nc-icon.nc-simple-remove
+                tr
+                  td
+                    .form-check
+                      label.form-check-label
+                        input.form-check-input(type='checkbox')
+                        span.form-check-sign
+                  td.img-row
+                    .img-wrapper
+                      img.img-raised(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/faces/joe-gardner-2.jpg')
+                  td.text-left But I must explain to you how all this mistaken idea of denouncing pleasure
+                  td.td-actions.text-right
+                    button.btn.btn-info.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Edit Task')
+                      i.nc-icon.nc-ruler-pencil
+                    button.btn.btn-danger.btn-round.btn-icon.btn-icon-mini.btn-neutral(type='button', rel='tooltip', title='', data-original-title='Remove')
+                      i.nc-icon.nc-simple-remove
+        .card-footer
+          hr
+          .stats
+            i.fa.fa-refresh.spin
+            |  Updated 3 minutes ago
+    .col-md-6
+      .card
+        .card-header
+          h4.card-title 2018 Sales
+          p.card-category All products including Taxes
+        .card-body
+          canvas#chartActivity
+        .card-footer
+          .legend
+            i.fa.fa-circle.text-info
+            |  Tesla Model S
+            i.fa.fa-circle.text-danger
+            |  BMW 5 Series
+          hr
+          .stats
+            i.fa.fa-check
+            |  Data information certified
+  .row
+    .col-md-3
+      .card
+        .card-header
+          h5.card-title Email Statistics
+          p.card-category Last Campaign Performance
+        .card-body
+          canvas#chartDonut1.ct-chart.ct-perfect-fourth(width='456', height='300')
+        .card-footer
+          .legend
+            i.fa.fa-circle.text-info
+            |  Open
+          hr
+          .stats
+            i.fa.fa-calendar
+            |  Number of emails sent
+    .col-md-3
+      .card
+        .card-header
+          h5.card-title New Visitators
+          p.card-category Out Of Total Number
+        .card-body
+          canvas#chartDonut2.ct-chart.ct-perfect-fourth(width='456', height='300')
+        .card-footer
+          .legend
+            i.fa.fa-circle.text-warning
+            |  Visited
+          hr
+          .stats
+            i.fa.fa-check
+            |  Campaign sent 2 days ago
+    .col-md-3
+      .card
+        .card-header
+          h5.card-title Orders
+          p.card-category Total number
+        .card-body
+          canvas#chartDonut3.ct-chart.ct-perfect-fourth(width='456', height='300')
+        .card-footer
+          .legend
+            i.fa.fa-circle.text-danger
+            |  Completed
+          hr
+          .stats
+            i.fa.fa-clock-o
+            |  Updated 3 minutes ago
+    .col-md-3
+      .card
+        .card-header
+          h5.card-title Subscriptions
+          p.card-category Our Users
+        .card-body
+          canvas#chartDonut4.ct-chart.ct-perfect-fourth(width='456', height='300')
+        .card-footer
+          .legend
+            i.fa.fa-circle.text-secondary
+            |  Ended
+          hr
+          .stats
+            i.fa.fa-history
+            |  Total users

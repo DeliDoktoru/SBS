@@ -1,0 +1,187 @@
+extends layout
+
+block body  
+  .register-page
+    nav.navbar.navbar-expand-lg.navbar-absolute.fixed-top.navbar-transparent
+      .container.mt-0
+        .navbar-wrapper
+          .navbar-toggle
+            button.navbar-toggler(type='button')
+              span.navbar-toggler-bar.bar1
+              span.navbar-toggler-bar.bar2
+              span.navbar-toggler-bar.bar3
+          a.navbar-brand(href='#pablo') Paper Dashboard 2 PRO
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navigation', aria-controls='navigation-index', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+        #navigation.collapse.navbar-collapse.justify-content-end
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='login.html')
+                i.nc-icon.nc-tap-01
+                |  Login
+    .wrapper.wrapper-full-page.ownImage
+      .full-page.register-page.section-image
+        .content.pt-15vh
+          .con.m-auto
+            .row
+              .col-lg-12.col-md-12.mr-auto
+                form#msform
+                  ul#progressbar
+                    li.active 
+                    li 
+                    li 
+                    li 
+                    li 
+                  fieldset
+                    h2.fs-title Giriş bilgileri
+                    h3.fs-subtitle Giriş işlemlerinde kullanıcağınız bilgiler
+                    .row
+                      .col-sm-12
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.ti-user
+                          input.form-control(type='text',name='kullaniciEPosta', placeholder='Eposta adresiniz',enforced,max="100",min="3")                        
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.ti-key
+                          input.form-control(type='password',name='kullaniciParola', placeholder='Şifre',enforced,max="45",min="4")                        
+                          .input-group-append.cursor-pointer.showpass
+                            span.input-group-text
+                              i.ti-eye
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.ti-key
+                          input.form-control(type='password',name='ckullaniciParola', placeholder='Şifre tekrarı',enforced,max="45",min="4")                        
+                          .input-group-append.cursor-pointer.showpass
+                            span.input-group-text
+                              i.ti-eye
+                    input.next.action-button(type='button', name='next', value=l.getLanguage("ileri"))
+                  fieldset
+                    h2.fs-title Kullanıcı bilgileri
+                    h3.fs-subtitle Kişisel bilgileriniz
+                    .row
+                      .col-sm-12
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.ti-user
+                          input.form-control(type='text',name='kullaniciIsim', placeholder='İsminiz',enforced,max="100")  
+                      .col-sm-12 
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-circle-10
+                          input.form-control(type='text',name='kullaniciSoyisim', placeholder='Soyisminiz',enforced,max="100")
+                      .col-sm-12
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-single-02
+                          input.form-control(type='text',name='kullaniciTel', placeholder='Telefon numaranız',enforced,max="45")                       
+                    input.previous.action-button(type='button', name='previous', value='Previous')    
+                    input.next.action-button(type='button', name='next', value='Next')
+                  fieldset
+                    h2.fs-title Paket bilginiz
+                    h3.fs-subtitle Kullanmak istediğiniz paket tipini seçiniz
+                    .row
+                      each val,index in abonelik_turleri                    
+                        .card.col-sm-4.shadow-none
+                          .card-body
+                            =val.abonlikTipAdi
+                            br
+                            =val.abonelikUcret
+                            br
+                            =val.abonelikGecerlilik  
+                          .card-footer.m-auto
+                            label.btn-radio(for='rdo-'+index)
+                              input(id="rdo-"+index,type='radio', name='radio-grp',radio-value="tercih"+index,checked)
+                              svg(width='20px', height='20px', viewBox='0 0 20 20')
+                                circle(cx='10', cy='10', r='9')
+                                path.inner(d='M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z')
+                                path.outer(d='M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z')
+                              span 
+                    input.previous.action-button(type='button', name='previous', value='Previous')
+                    input.next.action-button(type='button', name='next', value='Next')
+                  fieldset
+                    h2.fs-title Firma bilgileri
+                    h3.fs-subtitle Firma bilgileriniz
+                    .row
+                      .col-sm-6
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.ti-user
+                          input.form-control(type='text',name='firmaAdi', placeholder='Firma adınız',enforced,max="100")  
+                      .col-sm-6
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-circle-10
+                          input.form-control(type='text',name='firmaTel', placeholder='Firma telefonu no',enforced,max="45")
+                      .col-sm-6  
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-single-02
+                          input.form-control(type='text',name='firmaFaks', placeholder='Firma faks no',enforced,max="100")                       
+                      .col-sm-6  
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-single-02
+                          input.form-control(type='text',name='firmaVergiDairesi', placeholder='Firma vergi dairesi',enforced,max="100")                       
+                      .col-sm-6 
+                        .input-group
+                          .input-group-prepend
+                            span.input-group-text
+                              i.nc-icon.nc-single-02
+                          input.form-control(type='text',name='firmaVergiNo', placeholder='Firma vergi dairesi no',enforced,max="45")    
+                      .col-sm-6  
+                        select.custom-select(enforced)
+                          option(value='',selected) İl seçiniz..
+                          each val in iller
+                            option(value=val.plaka_no) 
+                              =val.il_adi
+                      .col-sm-12    
+                        textarea.form-control(rows='3',name='firmaAdres',placeholder='Firma adresiniz',enforced)
+                    input.previous.action-button(type='button', name='previous', value='Previous')
+                    input.next.action-button(type='button', name='next', value='Next')
+                  fieldset
+                    h2.fs-title Ödeme bilgileri
+                    h3.fs-subtitle Ödeme şekli seçip bilglerinizi doldurunuz
+                    .accwrapper
+                      each val,index in odeme_tipleri
+                        div(class="wrap-"+index)
+                          input.accinput(id="tab-"+index,type='radio', name='tabs',radio-value=val.id)
+                          label.acclabel(for='tab-'+index)
+                            div=val.odemeTipAdi
+                            .cross
+                          .acccontent
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, deserunt ipsum!
+                    input.previous.action-button(type='button', name='previous', value='Previous')
+                    input.submit.action-button(type='submit', name='submit', value='Submit')
+        footer.footer.footer-black.footer-white
+          .container-fluid
+            .row
+              nav.footer-nav
+                ul
+                  li
+                    a(href='https://www.creative-tim.com/', target='_blank') Creative Tim
+                  li
+                    a(href='http://blog.creative-tim.com/', target='_blank') Blog
+                  li
+                    a(href='https://www.creative-tim.com/license', target='_blank') Licenses
+              .credits.ml-auto
+                span.copyright
+                  | ©
+                  script.
+                    document.write(new Date().getFullYear())
+                  | , made with 
+                  i.fa.fa-heart.heart
+                  |  by Creative Tim
+
