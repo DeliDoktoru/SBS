@@ -142,7 +142,7 @@ block body
                               i.nc-icon.nc-single-02
                           input.form-control(ajax-key="r",type='text',name='firmaVergiNo', placeholder='Firma vergi dairesi no',enforced,max="45")    
                       .col-sm-6  
-                        select.custom-select(enforced)(ajax-key="r",name="firmaIli")
+                        select.custom-select(ajax-key="r",enforced,name="firmaIli")
                           option(value='',selected) İl seçiniz..
                           each val in iller
                             option(value=val.plaka_no) 

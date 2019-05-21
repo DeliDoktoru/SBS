@@ -1,10 +1,9 @@
 .sidebar(data-color='brown', data-active-color='danger')
   .logo
     a.simple-text.logo-mini(href='http://www.creative-tim.com/')
-      .logo-image-small
-        img(src='https://demos.creative-tim.com/paper-dashboard-2-pro/assets/img/logo-small.png')
+      i.ti-crown.crown.logo-image-small
     a.simple-text.logo-normal(href='http://www.creative-tim.com/')
-      | Creative Tim
+      i.ti-crown.crown.ml-5
   .sidebar-wrapper
     .user
       .photo
@@ -12,7 +11,7 @@
       .info
         a.collapsed(data-toggle='collapse', href='#collapseExample')
           span
-            | Chet Faker
+            =name
             b.caret
         .clearfix
         #collapseExample.collapse

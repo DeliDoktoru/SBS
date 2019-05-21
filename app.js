@@ -89,7 +89,7 @@ app.use(function (req, res, next) {
     return;
   }
   const l= require('./selfContent/language');
-  res.locals.l= new l((req.session&&req.session.language)||"tr");
+  res.locals.l= new l(req.session.language||(req.session.user&&req.session.user.kullaniciDilTercihi)||"tr");
   next();
 });
 app.use(function (req, res, next){
@@ -143,7 +143,7 @@ app.use(async function (req, res, next) {
         res.redirect('login');
         return;
       }
-      var unvanPages=yetki.pagesFromUnvanId(unvanId);
+      var unvanPages=yetki.unvans[unvanId];
       if (unvanPages == null) {
         res.redirect('login');
         return;
@@ -155,7 +155,8 @@ app.use(async function (req, res, next) {
         return;
       }
       res.locals.menu = unvanPages;
-      res.locals.active=result.id;
+      res.locals.active = result.id;
+      res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
       next();  
     }
   }

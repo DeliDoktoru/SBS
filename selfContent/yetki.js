@@ -11,9 +11,6 @@ function yetki(){
                 } 
             }
         })
-    });
-    this.pagesFromUnvanId=function(unvanId){
-        return this.unvans[unvanId];
-    }
-  }
+    });  
+  } 
 module.exports = new yetki();

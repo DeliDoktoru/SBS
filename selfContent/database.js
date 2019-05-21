@@ -29,14 +29,14 @@ class Database {
         } );
     }
     selectAll(tableName,databaseName="sbs"){
-        var query=`SELECT * FROM ${databaseName}.${tableName};`;
+        var query=`SELECT * FROM ${databaseName}.${tableName} WHERE silindiMi="0";`;
         return this.query(query);
     }
-    selectQuery(where,tableName,mode="AND",databaseName="sbs"){
+    selectQuery(where={},tableName,mode="AND",databaseName="sbs"){
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(!where){
+        if(Object.keys(where).length==0){
             throw "sorgualanieksik";
         }
         var query="";
@@ -46,11 +46,11 @@ class Database {
         }
         return this.query(query,Object.keys(where).map(y=> where[y]));
     }
-    insert(data,tableName,databaseName="sbs"){
+    insert(data={},tableName,databaseName="sbs"){
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(!data){
+        if(Object.keys(data).length==0){
             throw "veribulunamadi";
         }
         if(Array.isArray(data)){
@@ -81,11 +81,11 @@ class Database {
        
         return false;
     }
-    remove(where,tableName,mode="AND",databaseName="sbs"){
+    remove(where={},tableName,mode="AND",databaseName="sbs"){
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(!where){
+        if( Object.keys(where).length==0){
             throw "sorgualanieksik";
         }
         var query="";
@@ -95,14 +95,14 @@ class Database {
         }
         return this.query(query,Object.keys(where).map(y=> where[y]));
     }
-    update(data,where,tableName,mode="AND",databaseName="sbs"){
+    update(data={},where={},tableName,mode="AND",databaseName="sbs"){
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(!where){
+        if(Object.keys(where).length==0){
             throw "sorgualanieksik";
         }
-        if(!data){
+        if(Object.keys(data).length==0){
             throw "veribulunamadi";
         }
         var query="";
@@ -115,12 +115,12 @@ class Database {
         var concat= arr1.concat(arr2);
         return this.query(query,Object.keys(concat).map(y=> concat[y]));
     }
-    selectIn(colName,data,tableName,databaseName="sbs"){
+    selectIn(colName,data={},tableName,databaseName="sbs"){
         //data [1,2,3,4] şeklinde olmalı
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(!data){
+        if(Object.keys(data).length==0){
             throw "veribulunamadi";
         }
         if(!colName){
@@ -132,8 +132,22 @@ class Database {
             throw "sorgubulunamadi";
         }
         return this.query(query,[data]);
+    
     }
-
+    setSilindi(where={},tableName,mode="AND",databaseName="sbs"){
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
+        if( Object.keys(where).length==0){
+            throw "sorgualanieksik";
+        }
+        var query="";
+        query=setSilindiConverter(tableName,databaseName,where,mode);
+        if(query==""){
+            throw "sorgubulunamadi";
+        }
+        return this.query(query,Object.keys(where).map(y=> where[y]));
+    }
 }
 function insertConverter(_tableName,_databaseName,_object){
     return `INSERT INTO ${_databaseName}.${_tableName} (${Object.keys(_object).toString()}) VALUES  ?`; 
@@ -142,13 +156,16 @@ function removeConverter(_tableName,_databaseName,_where,_mode){
     return `DELETE FROM ${_databaseName}.${_tableName} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`; 
 }
 function selectQueryConverter(_tableName,_databaseName,_where,_mode){
-    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;
+    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ( ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")} ) AND silindiMi="0"`;
 }
 function updateConverter(_tableName,_databaseName,_object,_where,_mode){
-    return `UPDATE ${_databaseName}.${_tableName} SET ${Object.keys(_object).map(x=> x+"= ? ").toString()} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")};`;
+    return `UPDATE ${_databaseName}.${_tableName} SET ${Object.keys(_object).map(x=> x+"= ? ").toString()} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;
 }
 function selectInConverter(_tableName,_databaseName,colName){
-    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${colName} IN (?)`;
+    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${colName} IN (?) AND silindiMi="0"`;
+}
+function setSilindiConverter(_tableName,_databaseName,_where,_mode){
+    return `UPDATE ${_databaseName}.${_tableName} SET silindiMi="1" WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;
 }
 function sqlLog(sql,args){
     fs.appendFile(path.join(__dirname, '../sql.log'),"'"+ sql  + "'\n->" + (args!=null?JSON.stringify(args):"")  + "\n", function (error) {

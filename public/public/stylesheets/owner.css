@@ -28,3 +28,12 @@
 [type='password']{
   border-right: 0px;
 }
+.crown{
+  color: #EB5E28; 
+   font-size: 30px;  
+    margin: auto; 
+    text-align:center;
+}
+.user{
+  font-size: 10px;
+}

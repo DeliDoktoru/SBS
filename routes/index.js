@@ -63,6 +63,8 @@ router.get('/test', async function(req, res, next) {
     //var a=await new db().update({a:"a",b:"b"},{b:"b"},"test");
     //var a=await new db().selectIn("id",[1,2],"sayfalar");
     //res.write(JSON.stringify(a))
+    //await new db().setSilindi({a:"azxzcxzxczsol"},"test");
+    
     res.end();
   } catch (error) {
     res.write(error.message || JSON.stringify(error))
