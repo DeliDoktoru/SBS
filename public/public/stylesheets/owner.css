@@ -14,11 +14,17 @@
 #languages{
   z-index: 99999;
   position: absolute;
-  top: 5px;
-  right: 100px;
+  top: 0px;
+  right: 0px;
   width: 66px;
   height: 29px;
   font-size: 12px;
   font-weight: bold;
   padding-right: 0px;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+[type='password']{
+  border-right: 0px;
 }

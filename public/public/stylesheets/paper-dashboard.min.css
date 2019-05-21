@@ -7440,7 +7440,7 @@ fieldset[disabled] .btn-simple:hover {
 .form-group .form-control+.input-group-prepend .input-group-text,
 .input-group .form-control+.input-group-append .input-group-text,
 .input-group .form-control+.input-group-prepend .input-group-text {
-    padding: 10px 2px 10px 2px
+    padding: 10px 10px 10px 2px
 }
 
 .form-group .input-group-append .input-group-text,

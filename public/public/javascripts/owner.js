@@ -1,4 +1,87 @@
 
+  $(document).ready(function(){
+    $('.phone').mask('(000) 000-0000');
+  });
+  $('form').on('keyup keypress', function(e) {
+    var keyCode = e.keyCode || e.which;
+    if (keyCode === 13) { 
+      e.preventDefault();
+      return false;
+    }
+  });
+  function toDashboard(obj=null){
+    if(obj){
+      showNotification('top','right',obj.color,obj.message);
+    }
+    location.href="/dashboard";
+  }
+  function kayitBasarili(obj){
+    if(obj){
+      var successHtml=`
+      <div class="col-lg-8 col-md-12 m-auto">
+        <div class="jumbotron text-xs-center">
+          <h1 class="display-3">${obj.message.title}</h1>
+          <p class="lead"><strong>${obj.message.content}</p>
+          <hr>
+          <p>
+          ${obj.message.footer} <a href="">${obj.message.contactus}</a>
+          </p>
+          <p class="lead">
+          <a class="btn btn-info btn-round mb-3 btn-sm " href="login" role="button">${obj.message.continuelogin}</a>
+          </p>
+        </div>
+      </div>`;
+      $("#msform").parent().parent().html(successHtml);
+    }
+    else{
+      showNotification('top','right',"danger","Bir hata oluştu");
+    }
+   
+  }
+  function Dynajax(link,key="",callback,checkControls=true,data){
+    if(checkControls){
+      if(controls()) return;
+    }
+    var _data={};
+    if(key!=""){
+      kdata={};
+      $(`[ajax-key=${key}]`).each(function(){
+        var type=$(this).attr("type");
+        var name=$(this).attr("name");
+        if(type=="radio"){
+          kdata[name]=$(`[ajax-key=${key}][name=${name}]:checked`).attr("radio-value");
+        }else{
+          kdata[name]=$(this).val();
+        }
+      });
+      _data.kdata=JSON.stringify(kdata)
+    }
+    if(data){
+      _data.ndata=JSON.stringify(data);
+    }
+    $.ajax({
+      type: "POST",
+      url: "/ajax/"+link,
+      dataType: "json",
+      data: _data,
+      success: function (result) {
+        if (result.status){
+          if(callback && typeof(callback)=="function") {
+            callback(result);
+          }
+        } 
+        else {
+          showNotification('top', 'right', result.color, result.message);
+        }
+      },
+      error: function (jqXHR, exception) {
+        console.log(jqXHR);
+        console.log(exception);
+      }
+    });
+    
+  }
+
   /* #region  dil değişikliği */
   $("body").delegate("#languages", "change", function () {
     $.ajax({

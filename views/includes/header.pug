@@ -18,8 +18,3 @@ head
   link(href='/public/stylesheets/radiobutton.sass', rel='stylesheet')
   link(href='/public/stylesheets/radiobutton.css', rel='stylesheet')
   link(href='/public/stylesheets/accordionmenu.css', rel='stylesheet')
-  select#languages.custom-select
-    - var languages = ['tr','eng'];
-    each val in languages
-      option(value=val,selected=val==l.language?true:false )
-        =val.toUpperCase()

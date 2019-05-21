@@ -6,9 +6,9 @@ var animating; //flag to prevent quick multi-click glitches
 
 $(".next").click(function(){
 	//owner.js controls()
-	/*if(controls()){
+	if(controls()){
 		return;
-	}*/
+	}
 	if(animating) return false;
 	animating = true;
 	

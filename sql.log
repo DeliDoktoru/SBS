@@ -1,6 +1,4 @@
-'DELETE FROM sbs.test WHERE a= ? AND ,b= ? '
-->"a"
-'DELETE FROM sbs.test WHERE a= ? AND ,b= ? '
-->"a"
-'DELETE FROM sbs.test WHERE a= ? AND b= ? '
-->"a"
+'SELECT * FROM sbs.kullanici_unvanlar;'
+->
+'SELECT * FROM sbs.sayfalar;'
+->

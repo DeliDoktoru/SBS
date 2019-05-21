@@ -90,3 +90,22 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+
+/* #region  globaldir. global.erorLoger diye çağır,error.log dosyasına hataları yazar */
+
+errorLoger=function (err){
+  var fs = require("fs");
+  var path = require('path');
+  fs.appendFile(path.join(__dirname, '../error.log'), err.message + "\n->" + err.stack + "\n", function (error) {
+      console.log(error);
+    });
+    console.log(err.stack);
+}
+
+/* #endregion */
+
+
+
+

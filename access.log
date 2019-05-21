@@ -1,265 +1,725 @@
-anonymus GET /register 200 21378 - 1066.261 ms {} ::1
-anonymus GET /images/background.jpg 404 8340 - 175.660 ms {} ::1
-anonymus GET /images/favicon.png 404 8340 - 132.380 ms {} ::1
-anonymus GET /register 200 21392 - 1117.014 ms {} ::1
-anonymus GET /images/background.jpg 404 8354 - 137.698 ms {} ::1
-anonymus GET /register 304  - 419.342 ms {} ::1
-anonymus GET /register 200 21392 - 339.805 ms {} ::1
-anonymus GET /register 304  - 1184.900 ms {} ::1
-anonymus GET /register 304  - 1269.960 ms {} ::1
-anonymus GET /register 304  - 1150.339 ms {} ::1
-anonymus GET /register 304  - 1076.405 ms {} ::1
+anonymus POST /ajax/register 200 49 - 28.109 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 29 - 14126.886 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 57 - 38.249 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 57 - 38000.280 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 57 - 1576.440 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 5950.589 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 3948.234 ms {"{\"kdata\":{\"kullaniciEPosta\":\"\",\"kullaniciParola\":\"\",\"ckullaniciParola\":\"\",\"kullaniciIsim\":\"\",\"kullaniciSoyisim\":\"\",\"kullaniciTel\":\"\",\"paketTercihi\":\"1\",\"firmaAdi\":\"\",\"firmaTel\":\"\",\"firmaFaks\":\"\",\"firmaVergiDairesi\":\"\",\"firmaVergiNo\":\"\",\"il\":\"\",\"firmaAdres\":\"\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus GET /register 200 21878 - 2527.629 ms {} ::1
+anonymus GET /test 200  - 26.380 ms {} ::1
+anonymus GET /favicon.ico 404 8538 - 168.864 ms {} ::1
+anonymus GET /register 200 21878 - 2558.521 ms {} ::1
+anonymus POST /ajax/register 200 61 - 58.678 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 17410.226 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 18056.666 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 13902.775 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 62251.296 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 47 - 10929.367 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 2951.487 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 3357.381 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 2532.999 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 8063.277 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 45.782 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus POST /ajax/register 200 61 - 20938.462 ms {"{\"kdata\":{\"kullaniciEPosta\":\"yunusemrahdursun@gmail.com\",\"kullaniciParola\":\"gral\",\"ckullaniciParola\":\"gral\",\"kullaniciIsim\":\"Yunus Emrah\",\"kullaniciSoyisim\":\"Dursun\",\"kullaniciTel\":\"(537) 785-7448\",\"paketTercihi\":\"1\",\"firmaAdi\":\"İntersan\",\"firmaTel\":\"5334549672\",\"firmaFaks\":\"123456789\",\"firmaVergiDairesi\":\"Vergi dairesiiii\",\"firmaVergiNo\":\"vergi dairesi noooo\",\"firmaIli\":\"6\",\"firmaAdres\":\"tandoğan\",\"odemeTipi\":\"2\"}}":""} ::1
+anonymus GET /register 200 21878 - 2025.920 ms {} ::1
+anonymus POST /ajax/register 200 61 - 10151.542 ms {"kdata[kullaniciEPosta]":"yunusem","kdata[kullaniciParola]":"adsasds","kdata[ckullaniciParola]":"asasadas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asda","kdata[kullaniciTel]":"(123) 1","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asda","kdata[firmaTel]":"","kdata[firmaFaks]":"da","kdata[firmaVergiDairesi]":"sadasd","kdata[firmaVergiNo]":"adsad","kdata[firmaIli]":"1","kdata[firmaAdres]":"asda","kdata[odemeTipi]":"1"} ::1
+anonymus GET /register 200 21878 - 2844.936 ms {} ::1
+anonymus POST /ajax/register 500 8598 - 1806.938 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asddaas","kdata[kullaniciTel]":"(123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"aaaaaa","kdata[firmaTel]":"aaaaaa","kdata[firmaFaks]":"aaaaaaaaaaaa","kdata[firmaVergiDairesi]":"aaaaaa","kdata[firmaVergiNo]":"aaaaaaaaaaaaaa","kdata[firmaIli]":"1","kdata[firmaAdres]":"aaaaaaaaaaaa","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 500 8526 - 1781.586 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asddaas","kdata[kullaniciTel]":"(123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"aaaaaa","kdata[firmaTel]":"aaaaaa","kdata[firmaFaks]":"aaaaaaaaaaaa","kdata[firmaVergiDairesi]":"aaaaaa","kdata[firmaVergiNo]":"aaaaaaaaaaaaaa","kdata[firmaIli]":"1","kdata[firmaAdres]":"aaaaaaaaaaaa","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 200 61 - 9518.125 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asddaas","kdata[kullaniciTel]":"(123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"aaaaaa","kdata[firmaTel]":"aaaaaa","kdata[firmaFaks]":"aaaaaaaaaaaa","kdata[firmaVergiDairesi]":"aaaaaa","kdata[firmaVergiNo]":"aaaaaaaaaaaaaa","kdata[firmaIli]":"1","kdata[firmaAdres]":"aaaaaaaaaaaa","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 200 61 - 8162.760 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asddaas","kdata[kullaniciTel]":"(123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"aaaaaa","kdata[firmaTel]":"aaaaaa","kdata[firmaFaks]":"aaaaaaaaaaaa","kdata[firmaVergiDairesi]":"aaaaaa","kdata[firmaVergiNo]":"aaaaaaaaaaaaaa","kdata[firmaIli]":"1","kdata[firmaAdres]":"aaaaaaaaaaaa","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 200  - 55.581 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdas","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asddaas","kdata[kullaniciTel]":"(123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"aaaaaa","kdata[firmaTel]":"aaaaaa","kdata[firmaFaks]":"aaaaaaaaaaaa","kdata[firmaVergiDairesi]":"aaaaaa","kdata[firmaVergiNo]":"aaaaaaaaaaaaaa","kdata[firmaIli]":"1","kdata[firmaAdres]":"aaaaaaaaaaaa","kdata[odemeTipi]":"1"} ::1
+anonymus GET /register 200  - 10.723 ms {} ::1
+anonymus GET /favicon.ico 200  - 9.443 ms {} ::1
+anonymus GET /register 200  - 267.907 ms {} ::1
+anonymus GET /favicon.ico 404 8538 - 1850.533 ms {} ::1
+anonymus GET /register 200  - 6.587 ms {} ::1
+anonymus GET /register 200 21878 - 2824.943 ms {} ::1
+anonymus POST /ajax/register 200  - 50.974 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 500 8526 - 1831.473 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 200  - 46.833 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 200  - 47.242 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 500 8590 - 1634.432 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus POST /ajax/register 500 8590 - 194.862 ms {"kdata[kullaniciEPosta]":"asdas","kdata[kullaniciParola]":"asd","kdata[ckullaniciParola]":"asdd","kdata[kullaniciIsim]":"asd","kdata[kullaniciSoyisim]":"asd","kdata[kullaniciTel]":"(123) 123","kdata[paketTercihi]":"1","kdata[firmaAdi]":"asd","kdata[firmaTel]":"asd","kdata[firmaFaks]":"asd","kdata[firmaVergiDairesi]":"asd","kdata[firmaVergiNo]":"ads","kdata[firmaIli]":"1","kdata[firmaAdres]":"asd","kdata[odemeTipi]":"1"} ::1
+anonymus GET /register 200 21878 - 2798.695 ms {} ::1
+anonymus POST /ajax/register 500 8590 - 1866.179 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 200  - 44.429 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 500 8526 - 1640.821 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 500 8526 - 29251.367 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 200  - 96753.934 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 500 8562 - 8114.021 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 500 8562 - 7510.919 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus POST /ajax/register 500 8528 - 10422.986 ms {"{\"kdata\":{\"kullaniciEPosta\":\"ASD\",\"kullaniciParola\":\"ADSA\",\"ckullaniciParola\":\"ASDAD\",\"kullaniciIsim\":\"ASDAD\",\"kullaniciSoyisim\":\"ADSAS\",\"kullaniciTel\":\"(123) 133-1\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ADS\",\"firmaTel\":\"ASD\",\"firmaFaks\":\"ASD\",\"firmaVergiDairesi\":\"ASD\",\"firmaVergiNo\":\"ASDADA\",\"firmaIli\":\"2\",\"firmaAdres\":\"ASDADS\",\"odemeTipi\":\"1\"}}":""} ::1
+anonymus GET /register 500 8529 - 2326.809 ms {} ::1
+anonymus GET /register 200 21878 - 695.533 ms {} ::1
+anonymus POST /ajax/register 200 47 - 4587.031 ms {"kdata":"{\"kullaniciEPosta\":\"asda\",\"kullaniciParola\":\"asdad\",\"ckullaniciParola\":\"ad\",\"kullaniciIsim\":\"a\",\"kullaniciSoyisim\":\"a1\",\"kullaniciTel\":\"(121) 2\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ads\",\"firmaTel\":\"as\",\"firmaFaks\":\"as\",\"firmaVergiDairesi\":\"as\",\"firmaVergiNo\":\"as\",\"firmaIli\":\"1\",\"firmaAdres\":\"as\",\"odemeTipi\":\"1\"}"} ::1
+anonymus POST /ajax/register 200 203321 - 5463.106 ms {"kdata":"{\"kullaniciEPosta\":\"asda\",\"kullaniciParola\":\"asdad\",\"ckullaniciParola\":\"ad\",\"kullaniciIsim\":\"a\",\"kullaniciSoyisim\":\"a1\",\"kullaniciTel\":\"(121) 2\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ads\",\"firmaTel\":\"as\",\"firmaFaks\":\"as\",\"firmaVergiDairesi\":\"as\",\"firmaVergiNo\":\"as\",\"firmaIli\":\"1\",\"firmaAdres\":\"as\",\"odemeTipi\":\"1\"}"} ::1
+anonymus POST /ajax/register 200  - 53.512 ms {"kdata":"{\"kullaniciEPosta\":\"asda\",\"kullaniciParola\":\"asdad\",\"ckullaniciParola\":\"ad\",\"kullaniciIsim\":\"a\",\"kullaniciSoyisim\":\"a1\",\"kullaniciTel\":\"(121) 2\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ads\",\"firmaTel\":\"as\",\"firmaFaks\":\"as\",\"firmaVergiDairesi\":\"as\",\"firmaVergiNo\":\"as\",\"firmaIli\":\"1\",\"firmaAdres\":\"as\",\"odemeTipi\":\"1\"}"} ::1
+anonymus POST /ajax/register 200  - 28.535 ms {"kdata":"{\"kullaniciEPosta\":\"asda\",\"kullaniciParola\":\"asdad\",\"ckullaniciParola\":\"ad\",\"kullaniciIsim\":\"a\",\"kullaniciSoyisim\":\"a1\",\"kullaniciTel\":\"(121) 2\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ads\",\"firmaTel\":\"as\",\"firmaFaks\":\"as\",\"firmaVergiDairesi\":\"as\",\"firmaVergiNo\":\"as\",\"firmaIli\":\"1\",\"firmaAdres\":\"as\",\"odemeTipi\":\"1\"}"} ::1
+anonymus POST /ajax/register 200  - 60.438 ms {"kdata":"{\"kullaniciEPosta\":\"asda\",\"kullaniciParola\":\"asdad\",\"ckullaniciParola\":\"ad\",\"kullaniciIsim\":\"a\",\"kullaniciSoyisim\":\"a1\",\"kullaniciTel\":\"(121) 2\",\"paketTercihi\":\"1\",\"firmaAdi\":\"ads\",\"firmaTel\":\"as\",\"firmaFaks\":\"as\",\"firmaVergiDairesi\":\"as\",\"firmaVergiNo\":\"as\",\"firmaIli\":\"1\",\"firmaAdres\":\"as\",\"odemeTipi\":\"1\"}"} ::1
+anonymus POST /ajax/register 200 9941 - 309.875 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"ad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 9866 - 235.016 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"ad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 84 - 126.715 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"ad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 84 - 22.647 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"ad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 61 - 27.390 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"asdad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 63 - 3001.635 ms {"kdata":{"kullaniciEPosta":"asda","kullaniciParola":"asdad","ckullaniciParola":"asdad","kullaniciIsim":"a","kullaniciSoyisim":"a1","kullaniciTel":"(121) 2","paketTercihi":"1","firmaAdi":"ads","firmaTel":"as","firmaFaks":"as","firmaVergiDairesi":"as","firmaVergiNo":"as","firmaIli":"1","firmaAdres":"as","odemeTipi":"1"}} ::1
+anonymus GET /register 200 21878 - 1236.892 ms {} ::1
+anonymus POST /ajax/register 200 58 - 279.905 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 58 - 79010.368 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 6038.913 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus GET /register 200 21884 - 2002.132 ms {} ::ffff:192.168.1.34
+anonymus POST /ajax/register 200 258 - 32.675 ms {"kdata":{"kullaniciEPosta":"dfghfgh","kullaniciParola":"ghfgh","ckullaniciParola":"fghfgf","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::ffff:192.168.1.34
+anonymus POST /ajax/register 200 258 - 30.347 ms {"kdata":{"kullaniciEPosta":"dfghfgh","kullaniciParola":"ghfgh","ckullaniciParola":"fghfgf","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::ffff:192.168.1.34
+anonymus POST /ajax/register 200 258 - 31.214 ms {"kdata":{"kullaniciEPosta":"dfghfgh","kullaniciParola":"ghfgh","ckullaniciParola":"fghfgf","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::ffff:192.168.1.34
+anonymus POST /ajax/register 200 258 - 32.360 ms {"kdata":{"kullaniciEPosta":"dfghfgh","kullaniciParola":"ghfgh","ckullaniciParola":"fghfgf","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::ffff:192.168.1.34
+anonymus POST /ajax/register 200 65 - 276.302 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 58 - 197.669 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 58 - 38.463 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 58 - 424.751 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 29 - 280.248 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 29 - 74.463 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 10250.764 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 64908.236 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 74000.333 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 1674.031 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 34345.127 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 6782.535 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 80 - 2194.237 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 190.705 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 281.707 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 375.210 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 59 - 58.147 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"Yunus Emrah","kullaniciSoyisim":"Dursun","kullaniciTel":"(537) 785-7448","paketTercihi":"1","firmaAdi":"İntersan","firmaTel":"533454972","firmaFaks":"446545353","firmaVergiDairesi":"vergi dairesi","firmaVergiNo":"vergi no","firmaIli":"6","firmaAdres":"tandoğan","odemeTipi":"1"}} ::1
+anonymus GET /register 200 21884 - 3460.174 ms {} ::1
+anonymus GET /register 304  - 3147.661 ms {} ::1
+anonymus POST /ajax/register 200 431 - 67.737 ms {"kdata":{"kullaniciEPosta":"","kullaniciParola":"","ckullaniciParola":"","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 431 - 14.535 ms {"kdata":{"kullaniciEPosta":"","kullaniciParola":"","ckullaniciParola":"","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 431 - 27.771 ms {"kdata":{"kullaniciEPosta":"","kullaniciParola":"","ckullaniciParola":"","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 431 - 26.340 ms {"kdata":{"kullaniciEPosta":"","kullaniciParola":"","ckullaniciParola":"","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::1
+anonymus GET /register 200 21908 - 375.183 ms {} ::1
+anonymus POST /ajax/register 200 431 - 24.207 ms {"kdata":{"kullaniciEPosta":"","kullaniciParola":"","ckullaniciParola":"","kullaniciIsim":"","kullaniciSoyisim":"","kullaniciTel":"","paketTercihi":"1","firmaAdi":"","firmaTel":"","firmaFaks":"","firmaVergiDairesi":"","firmaVergiNo":"","firmaIli":"","firmaAdres":"","odemeTipi":"1"}} ::1
+anonymus GET /register 200 21884 - 2632.083 ms {} ::1
+anonymus GET /register 304  - 533.236 ms {} ::1
+anonymus GET /login.html 404 8538 - 108.024 ms {} ::1
+anonymus GET /login 200 9425 - 1880.940 ms {} ::1
+anonymus GET /login 200 9435 - 237.999 ms {} ::1
+anonymus GET /login 200 10437 - 156.576 ms {} ::1
+anonymus GET /login 200 10435 - 122.439 ms {} ::1
+anonymus GET /login 200 10434 - 251.031 ms {} ::1
+anonymus GET /login 200 10178 - 126.483 ms {} ::1
+anonymus GET /login.html 404 8538 - 85.968 ms {} ::1
+anonymus GET /login 200 10176 - 98.339 ms {} ::1
+anonymus GET /register 304  - 496.701 ms {} ::1
+anonymus GET /login.html 404 8538 - 80.842 ms {} ::1
+anonymus GET /register 200 21857 - 275.356 ms {} ::1
+anonymus GET /login 304  - 94.273 ms {} ::1
+anonymus GET /register 304  - 239.954 ms {} ::1
+anonymus GET /login 304  - 100.135 ms {} ::1
+anonymus GET /register 304  - 225.590 ms {} ::1
+anonymus GET /login 304  - 103.128 ms {} ::1
+anonymus GET /login 200 10153 - 256.072 ms {} ::1
+anonymus GET /register 304  - 359.438 ms {} ::1
+anonymus GET /login 304  - 133.775 ms {} ::1
+anonymus GET /login 200 10153 - 140.370 ms {} ::1
+anonymus GET /register 200 21857 - 281.993 ms {} ::1
+anonymus GET /login 304  - 119.735 ms {} ::1
+anonymus GET /login 200 10150 - 103.165 ms {} ::1
+anonymus GET /login 200 10150 - 115.487 ms {} ::1
+anonymus GET /login 200 10140 - 250.207 ms {} ::1
+anonymus GET /login 200 10243 - 183.568 ms {} ::1
+anonymus GET /login 200 10167 - 240.119 ms {} ::1
+anonymus GET /test 200  - 270.254 ms {} ::1
+anonymus GET /favicon.ico 404 8538 - 1665.115 ms {} ::1
+anonymus GET /test 200  - 214.131 ms {} ::1
+anonymus GET /test 200  - 265.365 ms {} ::1
+anonymus GET /test 200  - 254.085 ms {} ::1
+anonymus GET /test 200  - 257.947 ms {} ::1
+anonymus GET /test 200  - 155.860 ms {} ::1
+anonymus GET /test 200  - 12667.817 ms {} ::ffff:127.0.0.1
+anonymus GET /login 200 10190 - 1924.260 ms {} ::1
+anonymus POST /ajax/login 200 174 - 82.052 ms {"kdata":{"undefined":"gral"}} ::1
+anonymus GET /login? 200 10237 - 1892.175 ms {} ::1
+anonymus GET /login? 304  - 155.098 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10237 - 147.039 ms {} ::1
+anonymus POST /ajax/login   -  ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus POST /ajax/login 200 57 - 46827.882 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus POST /ajax/login 200 57 - 8152.310 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus POST /ajax/login 200 57 - 7152.258 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 200 10237 - 1843.309 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 183.255 ms {} ::1
+anonymus POST /ajax/login 200 57 - 27356.961 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10251 - 1955.166 ms {} ::1
+anonymus GET /login 200 10251 - 138.080 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 342.446 ms {} ::1
+anonymus POST /ajax/login 200 57 - 12439.664 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 1866.405 ms {} ::1
+anonymus GET /login 304  - 129.973 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 566.654 ms {} ::1
+anonymus POST /ajax/login   -  ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 200 10248 - 93.065 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10248 - 114.752 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10249 - 87.228 ms {} ::1
+anonymus POST /ajax/login 200 57 - 27.897 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200  - 2.342 ms {} ::1
+anonymus GET /favicon.ico 404 8538 - 92.892 ms {} ::1
+anonymus GET /login 200 10249 - 134.669 ms {} ::1
+anonymus POST /ajax/login 200 57 - 34.477 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200  - 1.549 ms {} ::1
+anonymus POST /ajax/login 200 57 - 28.017 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200  - 5.428 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 1881.170 ms {} ::1
+anonymus POST /ajax/login 400 8392 - 140.257 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 150.234 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 1718.709 ms {} ::1
+anonymus GET /login 304  - 140.190 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 158.806 ms {} ::1
+anonymus POST /ajax/login 200 57 - 461.825 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 93.244 ms {} ::1
+anonymus GET /login 304  - 91.805 ms {} ::1
+anonymus GET /login 304  - 91.819 ms {} ::1
+anonymus POST /ajax/login 200 57 - 33.258 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 145.925 ms {} ::1
+anonymus GET /dashboard 200  - 1.341 ms {} ::1
+anonymus GET /login 304  - 254.642 ms {} ::1
+anonymus POST /ajax/login 200 57 - 25.939 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10249 - 150.359 ms {} ::1
+anonymus GET /dashboard 200  - 0.914 ms {} ::1
+anonymus GET /login 304  - 360.058 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10249 - 126.470 ms {} ::1
+anonymus POST /ajax/login 200 57 - 435.535 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 103.099 ms {} ::1
+anonymus POST /ajax/login 200 57 - 39.505 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 304  - 113.645 ms {} ::1
+anonymus GET /dashboard 200  - 1.689 ms {} ::1
+anonymus GET /login 304  - 1603.939 ms {} ::1
+anonymus POST /ajax/login 200 194 - 55.316 ms {"[object Object]":""} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10249 - 163.560 ms {} ::1
+anonymus GET /login?kullaniciEPosta=yunusemrahdursun@gmail.com&kullaniciParola=gral 200 10253 - 255.448 ms {} ::1
+anonymus GET /login 200 10253 - 120.884 ms {} ::1
+anonymus POST /ajax/login 200 194 - 12.548 ms {"[object Object]":""} ::1
+anonymus POST /login 404 8538 - 103.578 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"GRAL"} ::1
+anonymus POST /login 404 8538 - 65.553 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"GRAL"} ::1
+anonymus GET /login 304  - 122.984 ms {} ::1
+anonymus POST /ajax/login 200 194 - 5.975 ms {"[object Object]":""} ::1
+anonymus POST /login 404 8538 - 80.884 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"} ::1
+anonymus POST /login 404 8538 - 206.018 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"} ::1
+anonymus GET /login 200 10267 - 116.864 ms {} ::1
+anonymus POST /login 404 8538 - 78.811 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"} ::1
+anonymus POST /login 404 8538 - 78.173 ms {"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"} ::1
+anonymus GET /login 200 10266 - 106.618 ms {} ::1
+anonymus GET /login 200 10252 - 330.137 ms {} ::1
+anonymus POST /ajax/login 200 194 - 4.446 ms {"[object Object]":""} ::1
+anonymus GET /login 304  - 1883.679 ms {} ::1
+anonymus POST /ajax/login 200 57 - 283.118 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200  - 3.327 ms {} ::1
+anonymus GET /login 304  - 249.259 ms {} ::1
+anonymus POST /ajax/login 200 64 - 24.040 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"asdasd"}} ::1
+anonymus POST /ajax/login 200 57 - 14.756 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200  - 1.858 ms {} ::1
+anonymus GET /register 200 21881 - 330.047 ms {} ::1
+anonymus GET /register 304  - 2903.076 ms {} ::1
+anonymus GET /register 304  - 2616.083 ms {} ::1
+anonymus GET /register 200 21880 - 2539.769 ms {} ::1
+anonymus GET /register 304  - 2583.544 ms {} ::1
+anonymus GET /login 304  - 112.318 ms {} ::1
+anonymus GET /register 304  - 3134.268 ms {} ::1
+anonymus GET /register 304  - 3178.671 ms {} ::1
+anonymus GET /register 304  - 1383.435 ms {} ::1
+anonymus GET /register 304  - 2784.936 ms {} ::1
+anonymus GET /register 304  - 2627.325 ms {} ::1
+anonymus GET /register 304  - 2761.019 ms {} ::1
+anonymus GET /register 200 21894 - 2718.460 ms {} ::1
+anonymus POST /ajax/register 200 82 - 105.463 ms {"kdata":{"kullaniciEPosta":"yunasdadusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaaaaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaa","firmaVergiDairesi":"aaaaaaaaaaaaaaa","firmaVergiNo":"aaaaaaaaaaaaaa","firmaIli":"2","firmaAdres":"aaaaaaaaaa","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 179 - 262.587 ms {"kdata":{"kullaniciEPosta":"yunasdadusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaaaaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaa","firmaVergiDairesi":"aaaaaaaaaaaaaaa","firmaVergiNo":"aaaaaaaaaaaaaa","firmaIli":"2","firmaAdres":"aaaaaaaaaa","odemeTipi":"1"}} ::1
+anonymus POST /ajax/register 200 179 - 62.129 ms {"kdata":{"kullaniciEPosta":"yunasdadusemrahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaaaaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaa","firmaVergiDairesi":"aaaaaaaaaaaaaaa","firmaVergiNo":"aaaaaaaaaaaaaa","firmaIli":"2","firmaAdres":"aaaaaaaaaa","odemeTipi":"1"}} ::1
+anonymus GET /register 304  - 3138.015 ms {} ::1
+anonymus POST /ajax/register 200 179 - 98.432 ms {"kdata":{"kullaniciEPosta":"yunusemasdadarahdursun@gmail.com","kullaniciParola":"gral","ckullaniciParola":"gral","kullaniciIsim":"aaaaaaaa","kullaniciSoyisim":"aaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaaaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaaaaaaaa","firmaIli":"1","firmaAdres":"aaaaaaaaaa","odemeTipi":"1"}} ::1
+anonymus GET /login 304  - 290.715 ms {} ::1
+anonymus GET /register 304  - 2604.522 ms {} ::1
+anonymus GET /login 500 9880 - 179.124 ms {} ::1
+anonymus GET /login 200 10305 - 248.188 ms {} ::1
+anonymus POST /ajax/login 200 64 - 65.390 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"asda"}} ::1
+anonymus GET /register 304  - 418.733 ms {} ::1
+anonymus GET /login 304  - 1916.620 ms {} ::1
+anonymus POST /ajax/login 200 57 - 331.461 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200 28380 - 553.128 ms {} ::1
+anonymus GET /index 404 8538 - 92.375 ms {} ::1
+anonymus GET / 200  - 2.931 ms {} ::1
+anonymus GET /dashboard 304  - 642.174 ms {} ::1
+anonymus GET /dashboard 200 15979 - 168.091 ms {} ::1
+anonymus GET /dashboard 200 15961 - 172.833 ms {} ::1
+anonymus GET /dashboard 200 16025 - 535.947 ms {} ::1
+anonymus GET /dashboard 304  - 253.917 ms {} ::1
+anonymus GET /dashboard 200 16025 - 171.416 ms {} ::1
+anonymus GET /dashboard 304  - 204.700 ms {} ::1
+anonymus GET /login 304  - 135.521 ms {} ::1
+anonymus POST /ajax/login 200 57 - 28.043 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 304  - 206.401 ms {} ::1
+anonymus GET /dashboard 200 28380 - 355.394 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 28.605 ms {"language":"eng"} ::1
+anonymus GET /dashboard 200 28380 - 1164.626 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.280 ms {"language":"tr"} ::1
+anonymus GET /dashboard 200 28380 - 520.552 ms {} ::1
+anonymus GET /register 200 21894 - 2123.967 ms {} ::ffff:192.168.1.35
+anonymus GET /login 200 10305 - 259.496 ms {} ::ffff:192.168.1.35
+anonymus POST /ajax/login 200 57 - 73.080 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 10.311 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.758 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.473 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.704 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.954 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.501 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.487 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.545 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.168 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.322 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.214 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.028 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.375 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.304 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.325 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.389 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.268 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.215 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.306 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.225 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.514 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.135 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.164 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.806 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.994 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 3.118 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.410 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.847 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.446 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.504 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.561 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.549 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.889 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.617 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.384 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.400 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.269 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.679 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.028 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.222 ms {} ::ffff:192.168.1.35
+anonymus POST /ajax/login 200 57 - 39.411 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.369 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.371 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.469 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.477 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.275 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.281 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.371 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.105 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.420 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.330 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.469 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.044 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.556 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.314 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.654 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.066 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.332 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 7.776 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.342 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.561 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 3.482 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.033 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.921 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.414 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.819 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.451 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.807 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.490 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.342 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.554 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.848 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.464 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.981 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.391 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.469 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.236 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.727 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.267 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.056 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.536 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 4.111 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.678 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.537 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.485 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.509 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.870 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.879 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.286 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.296 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.760 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.434 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.080 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.324 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.631 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.685 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.355 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.956 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.415 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.298 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.268 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.453 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.297 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.367 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.430 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.363 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.195 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.522 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.936 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.418 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.571 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.269 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.243 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.173 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 4.859 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.295 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.365 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.647 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.288 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.689 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.381 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.264 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 3.792 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.119 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.997 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 3.849 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.534 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.255 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.730 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.615 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.978 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.719 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.921 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.420 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.831 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.341 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 4.329 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.586 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.579 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.165 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.424 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.498 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.184 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.106 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.132 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 4.526 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.928 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.138 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.193 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.792 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.322 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.307 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.931 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.415 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.188 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.184 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.264 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.340 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.602 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.656 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.440 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 3.925 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.031 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.096 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.463 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.573 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.612 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.014 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.342 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.288 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.719 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.939 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.369 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.599 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.882 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.249 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.495 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.313 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.219 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.366 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.490 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.345 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.260 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.350 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.591 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.385 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.304 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.582 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.290 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.576 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 2.834 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.444 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.465 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.369 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.150 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.286 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.197 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 2.415 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.508 ms {} ::ffff:192.168.1.35
+anonymus GET /dashboard 302 46 - 1.725 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 64 - 1.798 ms {} ::ffff:192.168.1.35
+anonymus GET / 200  - 2.864 ms {} ::1
+anonymus GET /database 302 56 - 2.467 ms {} ::1
+anonymus GET /login 304  - 307.183 ms {} ::1
+anonymus POST /ajax/login 200 57 - 17.929 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 302 46 - 3.959 ms {} ::1
+anonymus GET / 302 64 - 4.458 ms {} ::1
+anonymus GET /dashboard 302 46 - 4.512 ms {} ::1
+anonymus GET / 302 64 - 3.583 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.956 ms {} ::1
+anonymus GET / 302 64 - 2.138 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.328 ms {} ::1
+anonymus GET / 302 64 - 1.972 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.937 ms {} ::1
+anonymus GET / 302 64 - 1.677 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.858 ms {} ::1
+anonymus GET / 302 64 - 2.102 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.705 ms {} ::1
+anonymus GET / 302 64 - 2.488 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.337 ms {} ::1
+anonymus GET / 302 64 - 1.612 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.398 ms {} ::1
+anonymus GET / 302 64 - 2.266 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.978 ms {} ::1
+anonymus GET / 302 64 - 1.761 ms {} ::1
+anonymus GET / 302 64 - 4.352 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.811 ms {} ::1
+anonymus GET / 302 64 - 2.996 ms {} ::1
+anonymus GET /dashboard 302 46 - 4.854 ms {} ::1
+anonymus GET / 302 64 - 2.044 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.045 ms {} ::1
+anonymus GET / 302 64 - 2.576 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.980 ms {} ::1
+anonymus GET / 302 64 - 1.716 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.864 ms {} ::1
+anonymus GET / 302 64 - 2.154 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.895 ms {} ::1
+anonymus GET / 302 64 - 2.348 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.336 ms {} ::1
+anonymus GET / 302 64 - 2.395 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.254 ms {} ::1
+anonymus GET / 302 64 - 2.192 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.395 ms {} ::1
+anonymus GET / 302 64 - 2.532 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.785 ms {} ::1
+anonymus GET / 302 64 - 5.323 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.736 ms {} ::1
+anonymus GET / 302 64 - 3.030 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.956 ms {} ::1
+anonymus GET / 302 64 - 1.882 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.505 ms {} ::1
+anonymus GET / 302 64 - 5.156 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.111 ms {} ::1
+anonymus GET / 302 64 - 2.639 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.617 ms {} ::1
+anonymus GET / 302 64 - 2.078 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.837 ms {} ::1
+anonymus GET / 302 64 - 3.114 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.974 ms {} ::1
+anonymus GET / 302 64 - 1.955 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.106 ms {} ::1
+anonymus GET / 302 64 - 2.425 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.508 ms {} ::1
+anonymus GET / 302 64 - 2.327 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.011 ms {} ::1
+anonymus GET / 302 64 - 1.344 ms {} ::1
+anonymus GET /dashboard 302 46 - 15.721 ms {} ::1
+anonymus GET / 302 64 - 1.884 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.222 ms {} ::1
+anonymus GET / 302 64 - 1.792 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.447 ms {} ::1
+anonymus GET / 302 64 - 2.606 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.623 ms {} ::1
+anonymus GET / 302 64 - 1.847 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.274 ms {} ::1
+anonymus GET / 302 64 - 2.338 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.330 ms {} ::1
+anonymus GET / 302 64 - 3.025 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.826 ms {} ::1
+anonymus GET / 302 64 - 1.739 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.083 ms {} ::1
+anonymus GET / 302 64 - 1.819 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.115 ms {} ::1
+anonymus GET / 302 64 - 2.501 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.584 ms {} ::1
+anonymus GET /dashboard 302 46 - 18703.988 ms {} ::1
+anonymus GET / 302 64 - 3.519 ms {} ::1
+anonymus GET /dashboard 302 46 - 4189.792 ms {} ::1
+anonymus GET / 302 64 - 2.853 ms {} ::1
+anonymus GET /dashboard 302 46 - 2350.197 ms {} ::1
+anonymus GET / 302 64 - 4.269 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.554 ms {} ::1
+anonymus GET / 302 64 - 1.718 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.707 ms {} ::1
+anonymus GET / 302 64 - 3.439 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.107 ms {} ::1
+anonymus GET / 302 64 - 3.082 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.421 ms {} ::1
+anonymus GET / 302 64 - 2.322 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.124 ms {} ::1
+anonymus GET / 302 64 - 3.013 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.250 ms {} ::1
+anonymus GET / 302 64 - 4.097 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.991 ms {} ::1
+anonymus GET / 302 64 - 4.115 ms {} ::1
+anonymus GET / 302 64 - 2.562 ms {} ::1
+anonymus GET /dashboard 302 46 - 3.284 ms {} ::1
+anonymus GET / 302 64 - 2.525 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.509 ms {} ::1
+anonymus GET / 302 64 - 3.149 ms {} ::1
+anonymus GET /dashboard 302 46 - 4.524 ms {} ::1
+anonymus GET / 302 64 - 2.109 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.486 ms {} ::1
+anonymus GET / 302 64 - 1.869 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.384 ms {} ::1
+anonymus GET / 302 64 - 1.349 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.980 ms {} ::1
+anonymus GET / 302 64 - 2.101 ms {} ::1
+anonymus GET /dashboard 302 46 - 5.042 ms {} ::1
+anonymus GET / 302 64 - 1.848 ms {} ::1
+anonymus GET /dashboard 302 46 - 1.988 ms {} ::1
+anonymus GET / 302 64 - 1.864 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.364 ms {} ::1
+anonymus GET / 302 64 - 1.939 ms {} ::1
+anonymus GET /dashboard 302 46 - 2.797 ms {} ::1
+anonymus GET /test 302 54 - 27.120 ms {} ::1
+anonymus GET /login 302 54 - 2.881 ms {} ::1
+anonymus GET /login 302 54 - 1.854 ms {} ::1
+anonymus GET /login 302 54 - 2.862 ms {} ::1
+anonymus GET /login 302 54 - 1.790 ms {} ::1
+anonymus GET /login 302 54 - 1.969 ms {} ::1
+anonymus GET /login 302 54 - 1.740 ms {} ::1
+anonymus GET /login 302 54 - 3.061 ms {} ::1
+anonymus GET /login 302 54 - 2.269 ms {} ::1
+anonymus GET /login 302 54 - 4.541 ms {} ::1
+anonymus GET /login 302 54 - 1.559 ms {} ::1
+anonymus GET /login 302 54 - 1.722 ms {} ::1
+anonymus GET /login 302 54 - 1.765 ms {} ::1
+anonymus GET /login 302 54 - 3.263 ms {} ::1
+anonymus GET /login 302 54 - 1.813 ms {} ::1
+anonymus GET /login 302 54 - 1.932 ms {} ::1
+anonymus GET /login 302 54 - 2.100 ms {} ::1
+anonymus GET /login 302 54 - 2.160 ms {} ::1
+anonymus GET /login 302 54 - 3.813 ms {} ::1
+anonymus GET /login 302 54 - 2.053 ms {} ::1
+anonymus GET /login 200 10305 - 1608.208 ms {} ::1
+anonymus GET /test 200  - 201.436 ms {} ::1
+anonymus GET /test 200  - 3.489 ms {} ::1
+anonymus GET /test 200  - 129.960 ms {} ::1
+anonymus GET /test 200  - 467.624 ms {} ::1
+anonymus GET /test 200  - 13.724 ms {} ::1
+anonymus GET /test 200  - 370.265 ms {} ::1
+anonymus GET /test 200  - 234.577 ms {} ::1
+anonymus GET /test 200  - 346.647 ms {} ::1
+anonymus GET /test 200  - 267.323 ms {} ::1
+anonymus GET /test 200  - 260.105 ms {} ::1
+anonymus GET /test 200  - 298.342 ms {} ::1
+anonymus GET /test 200  - 215.092 ms {} ::1
 anonymus GET /test   -  ms {} ::1
-anonymus GET /register 304  - 437.210 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /register 304  - 289.758 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /register 304  - 247.632 ms {} ::1
-anonymus GET /trest 404 8354 - 65.714 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /trest 404 8354 - 66.457 ms {} ::1
-anonymus GET /trest 404 8354 - 67.318 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 113.872 ms {} ::ffff:127.0.0.1
-anonymus GET /favicon.ico 404 8354 - 896.720 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 90.114 ms {} ::1
-anonymus GET /test 200  - 83.823 ms {} ::1
-anonymus GET /test 200  - 123.930 ms {} ::1
-anonymus GET /test 200  - 3.622 ms {} ::ffff:127.0.0.1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 161.172 ms {} ::1
-anonymus GET /test 200  - 37046.374 ms {} ::ffff:127.0.0.1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 267.113 ms {} ::1
-anonymus GET /test 200  - 211.126 ms {} ::1
-anonymus GET /   -  ms {} ::ffff:192.168.1.34
-anonymus GET /register 200 21392 - 2123.902 ms {} ::ffff:192.168.1.34
-anonymus GET / 200  - 11.657 ms {} ::1
-anonymus GET /test 200  - 252.090 ms {} ::1
-anonymus GET /test 200  - 312.097 ms {} ::1
-anonymus GET /register 200 21392 - 1958.455 ms {} ::1
-anonymus GET /register 200 21409 - 2305.098 ms {} ::1
-anonymus GET /register 200 21560 - 402.316 ms {} ::1
-anonymus GET /register 200 21575 - 256.747 ms {} ::1
-anonymus GET /register 200 21575 - 262.412 ms {} ::1
-anonymus GET /register 200 21575 - 177.563 ms {} ::1
-anonymus GET /register 200 21575 - 187.466 ms {} ::1
-anonymus GET /register 200 21585 - 402.625 ms {} ::1
-anonymus GET /register 200 21576 - 225.827 ms {} ::1
-anonymus GET /register 304  - 3186.977 ms {} ::1
-anonymus GET /register 500 1830 - 2730.038 ms {} ::1
-anonymus GET /register 200 21576 - 2308.726 ms {} ::1
-anonymus GET /register 200 21576 - 2466.801 ms {} ::1
-anonymus POST /ajax/changeLanguage 404 8538 - 142.116 ms {"language":"eng"} ::1
-anonymus GET /users 200 23 - 1.654 ms {} ::1
-anonymus GET /register 200 21576 - 378.821 ms {} ::1
-anonymus GET /register 200 21576 - 2758.034 ms {} ::1
-anonymus POST /ajax/changeLanguage 404 8538 - 102.857 ms {"language":"eng"} ::1
-anonymus GET /register 200 21576 - 2416.364 ms {} ::1
-anonymus POST /ajax/changeLanguage 404 8538 - 106.186 ms {"language":"eng"} ::1
-anonymus GET /register 200 21576 - 2557.253 ms {} ::1
-anonymus POST /ajax/changeLanguage 404 8538 - 123.448 ms {"language":"eng"} ::1
-anonymus GET /register 200 21576 - 2125.238 ms {} ::1
-anonymus POST /ajax/changeLanguage 200  - 42.122 ms {"language":"eng"} ::1
-anonymus GET /register 200 21577 - 2446.245 ms {} ::1
-anonymus POST /ajax/changeLanguage 200  - 3.344 ms {"language":"eng"} ::ffff:127.0.0.1
-anonymus GET /register 200 21576 - 2613.084 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 43.102 ms {"language":"eng"} ::1
-anonymus GET /register 200 21577 - 245.866 ms {} ::1
-anonymus GET /register 200 21585 - 472.015 ms {} ::1
-anonymus GET /register 200 21585 - 2888.382 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 29.721 ms {"language":"tr"} ::1
-anonymus GET /register 200 21585 - 231.521 ms {} ::1
-anonymus GET /register 200 21583 - 435.664 ms {} ::1
-anonymus GET /register 200 21575 - 253.777 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 3.693 ms {"language":"eng"} ::1
-anonymus GET /register 200 21576 - 219.651 ms {} ::1
-anonymus GET /register 200 21577 - 208.860 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 3.044 ms {"language":"tr"} ::1
-anonymus GET /register 200 21576 - 242.103 ms {} ::1
-anonymus GET /register 500 9556 - 2628.116 ms {} ::1
-anonymus GET /register 200 21567 - 390.256 ms {} ::1
-anonymus GET /register 200 21572 - 2555.625 ms {} ::1
-anonymus GET /register 500 9523 - 2591.944 ms {} ::1
-anonymus GET /register 200 21554 - 1911.246 ms {} ::1
-anonymus GET /register 500 9492 - 2754.554 ms {} ::1
-anonymus GET /register 500 9344 - 246127.360 ms {} ::1
-anonymus GET /register 500 9353 - 35337.165 ms {} ::ffff:127.0.0.1
-anonymus GET /register 200 21517 - 5430.339 ms {} ::1
-anonymus GET /register 200 21517 - 162078.615 ms {} ::1
-anonymus GET /register 500 8437 - 917.794 ms {} ::1
-anonymus GET /register 500 8437 - 173.425 ms {} ::1
-anonymus GET /register 200 21517 - 2132.340 ms {} ::1
-anonymus GET /register 500 9352 - 2722.713 ms {} ::1
-anonymus GET /register 500 9320 - 293.216 ms {} ::1
-anonymus GET /register 500 9320 - 2867.612 ms {} ::1
-anonymus GET /register 500 9320 - 1954.074 ms {} ::1
-anonymus GET /register 200 21509 - 2421.726 ms {} ::1
-anonymus GET /register 200 21509 - 3035.924 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 33.654 ms {"language":"eng"} ::1
-anonymus GET /register 200 21508 - 250.806 ms {} ::1
-anonymus GET /register 200 21509 - 2060.319 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 37.690 ms {"language":"eng"} ::ffff:127.0.0.1
-anonymus GET /register 200 21508 - 358.139 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 212.924 ms {} ::1
-anonymus GET /test 200  - 251.522 ms {} ::1
-anonymus GET /test 200  - 10225.652 ms {} ::1
-anonymus GET /test 200  - 248.338 ms {} ::1
-anonymus GET /test 200  - 8657.915 ms {} ::1
-anonymus GET /register   -  ms {} ::1
-anonymus GET /register 200 21509 - 2534.700 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 35.364 ms {"language":"eng"} ::1
-anonymus GET /register 200 21508 - 303.613 ms {} ::1
-anonymus GET /test 200  - 3.070 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 3.888 ms {"language":"eng"} ::1
-anonymus GET /register 304  - 242.911 ms {} ::1
-anonymus GET /register 200 21517 - 468.387 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 2.861 ms {"language":"tr"} ::1
-anonymus GET /register 200 21518 - 345.926 ms {} ::1
-anonymus GET /test 200  - 1.862 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 3.570 ms {"language":"eng"} ::1
-anonymus GET /register 200 21517 - 260.435 ms {} ::1
-anonymus GET /test 200  - 2.533 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 1.791 ms {"language":"tr"} ::1
-anonymus GET /register 200 21518 - 238.178 ms {} ::1
-anonymus GET /test 200  - 1.823 ms {} ::1
-anonymus GET /register 200 21518 - 223.743 ms {} ::ffff:192.168.1.34
-anonymus GET /register 304  - 224.936 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 3.401 ms {"language":"eng"} ::ffff:192.168.1.34
-anonymus GET /register 200 21517 - 250.745 ms {} ::ffff:192.168.1.34
-anonymus POST /ajax/changeLanguage 200 2 - 3.738 ms {"language":"tr"} ::ffff:192.168.1.34
-anonymus GET /register 200 21518 - 205.874 ms {} ::ffff:192.168.1.34
-anonymus POST /ajax/changeLanguage 200 2 - 2.628 ms {"language":"eng"} ::ffff:192.168.1.34
-anonymus GET /register 200 21517 - 229.234 ms {} ::ffff:192.168.1.34
-anonymus POST /ajax/changeLanguage 200 2 - 3.646 ms {"language":"tr"} ::ffff:192.168.1.34
-anonymus GET /register 200 21518 - 189.478 ms {} ::ffff:192.168.1.34
-anonymus GET /test 200  - 3.579 ms {} ::ffff:192.168.1.34
-anonymus GET /favicon.ico 404 8480 - 175.229 ms {} ::ffff:192.168.1.34
-anonymus POST /ajax/changeLanguage 200 2 - 3.782 ms {"language":"eng"} ::ffff:192.168.1.34
-anonymus GET /register 200 21517 - 319.123 ms {} ::ffff:192.168.1.34
-anonymus GET /test 200  - 3.181 ms {} ::ffff:192.168.1.34
-anonymus POST /ajax/changeLanguage 200 2 - 40.865 ms {"language":"eng"} ::1
-anonymus GET /register 200 21517 - 2363.832 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 4.100 ms {"language":"tr"} ::1
-anonymus GET /register 200 21518 - 320.756 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 4.381 ms {"language":"tr"} ::ffff:192.168.1.34
-anonymus GET /register 200 21518 - 526.706 ms {} ::ffff:192.168.1.34
-anonymus GET /test 200  - 209.269 ms {} ::1
-anonymus GET /test 200  - 235.363 ms {} ::1
-anonymus GET /test 200  - 12306.698 ms {} ::1
-anonymus GET /test 200  - 172.684 ms {} ::1
-anonymus GET /test 200  - 3.848 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 7671.727 ms {} ::1
-anonymus GET /test 200  - 29557.026 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 6.560 ms {} ::1
-anonymus GET /test 200  - 6221.916 ms {} ::1
-anonymus GET /test 200  - 92.091 ms {} ::1
-anonymus GET /test 200  - 2.190 ms {} ::1
-anonymus GET /test 200  - 170.302 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 194.215 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 141.833 ms {} ::1
-anonymus GET /test 200  - 121.168 ms {} ::1
-anonymus GET /test 200  - 136.666 ms {} ::1
-anonymus GET /test 200  - 147.762 ms {} ::1
-anonymus GET /test 200  - 4.185 ms {} ::1
-anonymus GET /test 200  - 2979.855 ms {} ::1
-anonymus GET /test 200  - 66775.076 ms {} ::1
-anonymus GET /test 200  - 8847.819 ms {} ::1
-anonymus GET /test 200  - 100.193 ms {} ::1
-anonymus GET /test 200  - 370.494 ms {} ::1
-anonymus GET /test 200  - 300.431 ms {} ::1
-anonymus GET /test 200  - 218.496 ms {} ::1
-anonymus GET /test 200  - 302.832 ms {} ::1
-anonymus GET /test 200  - 290.774 ms {} ::1
-anonymus GET /test 200  - 172.947 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 91659.233 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 127.972 ms {} ::1
-anonymus GET /test 200  - 7.783 ms {} ::1
-anonymus GET /test 200  - 162.320 ms {} ::1
-anonymus GET /test 200  - 237.199 ms {} ::1
-anonymus GET /test 200  - 8271.842 ms {} ::1
-anonymus GET /test 200  - 246.305 ms {} ::1
-anonymus GET /test 200  - 220.135 ms {} ::1
-anonymus GET /test 200  - 12.870 ms {} ::1
-anonymus GET /test 200  - 16.604 ms {} ::1
-anonymus GET /test 200  - 10.697 ms {} ::1
-anonymus GET /test 200  - 48044.259 ms {} ::1
-anonymus GET /test 200  - 37267.239 ms {} ::1
-anonymus GET /test 200  - 276.930 ms {} ::1
-anonymus GET /test 200  - 161.293 ms {} ::1
-anonymus GET /test 200  - 256.050 ms {} ::1
-anonymus GET /test 200  - 233.661 ms {} ::1
-anonymus GET /test 200  - 25.423 ms {} ::1
-anonymus GET /test 200  - 17.093 ms {} ::1
-anonymus GET / 200  - 231.465 ms {} ::1
-anonymus GET / 200  - 232.592 ms {} ::1
-anonymus GET / 200  - 215.190 ms {} ::1
-anonymus GET / 200  - 209.406 ms {} ::1
-anonymus GET / 200  - 231.109 ms {} ::1
-anonymus GET / 200  - 246.049 ms {} ::1
-anonymus GET / 200  - 201.282 ms {} ::1
-anonymus GET / 200  - 218.912 ms {} ::1
-anonymus GET / 200  - 207.946 ms {} ::1
-anonymus GET / 200  - 231.371 ms {} ::1
-anonymus GET / 200  - 96.590 ms {} ::1
-anonymus GET /register 304  - 1114.488 ms {} ::ffff:192.168.1.34
-anonymus GET /test 200  - 251.008 ms {} ::1
-anonymus GET /test 200  - 31.471 ms {} ::1
-anonymus GET /test 200  - 287.011 ms {} ::1
-anonymus GET /test 200  - 265.281 ms {} ::1
-anonymus GET /test 200  - 240.552 ms {} ::1
-anonymus GET /test 200  - 249.485 ms {} ::1
-anonymus GET /test 200  - 109.356 ms {} ::1
-anonymus GET /test 200  - 232.841 ms {} ::1
-anonymus GET /test 200  - 26.053 ms {} ::1
-anonymus GET /test 200  - 498456.835 ms {} ::1
-anonymus GET /test 200  - 127.955 ms {} ::1
-anonymus GET /test 200  - 6521.091 ms {} ::1
-anonymus GET /test 200  - 22.834 ms {} ::1
-anonymus GET /test 200  - 40.508 ms {} ::1
-anonymus GET /test 200  - 243.760 ms {} ::1
-anonymus GET /test 200  - 232.826 ms {} ::1
-anonymus GET /test 200  - 15.808 ms {} ::1
-anonymus GET /test 200  - 115.501 ms {} ::1
-anonymus GET /test 200  - 107.206 ms {} ::1
-anonymus GET /test 200  - 336.736 ms {} ::1
-anonymus GET /test 200  - 161.898 ms {} ::1
-anonymus GET /test 200  - 6.192 ms {} ::1
-anonymus GET /test 200  - 3852.914 ms {} ::1
-anonymus GET /test 200  - 284.712 ms {} ::1
-anonymus GET /test 200  - 310.233 ms {} ::1
-anonymus GET /test 200  - 267.025 ms {} ::1
-anonymus GET /test 200  - 14.186 ms {} ::1
-anonymus GET /test 200  - 313.259 ms {} ::1
-anonymus GET /favicon.ico 404 8480 - 1925.579 ms {} ::1
-anonymus GET /test 200  - 234.006 ms {} ::1
-anonymus GET /test 200  - 289.777 ms {} ::1
-anonymus GET /test 200  - 227.288 ms {} ::1
-anonymus GET /test 200  - 9313.557 ms {} ::1
-anonymus GET /test 200  - 291.701 ms {} ::1
-anonymus GET /test 200  - 223.284 ms {} ::1
-anonymus GET /test 200  - 223.449 ms {} ::1
-anonymus GET /test 200  - 254.684 ms {} ::1
-anonymus GET /test 200  - 275.776 ms {} ::1
-anonymus GET /test 200  - 217.882 ms {} ::1
-anonymus GET /test 200  - 350.843 ms {} ::1
-anonymus GET /test 200  - 222.794 ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 269.998 ms {} ::1
-anonymus GET /test 200  - 221.237 ms {} ::1
-anonymus GET /test 200  - 255.203 ms {} ::1
-anonymus GET /test 200  - 112.892 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 195.936 ms {} ::1
-anonymus GET /test 200  - 2812.472 ms {} ::ffff:127.0.0.1
-anonymus GET /test 200  - 212.662 ms {} ::1
-anonymus GET /test 200  - 5345.508 ms {} ::1
-anonymus GET /test 200  - 2998.716 ms {} ::1
-anonymus GET /test 200  - 138.233 ms {} ::ffff:127.0.0.1
-anonymus GET /test   -  ms {} ::1
-anonymus GET /test 200  - 11944.798 ms {} ::1
-anonymus GET /test 200  - 105561.380 ms {} ::1
+anonymus GET /test 200  - 20.227 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200  - 31.356 ms {} ::1
+anonymus GET /test 200  - 25.801 ms {} ::1
+anonymus GET /test 200  - 7.204 ms {} ::1
+anonymus GET /test 200  - 26.131 ms {} ::1
+anonymus GET /test 200  - 20.650 ms {} ::1
+anonymus GET /login 304  - 1894.884 ms {} ::1
+anonymus GET /login 304  - 421.859 ms {} ::1
+anonymus POST /ajax/login 200 58 - 79.332 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 2296.241 ms {} ::1
+anonymus POST /ajax/login 200 57 - 82.786 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200 28380 - 682.328 ms {} ::1
+anonymus GET /dashboard 302 54 - 45.066 ms {} ::1
+anonymus GET /login 304  - 1972.594 ms {} ::1
+anonymus POST /ajax/login 200 57 - 73.816 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200 28380 - 695.246 ms {} ::1
+anonymus GET /dashboard 302 54 - 17.592 ms {} ::ffff:127.0.0.1
+anonymus GET /login 304  - 2137.281 ms {} ::ffff:127.0.0.1
+anonymus POST /ajax/login 200 57 - 74.196 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 200 28380 - 610.926 ms {} ::1
+anonymus GET /login 304  - 1772.090 ms {} ::1
+anonymus POST /ajax/login 200 57 - 71.654 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /dashboard 304  - 666.990 ms {} ::1
+anonymus GET /dashboard.html 302 46 - 11.080 ms {} ::1
+anonymus GET / 302 62 - 2.157 ms {} ::1
+anonymus GET /dashboard 304  - 470.035 ms {} ::1
+anonymus GET /dashboard 302 54 - 21.373 ms {} ::1
+anonymus GET /login 304  - 1704.636 ms {} ::1
+anonymus GET /dashboard 302 54 - 32.119 ms {} ::1
+anonymus GET /login 304  - 1966.081 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 65.568 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28380 - 667.318 ms {} ::1
+anonymus GET /dashboard 302 54 - 19.315 ms {} ::1
+anonymus GET /login 304  - 1782.681 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 70.844 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28513 - 660.562 ms {} ::1
+anonymus GET /dashboard 302 54 - 16.874 ms {} ::1
+anonymus GET /login 304  - 1767.627 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 85.498 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28521 - 524.543 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 619.976 ms {} ::1
+anonymus GET /dashboard 302 54 - 18.897 ms {} ::1
+anonymus GET /login 304  - 1359.725 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 61.225 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28584 - 633.787 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 500 9508 - 331.541 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28671 - 586.475 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 29433 - 471.842 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 29442 - 391.345 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28896 - 379.510 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 337.735 ms {} ::1
+anonymus GET /dashboard 302 54 - 25.266 ms {} ::1
+anonymus GET /login 304  - 1504.766 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 98.938 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28917 - 722.363 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 29292 - 801.665 ms {} ::1
+anonymus GET /dashboard 302 54 - 21.677 ms {} ::1
+anonymus GET /login 304  - 1661.185 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 68.476 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 29292 - 644.453 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28380 - 705.710 ms {} ::1
+anonymus GET /dashboard 302 54 - 19.847 ms {} ::1
+anonymus GET /login 304  - 1418.583 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 67.268 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28914 - 684.883 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28914 - 472.585 ms {} ::1
+anonymus GET /register 304  - 487.444 ms {} ::ffff:192.168.1.35
+anonymus GET /login 304  - 149.313 ms {} ::ffff:192.168.1.35
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 19.853 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::ffff:192.168.1.35
+YUNUS EMRAH DURSUN GET /dashboard 200 28914 - 387.083 ms {} ::ffff:192.168.1.35
+anonymus GET / 302 54 - 19.795 ms {} ::1
+anonymus GET /login 304  - 2035.310 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 67.475 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 860.111 ms {} ::1
+anonymus GET /dashboard 302 54 - 25.723 ms {} ::1
+anonymus GET /login   -  ms {} ::1
+anonymus GET /dashboard 302 54 - 3.845 ms {} ::1
+anonymus GET /login   -  ms {} ::1
+anonymus GET /dashboard 302 54 - 2.538 ms {} ::1
+anonymus GET /login 200 10305 - 1719.328 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 64.253 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28914 - 1397.346 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 28849 - 901.303 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 404 8538 - 85.226 ms {} ::1
+anonymus GET /test1 302 54 - 20.969 ms {} ::1
+anonymus GET /login 304  - 2152.556 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 77.867 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 774.156 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 200 28849 - 489.122 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 200 24544 - 805.875 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 304  - 448.873 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 24544 - 351.838 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 5.171 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 323.890 ms {} ::1
+anonymus GET /dashboard 302 54 - 21.088 ms {} ::1
+anonymus GET /login 304  - 1805.117 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 71.755 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 24241 - 426.291 ms {} ::1
+YUNUS EMRAH DURSUN GET /test 200  - 2.812 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 302 46 - 7.871 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 1.904 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 296.309 ms {} ::1

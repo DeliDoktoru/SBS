@@ -1,0 +1,67 @@
+extends layout
+
+block body 
+  .register-page.overflow-hidden
+    nav.navbar.navbar-expand-lg.navbar-absolute.fixed-top.navbar-transparent
+      .container.mt-0
+        .navbar-wrapper
+          .navbar-toggle
+            button.navbar-toggler(type='button')
+              span.navbar-toggler-bar.bar1
+              span.navbar-toggler-bar.bar2
+              span.navbar-toggler-bar.bar3
+          a.navbar-brand(href='sbs')=l.getLanguage("sbs").toUpperCase()
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navigation', aria-controls='navigation-index', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+        #navigation.collapse.navbar-collapse.justify-content-end
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='register')
+                i.nc-icon.nc-book-bookmark
+                  =l.getLanguage("kayitol").toUpperCase()
+    .wrapper.wrapper-full-page.ownImage
+      .full-page.register-page.section-image
+        .content.pt-15vh
+          .con.m-auto
+            .row
+              .col-lg-4.col-md-6.m-auto
+                form.form(onsubmit="return false")
+                  .card.card-login
+                    .card-header
+                      .card-header
+                        h3.header.text-center=l.getLanguage("giris")
+                    .card-body
+                      .input-group
+                        .input-group-prepend
+                          span.input-group-text
+                            i.nc-icon.nc-single-02
+                        input.form-control(ajax-key="l",enforced,max="100",min="3",type='email',name='kullaniciEPosta', placeholder=l.getLanguage("email"))
+                      .input-group
+                        .input-group-prepend
+                          span.input-group-text
+                            i.nc-icon.nc-key-25
+                        input.form-control(ajax-key="l",enforced,max="45",min="4",type='password',name='kullaniciParola', placeholder=l.getLanguage("şifre"))
+                    .card-footer
+                      button.btn.btn-info.btn-round.btn-block.mb-3(onclick="Dynajax('login','l',toDashboard)")=l.getLanguage("girisyap")
+        footer.footer.footer-black.footer-white
+          .container-fluid
+            .row
+              nav.footer-nav
+                ul
+                  li
+                    a(href='https://www.creative-tim.com/', target='_blank') Creative Tim
+                  li
+                    a(href='http://blog.creative-tim.com/', target='_blank') Blog
+                  li
+                    a(href='https://www.creative-tim.com/license', target='_blank') Licenses
+              .credits.ml-auto
+                span.copyright
+                  | ©
+                  script.
+                    document.write(new Date().getFullYear())
+                  | , made with 
+                  i.fa.fa-heart.heart
+                  |  by Creative Tim
+

@@ -10,7 +10,10 @@ class Database {
         sqlLog(sql,args);
         return new Promise( ( resolve, reject ) => {
             this.connection.query( sql, args, ( err, rows ) => {
-                if ( err )  return reject( err );//"veritabanihatasi"
+                if ( err )  {
+                    global.errorLoger(err);
+                    return reject( "veritabanihatasi" );
+                }
                 if ( close ) this.close();
                 resolve( rows );
             } );
@@ -28,6 +31,20 @@ class Database {
     selectAll(tableName,databaseName="sbs"){
         var query=`SELECT * FROM ${databaseName}.${tableName};`;
         return this.query(query);
+    }
+    selectQuery(where,tableName,mode="AND",databaseName="sbs"){
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
+        if(!where){
+            throw "sorgualanieksik";
+        }
+        var query="";
+        query=selectQueryConverter(tableName,databaseName,where,mode);
+        if(query==""){
+            throw "sorgubulunamadi";
+        }
+        return this.query(query,Object.keys(where).map(y=> where[y]));
     }
     insert(data,tableName,databaseName="sbs"){
         if(!tableName || tableName==""){
@@ -64,29 +81,77 @@ class Database {
        
         return false;
     }
-    remove(data,tableName,mode="AND",databaseName="sbs"){
+    remove(where,tableName,mode="AND",databaseName="sbs"){
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
+        if(!where){
+            throw "sorgualanieksik";
+        }
+        var query="";
+        query=removeConverter(tableName,databaseName,where,mode);
+        if(query==""){
+            throw "sorgubulunamadi";
+        }
+        return this.query(query,Object.keys(where).map(y=> where[y]));
+    }
+    update(data,where,tableName,mode="AND",databaseName="sbs"){
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
+        if(!where){
+            throw "sorgualanieksik";
+        }
+        if(!data){
+            throw "veribulunamadi";
+        }
+        var query="";
+        query=updateConverter(tableName,databaseName,data,where,mode);
+        if(query==""){
+            throw "sorgubulunamadi";
+        }
+        var arr1=Object.keys(data).map(y=> data[y])
+        var arr2=Object.keys(where).map(y=> where[y])
+        var concat= arr1.concat(arr2);
+        return this.query(query,Object.keys(concat).map(y=> concat[y]));
+    }
+    selectIn(colName,data,tableName,databaseName="sbs"){
+        //data [1,2,3,4] şeklinde olmalı
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
         if(!data){
             throw "veribulunamadi";
         }
+        if(!colName){
+            throw "kolonadibulanamadi";
+        }
         var query="";
-        query=removeConverter(tableName,databaseName,data,mode);
+        query=selectInConverter(tableName,databaseName,colName);
         if(query==""){
             throw "sorgubulunamadi";
         }
-        return this.query(query,Object.keys(data).map(y=> data[y]));
+        return this.query(query,[data]);
     }
+
 }
 function insertConverter(_tableName,_databaseName,_object){
     return `INSERT INTO ${_databaseName}.${_tableName} (${Object.keys(_object).toString()}) VALUES  ?`; 
 }
-function removeConverter(_tableName,_databaseName,_object,_mode){
-    return `DELETE FROM ${_databaseName}.${_tableName} WHERE ${Object.keys(_object).map(x=> x+"= ? ").join(_mode+" ")}`; 
+function removeConverter(_tableName,_databaseName,_where,_mode){
+    return `DELETE FROM ${_databaseName}.${_tableName} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`; 
+}
+function selectQueryConverter(_tableName,_databaseName,_where,_mode){
+    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;
+}
+function updateConverter(_tableName,_databaseName,_object,_where,_mode){
+    return `UPDATE ${_databaseName}.${_tableName} SET ${Object.keys(_object).map(x=> x+"= ? ").toString()} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")};`;
+}
+function selectInConverter(_tableName,_databaseName,colName){
+    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${colName} IN (?)`;
 }
 function sqlLog(sql,args){
-    fs.appendFile(path.join(__dirname, '../sql.log'),"'"+ sql  + "'\n->" + JSON.stringify(args[0]) + "\n", function (error) {
+    fs.appendFile(path.join(__dirname, '../sql.log'),"'"+ sql  + "'\n->" + (args!=null?JSON.stringify(args):"")  + "\n", function (error) {
         if(error) console.log(error);
       });
 }
