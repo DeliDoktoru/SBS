@@ -106,7 +106,7 @@ app.use(function (req, res, next){
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["test1","public", "ajax", "favicon.ico","register"];
+  var arr = ["test1","ajax/login","public", "favicon.ico","register"];
   for (val of arr) {
     if (txt.includes(val))
       return true;
@@ -118,10 +118,11 @@ app.use(async function (req, res, next) {
     next();
     return;
   }
+  
   if (req.url == "/" || req.url == "/login" ) {
     if (req.session.user == undefined || req.session.user.id == undefined) {
       if(req.url == "/"){
-        res.redirect('login');
+        res.redirect('/login');
         next();
         return;
       }
@@ -131,31 +132,38 @@ app.use(async function (req, res, next) {
       }
     } 
     else{
-      res.redirect('dashboard');
+      res.redirect('/dashboard');
     }
   } else {
     if (req.session.user == undefined || req.session.user.id == undefined)
-      res.redirect('login');
+      res.redirect('/login');
     else {
       var unvanId = req.session.user.kullaniciUnvan;
       if (unvanId == undefined) {
-        res.redirect('login');
+        res.redirect('/login');
         return;
       }
       var unvanPages=yetki.unvans[unvanId];
       if (unvanPages == null) {
-        res.redirect('login');
+        res.redirect('/login');
         return;
       } 
       var str = decodeURIComponent(req.url);
-      var result=unvanPages.find(x=>x.url && x.url!="" && x.url==str);
+      var ajaxBoolean=false;
+      if(str.indexOf("/ajax")==0){
+        str=str.substring(5,str.length);
+        ajaxBoolean=true;
+      }
+      var result=unvanPages.find(x=>x.yetkiAdi && x.yetkiAdi!="" && str.indexOf(x.yetkiAdi)==0 );
       if (result == null) {
         res.redirect('/');
         return;
       }
-      res.locals.menu = unvanPages;
-      res.locals.active = result.id;
-      res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
+      if(!ajaxBoolean){
+        res.locals.menu = unvanPages;
+        res.locals.active = result.id;
+        res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
+      }
       next();  
     }
   }

@@ -26,9 +26,7 @@
 .overflow-hidden{
   overflow: hidden;
 }
-[type='password']{
-  border-right: 0px;
-}
+
 .crown{
   color: #EB5E28; 
    font-size: 30px;  
@@ -68,10 +66,14 @@
   border: none !important;
   background: none !important;
 }
-input[type="password"]{
+/*input[type="password"]{
   border: 1px solid #ddd;
   border-left: none;
 }
+[type='password']{
+  border-right: 0px;
+}
+*/
 .after{
   content: "";
   bottom: 0;

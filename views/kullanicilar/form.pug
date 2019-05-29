@@ -1,0 +1,57 @@
+extends ../defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('kullanicilar','f',formBasarili,false,{id:${targetData.id},method:'delete'})`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+          .row
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciIsim")
+                input.form-control(ajax-key="f",name='kullaniciIsim', type='text' ,enforced,max="100",value=targetData.kullaniciIsim)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciSoyisim")
+                input.form-control(ajax-key="f",name='kullaniciSoyisim' ,type='text' ,enforced,max="100",value=targetData.kullaniciSoyisim)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciTel")
+                input.phone.form-control(ajax-key="f",name='kullaniciTel', type='text' ,enforced,max="45",value=targetData.kullaniciTel)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciEPosta")
+                input.form-control(ajax-key="f",name='kullaniciEPosta', type='email' ,enforced,max="100",min="3",value=targetData.kullaniciEPosta)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciUnvan")
+                select.custom-select(ajax-key="f",enforced,name="kullaniciUnvan")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in unvanlar
+                        option(value=val.id,selected=val.id==targetData.kullaniciUnvan?true:false) 
+                            =val.unvanAdi
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciParola")
+                input.form-control(ajax-key="f",name='kullaniciParola', type='password' ,max="45",min="4")&attributes({[targetData && targetData.id?null:"enforced"]: ''})              
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('kullanicilar','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")       

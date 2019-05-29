@@ -232,3 +232,33 @@ Cannot convert undefined or null to object
     at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
     at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
     at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot set property 'id' of undefined
+->TypeError: Cannot set property 'id' of undefined
+    at data.targetData.colNameS.map.x (C:\Users\INTERSAN\Desktop\sbs\routes\index.js:105:64)
+    at Array.map (<anonymous>)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:105:38
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Cannot read property 'indexOf' of undefined
+->TypeError: Cannot read property 'indexOf' of undefined
+    at C:\Users\INTERSAN\Desktop\sbs\app.js:121:10
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\INTERSAN\Desktop\sbs\app.js:102:3
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:284:7
+Can't set headers after they are sent.
+->Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\response.js:767:10)
+    at ServerResponse.send (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\response.js:267:15)
+    at ServerResponse.send (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\response.js:158:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:59:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)

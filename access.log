@@ -420,3 +420,660 @@ YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 29.072 ms {"kdata":{"kullaniciEPost
 YUNUS EMRAH DURSUN GET /dashboard 304  - 440.160 ms {} ::1
 YUNUS EMRAH DURSUN GET /kullanicilar 200 20753 - 222.026 ms {} ::1
 YUNUS EMRAH DURSUN GET /ajax/notifications 404 15528 - 112.601 ms {} ::1
+YUNUS EMRAH DURSUN GET /ajax/notifications 404 15528 - 335.531 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 1668.807 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 321.950 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 174.972 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 190.501 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 156.858 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 145.717 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 147.724 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 119.178 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 139.370 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 280.570 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 164.083 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 149.969 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 144.471 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 146.573 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 110.457 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 119.782 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 117.578 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 318.556 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 189.286 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 152.217 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 139.432 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 137.982 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 132.560 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 120.605 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 122.511 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 153.771 ms {} ::1
+anonymus GET /ajax/notifications 404 15528 - 311.548 ms {} ::1
+anonymus GET /kullanicilar 302 54 - 23.153 ms {} ::1
+anonymus GET /login 304  - 2089.346 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 69.810 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 582.876 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar 404 15528 - 140.964 ms {} ::1
+anonymus GET /kullanicilar/table 302 54 - 20.132 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.641 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.484 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.029 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.558 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.093 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.273 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.219 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.180 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.905 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.805 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.191 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.675 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.684 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.592 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.636 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.337 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.310 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.144 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.742 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.869 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 7.782 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.306 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.833 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.784 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.878 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.265 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.792 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.814 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.479 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.590 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.095 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.210 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.686 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.491 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.464 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.822 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.707 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.017 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.318 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.105 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.311 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.268 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 8.113 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.709 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.034 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.560 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.238 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.610 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.332 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.068 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.021 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.820 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.788 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.956 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.261 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.037 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.689 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.890 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.059 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.202 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.268 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.825 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.012 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.275 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.975 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.429 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.511 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.014 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.425 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.792 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.070 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.615 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.817 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.965 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.594 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.863 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.003 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.790 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.077 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.797 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.998 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.790 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 7.623 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.037 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.941 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.789 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.528 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.996 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.977 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.933 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.991 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.638 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.049 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.515 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.392 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.429 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.780 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.629 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.331 ms {} ::1
+anonymus GET /login 304  - 2006.057 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 71.784 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 441.918 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar 404 15528 - 116.544 ms {} ::1
+anonymus GET /dashboard 302 54 - 21.612 ms {} ::1
+anonymus GET /login 304  - 2612.774 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 99.074 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 31738 - 466.534 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 500 15157 - 140.351 ms {} ::1
+anonymus GET /kullanicilar/table 302 54 - 25.614 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.423 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 6.341 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.431 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.481 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.014 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.401 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.599 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.270 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 6.988 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.741 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.620 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.435 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.604 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.954 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.743 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.932 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.496 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.416 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.544 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.853 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.894 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.075 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.909 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.787 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.910 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.844 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.688 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.959 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.128 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.923 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.901 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.232 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.956 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.852 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.165 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.178 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.913 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 5.664 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.013 ms {} ::1
+anonymus GET /login 304  - 1781.525 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 93.860 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 484.140 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 500 15647 - 154.038 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20809 - 241.274 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 2.635 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2.157 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 454.746 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 265.649 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 3.227 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2.820 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 349.082 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 406.224 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20810 - 236.394 ms {} ::1
+YUNUS EMRAH DURSUN GET /new 302 46 - 2.408 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2.730 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 400.034 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 344.248 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20809 - 317.737 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 2.862 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2.662 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 424.907 ms {} ::1
+anonymus GET /dashboard 302 54 - 25.590 ms {} ::1
+anonymus GET /login 304  - 2602.813 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 122.865 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 31738 - 582.515 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 248.462 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 1.934 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 3.130 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 412.630 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 2682.751 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 148517.377 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2429.779 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 532.481 ms {} ::1
+anonymus GET /dashboard 302 54 - 23.792 ms {} ::1
+anonymus GET /login 304  - 2565.713 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 72.250 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 31738 - 562.747 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 309.452 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 2.635 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 4.194 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 376.061 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 307.622 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 3.362 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 2.643 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 342.318 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 302 46 - 78903.739 ms {} ::1
+YUNUS EMRAH DURSUN GET / 302 62 - 6.855 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 2926.090 ms {} ::1
+anonymus GET /dashboard 302 54 - 23.186 ms {} ::1
+anonymus GET /login 304  - 2444.618 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 94.679 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 31738 - 522.817 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 282.786 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 500 16431 - 295.115 ms {} ::1
+anonymus GET /kullanicilar/new 302 54 - 23.542 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.426 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.573 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.039 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.811 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.607 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.710 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.380 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.486 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.941 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.763 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.649 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.366 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.449 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.589 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.038 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.574 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.766 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.593 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.478 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.873 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.532 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.828 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.218 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.974 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.105 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.410 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.931 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.841 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.159 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.121 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.398 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.656 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.880 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.879 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.486 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.933 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.427 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.070 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.166 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.903 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 5.411 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.253 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.936 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.702 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.213 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.941 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.784 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.765 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.190 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.242 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.494 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.890 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.685 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.083 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.319 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.976 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.405 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.855 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.563 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.947 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.262 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.387 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.220 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.702 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.881 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.916 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.828 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.506 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.691 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.875 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.175 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.409 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.962 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.516 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.408 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.056 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.001 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.654 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.666 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.475 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.240 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 5.271 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.603 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.955 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.595 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.142 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.340 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.841 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.438 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.493 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.386 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.447 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.044 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.754 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.116 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.295 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.275 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.128 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.133 ms {} ::1
+anonymus GET /login 304  - 1851.189 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 65.480 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 567.699 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20810 - 313.076 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form   -  ms {} ::1
+anonymus GET /kullanicilar/form 302 54 - 17.182 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 4.123 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.531 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.535 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.661 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.334 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 3.803 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.302 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.264 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.443 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.530 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.133 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.361 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.277 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.261 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.427 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.347 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 2.025 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.342 ms {} ::1
+anonymus GET /kullanicilar/login 302 54 - 1.130 ms {} ::1
+anonymus GET /kullanicilar/login 302 56 - 28.648 ms {} ::1
+anonymus GET /login 304  - 1988.279 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 64.764 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 582.400 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 766.926 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form   -  ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 24.201 ms {} ::1
+anonymus GET /login 304  - 2569.491 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 81.129 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 590.834 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 305.011 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 12 - 9.025 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 28.257 ms {} ::1
+anonymus GET /login 304  - 2172.320 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 73.711 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 660.077 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20810 - 311.293 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 500 15940 - 197.225 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19691 - 234.621 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19726 - 617.902 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 350.322 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 310.968 ms {} ::1
+YUNUS EMRAH DURSUN GET /register 200 28884 - 432.152 ms {} ::1
+YUNUS EMRAH DURSUN GET /test 200  - 11.580 ms {} ::1
+YUNUS EMRAH DURSUN GET /test1 200 28625 - 531.773 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19857 - 657.355 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19857 - 293.873 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 313.242 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 250.359 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19857 - 383.130 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 19857 - 241.808 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20376 - 620.356 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20599 - 408.246 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20602 - 284.207 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 20.339 ms {} ::1
+anonymus GET /login 304  - 2007.644 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 64.516 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 483.032 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20788 - 314.295 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20807 - 604.635 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20602 - 302.208 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20641 - 255.365 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20641 - 269.152 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20641 - 556.825 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 261.023 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20644 - 295.927 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 196.654 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 241.838 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 20645 - 232.334 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20825 - 203.310 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 205.373 ms {} ::1
+anonymus GET /test 302 56 - 23.745 ms {} ::1
+anonymus GET /login 304  - 1523.100 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 100.925 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 493.243 ms {} ::1
+YUNUS EMRAH DURSUN GET /test 200  - 17.294 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 27.239 ms {} ::1
+anonymus GET /login 304  - 515.564 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 84.765 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 683.641 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 20845 - 268.689 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 647.370 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21049 - 310.205 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 299.187 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 256.639 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21397 - 624.583 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21193 - 322.893 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21241 - 361.107 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21662 - 421.591 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21672 - 261.166 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 268.199 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 369.685 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 254.372 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 22.506 ms {} ::1
+anonymus GET /login 200 17686 - 2178.762 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 70.540 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 32129 - 663.630 ms {} ::1
+anonymus GET /dashboard 302 56 - 29.107 ms {} ::1
+anonymus GET /login 304  - 2247.456 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 79.361 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 32129 - 694.874 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21236 - 307.920 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21667 - 339.013 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21676 - 317.600 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21679 - 249.883 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21532 - 291.426 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 27.148 ms {} ::1
+anonymus GET /login 304  - 2076.858 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 71.714 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 544.303 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21236 - 316.907 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21535 - 320.177 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 647.929 ms {} ::1
+anonymus GET /kullanicilar/24 302 56 - 39.094 ms {} ::1
+anonymus GET /login 304  - 1925.911 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 82.466 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 505.129 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 270.631 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21638 - 353.589 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21637 - 683.480 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 302.683 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21254 - 386.633 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 286.443 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 266.010 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 321.577 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21772 - 623.375 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/new 500 16955 - 438.404 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 500 16955 - 362.369 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 500 16955 - 335.282 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 25.646 ms {} ::1
+anonymus GET /login 304  - 1917.802 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 75.959 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 506.492 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 274.152 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 329.571 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 292.575 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 26.165 ms {} ::ffff:127.0.0.1
+anonymus GET /login 304  - 1670.536 ms {} ::ffff:127.0.0.1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 75.364 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 530.278 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 281.856 ms {} ::ffff:127.0.0.1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21568 - 325.222 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 266.016 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 251.242 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 232.295 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 273.614 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 225.320 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 237.563 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 715.588 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 444.358 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 337.309 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21570 - 827.617 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21570 - 402.016 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 366.244 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21774 - 364.720 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21780 - 778.083 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 352.313 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21578 - 378.743 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 280.247 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 315.098 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21993 - 780.246 ms {} ::1
+YUNUS EMRAH DURSUN GET /register 200 29275 - 521.056 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 22130 - 565.668 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 22121 - 735.845 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 22130 - 469.675 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21993 - 310.249 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 387.557 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 746.577 ms {} ::1
+YUNUS EMRAH DURSUN GET /register 304  - 608.366 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 343.599 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 20.801 ms {} ::1
+anonymus GET /login 304  - 2448.295 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 126.462 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 597.722 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21254 - 315.959 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21791 - 368.466 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21791 - 442.333 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 47 - 2.982 ms {"kdata":{"kullaniciIsim":"asdasda","kullaniciSoyisim":"asdadad","kullaniciTel":"(121) 321-2212","kullaniciEPosta":"aaa@hotmail.com","kullaniciUnvan":"2","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 442.051 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 28.647 ms {} ::1
+anonymus GET /login 304  - 3377.486 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 124.205 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 609.961 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21254 - 356.462 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 361.547 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 29 - 44.934 ms {"kdata":{"kullaniciIsim":"asdad","kullaniciSoyisim":"asdad","kullaniciTel":"(132) 123-1231","kullaniciEPosta":"asd@hotmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET /kullanicilar/form 302 56 - 26.113 ms {} ::1
+anonymus GET /login 304  - 2575.301 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 93.561 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 528.264 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 329.704 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21790 - 441.407 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 295.765 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21996 - 287.329 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 200 21983 - 332.570 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 273.242 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21785 - 330.301 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 32.003 ms {} ::1
+anonymus GET /login 304  - 2480.725 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 133.425 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 632.399 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 382.508 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21785 - 393.686 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 350.561 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 301.267 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 29 - 38.775 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciTel":"(537) 785-7448","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":24,"method":"update"}} ::1
+anonymus GET /kullanicilar/24 302 56 - 28.597 ms {} ::1
+anonymus GET /login 304  - 2422.283 ms {} ::1
+anonymus GET /login 200 17686 - 2932.559 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 80.805 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 660.408 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 354.375 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 472.877 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 49.939 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test2","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"a@hotmail.com","kullaniciUnvan":"1","kullaniciParola":"1111","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"a@hotmail.com"},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET /kullanicilar/form 302 56 - 30.455 ms {} ::1
+anonymus GET /login 304  - 2582.033 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 65.818 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 603.424 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 319.342 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21785 - 408.111 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 57.509 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":"11111111","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21969 - 380.747 ms {} ::1
+YUNUS EMRAH DURSUN GET /ajax/kullanicilar 404 15919 - 523.996 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 304  - 771.897 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 23467.302 ms {"kdata":{"kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"11111111","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22705 - 504.569 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 25.864 ms {} ::1
+anonymus GET /login 304  - 2312.936 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 88.643 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 598.269 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 317.175 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21785 - 421.841 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 63 - 4579.272 ms {"kdata":{"kullaniciIsim":"zzzzzzzz","kullaniciSoyisim":"zzzzzzzzzzzzz","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1212112","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23438 - 456.540 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/32 200 21987 - 311.193 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 61 - 55.461 ms {"kdata":{"kullaniciIsim":"zzzzzzzzaa","kullaniciSoyisim":"zzzzzzzzzzzzz","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":32,"method":"update"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23440 - 412.893 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/32 200 21989 - 300.665 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 61 - 46.251 ms {"kdata":{"kullaniciIsim":"zzzzzzzzaa","kullaniciSoyisim":"zzzzzzzzzzzzz","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":""},"ndata":{"id":32,"method":"update"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23435 - 387.580 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/32 200 21989 - 327.494 ms {} ::1
+anonymus GET /kullanicilar/32 302 56 - 28.836 ms {} ::1
+anonymus GET /login 200 17681 - 2383.437 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 95.619 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 32124 - 663.677 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23430 - 325.002 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/32 200 22065 - 408.803 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 44.771 ms {"kdata":{"kullaniciIsim":"zzzzzzzzaa","kullaniciSoyisim":"zzzzzzzzzzzzz","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":"","firmaId":26,"id":32},"ndata":{"id":32,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22700 - 452.485 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/30 200 22050 - 285.784 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 20.296 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":"","firmaId":26,"id":30},"ndata":{"id":30,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 492.869 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/31 200 22066 - 360.037 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 173.007 ms {"kdata":{"kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"","firmaId":26,"id":31},"ndata":{"id":31,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 417.099 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/30 304  - 339.040 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 23.950 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":"","firmaId":26,"id":30},"ndata":{"id":30,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 370.913 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 32.354 ms {} ::1
+anonymus GET /login 304  - 2680.683 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 92.566 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 672.946 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22700 - 421.626 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/30 304  - 505.387 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 39.149 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"2","kullaniciParola":""},"ndata":{"id":30,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21985 - 379.058 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/31 304  - 288.640 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 33.232 ms {"kdata":{"kullaniciIsim":"aaaaaaaaa","kullaniciSoyisim":"aaaaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":31,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21249 - 470.954 ms {} ::1
+anonymus GET /kullanicilar/table 302 56 - 50.799 ms {} ::1
+anonymus GET /login 304  - 2341.304 ms {} ::1
+anonymus POST /ajax/login 302 28 - 53.457 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 244.178 ms {} ::1
+anonymus POST /ajax/login 302 28 - 6.154 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 256.865 ms {} ::1
+anonymus GET /login 304  - 2347.771 ms {} ::1
+anonymus POST /ajax/login 404 15893 - 240.173 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 1987.125 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 105.321 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 555.360 ms {} ::1
+anonymus GET /ajax/exit 304  - 12.494 ms {} ::1
+anonymus GET / 302 56 - 12.831 ms {} ::1
+anonymus GET /login 304  - 413.514 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 91.903 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 513.090 ms {} ::1
+anonymus GET /dashboard 302 56 - 27.893 ms {} ::1
+anonymus GET /login 304  - 2671.205 ms {} ::1
+anonymus POST /ajax/login 302 28 - 47.299 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 237.861 ms {} ::1
+anonymus GET /login 304  - 488.025 ms {} ::1
+anonymus POST /ajax/login 302 28 - 3.135 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+anonymus GET /login 304  - 383.946 ms {} ::1
+anonymus GET /login 304  - 2345.876 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 151.197 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 200 32124 - 570.234 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21249 - 344.730 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21780 - 379.621 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21775 - 377.582 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 302 23 - 7.467 ms {"kdata":{"kullaniciIsim":"asdasdas","kullaniciSoyisim":"adasda","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"123131"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET / 302 32 - 2.960 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 401.669 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 302 23 - 2.826 ms {"kdata":{"kullaniciIsim":"asdasdas","kullaniciSoyisim":"adasda","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"123131"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET / 302 32 - 2.250 ms {} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 936.488 ms {} ::1
+anonymus GET /kullanicilar/form 302 56 - 3885.798 ms {} ::1
+anonymus GET /login 304  - 4565.862 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 148.894 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
+YUNUS EMRAH DURSUN GET /dashboard 304  - 744.843 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 331.416 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21775 - 428.017 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 63 - 32.989 ms {"kdata":{"kullaniciIsim":"asdasdada","kullaniciSoyisim":"asdadasasd","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"111111111111","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21980 - 407.751 ms {} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/33 200 22056 - 259.103 ms {} ::1
+YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 19.354 ms {"kdata":{"kullaniciIsim":"asdasdada","kullaniciSoyisim":"asdadasasd","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":33,"method":"delete"}} ::1
+YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21249 - 406.938 ms {} ::1

@@ -1,17 +1,17 @@
-extends defaultBody
+extends ../defaultBody
 
 block content
   .row
     .col-md-12
       .card
         .card-header
-          h4.card-title=title
+          h4.card-title=cardHeader
         .card-body
           .text-right.mb-4
-            a(href='/Form/Sayfalar/Yeni_Kayıt')
-              button.ml-4.btn.btn-sm.btn-success(type='button')
+            a(href='form')
+              button.ml-4.btn.btn-sm.btn-outline-success.btn-round(type='button')
                 i.ti-pin-alt.mr-1
-                | Kayıt Oluştur
+                =l.getLanguage("kayitolustur")  
           .row
             .col-sm-12
               .table-responsive
@@ -32,7 +32,8 @@ block content
                         td.text-right
                           button.btn.btn-info.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
                             i.fa.fa-user
-                          button.btn.btn-success.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
-                            i.fa.fa-edit
+                          a(href=item['id'])  
+                            button.btn.btn-success.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
+                              i.fa.fa-edit
                           button.btn.btn-danger.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
                             i.fa.fa-times

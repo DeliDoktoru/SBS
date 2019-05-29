@@ -16,7 +16,7 @@ check('kdata.kullaniciParola').exists().not().isEmpty().withMessage("paraloalani
 ,async function(req, res, next) {
   var l=res.locals.l;
   var data=req.body.kdata;
-  var text, renk, status=0 ;
+  var text,  status=0 ;
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -166,6 +166,84 @@ router.post('/register',
     color: renk
   });
 });
+router.post('/kullanicilar',
+[
+  check('kdata').exists(),
+  check('kdata.kullaniciIsim').exists().not().isEmpty().withMessage("isimalanigerekli").isLength({max: 100}).withMessage("isimalanimax100"),
+  check('kdata.kullaniciSoyisim').exists().not().isEmpty().withMessage("soyisimalanigerekli").isLength({max: 100}).withMessage("soyisimalanimax100"),
+  check('kdata.kullaniciTel').exists().not().isEmpty().withMessage("telalanigerekli").isLength({max: 45}).withMessage("kullanicitelmax45"),
+  check('kdata.kullaniciEPosta').exists().not().isEmpty().withMessage("epostaalanigerekli").isEmail().withMessage("gecersizeposta").isLength({max: 100}).withMessage("epostamax100"),
+  check('ndata').exists(),
+  check('ndata.method').exists().not().isEmpty().withMessage("methodgerekli")
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", renk, status=0 ;
+  var session=req.session.user; 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        data.firmaId=session.firmaId;
+        await new db().update(data,{id:req.body.ndata.id},"kullanicilar");
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id,firmaId:session.firmaId}
+        await new db().setSilindi(tmpData,"kullanicilar");
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        if(!data.kullaniciParola || data.kullaniciParola==""){
+          throw "parolabulunamadi";
+        }
+        data.firmaId=session.firmaId;
+        data.kullaniciDilTercihi=session.kullaniciDilTercihi;
+        data.kullaniciOlusturanId=session.id;
+        data.kullaniciAdi=data.kullaniciEPosta;
+        await new db().insert(data,"kullanicilar");
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    status = 0;
+    if (error.message != undefined)
+      text = l.getLanguage(error.message);
+    else if(Array.isArray(error)){
+      text=error.map(x=> l.getLanguage(x.msg)+"<br>")
+    }  
+    else
+      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+  }
+  if (status == undefined || status != 1) {
+    renk = "danger";
+  } else {
+    renk = "success";
+  }
+  res.send({
+    message: text,
+    status: status,
+    color: renk
+  });
+
+})
+
+
 
 router.get('/exit', async function (req, res, next) {
   var l=res.locals.l;
