@@ -2,7 +2,7 @@
     background-image: url("/public/images/background.jpg");
     background-repeat:no-repeat;
     background-position: center top ;
-    background-size: 100% 95%;
+    background-size: 100% 100%;
     
   }
 .con{
@@ -14,13 +14,14 @@
 #languages{
   z-index: 99999;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 17px;
+  right: 5px;
   width: 66px;
   height: 29px;
   font-size: 12px;
   font-weight: bold;
   padding-right: 0px;
+  background-color: #f4f3ef;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -36,4 +37,47 @@
 }
 .user{
   font-size: 10px;
+}
+.customfooter{
+  padding: 5px 1.25rem !important;
+}
+.customheader{
+  padding: 3px 0px 0px 0px  !important;
+  margin-top: 10px;
+}
+.customtab-content{
+  min-height: 250px !important;
+  padding: 2px 20px !important;
+}
+.customcard-body{
+  padding: 0px 0px 0px;
+}
+.customh5{
+  text-align: center;
+  font-weight: 300;
+  margin: 0px 0 20px !important;
+}
+.showpass{
+  position: absolute;
+   right: 0px;
+   top: 0px;
+   z-index: 999999;
+   height: 100%;
+}
+.showpass .input-group-text {
+  border: none !important;
+  background: none !important;
+}
+input[type="password"]{
+  border: 1px solid #ddd;
+  border-left: none;
+}
+.after{
+  content: "";
+  bottom: 0;
+  right: 15px;
+  height: 1px;
+  width: calc(100% - 30px);
+  background-color: hsla(0, 0%, 100%, .5);
+  margin-left: 15px;
 }

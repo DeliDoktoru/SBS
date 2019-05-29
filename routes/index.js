@@ -20,9 +20,12 @@ router.get('/dashboard', async function(req, res, next) {
 router.get('/test1', async function(req, res, next) {
   var l=res.locals.l;
   var data={
-    title:l.getLanguage('dashboard'),
+    title:l.getLanguage('register'),
+    iller: await new db().selectAll('iller'),
+    abonelik_turleri: await new db().selectAll('abonelik_turleri'),
+    odeme_tipleri: await new db().selectAll('odeme_tipleri')
   };
-  res.render('dashboard', data);
+  res.render('register1', data);
 });
 router.get('/register', async function(req, res, next) {
   var l=res.locals.l;
@@ -64,7 +67,8 @@ router.get('/test', async function(req, res, next) {
     //var a=await new db().selectIn("id",[1,2],"sayfalar");
     //res.write(JSON.stringify(a))
     //await new db().setSilindi({a:"azxzcxzxczsol"},"test");
-    
+    var a=await new db().selectWithColumn(["id","a"],"test");
+    res.write(JSON.stringify(a))
     res.end();
   } catch (error) {
     res.write(error.message || JSON.stringify(error))
@@ -72,4 +76,16 @@ router.get('/test', async function(req, res, next) {
   }
  
 });
+router.get('/kullanicilar',async function(req,res,next){
+  var l=res.locals.l;
+  var colNameS=["id","kullaniciIsim","kullaniciSoyisim","kullaniciTel","kullaniciEPosta"];
+  var data={
+    title: l.getLanguage('kullanicilar'),
+    tableBody: await new db().selectWithColumn(colNameS,"kullanicilar",{firmaId:req.session.user.firmaId}),
+    tableHead: colNameS
+  };
+  res.render('kullanicilar', data);
+});
+
+
 module.exports = router;

@@ -1,5 +1,6 @@
 script.
     $(document).ready(function(){
+        demo.initWizard();
         $('.phone').mask('(000) 000-0000');
     });
     $('form').on('keyup keypress', function(e) {
@@ -221,5 +222,30 @@ script.
     /* #region  bütün kontroller */
     function controls() {
         return (enforcedControl() || maxMinControl() || isPasswordMatch())
+    }
+    /* #endregion */
+    /* #region  datatable generator*/
+    $(document).ready(function() {
+        if(typeof(datatable)!="undefined"){
+            datatable();
+        }
+    });
+    /* #endregion */
+    /* #region  Çıkış yap */
+    function exit() {
+    $.ajax({
+        type: "GET",
+        url: "/ajax/exit",
+        dataType: "json",
+        success: function (result) {
+        showNotification('top', 'right', result.color, result.message);
+        if (result.status)
+            location.href = "/";
+        },
+        error: function (jqXHR, exception) {
+        console.log(jqXHR);
+        console.log(exception);
+        }
+    });
     }
     /* #endregion */

@@ -1,0 +1,234 @@
+ER_OPERAND_COLUMNS: Operand should contain 1 column(s)
+->Error: ER_OPERAND_COLUMNS: Operand should contain 1 column(s)
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:70:26
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+ER_OPERAND_COLUMNS: Operand should contain 1 column(s)
+->Error: ER_OPERAND_COLUMNS: Operand should contain 1 column(s)
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:70:26
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+undefined
+->undefined
+undefined
+->undefined
+ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+->Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+undefined
+->undefined
+ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+->Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+undefined
+->undefined
+ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+->Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+undefined
+->undefined
+ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+->Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND silindiMi="0"' at line 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+undefined
+->undefined
+where is not defined
+->ReferenceError: where is not defined
+    at selectWithColumnConverter (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:187:80)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:64:15)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:68:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:68:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+Cannot convert undefined or null to object
+->TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:65:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:84:31
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)

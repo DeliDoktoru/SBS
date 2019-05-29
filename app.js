@@ -106,7 +106,7 @@ app.use(function (req, res, next){
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["public", "ajax", "favicon.ico","register"];
+  var arr = ["test1","public", "ajax", "favicon.ico","register"];
   for (val of arr) {
     if (txt.includes(val))
       return true;
@@ -114,7 +114,6 @@ function checkAllowed(txt) {
   return false;
 }
 app.use(async function (req, res, next) {
-  
   if (checkAllowed(req.url)) {
     next();
     return;

@@ -318,20 +318,6 @@ demo = {
   initWizard: function() {
     // Code for the Validator
     var $validator = $('.card-wizard form').validate({
-      rules: {
-        firstname: {
-          required: true,
-          minlength: 3
-        },
-        lastname: {
-          required: true,
-          minlength: 3
-        },
-        email: {
-          required: true,
-          minlength: 3,
-        }
-      },
       highlight: function(element) {
         $(element).closest('.input-group').removeClass('has-success').addClass('has-danger');
       },

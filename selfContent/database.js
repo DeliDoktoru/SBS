@@ -29,6 +29,9 @@ class Database {
         } );
     }
     selectAll(tableName,databaseName="sbs"){
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
         var query=`SELECT * FROM ${databaseName}.${tableName} WHERE silindiMi="0";`;
         return this.query(query);
     }
@@ -46,7 +49,26 @@ class Database {
         }
         return this.query(query,Object.keys(where).map(y=> where[y]));
     }
+    selectWithColumn(colNameS=[],tableName,where,mode="AND",databaseName="sbs"){
+        //var a=await new db().selectWithColumn(["id","a"],"test");
+        if(!tableName || tableName==""){
+            throw "tabloismibulunamadi";
+        }
+        if(colNameS.length==0){
+            throw "kolonisimlerieksik";
+        }
+        var query="";
+        query=selectWithColumnConverter(tableName,databaseName,colNameS,where,mode);
+        if(!where){
+            where={};
+        }
+        if(query==""){
+            throw "sorgubulunamadi";
+        }
+        return this.query(query,Object.keys(where).map(y=> where[y]));
+    }
     insert(data={},tableName,databaseName="sbs"){
+        //await new db().insert({ a:"azxzcxzxczsol",b:"1231"},"test")
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
@@ -96,6 +118,7 @@ class Database {
         return this.query(query,Object.keys(where).map(y=> where[y]));
     }
     update(data={},where={},tableName,mode="AND",databaseName="sbs"){
+        //var a=await new db().update({a:"a",b:"b"},{b:"b"},"test");
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
@@ -115,12 +138,13 @@ class Database {
         var concat= arr1.concat(arr2);
         return this.query(query,Object.keys(concat).map(y=> concat[y]));
     }
-    selectIn(colName,data={},tableName,databaseName="sbs"){
+    selectIn(colName,data=[],tableName,databaseName="sbs"){
         //data [1,2,3,4] şeklinde olmalı
+        //var a=await new db().selectIn("id",[1,2],"sayfalar");
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
-        if(Object.keys(data).length==0){
+        if(data.length==0){
             throw "veribulunamadi";
         }
         if(!colName){
@@ -135,6 +159,7 @@ class Database {
     
     }
     setSilindi(where={},tableName,mode="AND",databaseName="sbs"){
+        //await new db().setSilindi({a:"azxzcxzxczsol"},"test");
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
         }
@@ -158,11 +183,14 @@ function removeConverter(_tableName,_databaseName,_where,_mode){
 function selectQueryConverter(_tableName,_databaseName,_where,_mode){
     return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ( ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")} ) AND silindiMi="0"`;
 }
+function selectWithColumnConverter(_tableName,_databaseName,_colNameS,_where,_mode){
+    return `SELECT ${_colNameS} FROM ${_databaseName}.${_tableName} WHERE ( ${ _where ? Object.keys(_where).map(x=> x+"= ? ").join(_mode+" "):"1=1" } ) AND silindiMi="0"`;
+}
 function updateConverter(_tableName,_databaseName,_object,_where,_mode){
     return `UPDATE ${_databaseName}.${_tableName} SET ${Object.keys(_object).map(x=> x+"= ? ").toString()} WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;
 }
-function selectInConverter(_tableName,_databaseName,colName){
-    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${colName} IN (?) AND silindiMi="0"`;
+function selectInConverter(_tableName,_databaseName,_colName){
+    return `SELECT * FROM ${_databaseName}.${_tableName} WHERE ${_colName} IN (?) AND silindiMi="0"`;
 }
 function setSilindiConverter(_tableName,_databaseName,_where,_mode){
     return `UPDATE ${_databaseName}.${_tableName} SET silindiMi="1" WHERE ${Object.keys(_where).map(x=> x+"= ? ").join(_mode+" ")}`;

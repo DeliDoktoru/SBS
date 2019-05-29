@@ -52,3 +52,9 @@
                           a(href=child.url)
                             span.sidebar-mini-icon(class=child.icon)
                             span.sidebar-normal=l.getLanguage(child.sayfaAdi)
+    .after
+    ul.nav                      
+      li
+        a(href='#cikis',onclick='exit()')
+          i.nc-icon.nc-bank
+          p=l.getLanguage("cikis") 

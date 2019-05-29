@@ -13,5 +13,7 @@ var language={
     "zorunlualanlaridoldurmanizgerekmektedir":"Zorunlu alanları doldurmanız gerekmektedir.",
     "birhataolustu":"Bir hata oluştu",
     "sifrelereslesmedi":"Şifreler eşleşmedi!",
+    "girisbilgilerinizbulunamadi":"Giriş bilgileriniz bulunamadı!",
+    "cikisyapiliyor":"Çıkış Yapılıyor.."
 }
 module.exports = language;

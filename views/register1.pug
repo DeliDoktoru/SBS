@@ -1,0 +1,202 @@
+extends layout
+
+block body 
+  .register-page.overflow-hidden
+    nav.navbar.navbar-expand-lg.navbar-absolute.fixed-top.navbar-transparent
+      .container.mt-0
+        .navbar-wrapper
+          .navbar-toggle
+            button.navbar-toggler(type='button')
+              span.navbar-toggler-bar.bar1
+              span.navbar-toggler-bar.bar2
+              span.navbar-toggler-bar.bar3
+          a.navbar-brand(href='sbs')=l.getLanguage("sbs").toUpperCase()
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navigation', aria-controls='navigation-index', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+          span.navbar-toggler-bar.navbar-kebab
+        #navigation.collapse.navbar-collapse.justify-content-end
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='login')
+                i.nc-icon.nc-tap-01
+                  =l.getLanguage("giris").toUpperCase()
+    .wrapper.wrapper-full-page.ownImage
+      .full-page.register-page.section-image
+        .content.pt-15vh
+          .con.m-auto
+            .row
+              .col-lg-12.col-md-12.m-auto
+                .wizard-container
+                  #wizardProfile.card.card-wizard.active(data-color='primary')
+                    form(action='#', method='', novalidate='novalidate')
+                      .customheader.text-center
+                        .wizard-navigation
+                          ul.nav.nav-pills
+                            li.nav-item(style='width: 20%;')
+                              a.nav-link.active(href='#tab1', data-toggle='tab', role='tab', aria-controls='tab1', aria-selected='true')
+                                i.nc-icon.nc-single-02
+                                |  Giriş bilgileri
+                            li.nav-item(style='width: 20%;')
+                              a.nav-link(href='#tab2', data-toggle='tab', role='tab', aria-controls='tab2', aria-selected='true')
+                                i.nc-icon.nc-touch-id
+                                |  Kullanıcı bilgileri
+                            li.nav-item(style='width: 20%;')
+                              a.nav-link(href='#tab3', data-toggle='tab', role='tab', aria-controls='tab3', aria-selected='true')
+                                i.nc-icon.nc-pin-3
+                                |  Paket bilginiz
+                            li.nav-item(style='width: 20%;')
+                              a.nav-link(href='#tab4', data-toggle='tab', role='tab', aria-controls='tab4', aria-selected='true')
+                                i.nc-icon.nc-pin-3
+                                |  Firma bilgileri
+                            li.nav-item(style='width: 20%;')
+                              a.nav-link(href='#tab5', data-toggle='tab', role='tab', aria-controls='tab5', aria-selected='true')
+                                i.nc-icon.nc-pin-3
+                                |  Ödeme bilgieri
+                          .moving-tab(style='width: 280.552px; transform: translate3d(0px, 0px, 0px); transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;')
+                            i.nc-icon.nc-single-02
+                            |  tab1
+                      .card-body
+                        .tab-content.customtab-content
+                          #tab1.tab-pane.show.active
+                            h5.info-text.customh5  Giriş işlemlerinde kullanıcağınız bilgiler
+                            .row.justify-content-center
+                              .col-sm-8
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-send
+                                  input.form-control(ajax-key="r",type='email', name='kullaniciEPosta', placeholder='Eposta adresiniz')                              
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-single-02
+                                  input.form-control(ajax-key="r",type='password',name='kullaniciParola', placeholder='Şifre')
+                                  .cursor-pointer.showpass
+                                    span.input-group-text
+                                      i.ti-eye                                  
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-circle-10
+                                  input.form-control(ajax-key="r",type='password',name='ckullaniciParola', placeholder='Şifre tekrarı')
+                                  .cursor-pointer.showpass
+                                    span.input-group-text
+                                      i.ti-eye
+                          #tab2.tab-pane
+                            h5.info-text.customh5  Kişisel bilgileriniz
+                            .row.justify-content-center
+                              .col-sm-8
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-send
+                                  input.form-control(ajax-key="r",type='text', name='kullaniciIsim', placeholder='İsminiz',d-max="3")                              
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-single-02
+                                  input.form-control(ajax-key="r",type='text',name='kullaniciSoyisim', placeholder='Soyisminiz')                               
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-circle-10
+                                  input.phone.form-control(ajax-key="r",type='text',name='kullaniciTel', placeholder='Telefon numaranız')
+                          #tab3.tab-pane
+                            h5.info-text.customh5  Kullanmak istediğiniz paket tipini seçiniz
+                            .row.justify-content-center
+                              .col-lg-10
+                                .row
+                                  each val,index in abonelik_turleri
+                                    .col-sm-4
+                                      .choice(data-toggle='wizard-radio',class=index==0?"active":"")
+                                        input(ajax-key="r",type='radio', name='paketTercihi', radio-value=value=val.id,checked=index==0?true:false)
+                                        .icon
+                                          i.nc-icon.nc-ruler-pencil
+                                        h6=val.abonlikTipAdi
+                                        br
+                                        =val.abonelikUcret
+                                        br
+                                        =val.abonelikGecerlilik                                         
+                          #tab4.tab-pane
+                            h5.info-text.customh5  Firma bilgileriniz
+                            .row.justify-content-center
+                              .col-sm-6
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-send
+                                  input.form-control(ajax-key="r",type='text',name='firmaAdi', placeholder='Firma adınız',enforced,max="100")                              
+                              .col-sm-6
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-single-02
+                                  input.form-control(ajax-key="r",type='text',name='firmaTel', placeholder='Firma telefonu no',enforced,max="45")         
+                              .col-sm-6                          
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-circle-10
+                                  input.phone.form-control(ajax-key="r",type='text',name='firmaFaks', placeholder='Firma faks no',enforced,max="100")
+                              .col-sm-6                          
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-circle-10
+                                  input.phone.form-control(ajax-key="r",type='text',name='firmaVergiDairesi', placeholder='Firma vergi dairesi',enforced,max="100")
+                              .col-sm-6                          
+                                .input-group
+                                  .input-group-prepend
+                                    span.input-group-text
+                                      i.nc-icon.nc-circle-10
+                                  input.phone.form-control(ajax-key="r",type='text',name='firmaVergiNo', placeholder='Firma vergi dairesi no',enforced,max="45")
+                              .col-sm-6                          
+                                select.custom-select(ajax-key="r",enforced,name="firmaIli")
+                                  option(value='',selected) İl seçiniz..
+                                  each val in iller
+                                    option(value=val.plaka_no) 
+                                      =val.il_adi
+                              .col-sm-12    
+                                textarea.form-control(ajax-key="r",rows='3',name='firmaAdres',placeholder='Firma adresiniz',enforced)
+                          #tab5.tab-pane
+                            h5.info-text  Ödeme şekli seçip bilgileriniz doldurunuz
+                            .row.justify-content-center
+                              .col-sm-12
+                                .accwrapper
+                                  each val,index in odeme_tipleri
+                                    div(class="wrap-"+index)
+                                      input.accinput(ajax-key="r",id="tab-"+index,type='radio', name='odemeTipi',radio-value=val.id,checked=index==0?true:false )
+                                      label.acclabel(for='tab-'+index)
+                                        div=val.odemeTipAdi
+                                        .cross
+                                      .acccontent
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, deserunt ipsum!
+                      .card-footer.customfooter.col-sm-8.m-auto
+                        .pull-right
+                          input.btn.btn-next.btn-fill.btn-rose.btn-wd(type='button', name='next', value='Next')
+                          input.btn.btn-finish.btn-fill.btn-rose.btn-wd(type='button', name='finish', value='Finish', style='display: none;')
+                        .pull-left
+                          input.btn.btn-previous.btn-fill.btn-default.btn-wd.disabled(type='button', name='previous', value='Previous')
+                        .clearfix
+        footer.footer.footer-black.footer-white.position-absolute
+          .container-fluid
+            .row
+              nav.footer-nav
+                ul
+                  li
+                    a(href='https://www.creative-tim.com/', target='_blank') Creative Tim
+                  li
+                    a(href='http://blog.creative-tim.com/', target='_blank') Blog
+                  li
+                    a(href='https://www.creative-tim.com/license', target='_blank') Licenses
+              .credits.ml-auto
+                span.copyright
+                  | ©
+                  script.
+                    document.write(new Date().getFullYear())
+                  | , made with 
+                  i.fa.fa-heart.heart
+                  |  by Creative Tim
+
+    

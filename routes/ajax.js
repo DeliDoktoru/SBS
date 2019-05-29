@@ -167,4 +167,26 @@ router.post('/register',
   });
 });
 
+router.get('/exit', async function (req, res, next) {
+  var l=res.locals.l;
+  var text, renk;
+  if (req.session.user == undefined || req.session.user.id == undefined) {
+    text = l.getLanguage("girisbilgilerinizbulunamadi");
+    renk = "danger"
+    res.send({
+      message: text,
+      status: 0,
+      color: renk
+    });
+  } else {
+    req.session.destroy();
+    text = l.getLanguage("cikisyapiliyor");
+    renk = "success"
+    res.send({
+      message: text,
+      status: 1,
+      color: renk
+    });
+  }
+});
 module.exports = router;
