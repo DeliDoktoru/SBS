@@ -28,6 +28,13 @@ class Database {
             } );
         } );
     }
+    generateCariDatabase(dbName){
+        if(!dbName || dbName==""){
+            throw "databaseadibulunamadi";
+        }
+        var query=require('./databaseDump')(dbName);
+        return this.query(query);
+    }
     selectAll(tableName,databaseName="sbs"){
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";

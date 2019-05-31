@@ -10,9 +10,51 @@ script.
         return false;
         }
     });
+    function uploadImage(target,dynamicTarget){
+        if(!target || target==""){
+            return;
+        }
+        $("body").eq(0).prepend(`<input hidden id="dummyImageInput" type="file">`);
+        $("#dummyImageInput").change(function(){
+            var formData = new FormData();
+                formData.append("file", document.getElementById("dummyImageInput").files[0]);
+                jQuery.ajax({
+                    url: '/ajax/uploadImage',
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (result) {
+                        if(!result){
+                            showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
+                            return;
+                        }
+                        if (result.status){
+                            $(target).val(result.fileName);
+                            if(dynamicTarget){
+                                $(dynamicTarget).attr("src","/public/firmaImages/"+result.fileName)
+                            }
+                            showNotification('top', 'right', "succes", result.message);
+                        }
+                        else{
+                            showNotification('top', 'right', "danger", result.message);
+                        } 
+                        
+                        $("#dummyImageInput").remove();
+
+                    },
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                });
+        })
+        $("#dummyImageInput").click();
+
+    }
     function toDashboard(obj){
         if(obj){
-            showNotification('top','right',obj.color,obj.message);
+            showNotification('top','right',"success",obj.message);
             location.href="/dashboard";
         }
     }
@@ -40,11 +82,16 @@ script.
 
     }
     function formBasarili(obj){
-        showNotification('top','right',obj.color,obj.message);
+        showNotification('top','right',"success",obj.message);
         location.href="table";
 
     }
-    function Dynajax(link,key="",callback,checkControls=true,data){
+    function formBasariliAyniSayfa(obj){
+        showNotification('top','right',"success",obj.message);
+        location.href="";
+
+    }
+    function Dynajax(link,key="",callback,checkControls=true,data,ask=false){
         if(checkControls){
         if(controls()) return;
         }
@@ -55,9 +102,9 @@ script.
                 var type=$(this).attr("type");
                 var name=$(this).attr("name");
                 if(type=="radio"){
-                kdata[name]=$(`[ajax-key=${key}][name=${name}]:checked`).attr("radio-value");
+                    kdata[name]=$(`[ajax-key=${key}][name=${name}]:checked`).attr("radio-value");
                 }else{
-                kdata[name]=$(this).val();
+                    kdata[name]=$(this).val();
                 }
             });
             _data.kdata=JSON.stringify(kdata)
@@ -65,30 +112,55 @@ script.
         if(data){
             _data.ndata=JSON.stringify(data);
         }
-        $.ajax({
-        type: "POST",
-        url: "/ajax/"+link,
-        dataType: "json",
-        data: _data,
-        success: function (result) {
-            if(!result){
-                showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
-                return;
-            }
-            if (result.status){
-                if(callback && typeof(callback)=="function") {
-                    callback(result);
+        var _ajax={
+            type: "POST",
+            url: "/ajax/"+link,
+            dataType: "json",
+            data: _data,
+            success: function (result) {
+                if(!result){
+                    showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
+                    return;
                 }
-            } 
-            else {
-                showNotification('top', 'right', result.color, result.message);
+                if (result.status){
+                    if(callback && typeof(callback)=="function") {
+                        callback(result);
+                    }
+                } 
+                else {
+                    showNotification('top', 'right', "danger", result.message);
+                }
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
             }
-        },
-        error: function (jqXHR, exception) {
-            console.log(jqXHR);
-            console.log(exception);
         }
-        });
+        if (ask) {
+            $.confirm({
+                content: "",
+                theme: 'material',
+                type: 'red',
+                title: "#{l && l.getLanguage('eminmisiniz')}",
+                buttons: {
+                    confirm: {
+                    btnClass: 'btn-red',
+                    text: 'Evet',
+                    action: function () {
+                        $.ajax(_ajax);
+                    }
+
+                    },
+                    cancel: {
+                    btnClass: 'btn-default',
+                    text: 'Hayır',
+                    action: function () {}
+                    }
+                }
+            });
+        } else {
+            $.ajax(_ajax);
+        }
         
     }
 
@@ -258,3 +330,54 @@ script.
     });
     }
     /* #endregion */
+
+    function DynData(where={},hash,callback){
+        var _data={};
+        _data.kdata=JSON.stringify({
+            where:where,
+            hash:hash,
+        })
+        $.ajax({
+            type: "POST",
+            url: "/ajax/dyndata",
+            dataType: "json",
+            data: _data,
+            success: function (result) {
+                if(!result){
+                    showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
+                    return;
+                }
+                if (result.status){
+                    callback(result.data,result.colName);
+                } 
+                else {
+                    showNotification('top', 'right', "danger", result.message);
+                }
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+        
+    }
+
+    $("body").delegate("[connect-target]","change",function(){
+        var hash=$(this).attr("connect-hash");
+        var target=$(this).attr("connect-target");
+        var whoAmI=$(this).attr("connect-whoami");
+        var targetTagName=$(target).prop("tagName");
+        var val=$(this).val();
+        if(!hash || !target){
+            return;
+        }
+        DynData({[whoAmI]:val},hash,function(result,colName){
+            if(targetTagName=="SELECT"){
+                $(target).html("");
+                $(target).append(`<option value=''>#{l && l.getLanguage('seciniz')}</option>`);
+                $(target).append( result.map(x=>  `<option value="${x.id}">${x[colName]}</option>`).join("<br>"));
+                $(target).val('');              
+            }
+
+        });
+    })

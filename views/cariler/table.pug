@@ -1,0 +1,39 @@
+extends ../defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            a(href='form')
+              button.ml-4.btn.btn-sm.btn-outline-success.btn-round(type='button')
+                i.ti-pin-alt.mr-1
+                =l.getLanguage("kayitolustur")  
+          .row
+            .col-sm-12
+              .table-responsive
+                table.table
+                  thead.text-primary
+                    tr
+                      each key in tableHead
+                        if key=="id" 
+                          th.text-center #
+                        else 
+                          th.text-center=l.getLanguage(key)
+                      th.text-right=l.getLanguage("aksiyon")        
+                  tbody
+                    each item in tableBody
+                      tr
+                        each key in tableHead
+                          td.text-center=item[key]
+                        td.text-right
+                          button.btn.btn-info.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
+                            i.fa.fa-user
+                          a(href=item['id'])  
+                            button.btn.btn-success.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
+                              i.fa.fa-edit
+                          button.btn.btn-danger.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
+                            i.fa.fa-times

@@ -1,0 +1,102 @@
+extends ../defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('cariler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+          .row
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariAdi")
+                input.form-control(ajax-key="f",name='cariAdi', type='text' ,enforced,max="100",value=targetData.cariAdi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariYetkiliKisiAdi")
+                input.form-control(ajax-key="f",name='cariYetkiliKisiAdi' ,type='text' ,max="100",value=targetData.cariYetkiliKisiAdi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariYetkiliKisiSoyadi")
+                input.form-control(ajax-key="f",name='cariYetkiliKisiSoyadi' ,type='text' ,max="100",value=targetData.cariYetkiliKisiSoyadi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariTel")
+                input.phone.form-control(ajax-key="f",name='cariTel', type='text' ,max="45",value=targetData.cariTel)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariYetkiliKisiTel")
+                input.phone.form-control(ajax-key="f",name='cariYetkiliKisiTel', type='text' ,max="45",value=targetData.cariYetkiliKisiTel)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariEPosta")
+                input.form-control(ajax-key="f",name='cariEPosta', type='email' ,max="100",min="3",value=targetData.cariEPosta)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariFaks")
+                input.form-control(ajax-key="f",name='cariFaks' ,type='text' ,max="45",value=targetData.cariFaks)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariVergiDairesi")
+                input.form-control(ajax-key="f",name='cariVergiDairesi' ,type='text' ,max="100",value=targetData.cariVergiDairesi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariVergiNo")
+                input.form-control(ajax-key="f",name='cariVergiNo' ,type='text' ,max="45",value=targetData.cariVergiNo)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariMernis")
+                input.form-control(ajax-key="f",name='cariMernis' ,type='text' ,max="45",value=targetData.cariMernis)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("bolgeId")
+                select.custom-select(connect-whoami="bolgeID",connect-target=`[name='cariIliId']`,connect-hash=illerHash,ajax-key="f",enforced,name="bolgeId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in bolgeler
+                        option(value=val.id,selected=val.id==targetData.bolgeId?true:false) 
+                            =val.bolgeAdi
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariIliId")
+                select.custom-select(ajax-key="f",enforced,name="cariIliId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in iller
+                        option(value=val.id,selected=val.id==targetData.cariIliId?true:false) 
+                            =val.il_adi
+            .col-md-8
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariAdres")
+                textarea.form-control.textarea(ajax-key="f",name="cariAdres",rows='4' cols='80',max="200")=targetData.cariAdres
+            .col-md-4
+              .card-user.text-center
+                a(href='#',onclick=`uploadImage("[name='cariLogo']",".avatar")`)
+                  input.form-control(hidden,ajax-key="f",name='cariLogo',type='text',max="200",value=targetData.cariLogo)    
+                  img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.cariLogo || 'image_placeholder.jpg') alt='...')
+                  h5.title=l.getLanguage("cariLogo")
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('cariler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")       

@@ -1,4 +1,4 @@
-.sidebar(data-color='brown', data-active-color='danger')
+.sidebar(data-color='white', data-active-color='info')
   .logo
     a.simple-text.logo-mini(href='http://www.creative-tim.com/')
       i.ti-crown.crown.logo-image-small
@@ -17,17 +17,18 @@
         #collapseExample.collapse
           ul.nav
             li
-              a(href='#')
-                span.sidebar-mini-icon MP
-                span.sidebar-normal My Profile
+              a(href='/profile/'+id)
+                span.sidebar-mini-icon P
+                span.sidebar-normal=l.getLanguage("profilim")
             li
               a(href='#')
-                span.sidebar-mini-icon EP
-                span.sidebar-normal Edit Profile
-            li
-              a(href='#')
-                span.sidebar-mini-icon S
-                span.sidebar-normal Settings
+                span.sidebar-mini-icon A
+                span.sidebar-normal=l.getLanguage("ayarlar")
+            if kullaniciUnvan==1    
+              li
+                a(href='#')
+                  span.sidebar-mini-icon F
+                  span.sidebar-normal=l.getLanguage("firmabilgileri")
     ul.nav
       if menu != null 
         each val in menu

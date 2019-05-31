@@ -11320,7 +11320,7 @@ img {
 .sidebar[data-active-color=info] .nav li.active>a[data-toggle=collapse]~div>ul>li.active .sidebar-mini-icon,
 .sidebar[data-active-color=info] .nav li.active>a[data-toggle=collapse]~div>ul>li.active>a,
 .sidebar[data-active-color=info] .nav li.active>a i {
-    color: #51bcda;
+    color: #51bcda !important;
     opacity: 1
 }
 

@@ -1,0 +1,249 @@
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Thu May 30 2019 15:57:12 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Thu May 30 2019 15:59:11 GMT+0300 (GTB Daylight Time)
+kullancı sorgusunda birden fazla sonuç geldi
+->kullaniciEPosta:yunusemrahdursun@gmail.com
+Thu May 30 2019 16:06:26 GMT+0300 (GTB Daylight Time)
+kullancı sorgusunda birden fazla sonuç geldi
+->kullaniciEPosta:yunusemrahdursun@gmail.com
+Thu May 30 2019 16:07:21 GMT+0300 (GTB Daylight Time)
+ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+->Error: ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectAll (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:43:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:159:31
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu May 30 2019 17:05:38 GMT+0300 (GTB Daylight Time)
+undefined
+->undefined
+Thu May 30 2019 17:05:45 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Thu May 30 2019 17:07:28 GMT+0300 (GTB Daylight Time)
+undefined
+->undefined
+Thu May 30 2019 17:07:28 GMT+0300 (GTB Daylight Time)
+ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+->Error: ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectAll (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:43:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:159:31
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu May 30 2019 17:07:28 GMT+0300 (GTB Daylight Time)
+ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+->Error: ER_NO_SUCH_TABLE: Table 'sbs.bolgeler' doesn't exist
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectAll (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:43:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:159:31
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu May 30 2019 17:08:35 GMT+0300 (GTB Daylight Time)
+undefined
+->undefined
+Thu May 30 2019 17:08:35 GMT+0300 (GTB Daylight Time)
+ER_BAD_FIELD_ERROR: Unknown column 'cariIli' in 'field list'
+->Error: ER_BAD_FIELD_ERROR: Unknown column 'cariIli' in 'field list'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:75:21)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:165:39
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu May 30 2019 17:09:50 GMT+0300 (GTB Daylight Time)
+undefined
+->undefined
+Thu May 30 2019 17:09:50 GMT+0300 (GTB Daylight Time)
+a is not defined
+->ReferenceError: a is not defined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:255:64
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at runner.then.errors (C:\Users\INTERSAN\Desktop\sbs\node_modules\express-validator\check\check.js:16:7)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 10:19:26 GMT+0300 (GTB Daylight Time)
+ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'BAYBURT' for column 'cariIliId' at row 1
+->Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'BAYBURT' for column 'cariIliId' at row 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:105:25)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:377:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 11:01:58 GMT+0300 (GTB Daylight Time)
+Cannot read property 'il_adi' of undefined
+->TypeError: Cannot read property 'il_adi' of undefined
+    at data.tableBody.map.x (C:\Users\INTERSAN\Desktop\sbs\routes\index.js:170:61)
+    at Array.map (<anonymous>)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:167:94
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 11:03:03 GMT+0300 (GTB Daylight Time)
+Cannot read property 'dbAdi' of undefined
+->TypeError: Cannot read property 'dbAdi' of undefined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:159:90
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 11:11:16 GMT+0300 (GTB Daylight Time)
+Cannot read property 'dbAdi' of undefined
+->TypeError: Cannot read property 'dbAdi' of undefined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:159:90
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 11:12:09 GMT+0300 (GTB Daylight Time)
+md5 is not defined
+->ReferenceError: md5 is not defined
+    at selfScript.generateHash (C:\Users\INTERSAN\Desktop\sbs\selfContent\selfScript.js:4:18)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:182:33
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 14:02:54 GMT+0300 (GTB Daylight Time)
+Cannot read property 'il_adi' of undefined
+->TypeError: Cannot read property 'il_adi' of undefined
+    at data.tableBody.map.x (C:\Users\INTERSAN\Desktop\sbs\routes\index.js:173:61)
+    at Array.map (<anonymous>)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:170:94
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 15:26:11 GMT+0300 (GTB Daylight Time)
+targetData is not defined
+->ReferenceError: targetData is not defined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:195:49
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Fri May 31 2019 15:27:12 GMT+0300 (GTB Daylight Time)

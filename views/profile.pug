@@ -1,0 +1,63 @@
+extends defaultBody
+
+block content
+    .row
+      div(class=editable?"col-md-6":"col-md-8 m-auto")
+        .card.card-user
+          .image
+            img(src='/public/images/damir-bosnjak.jpg' alt='...')
+          .card-body
+            .author
+              a(href='#',class=editable?"":"cursor-default",onclick=editable?`uploadImage("[name='kullaniciFoto']",".avatar")`:"")
+                if(editable)
+                  input.form-control(hidden,ajax-key="p",name='kullaniciFoto',type='text',max="200",value=targetData.kullaniciFoto)    
+                img.avatar.border-gray(src='/public/firmaImages/'+ targetData.kullaniciFoto alt='...')
+                h5.title=targetData.kullaniciIsim+" "+targetData.kullaniciSoyisim
+              p.description
+                =targetData.kullaniciUnvan
+            p.description.text-center
+                =targetData.hakkinda
+          .card-footer
+            hr
+            .button-container
+              .row
+                .col-lg-6.col-md-6.col-6.ml-auto.text-info
+                  h5=targetData.kullaniciEPosta
+                .col-lg-6.col-md-6.col-6.ml-auto.mr-auto.text-info
+                  h5=targetData.kullaniciTel
+      if editable  
+        .col-md-6
+          .card
+            .card-header
+              h5.title
+            .card-body
+              .row
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("kullaniciIsim")
+                    input.form-control(ajax-key="p",name='kullaniciIsim',type='text',enforced,max="100",value=targetData.kullaniciIsim)
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("kullaniciSoyisim")
+                    input.form-control(ajax-key="p",name='kullaniciSoyisim',type='text',enforced,max="100",value=targetData.kullaniciSoyisim)
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("kullaniciEPosta")
+                    input.form-control(ajax-key="p",name='kullaniciEPosta',type='email' ,enforced,max="100",min="3",value=targetData.kullaniciEPosta)
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("kullaniciTel")
+                    input.form-control.phone(ajax-key="p",name='kullaniciTel',type='text' ,enforced,max="45",value=targetData.kullaniciTel)
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("hakkimda")
+                    textarea.form-control.textarea(ajax-key="p",name="hakkinda",rows='4' cols='80',max="200")=targetData.hakkinda
+                .col-md-6.pr-1
+                  .form-group
+                    label=l.getLanguage("kullaniciParola")
+                    input.form-control(ajax-key="p",name='kullaniciParola',type='password' ,max="45",min="4")
+                .col-md-12
+                  .text-right.mb-4
+                    button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('profile','p',formBasariliAyniSayfa,true,{id:${targetData.id},method:'update'})`) 
+                      i.ti-check-box.mr-1  
+                      =l.getLanguage("kaydet")          

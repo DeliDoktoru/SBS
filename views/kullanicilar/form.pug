@@ -9,7 +9,7 @@ block content
         .card-body
           .text-right.mb-4
             if targetData && targetData.id && targetData.id != ""
-              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('kullanicilar','f',formBasarili,false,{id:${targetData.id},method:'delete'})`) 
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('kullanicilar','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
                 i.ti-check-box.mr-1    
                 =l.getLanguage("sil")    
             a(href='table')
@@ -21,7 +21,7 @@ block content
               .form-group.has-label
                 label
                   =l.getLanguage("kullaniciIsim")
-                input.form-control(ajax-key="f",name='kullaniciIsim', type='text' ,enforced,max="100",value=targetData.kullaniciIsim)
+                input.form-control(ajax-key="f",name='kullaniciIsim', type='text' ,value=targetData.kullaniciIsim)
             .col-md-6
               .form-group.has-label
                 label

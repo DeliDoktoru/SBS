@@ -11,6 +11,99 @@ var usersRouter = require('./routes/users');
 var app = express();
 const yetki= require('./selfContent/yetki');
 
+/* #region  session */
+app.use(session({
+  secret: '3D75D274B997B53CFD2892F69F54BC28',
+  resave: false,
+  saveUninitialized: true
+  //cookie: { secure: true }
+}));
+
+/* #endregion */
+
+/* #region  permission control */
+function checkAllowed(txt) {
+  var arr = ["test1","test","ajax/dyndata","ajax/uploadImage","ajax/login","ajax/exit","public/fonts","public/images","public/javascripts","public/stylesheets", "favicon.ico","register"];
+  for (val of arr) {
+    if (txt.includes(val))
+      return true;
+  }
+  return false;
+}
+app.use(async function (req, res, next) {
+  if (checkAllowed(req.url)) {
+    next(); 
+    return;
+  }
+  if (req.url == "/" || req.url == "/login" ) {
+    if (req.session.user == undefined || req.session.user.id == undefined) {
+      if(req.url == "/"){
+        res.redirect('/login');
+        next();
+        return;
+      }
+      else{
+        next();
+        return;
+      }
+    } 
+    else{
+      res.redirect('/dashboard');
+    }
+  } else {
+    if (req.session.user == undefined || req.session.user.id == undefined || req.session.user.firmaId==undefined)
+      res.redirect('/login');
+    else {
+      var unvanId = req.session.user.kullaniciUnvan;
+      if (unvanId == undefined) {
+        res.redirect('/login');
+        return;
+      }
+      var unvanPages=yetki.unvans[unvanId];
+      if (unvanPages == null) {
+        res.redirect('/login');
+        return;
+      } 
+      var str = decodeURIComponent(req.url);
+      var skipMenu=false;
+      if(str.indexOf("/ajax")==0){
+        str=str.substring(5,str.length);
+        skipMenu=true;
+      }
+      if(str.indexOf("/public/firmaImages")==0){
+        str=str.substring(20,str.length);
+        if(str=="image_placeholder.jpg"){
+          next();
+          return;  
+        }
+        var tmpFirmaId=str.substring(0,str.indexOf("-"))
+        if(req.session.user.firmaId && tmpFirmaId && tmpFirmaId!="" && tmpFirmaId==req.session.user.firmaId){
+          next();
+          return;
+        }else{
+          res.redirect('/login');
+          return;
+        }
+        
+      }
+
+      var result=unvanPages.find(x=>x.yetkiAdi && x.yetkiAdi!="" && str.indexOf(x.yetkiAdi)==0 );
+      if (result == null) {
+        res.redirect('/');
+        return;
+      }
+      if(!skipMenu){ 
+        res.locals.menu = unvanPages.filter(x=>x.menudeGoster);
+        res.locals.active = result.id;
+        res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
+        res.locals.kullaniciUnvan=req.session.user.kullaniciUnvan;
+        res.locals.id=req.session.user.id;
+      }
+      next();  
+    }
+  }
+}); 
+/* #endregion */
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -67,16 +160,7 @@ app.use(logger(function (tokens, req, res) {
 }));
 
 /* #endregion */
-/* #region  session */
-app.use(session({
-  secret: '3D75D274B997B53CFD2892F69F54BC28',
-  resave: false,
-  saveUninitialized: true
-  //cookie: { secure: true }
-}));
 
-
-/* #endregion */
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -104,71 +188,7 @@ app.use(function (req, res, next){
 
 /* #endregion */
 
-/* #region  permission control */
-function checkAllowed(txt) {
-  var arr = ["test1","ajax/login","public", "favicon.ico","register"];
-  for (val of arr) {
-    if (txt.includes(val))
-      return true;
-  }
-  return false;
-}
-app.use(async function (req, res, next) {
-  if (checkAllowed(req.url)) {
-    next();
-    return;
-  }
-  
-  if (req.url == "/" || req.url == "/login" ) {
-    if (req.session.user == undefined || req.session.user.id == undefined) {
-      if(req.url == "/"){
-        res.redirect('/login');
-        next();
-        return;
-      }
-      else{
-        next();
-        return;
-      }
-    } 
-    else{
-      res.redirect('/dashboard');
-    }
-  } else {
-    if (req.session.user == undefined || req.session.user.id == undefined)
-      res.redirect('/login');
-    else {
-      var unvanId = req.session.user.kullaniciUnvan;
-      if (unvanId == undefined) {
-        res.redirect('/login');
-        return;
-      }
-      var unvanPages=yetki.unvans[unvanId];
-      if (unvanPages == null) {
-        res.redirect('/login');
-        return;
-      } 
-      var str = decodeURIComponent(req.url);
-      var ajaxBoolean=false;
-      if(str.indexOf("/ajax")==0){
-        str=str.substring(5,str.length);
-        ajaxBoolean=true;
-      }
-      var result=unvanPages.find(x=>x.yetkiAdi && x.yetkiAdi!="" && str.indexOf(x.yetkiAdi)==0 );
-      if (result == null) {
-        res.redirect('/');
-        return;
-      }
-      if(!ajaxBoolean){
-        res.locals.menu = unvanPages;
-        res.locals.active = result.id;
-        res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
-      }
-      next();  
-    }
-  }
-}); 
-/* #endregion */
+
 
 
 app.use('/', indexRouter);

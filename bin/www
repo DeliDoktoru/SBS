@@ -98,7 +98,7 @@ function onListening() {
 errorLoger=function (err){
   var fs = require("fs");
   var path = require('path');
-  fs.appendFile(path.join(__dirname, '../error.log'), err.message + "\n->" + err.stack + "\n", function (error) {
+  fs.appendFile(path.join(__dirname, '../error.log'), err.message + "\n->" + err.stack + "\n" + new Date()+"\n", function (error) {
       console.log(error);
     });
     console.log(err.stack);

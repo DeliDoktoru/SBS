@@ -2,7 +2,8 @@ const config={
   databaseServer: {
     host: "localhost",
     user: "sbs",
-    password: "tryRoot94"
+    password: "tryRoot94",
+    multipleStatements: true
   },
   webServer:{
     port:3000

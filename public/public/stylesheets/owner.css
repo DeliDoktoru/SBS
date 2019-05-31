@@ -11,6 +11,9 @@
 .cursor-pointer{
   cursor: pointer;
 } 
+.cursor-default{
+  cursor: default;
+} 
 #languages{
   z-index: 99999;
   position: absolute;

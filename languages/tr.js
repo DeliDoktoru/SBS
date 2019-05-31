@@ -14,6 +14,7 @@ var language={
     "birhataolustu":"Bir hata oluştu",
     "sifrelereslesmedi":"Şifreler eşleşmedi!",
     "girisbilgilerinizbulunamadi":"Giriş bilgileriniz bulunamadı!",
-    "cikisyapiliyor":"Çıkış Yapılıyor.."
+    "cikisyapiliyor":"Çıkış Yapılıyor..",
+    "eminmisiniz":"Emin misiniz ?"
 }
 module.exports = language;
