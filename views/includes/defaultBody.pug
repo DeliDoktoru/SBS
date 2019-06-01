@@ -1,0 +1,10 @@
+extends layout
+
+block body
+  .wrapper
+    include sidebar.pug
+    .main-panel
+      include navbar.pug
+      .content
+        block content
+      include footer.pug

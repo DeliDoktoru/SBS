@@ -137,7 +137,7 @@ router.get('/kullanicilar/:id',async function(req,res,next){
       );
       data.tableHead= colNameS;
       data.cardHeader=l.getLanguage('kullanicilar');
-      res.render('kullanicilar/table', data);
+      res.render('includes/table', data);
       break;
     case "form":
       data.cardHeader=l.getLanguage('kullaniciekle');
@@ -177,7 +177,7 @@ router.get('/cariler/:id',async function(req,res,next){
       );
       data.tableHead= colNameS;
       data.cardHeader=l.getLanguage('carilistele');
-      res.render('cariler/table', data);
+      res.render('includes/table', data);
       break;
     case "form":
       data.illerHash=selfScript.generateHash(session,"iller",dbName,"il_adi");  

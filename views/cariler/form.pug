@@ -1,4 +1,4 @@
-extends ../defaultBody
+extends ../includes/defaultBody
 
 block content
   .row
@@ -96,6 +96,8 @@ block content
                   input.form-control(hidden,ajax-key="f",name='cariLogo',type='text',max="200",value=targetData.cariLogo)    
                   img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.cariLogo || 'image_placeholder.jpg') alt='...')
                   h5.title=l.getLanguage("cariLogo")
+            .col-md-10.m-auto
+              #mapid
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('cariler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  

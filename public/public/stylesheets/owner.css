@@ -86,3 +86,8 @@
   background-color: hsla(0, 0%, 100%, .5);
   margin-left: 15px;
 }
+#mapid {
+   height: 180px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }

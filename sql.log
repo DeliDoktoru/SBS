@@ -3985,3 +3985,291 @@
 ->["1"]
 'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
 ->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,carilerKoordinat,cariVergiDairesi,cariVergiNo,cariMernis FROM sbs_comp_2.cariler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.iller WHERE ( bolgeId= ?  ) AND silindiMi="0"'
+->[4]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.iller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.abonelik_turleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.odeme_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.iller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.abonelik_turleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.odeme_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariAdres,cariIliId,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
