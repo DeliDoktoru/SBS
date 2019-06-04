@@ -23,7 +23,7 @@ app.use(session({
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["test1","test","ajax/dyndata","ajax/uploadImage","ajax/login","ajax/exit","public/fonts","public/images","public/javascripts","public/stylesheets", "favicon.ico","register"];
+  var arr = ["test1","test","ajax/dyndata","ajax/uploadImage","ajax/changeLanguage","ajax/login","ajax/exit","public/fonts","public/images","public/javascripts","public/stylesheets", "favicon.ico","register"];
   for (val of arr) {
     if (txt.includes(val))
       return true;

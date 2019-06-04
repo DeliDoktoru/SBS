@@ -58,6 +58,9 @@ router.post('/uploadImage',uploadImage.single('file'), async function(req, res, 
 /* #region  changeLanguage */
 router.post('/changeLanguage', async function(req, res, next) {
   req.session.language = req.body.language;
+  if(req.session.user && req.session.user.id){
+    await new db().update({kullaniciDilTercihi:req.body.language},{id:req.session.user.id},"kullanicilar");
+  }
   res.send({});
 });
 /* #endregion */
@@ -91,6 +94,9 @@ check('kdata.kullaniciParola').exists().not().isEmpty().withMessage("paraloalani
     else if (user && user.length==1 ) {
       req.session.user = user[0];
       req.session.user.tableNames=[];
+      if(req.session.user.kullaniciDilTercihi != (req.session.language|| "tr")){
+        await new db().update({kullaniciDilTercihi:(req.session.language|| "tr")},{id:req.session.user.id},"kullanicilar");  
+      }
     }
     else{
       throw "epostayadaparalohatali";
@@ -98,14 +104,7 @@ check('kdata.kullaniciParola').exists().not().isEmpty().withMessage("paraloalani
     text = l.getLanguage("girisyapiliyor");
     status = 1;
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
   
   res.send({
@@ -207,14 +206,7 @@ router.post('/register',
     text.continuelogin=l.getLanguage("girissayfasinailerle");
     status = 1;
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
   
   res.send({
@@ -293,14 +285,7 @@ router.post('/kullanicilar',
         status = 0;
     }
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
   
   res.send({
@@ -365,16 +350,62 @@ router.post('/cariler',
         status = 0;
     }
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
-  
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  cariler */
+router.post('/bolgeler',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  customValidation.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"bolgeler",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"bolgeler",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"bolgeler",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error);
+  }
   res.send({
     message: text,
     status: status,
@@ -422,14 +453,7 @@ router.post('/profile',
         status = 0;
     }
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
   
   res.send({
@@ -481,14 +505,7 @@ router.post('/dyndata', async function (req, res, next) {
     result=await new db().selectWithColumn(sorguBilgileri.colName,sorguBilgileri.tableName,data.where,null,sorguBilgileri.dbName);
     status=1;
   } catch (error) {
-    status = 0;
-    if (error.message != undefined)
-      text = l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-      text=error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-      text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    text=selfScript.catchConverterError(error);
   }
   res.send({
     message: text,

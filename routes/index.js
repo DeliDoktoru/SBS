@@ -118,7 +118,6 @@ router.get('/profile/:id',async function(req, res, next){
 
 router.get('/kullanicilar/:id',async function(req,res,next){
   var l=res.locals.l;
-  // session,firma ve id kontrolü
   if( !req.params.id){
     res.redirect('/login'); return;
   }
@@ -154,7 +153,6 @@ router.get('/kullanicilar/:id',async function(req,res,next){
 router.get('/cariler/:id',async function(req,res,next){
   var l=res.locals.l; 
   var session=req.session.user;
-  // session,firma ve id kontrolü
   if(  !req.params.id){
     res.redirect('/login'); return;
   }
@@ -194,6 +192,86 @@ router.get('/cariler/:id',async function(req,res,next){
       data.targetData=(await new db().selectWithColumn(colNameS,"cariler",{id : req.params.id  },null,dbName))[0];
       data.iller=await new db().selectQuery({bolgeId:data.targetData.bolgeId},'iller',null,dbName);
       res.render('cariler/form',data);
+  }
+});
+router.get('/bolgeler/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('bolgeler')
+  };
+  switch(req.params.id) {
+    case "table":
+      var colNameS=["id","sorumluId","bolgeAdi"];
+      data.iller=await new db().selectAll('iller',dbName);
+      var sql=`
+      SELECT bolgeler.id,CONCAT(kullanicilar.kullaniciIsim,' ',kullanicilar.kullaniciSoyisim) AS sorumluId,bolgeler.bolgeAdi FROM ${dbName}.bolgeler as bolgeler 
+        LEFT JOIN sbs.kullanicilar as kullanicilar 
+          on kullanicilar.id=bolgeler.sorumluId 
+          WHERE bolgeler.silindiMi=0;
+      `;
+      data.tableBody= (await new db().query(sql));
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('bolgeler');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      var colNameS=["id","sorumluId","bolgeAdi","bolgelerAciklama"];
+      data.cardHeader=l.getLanguage('bolgeekle');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      data.kullanicilar=await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
+      res.render('bolgeler/form',data);
+    break;
+    default:
+      var colNameS=["id","sorumluId","bolgeAdi","bolgelerAciklama"];
+      data.cardHeader=l.getLanguage('bolgeduzenle');
+      data.targetData=(await new db().selectWithColumn(colNameS,"bolgeler",{id : req.params.id  },null,dbName))[0];
+      data.kullanicilar=await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
+      res.render('bolgeler/form',data);
+  }
+});
+router.get('/iller/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('iller')
+  };
+  var colNameS=["id","il_adi","plaka_no","bolgeId","tel_kod"];
+  switch(req.params.id) {
+    case "table":
+      data.iller=await new db().selectAll('iller',dbName);
+      var sql=`
+      SELECT iller.id,iller.il_adi,iller.plaka_no,bolgeler.bolgeAdi AS bolgeId,iller.tel_kod FROM ${dbName}.iller as iller 
+        LEFT JOIN ${dbName}.bolgeler as bolgeler 
+          on iller.bolgeId=bolgeler.id 
+          WHERE iller.silindiMi=0;
+      `; 
+      data.tableBody= (await new db().query(sql));
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('iller');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.cardHeader=l.getLanguage('ilekle');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      data.bolgeler=await new db().selectAll('bolgeler',dbName);
+      res.render('iller/form',data);
+    break;
+    default:
+      data.cardHeader=l.getLanguage('ilduzenle');
+      data.targetData=(await new db().selectWithColumn(colNameS,"iller",{id : req.params.id  },null,dbName))[0];
+      data.bolgeler=await new db().selectAll('bolgeler',dbName);
+      res.render('iller/form',data);
   }
 });
 

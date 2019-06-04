@@ -247,3 +247,95 @@ targetData is not defined
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
 Fri May 31 2019 15:27:12 GMT+0300 (GTB Daylight Time)
+Cannot read property 'user' of undefined
+->TypeError: Cannot read property 'user' of undefined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:61:18
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:47:12)
+Tue Jun 04 2019 20:10:48 GMT+0300 (GTB Daylight Time)
+Cannot read property 'user' of undefined
+->TypeError: Cannot read property 'user' of undefined
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:62:33
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\INTERSAN\Desktop\sbs\node_modules\express\lib\router\index.js:47:12)
+Tue Jun 04 2019 20:14:41 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Tue Jun 04 2019 21:04:56 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Tue Jun 04 2019 23:45:48 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:24:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:23:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:17:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Wed Jun 05 2019 00:05:23 GMT+0300 (GTB Daylight Time)

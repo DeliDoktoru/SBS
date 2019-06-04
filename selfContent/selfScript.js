@@ -21,6 +21,15 @@ function selfScript(){
             return session.tableNames[foundIndex];
         }
     }
-  
+    this.catchConverterError=function(error){
+    if (error.message != undefined)
+        return l.getLanguage(error.message);
+    else if(Array.isArray(error)){
+        return error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
+    }  
+    else
+        return (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    }
+    return "";
   }
   module.exports = new selfScript();
