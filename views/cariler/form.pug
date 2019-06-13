@@ -134,18 +134,18 @@ block content
               .form-group.has-label
                 label
                   =l.getLanguage("Enlem")
-                input.form-control(ajax-key="f",disabled,name='Latitude' ,type='text' ,max="45",value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[0] || 39.0100769  )
+                input.form-control(ajax-key="f",disabled,name='Latitude' ,type='text' ,value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[0] || 39.0100769  )
             .col-md-6
               .form-group.has-label
                 label
                   =l.getLanguage("Boylam")
-                input.form-control(ajax-key="f",disabled,name='Longitude' ,type='text' ,max="45",value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[1] || 30.6887968 )   
+                input.form-control(ajax-key="f",disabled,name='Longitude' ,type='text' ,value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[1] || 30.6887968 )   
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('cariler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  
               =l.getLanguage("kaydet")
   script.
-    var map=null,searchControl=null,circle=null;
+    var map=null,searchControl=null,circle=null,marker=null;
     function initMap(_x,_y){
         if($("#map").length==0){
           console.log("map element not found");
@@ -187,8 +187,8 @@ block content
         marker.on('move',function(e){
           var _lat=marker.getLatLng().lat;
           var _lng=marker.getLatLng().lng;
-          $("[name='Latitude']").val(marker.getLatLng()._lat);
-          $("[name='Longitude']").val(marker.getLatLng()._lng);
+          $("[name='Latitude']").val(_lat);
+          $("[name='Longitude']").val(_lng);
           if(circle!=null){
                 circle.setLatLng(e.latlng);
           }

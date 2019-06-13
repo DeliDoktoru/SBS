@@ -4,7 +4,6 @@ const { check , validationResult } = require('express-validator/check');
 const db= require('../selfContent/database');
 const md5 = require('md5');
 const multer  = require('multer');
-const customValidation= require('../selfContent/customValidation');
 const selfScript= require('../selfContent/selfScript');
 /* #region  multer storage */
 var storageImage = multer.diskStorage({
@@ -104,7 +103,7 @@ check('kdata.kullaniciParola').exists().not().isEmpty().withMessage("paraloalani
     text = l.getLanguage("girisyapiliyor");
     status = 1;
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   
   res.send({
@@ -206,7 +205,7 @@ router.post('/register',
     text.continuelogin=l.getLanguage("girissayfasinailerle");
     status = 1;
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   
   res.send({
@@ -231,7 +230,7 @@ router.post('/kullanicilar',
   var data=req.body.kdata;
   var text="", status=0 ;
   var session=req.session.user; 
-  customValidation.removeNotAllowedProperties([
+  selfScript.removeNotAllowedProperties([
     "id","firmaId","kullaniciAdi","kullaniciFoto","kullaniciKayitTar",
   "kullaniciOlusturanId","kullaniciDuzenlemeTar","kullaniciDilTercihi","kullaniciDilTercihi","silindiMi"
   ],data);
@@ -285,7 +284,7 @@ router.post('/kullanicilar',
         status = 0;
     }
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   
   res.send({
@@ -319,7 +318,7 @@ router.post('/cariler',
   {
     data.carilerKoordinat=data.Latitude+","+data.Longitude;
   }
-  customValidation.removeNotAllowedProperties([
+  selfScript.removeNotAllowedProperties([
     "id","silindiMi","Latitude","Longitude"
   ],data); 
   try {
@@ -355,7 +354,7 @@ router.post('/cariler',
         status = 0;
     }
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   res.send({
     message: text,
@@ -371,32 +370,44 @@ router.post('/toplucariekle',
 ],async function(req, res, next){
   var l=res.locals.l;
   var data=req.body.ndata;
+  var dataLength=data.length;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
   var rejectedCariler=[];
-  
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       throw errors.array();
     }
+    var iller =await new db().selectAll('iller',dbName);
     data=data.filter(x=> { 
       if(x.cariIli && x.cariIli!=""){
-        // bura
+        var findedIl=iller.find(f=>f.il_adi && f.il_adi.toUpperCase()==x.cariIli.toUpperCase() );
+        if(findedIl){
+          x.cariIli=findedIl.id;
+          x.bolgeId=findedIl.bolgeId;
+          return true;
+        }
       }
-      rejectedCariler.push(x)
+      rejectedCariler.push({ title:"ilceeslesmedi",data:x})
       return false;
     })
-    console.log(data);
-    await new db().insert(data,"cariler",dbName);
-    text=l.getLanguage("eklemeislemibasarili");
+    if(data && data.length){
+      var couldntInserted = await new db().insert(data,"cariler",dbName);
+      if(couldntInserted && couldntInserted.length){
+        rejectedCariler = rejectedCariler.concat(couldntInserted);
+      }
+      text=l.getLanguage("eklemeislemibasarili");
+    }
     status = 1;
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   res.send({
     message: text,
     status: status,
+    rejectedCariler:rejectedCariler.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
+    insertedRowCount:dataLength-rejectedCariler.length
   });
 
 });
@@ -410,7 +421,7 @@ router.post('/bolgeler',
   var data=req.body.kdata;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
-  customValidation.removeNotAllowedProperties([
+  selfScript.removeNotAllowedProperties([
     "id","silindiMi"
   ],data); 
   try {
@@ -446,7 +457,7 @@ router.post('/bolgeler',
         status = 0;
     }
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   res.send({
     message: text,
@@ -496,7 +507,7 @@ router.post('/profile',
         status = 0;
     }
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   
   res.send({
@@ -548,7 +559,7 @@ router.post('/dyndata', async function (req, res, next) {
     result=await new db().selectWithColumn(sorguBilgileri.colName,sorguBilgileri.tableName,data.where,null,sorguBilgileri.dbName);
     status=1;
   } catch (error) {
-    text=selfScript.catchConverterError(error);
+    text=selfScript.catchConverterError(error,l);
   }
   res.send({
     message: text,

@@ -21,15 +21,27 @@ function selfScript(){
             return session.tableNames[foundIndex];
         }
     }
-    this.catchConverterError=function(error){
-    if (error.message != undefined)
-        return l.getLanguage(error.message);
-    else if(Array.isArray(error)){
-        return error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
-    }  
-    else
-        return (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+    this.catchConverterError=function(error,l){
+        var text="",extra="";
+        if(error.colName || error.colData ){
+            extra=`<br> ${error.colName?l.getLanguage(error.colName)+" : ":""} ${error.colData}`; 
+        }
+        if (error.message != undefined)
+            text = l.getLanguage(error.message);
+        else if(Array.isArray(error)){
+            text = error.map(x=> l.getLanguage(x.param.split(".")[1])+" "+l.getLanguage(x.msg)+"<br>")
+        }  
+        else{
+            text = (error && typeof(error))=="string"?l.getLanguage(error):l.getLanguage("bilinmeyenhata");
+        }
+        return text + extra;
+
     }
-    return "";
+    this.removeNotAllowedProperties=function(notAllowedArr,obj){
+        for(item of notAllowedArr){
+           delete  obj[item];
+        }
+        return obj;
+    }
   }
   module.exports = new selfScript();

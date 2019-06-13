@@ -6,13 +6,24 @@ class Database {
     constructor() {
         this.connection = mysql.createConnection( config.databaseServer );
     }
-    query( sql, args, close=true ) {
+    async query( sql, args, close=true,returnRejectedData=false,ignoreError=false ) {
         sqlLog(sql,args);
         return new Promise( ( resolve, reject ) => {
             this.connection.query( sql, args, ( err, rows ) => {
                 if ( err )  {
+                    var rejected={message:"veritabanihatasi" };
+                    if(err.code=="ER_DUP_ENTRY"){
+                        rejected.colName=err.sqlMessage.substring(err.sqlMessage.search("key ")+5,err.sqlMessage.search("_UNIQUE"));
+                        rejected.colData=err.sqlMessage.substring(err.sqlMessage.search("entry ")+6,err.sqlMessage.search(" for key"));
+                        rejected.message="buverihalihazirdavar";
+
+                    }
                     global.errorLoger(err);
-                    return reject( "veritabanihatasi" );
+                    if(returnRejectedData) {
+                        rejected.data=args;
+                    }
+                    return ignoreError? resolve( rejected ) : reject( rejected );
+                    
                 }
                 if ( close ) this.close();
                 resolve( rows );
@@ -74,7 +85,7 @@ class Database {
         }
         return this.query(query,Object.keys(where).map(y=> where[y]));
     }
-    insert(data={},tableName,databaseName="sbs"){
+    async insert(data={},tableName,databaseName="sbs"){
         //await new db().insert({ a:"azxzcxzxczsol",b:"1231"},"test")
         if(!tableName || tableName==""){
             throw "tabloismibulunamadi";
@@ -83,7 +94,26 @@ class Database {
             throw "veribulunamadi";
         }
         if(Array.isArray(data)){
-            data.map(x=> {
+            var rejectedItems=[];
+            for(item of data){
+                if(typeof(item)!="object"){
+                    throw "veritipihatali";
+                }
+                var query="";
+                query=insertConverter(tableName,databaseName,item);
+                if(query==""){
+                    throw "sorgubulunamadi";
+                }
+                var result =await this.query(query,[ [ Object.keys(item).map(y=> item[y]) ] ],false,true,true);
+                if(result.data){
+                    rejectedItems.push( { title: {colName: result.colName, colData:result.colData, message:result.message },data:result.data[0][0]});
+                }
+            }
+            console.log(rejectedItems);
+            this.close();
+            return rejectedItems;
+            /*  eski toplu insert
+                data.map(x=> {
                 if(typeof(x)!="object"){
                     throw "veritipihatali";
                 }
@@ -93,8 +123,7 @@ class Database {
                     throw "sorgubulunamadi";
                 }
                 return this.query(query,[ [ Object.keys(x).map(y=> x[y]) ] ],false);
-            })
-            this.close();
+            })*/
         }
         else if(typeof(data)=="object"){
             var query="";

@@ -9248,7 +9248,9 @@ img {
 
 .table-responsive {
     overflow: scroll;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    overflow-y:auto;
+    overflow-x:auto;
 }
 
 #tables .table-responsive {

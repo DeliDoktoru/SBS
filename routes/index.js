@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db = require('../selfContent/database');
 const { check, validationResult } = require('express-validator/check');
-const customValidation= require('../selfContent/customValidation');
 const selfScript= require('../selfContent/selfScript');
 /* GET home page. */
 router.get('/', async function(req, res, next) {
@@ -159,6 +158,7 @@ router.get('/toplucariekle',async function(req,res,next){
   var l=res.locals.l;
   var data={
     title:l.getLanguage('topluCari'),
+    cardHeader:l.getLanguage('topluCariEkle')
   };
   res.render('cariler/topluCari', data);
 

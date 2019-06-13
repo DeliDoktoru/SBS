@@ -1,5 +1,5 @@
-ER_BAD_FIELD_ERROR: Unknown column 'cariAdres' in 'field list'
-->Error: ER_BAD_FIELD_ERROR: Unknown column 'cariAdres' in 'field list'
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
     at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
     at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
     at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
@@ -16,16 +16,13 @@ ER_BAD_FIELD_ERROR: Unknown column 'cariAdres' in 'field list'
     at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
     at new Promise (<anonymous>)
     at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
-    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:75:21)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:170:39
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:397:44
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 14:40:55 GMT+0300 (GTB Daylight Time)
-undefined
-->undefined
-Mon Jun 10 2019 14:40:55 GMT+0300 (GTB Daylight Time)
-ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
-->Error: ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
+Thu Jun 13 2019 15:49:58 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
     at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
     at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
     at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
@@ -42,16 +39,12 @@ ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
     at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
     at new Promise (<anonymous>)
     at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
-    at Database.selectWithColumn (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:75:21)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:170:39
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 14:41:59 GMT+0300 (GTB Daylight Time)
-undefined
-->undefined
-Mon Jun 10 2019 14:41:59 GMT+0300 (GTB Daylight Time)
-ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
-->Error: ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
+Thu Jun 13 2019 15:49:58 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
     at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
     at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
     at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
@@ -68,34 +61,13 @@ ER_BAD_FIELD_ERROR: Unknown column 'cariIliId' in 'field list'
     at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
     at new Promise (<anonymous>)
     at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
-    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:105:25)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:349:24
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:397:44
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 15:08:25 GMT+0300 (GTB Daylight Time)
-l is not defined
-->ReferenceError: l is not defined
-    at selfScript.catchConverterError (C:\Users\INTERSAN\Desktop\sbs\selfContent\selfScript.js:31:51)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:358:21
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 15:08:25 GMT+0300 (GTB Daylight Time)
-Cannot read property 'il_adi' of undefined
-->TypeError: Cannot read property 'il_adi' of undefined
-    at data.tableBody.map.x (C:\Users\INTERSAN\Desktop\sbs\routes\index.js:173:61)
-    at Array.map (<anonymous>)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:170:94
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 15:09:06 GMT+0300 (GTB Daylight Time)
-Cannot read property 'bolgeId' of undefined
-->TypeError: Cannot read property 'bolgeId' of undefined
-    at C:\Users\INTERSAN\Desktop\sbs\routes\index.js:194:70
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:188:7)
-Mon Jun 10 2019 15:17:47 GMT+0300 (GTB Daylight Time)
-ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'Ankara' for column 'cariIli' at row 1
-->Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'Ankara' for column 'cariIli' at row 1
+Thu Jun 13 2019 15:52:56 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
     at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
     at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
     at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
@@ -112,12 +84,592 @@ ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'Ankara' for column
     at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
     at new Promise (<anonymous>)
     at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
-    at data.map.x (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:95:29)
-    at Array.map (<anonymous>)
-    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:86:18)
-    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:388:20
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
     at <anonymous>
-Tue Jun 11 2019 11:57:05 GMT+0300 (GTB Daylight Time)
-undefined
-->undefined
-Tue Jun 11 2019 11:57:05 GMT+0300 (GTB Daylight Time)
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 15:53:04 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:07:36 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:07:36 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:16:34 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:16:34 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:30:59 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:30:59 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:31:59 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:31:59 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:32:44 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:32:45 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:33:41 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:33:41 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:34:23 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:34:23 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:38:29 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:38:29 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:39:54 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:39:54 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:43:26 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:43:26 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:45:49 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:45:49 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:47:34 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:47:35 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:396:44
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:48:18 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 16:48:18 GMT+0300 (GTB Daylight Time)

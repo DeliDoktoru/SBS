@@ -20,14 +20,15 @@ block content
               input#importInput(hidden,type="file")   
             .col-md-12
               .table-responsive
-                table#outputImport.table.table-striped.table-bordered      
+                table#outputImport.table.table-striped.table-bordered  
+              #rejectedCariler
           .text-right.mb-4
-            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('toplucariekle','',formBasarili,false,getResult())`) 
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('toplucariekle','',topluCariEkleCallback,false,getResult())`) 
               i.ti-check-box.mr-1  
               =l.getLanguage("kaydet")
   script.
     
-    var colValues = [],result=null;
+    var colValues = [],result=null,table=null;
     function checkCols(workbook)  
       {
         var first_sheet_name = workbook.SheetNames[0];
@@ -45,8 +46,8 @@ block content
         return result;
       }
       else{
-        throw "#{l && l.getLanguage('onceverieklemenizgerekmektedir')}";
         showNotification('top','right',"danger","#{l && l.getLanguage('onceverieklemenizgerekmektedir')}");
+        throw "#{l && l.getLanguage('onceverieklemenizgerekmektedir')}";
         return null;
       }
     }
@@ -66,7 +67,7 @@ block content
               var oJS = XLS.utils.sheet_to_json(cfb.Sheets[sheetName] ,{defval: ''});  
               result=oJS; 
               oJS=oJS.map(o=> o=$.map(o, function(el) { return el; })  ); 
-               $('#outputImport').DataTable( {
+              table= $('#outputImport').DataTable( {
                   data: oJS,
                   columns:  colValues.map(x=>{ return { title:x } })
               } );
@@ -79,6 +80,46 @@ block content
 
           reader.readAsBinaryString(oFile);
       });
-        
     }
-    
+    function topluCariEkleCallback(obj){
+      if(obj.rejectedCariler && obj.rejectedCariler.length){
+        if(table){
+          table.destroy();
+        }
+        //$("#outputImport").html("");
+        var tableBody="";
+        for(item of obj.rejectedCariler){
+          tableBody+=`<tr class="table-danger"><td>${ item.data[Object.keys(item.data)[0]]}</td><td>${item.title}</td> </tr>`;
+        }
+        $("#rejectedCariler").html( `
+          <br>
+            <div style="width: 50%; margin: auto; text-align: center;">
+              <h5 ><b>${obj.insertedRowCount} #{l && l.getLanguage('adetveribasariylaeklendi')}</b></h5>
+              <div  class="text-success" style="color: #EB5E28;
+                          font-size: 30px;
+                          margin: auto;
+                          text-align: center;">
+                          <i class="ti-check"></i></div>
+              
+            </div>
+            <h3><b>#{l && l.getLanguage('asagidakiverileryuklenemedi')}</b></h3>
+          <br>
+          <table class="table">
+          <thead>
+            <tr>
+            <th> ${colValues[0]}</th>
+            <th> #{l && l.getLanguage('hatanedeni')} </th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableBody}
+          </tbody>
+          </table>
+        `);
+      }
+      else{
+        showNotification('top','right',"success",obj.message);
+        location.href="cariler/table";
+      }
+      console.log(result.rejectedCariler)
+    }
