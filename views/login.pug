@@ -3,6 +3,7 @@ extends includes/layout
 block body 
   .register-page.overflow-hidden
     nav.navbar.navbar-expand-lg.navbar-absolute.fixed-top.navbar-transparent
+      include includes/language.pug
       .container.mt-0
         .navbar-wrapper
           .navbar-toggle
@@ -16,7 +17,7 @@ block body
           span.navbar-toggler-bar.navbar-kebab
           span.navbar-toggler-bar.navbar-kebab
         #navigation.collapse.navbar-collapse.justify-content-end
-          ul.navbar-nav
+          ul.navbar-nav.mr-2
             li.nav-item
               a.nav-link(href='register')
                 i.nc-icon.nc-book-bookmark

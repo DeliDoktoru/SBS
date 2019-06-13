@@ -94,7 +94,7 @@ class Database {
                 }
                 return this.query(query,[ [ Object.keys(x).map(y=> x[y]) ] ],false);
             })
-            this.close;
+            this.close();
         }
         else if(typeof(data)=="object"){
             var query="";

@@ -1,0 +1,5 @@
+select#languages.custom-select
+  - var languages = ['tr','eng'];
+  each val in languages
+    option(value=val ,selected= val == (l && l.language) ? true:false)
+      =val.toUpperCase()

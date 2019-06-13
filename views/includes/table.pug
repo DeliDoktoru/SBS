@@ -7,7 +7,7 @@ block content
         .card-header
           h4.card-title=cardHeader
         .card-body
-          .text-right.mb-4
+          .text-right
             a(href='form')
               button.ml-4.btn.btn-sm.btn-outline-success.btn-round(type='button')
                 i.ti-pin-alt.mr-1
@@ -15,7 +15,7 @@ block content
           .row
             .col-sm-12
               .table-responsive
-                table.table
+                table#datatable.table.table-striped.table-bordered
                   thead.text-primary
                     tr
                       each key in tableHead
@@ -29,11 +29,12 @@ block content
                       tr
                         each key in tableHead
                           td.text-center=item[key]
-                        td.text-right
-                          button.btn.btn-info.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
-                            i.fa.fa-user
+                        td.text-center
                           a(href=item['id'])  
                             button.btn.btn-success.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
                               i.fa.fa-edit
-                          button.btn.btn-danger.btn-icon.btn-sm.mr-1.ml-1(type='button' rel='tooltip' data-original-title)
-                            i.fa.fa-times
+
+  script.
+    function datatable(){
+      $('#datatable').DataTable();
+    }

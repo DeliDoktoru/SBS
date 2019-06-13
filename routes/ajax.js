@@ -298,6 +298,7 @@ router.post('/kullanicilar',
 /* #region  cariler */
 router.post('/cariler',
 [
+  //eklencek
   /*check('kdata').exists(),
   check('kdata.cariAdi').exists().not().isEmpty().withMessage("cariAdialanigerekli").isLength({max: 100}).withMessage("cariAdialanimax100"),
   check('kdata.cariYetkiliKisiAdi').exists().isLength({max: 100}).withMessage("cariYetkiliKisiAdialanimax100"),
@@ -314,8 +315,12 @@ router.post('/cariler',
   var data=req.body.kdata;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  if(data.Latitude && data.Longitude)
+  {
+    data.carilerKoordinat=data.Latitude+","+data.Longitude;
+  }
   customValidation.removeNotAllowedProperties([
-    "id","silindiMi"
+    "id","silindiMi","Latitude","Longitude"
   ],data); 
   try {
     const errors = validationResult(req);
@@ -359,7 +364,44 @@ router.post('/cariler',
 
 });
 /* #endregion */
-/* #region  cariler */
+/* #region  toplucariekle */
+router.post('/toplucariekle',
+[
+  //eklencek
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.ndata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  var rejectedCariler=[];
+  
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    data=data.filter(x=> { 
+      if(x.cariIli && x.cariIli!=""){
+        // bura
+      }
+      rejectedCariler.push(x)
+      return false;
+    })
+    console.log(data);
+    await new db().insert(data,"cariler",dbName);
+    text=l.getLanguage("eklemeislemibasarili");
+    status = 1;
+  } catch (error) {
+    text=selfScript.catchConverterError(error);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  bolgeler */
 router.post('/bolgeler',
 [
  
@@ -445,6 +487,7 @@ router.post('/profile',
           delete data.kullaniciParola;
         }
         await new db().update(data,{id:req.body.ndata.id},"kullanicilar");
+        req.session.user=(await new db().selectQuery({id:session.id},"kullanicilar"))[0]
         text=l.getLanguage("guncellemebasarili");
         status = 1;
         break;

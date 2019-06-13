@@ -1,0 +1,84 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4  
+            a(href='cariler/table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec")
+          .row
+            .col-md-12
+              button.btn.btn-info.btn-round#topluEkle(onclick='$("#importInput").click()')
+                i.nc-icon.nc-share-66.mr-1 
+                =l.getLanguage("topluEkle")
+              input#importInput(hidden,type="file")   
+            .col-md-12
+              .table-responsive
+                table#outputImport.table.table-striped.table-bordered      
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('toplucariekle','',formBasarili,false,getResult())`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")
+  script.
+    
+    var colValues = [],result=null;
+    function checkCols(workbook)  
+      {
+        var first_sheet_name = workbook.SheetNames[0];
+        var worksheet = workbook.Sheets[first_sheet_name];
+        var cells = Object.keys(worksheet);
+        for (var i = 0; i < Object.keys(cells).length; i++) {
+            if( cells[i].indexOf('1') > -1)
+            {
+                colValues.push(worksheet[cells[i]].v); 
+            }
+        }
+    }
+    function getResult(){
+      if(result){
+        return result;
+      }
+      else{
+        throw "#{l && l.getLanguage('onceverieklemenizgerekmektedir')}";
+        showNotification('top','right',"danger","#{l && l.getLanguage('onceverieklemenizgerekmektedir')}");
+        return null;
+      }
+    }
+    function importExcel(){
+      $("body").delegate("#importInput","change",function(oEvent){
+       var oFile = oEvent.target.files[0];
+        var sFilename = oFile.name;
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var data = e.target.result;
+          var cfb = XLSX.read(data, {type: 'binary'});
+          var boolean=true;
+          checkCols(cfb);
+          cfb.SheetNames.forEach(function(sheetName) {
+            if(boolean){
+              var sCSV = XLS.utils.make_csv(cfb.Sheets[sheetName]);   
+              var oJS = XLS.utils.sheet_to_json(cfb.Sheets[sheetName] ,{defval: ''});  
+              result=oJS; 
+              oJS=oJS.map(o=> o=$.map(o, function(el) { return el; })  ); 
+               $('#outputImport').DataTable( {
+                  data: oJS,
+                  columns:  colValues.map(x=>{ return { title:x } })
+              } );
+              console.log(oJS);
+              console.log(colValues.map(x=>{ return { title:x } }));
+              boolean=false;
+            }
+          });
+        };
+
+          reader.readAsBinaryString(oFile);
+      });
+        
+    }
+    

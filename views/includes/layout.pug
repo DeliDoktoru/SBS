@@ -2,10 +2,5 @@ doctype html
 html(lang='tr')
   include header.pug
   body
-    select#languages.custom-select
-      - var languages = ['tr','eng'];
-      each val in languages
-        option(value=val ,selected= val == (l && l.language) ? true:false)
-          =val.toUpperCase()
     block body
     include javascripts.pug

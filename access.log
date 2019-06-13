@@ -1,1124 +1,560 @@
-anonymus GET /kullanicilar/table 302 56 - 32.436 ms {} ::1
-anonymus GET /login 304  - 2426.048 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 95.635 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32240 - 547.847 ms {} ::1
-anonymus GET /dashboard 302 56 - 19.201 ms {} ::1
-anonymus GET /login 304  - 1175.874 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 64.261 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32240 - 521.505 ms {} ::1
-anonymus GET /dashboard 302 56 - 24.786 ms {} ::1
-anonymus GET /login 304  - 2276.576 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 72.205 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32247 - 512.496 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile 302 46 - 2.561 ms {} ::1
-YUNUS EMRAH DURSUN GET / 302 64 - 2.891 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 460.666 ms {} ::1
-anonymus GET /dashboard 302 56 - 23.563 ms {} ::1
-anonymus GET /login 304  - 2172.575 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 77.859 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32247 - 540.540 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile 200 19830 - 230.294 ms {} ::1
-anonymus GET /profile 302 56 - 27.224 ms {} ::1
-anonymus GET /login 304  - 2330.366 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 83.535 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32262 - 545.894 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22768 - 316.603 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22708 - 783.020 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/images/damir-bosnjak.jpg 404 15914 - 597.912 ms {} ::1
-YUNUS EMRAH DURSUN GET /images/damir-bosnjak.jpg 302 23 - 3.642 ms {} ::1
-YUNUS EMRAH DURSUN GET / 302 32 - 3.938 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 746.373 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22715 - 358.322 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22716 - 374.944 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22665 - 672.392 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22676 - 429.282 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22673 - 438.776 ms {} ::1
-anonymus GET /profile/24 302 56 - 25.883 ms {} ::1
-anonymus GET /login 304  - 2173.436 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 81.376 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 623.984 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24   -  ms {} ::1
-anonymus GET /profile/24 302 56 - 49.161 ms {} ::1
-anonymus GET /login 304  - 2346.149 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 121.377 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 631.063 ms {} ::1
-anonymus GET /profile/24 302 56 - 46.855 ms {} ::ffff:127.0.0.1
-anonymus GET /login 304  - 3535.475 ms {} ::ffff:127.0.0.1
-anonymus GET /login 304  - 536.746 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 72.038 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 646.447 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21387 - 318.215 ms {} ::ffff:127.0.0.1
-anonymus GET /profile/24 302 56 - 37.171 ms {} ::ffff:127.0.0.1
-anonymus GET /login 304  - 2289.151 ms {} ::ffff:127.0.0.1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 71.375 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 649.900 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22683 - 482.482 ms {} ::1
-anonymus GET /profile/24 302 56 - 27.093 ms {} ::1
-anonymus GET /login 304  - 1920.465 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 79.324 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 511.798 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22664 - 399.556 ms {} ::1
-anonymus GET /test 302 56 - 28.370 ms {} ::1
-anonymus GET /login 304  - 2399.220 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 83.114 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 664.886 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 328.845 ms {} ::1
-anonymus GET /profile/24 302 56 - 28.454 ms {} ::1
-anonymus GET /login 304  - 2173.416 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 76.196 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32131 - 648.852 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22560 - 393.415 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22579 - 646.854 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22672 - 572.105 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22660 - 394.276 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21256 - 513.212 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/24 200 22061 - 455.627 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/changeLanguage 302 23 - 2.661 ms {"language":"eng"} ::1
-YUNUS EMRAH DURSUN GET / 302 32 - 2.362 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 468.169 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22527 - 751.668 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22527 - 645.436 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 500 16985 - 291.744 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21844 - 338.864 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21843 - 340.824 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21831 - 658.998 ms {} ::1
-anonymus GET /profile/24 302 56 - 27.828 ms {} ::1
-anonymus GET /login 200 17689 - 2194.000 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 64.617 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 32139 - 546.682 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21831 - 318.592 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21851 - 692.153 ms {} ::1
-anonymus GET /profile/24 302 56 - 24.502 ms {} ::1
-anonymus GET /login 304  - 2133.322 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 121.325 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 591.193 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21851 - 349.873 ms {} ::1
-anonymus GET /profile/24 302 56 - 22.420 ms {} ::1
-anonymus GET /login 304  - 2304.691 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 92.797 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 531.633 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21831 - 367.839 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/1 302 56 - 33.999 ms {} ::1
-YUNUS EMRAH DURSUN GET /login 302 64 - 2.255 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 423.717 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 604.647 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21264 - 300.067 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/form 200 21790 - 512.402 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 63 - 41.698 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(121) 312-3131","kullaniciEPosta":"yunusemrahdursun2@gmail.com","kullaniciUnvan":"2","kullaniciParola":"1111","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun2@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 21980 - 380.995 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 311.496 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21732 - 274.498 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 283.430 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22071 - 683.869 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22071 - 373.594 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21972 - 289.309 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 304  - 365.977 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21976 - 777.502 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22075 - 354.091 ms {} ::1
-anonymus GET /profile/24 302 56 - 20.530 ms {} ::1
-anonymus GET /login 200 17689 - 2241.557 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 70.811 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 583.564 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22075 - 501.092 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21744 - 274.513 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21739 - 288.702 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21536 - 696.055 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21451 - 412.818 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 21458 - 401.001 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 20409 - 359.217 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 21985 - 272.092 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22014 - 387.446 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22014 - 303.487 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22034 - 808.683 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22057 - 403.326 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22226 - 391.082 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 22220 - 457.253 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/34 200 20452 - 319.097 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 599.030 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22685 - 486.353 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/34 200 22771 - 432.463 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/34 200 23012 - 801.851 ms {} ::1
-anonymus GET /kullanicilar/34 302 56 - 27.099 ms {} ::1
-anonymus GET /login 200 18630 - 2496.968 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 98.413 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 33080 - 510.421 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22921 - 489.160 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/34 200 23007 - 410.283 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/34 304  - 408.263 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/34 200 23007 - 299.930 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 42.797 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(121) 312-3131","kullaniciEPosta":"yunusemrahdursun2@gmail.com","kullaniciUnvan":"2","kullaniciParola":""},"ndata":{"id":34,"method":"delete"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22205 - 321.857 ms {} ::1
-anonymus GET /register 200 30219 - 284.836 ms {} ::ffff:192.168.1.35
-anonymus GET /login 200 18630 - 163.481 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 20.160 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 200 33080 - 340.990 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22205 - 259.200 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/form 200 22731 - 233.468 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 63 - 22.545 ms {"kdata":{"kullaniciIsim":"ie","kullaniciSoyisim":"kara","kullaniciTel":"(542) 343-222","kullaniciEPosta":"iekara@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1234","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"iekara@gmail.com"},"ndata":{"id":null,"method":"create"}} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22912 - 521.514 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/35 200 22993 - 399.324 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/table 304  - 262.646 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /profile/24 200 23161 - 309.475 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /profile/35 200 21384 - 271.301 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 2.102 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.133 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 613.931 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.327 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.831 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 539.404 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 64 - 2.438 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 312.723 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /login 302 64 - 3.415 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 313.980 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.801 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.748 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 305.542 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 2.339 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.283 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 305.806 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.655 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 3.427 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 303.322 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 2.452 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.280 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 305.164 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 40.131 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 2.663 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 3.781 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.162 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 351.578 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 1.522 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 304.217 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 1.872 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.960 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 302.989 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 45.810 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 337.738 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.340 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.339 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 279.017 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 4.321 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET / 302 32 - 2.943 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /dashboard 304  - 594.371 ms {} ::ffff:192.168.1.35
-YUNUS EMRAH DURSUN GET /kullanicilar/24 200 23015 - 758.158 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/24 304  - 382.383 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22912 - 338.452 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/35 200 22993 - 303.560 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 61 - 26.341 ms {"kdata":{"kullaniciIsim":"ie","kullaniciSoyisim":"kara","kullaniciTel":"(542) 343-2221","kullaniciEPosta":"iekara@gmail.com","kullaniciUnvan":"1","kullaniciParola":"","firmaId":26},"ndata":{"id":35,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22913 - 403.631 ms {} ::1
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 6.588 ms {} ::1
-YUNUS EMRAH DURSUN GET / 302 32 - 3.761 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 33080 - 892.243 ms {} ::1
-anonymus GET /kullanicilar/table 302 56 - 30.570 ms {} ::1
-anonymus GET /login 200 18630 - 2687.471 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 91.951 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 562.903 ms {} ::1
-YUNUS EMRAH DURSUN GET /ajax/exit 302 23 - 3.771 ms {} ::1
-YUNUS EMRAH DURSUN GET / 302 32 - 4.964 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 602.674 ms {} ::1
-anonymus GET /dashboard 302 56 - 26.715 ms {} ::1
-anonymus GET /login 304  - 2279.862 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 92.904 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 33080 - 594.356 ms {} ::1
-anonymus GET /ajax/exit 200 66 - 5531.007 ms {} ::1
-anonymus GET / 302 56 - 8.261 ms {} ::1
-anonymus GET /login 304  - 1129.296 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 70.485 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 576.954 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23161 - 554.387 ms {} ::1
-anonymus GET /profile/24 302 56 - 28.991 ms {} ::1
-anonymus GET /login 304  - 2597.562 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 82.047 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 642.039 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22913 - 306.454 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23147 - 480.829 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 737.531 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23277 - 439.078 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 39.654 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23333 - 356.010 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 37.395 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7441","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23333 - 428.769 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 58.567 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23333 - 371.117 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 26.676 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"1234","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 368.923 ms {} ::1
-anonymus GET /ajax/exit 304  - 3.670 ms {} ::1
-anonymus GET / 302 56 - 5.060 ms {} ::1
-anonymus GET /login 200 18751 - 186.705 ms {} ::1
-anonymus POST /ajax/login 200 64 - 20.729 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-anonymus POST /ajax/login 200 64 - 22.480 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-anonymus POST /ajax/login 200 64 - 38.661 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-anonymus POST /ajax/login 200 64 - 91.147 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 26.375 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 33201 - 2803.375 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23034 - 468.843 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/form 200 22852 - 426.015 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 63 - 50746.046 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"b59c67bf196a4758191e42f76670ceba","firmaId":26,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":24,"kullaniciAdi":"yunusemrahdursun@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23754 - 848.276 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/35 200 23115 - 545.913 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 9384.393 ms {"kdata":{"kullaniciIsim":"ie","kullaniciSoyisim":"kara","kullaniciTel":"(542) 343-2221","kullaniciEPosta":"iekara@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":35,"method":"delete"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23046 - 898.303 ms {} ::1
-anonymus GET /kullanicilar/table 302 56 - 29.256 ms {} ::1
-anonymus GET /login 304  - 2252.753 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 81.137 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 626.576 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23046 - 353.582 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/36 200 23127 - 804.823 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/kullanicilar 200 62 - 51.965 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":36,"method":"delete"}} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 22326 - 527.898 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 397.586 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 5598.881 ms {"kdata":{"kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"81dc9bdb52d04dc20036dbd8313ed055","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 726.061 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 346.974 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.189 ms {} ::1
-anonymus GET / 302 56 - 4.013 ms {} ::1
-anonymus GET /login 304  - 214.910 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 18.520 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 505.410 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 344.208 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 500 17250 - 711.963 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23373 - 561.399 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23350 - 453.375 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23696 - 424.754 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23656 - 365.237 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 414.221 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23657 - 399.276 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23658 - 913.218 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23665 - 387.384 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23751 - 405.541 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23781 - 344.535 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 23783 - 318.952 ms {} ::1
-anonymus GET /profile/24 302 56 - 23.394 ms {} ::1
-anonymus GET /login 200 19512 - 2047.126 ms {} ::1
-anonymus GET /login 304  - 190.931 ms {} ::1
-anonymus GET /login 304  - 189.348 ms {} ::1
-anonymus POST /ajax/uploadImage 302 28 - 4.554 ms {} ::1
-anonymus GET /login 304  - 172.247 ms {} ::1
-anonymus GET /login 200 19520 - 161.650 ms {} ::1
-anonymus POST /ajax/uploadImage 302 28 - 1.193 ms {} ::1
-anonymus GET /login 304  - 144.544 ms {} ::1
-anonymus GET /login 304  - 2028.390 ms {} ::1
-anonymus POST /ajax/uploadImage 500 17565 - 144.995 ms {} ::1
-anonymus GET /login 200 19973 - 1925.763 ms {} ::1
-anonymus POST /ajax/uploadImage 200 57 - 94.679 ms {} ::1
-anonymus POST /ajax/uploadImage 200 57 - 22.826 ms {} ::1
-anonymus POST /ajax/login 200 64 - 70.530 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 32.029 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34423 - 2520.914 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 500 17503 - 197.126 ms {} ::1
-anonymus POST /ajax/uploadImage 200 57 - 39.141 ms {} ::1
-anonymus GET /dashboard 302 56 - 13.435 ms {} ::1
-anonymus GET /login 304  - 2059.705 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 70.610 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34423 - 498.690 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 90 - 44.528 ms {} ::1
-anonymus GET /dashboard 302 56 - 28.736 ms {} ::1
-anonymus GET /login 304  - 2867.207 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 73.613 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34423 - 591.082 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 163 - 42.509 ms {} ::1
-anonymus GET / 302 56 - 11.175 ms {} ::1
-anonymus GET /login 304  - 301.680 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 94.534 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 570.996 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 164 - 47.271 ms {} ::1
-YUNUS EMRAH DURSUN GET /favicon.ico 404 18206 - 193.787 ms {} ::1
-anonymus GET / 302 56 - 38.271 ms {} ::1
-anonymus GET /login 200 20003 - 2134.627 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 83.087 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34453 - 589.850 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24726 - 523.403 ms {} ::1
-YUNUS EMRAH DURSUN POST /profile/ajax/uploadImage 404 18236 - 150.971 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24727 - 506.490 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 40.937 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24732 - 779.660 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 411.245 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/35 302 56 - 25.255 ms {} ::1
-YUNUS EMRAH DURSUN GET /login 302 64 - 4.193 ms {} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34454 - 441.839 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23579 - 298.437 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 445.986 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 36.762 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 44.864 ms {"kdata":{"kullaniciFoto":"26-2d7e7be05835a946f2864a9f17b4d1e5.jpg","kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24798 - 442.369 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 804.923 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 60.171 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 20.868 ms {"kdata":{"kullaniciFoto":"26-027d092835574ce350b7582b718aadd1.jpg","kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","kullaniciParola":"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 450.993 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 631.832 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 37.646 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 328.375 ms {} ::1
-anonymus GET /profile/24 302 56 - 41.442 ms {} ::1
-anonymus GET /login 200 20183 - 2485.683 ms {} ::1
-anonymus POST /ajax/login 200 64 - 104.839 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-anonymus POST /ajax/login 200 64 - 45.918 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-anonymus POST /ajax/login 200 64 - 18.671 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 93.636 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 2688.581 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24990 - 493.919 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-027d092835574ce350b7582b718aadd1.jpg 200 845941 - 16.389 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 40.754 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-68346ad304af4fb5403459a201a10b37.jpg 200 595284 - 3.873 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24983 - 794.198 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-027d092835574ce350b7582b718aadd1.jpg 304  - 6.575 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-027d092835574ce350b7582b718aadd1.jpg 304  - 4.687 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 106.932 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 200 775702 - 3.122 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 37.361 ms {"kdata":{"kullaniciFoto":"26-676ecbabbc3c89edca81dfa4e0c7946e.jpg","kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24983 - 557.494 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 3.567 ms {} ::1
-anonymus GET /ajax/exit 304  - 10.515 ms {} ::1
-anonymus GET / 302 56 - 23.409 ms {} ::1
-anonymus GET /login 200 20176 - 314.366 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 33.533 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34626 - 499.428 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 351.465 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 8.133 ms {} ::1
-anonymus GET /profile/24 302 56 - 32.531 ms {} ::1
-anonymus GET /login 304  - 2236.526 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 115.508 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 607.049 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24983 - 615.459 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 5.956 ms {} ::1
-YUNUS EMRAH DURSUN GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 6.823 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.615 ms {} ::1
-anonymus GET / 302 56 - 3.001 ms {} ::1
-anonymus GET /login 304  - 592.908 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 3.375 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 5.196 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 4.243 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 3.084 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 18.620 ms {} ::1
-anonymus GET /login 304  - 6584.736 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 200 775702 - 1.637 ms {} ::1
-anonymus GET /favicon.ico 404 18409 - 307.498 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 2.838 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 13.510 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 3.168 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 304  - 1.701 ms {} ::1
-anonymus GET /firmaImages/26-676ecbabbc3c89edca81dfa4e0c7946e.jpg 302 56 - 23.537 ms {} ::1
-anonymus GET /login 200 20183 - 2134.694 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 79.775 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 671.516 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 534.552 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.798 ms {} ::1
-anonymus GET / 302 56 - 5.554 ms {} ::1
-anonymus GET /login 304  - 306.518 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 4314.764 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 1370.859 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 419.901 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 500 17721 - 163.944 ms {} ::1
-anonymus GET /profile/24 302 56 - 21.491 ms {} ::1
-anonymus GET /login 304  - 1194.574 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 78.092 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 653.054 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 543.658 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 101.191 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 39.994 ms {"kdata":{"kullaniciFoto":"26-aa13a61b0a77fd9ffe80496bb8a78e82.jpg","kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 508.069 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 305.132 ms {} ::1
-anonymus GET /ajax/exit 304  - 5.633 ms {} ::1
-anonymus GET / 302 56 - 4.131 ms {} ::1
-anonymus GET /login 304  - 281.548 ms {} ::1
-anonymus GET /favicon.ico 404 18416 - 282.551 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 15.596 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 845.078 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 335.179 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/uploadImage 200 143 - 15.747 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/profile 200 61 - 17.812 ms {"kdata":{"kullaniciFoto":"26-bfe2e93087dfc2ebf597254ca05fdc2f.jpg","kullaniciIsim":"YUNUS EMRAH","kullaniciSoyisim":"DURSUN","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciTel":"(537) 785-7448","hakkinda":"\"geçme namık kemal köprüsünden ürkütürsün vak vakları\"","firmaId":26},"ndata":{"id":24,"method":"update"}} ::1
-YUNUS EMRAH DURSUN GET /profile/24 200 24997 - 278.749 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 293.222 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.173 ms {} ::1
-anonymus GET / 302 56 - 1.852 ms {} ::1
-anonymus GET /login 304  - 246.863 ms {} ::1
-anonymus GET /public/firmaImages/26-bfe2e93087dfc2ebf597254ca05fdc2f.jpg 304  - 16.066 ms {} ::1
-anonymus POST /ajax/uploadImage 200 71 - 9858.063 ms {} ::1
-anonymus GET /login 304  - 1782.258 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 74.915 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 901.051 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 526.847 ms {} ::1
-anonymus GET /ajax/exit 304  - 1.585 ms {} ::1
+anonymus GET /test 200  - 16.694 ms {} ::1
+anonymus GET /favicon.ico 404 20987 - 2280.211 ms {} ::1
+anonymus GET /login 200 22754 - 316.835 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 100.092 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37604 - 636.626 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 78946 - 471.073 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30038 - 334.289 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 78946 - 661.276 ms {} ::1
+anonymus GET /test 200  - 11.515 ms {} ::1
+anonymus GET /login 304  - 2037.827 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 120.554 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 630.317 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 78946 - 343.977 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200  - 2.739 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200  - 1.571 ms {} ::1
+anonymus GET /test 200 84232 - 3278.108 ms {} ::1
+anonymus GET /login 304  - 636.994 ms {} ::1
+anonymus GET /test 200 84175 - 1272.456 ms {} ::1
+anonymus GET /login 304  - 424.665 ms {} ::1
+anonymus GET /test 200 84161 - 881.771 ms {} ::1
+anonymus GET /login 304  - 279.025 ms {} ::1
+anonymus GET /test 200 84174 - 1315.226 ms {} ::1
+anonymus GET /login 304  - 622.721 ms {} ::1
+anonymus GET /login 304  - 219.355 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 76.137 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37604 - 431.484 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79032 - 332.076 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79018 - 380.163 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79032 - 380.860 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79061 - 645.004 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/4 200 27157 - 445.178 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 324.974 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79061 - 635.838 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37604 - 436.469 ms {} ::1
+anonymus GET /ajax/exit 200 66 - 2.714 ms {} ::1
 anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 255.050 ms {} ::1
-anonymus GET /login 304  - 208.958 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 24.520 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 425.914 ms {} ::1
-anonymus GET /ajax/exit 304  - 1.527 ms {} ::1
+anonymus GET /login 200 22629 - 194.940 ms {} ::1
+anonymus GET /login 500 20923 - 210.581 ms {} ::1
+anonymus GET /login 200 22754 - 199.135 ms {} ::1
+anonymus GET /login 200 22754 - 626.995 ms {} ::1
+anonymus POST /ajax/changeLanguage 200 2 - 3.274 ms {"language":"eng"} ::1
+anonymus GET /login 200 22707 - 218.095 ms {} ::1
+anonymus GET /login 200 22707 - 206.811 ms {} ::1
+anonymus GET /login 304  - 231.288 ms {} ::1
+anonymus GET /login 200 23608 - 208.021 ms {} ::1
+anonymus GET /login 200 22707 - 192.841 ms {} ::1
+anonymus GET /login 304  - 453.497 ms {} ::1
+anonymus GET /login 200 22712 - 215.217 ms {} ::1
+anonymus GET /register 200 34285 - 358.104 ms {} ::1
+anonymus GET /login 304  - 185.055 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 43.159 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37558 - 429.068 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79015 - 350.532 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 1205.034 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 79010 - 683.248 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30102 - 576.138 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 27517 - 410.340 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26959 - 567.422 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26961 - 390.247 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test1 200 33902 - 676.825 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26823 - 558.287 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29173 - 372.881 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 341.385 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29173 - 324.326 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 35.478 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"b0f1839624bf116a157da10c6fd78b7f"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 18.127 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"b0f1839624bf116a157da10c6fd78b7f"}} ::1
+anonymus GET /test 200 708 - 1588.599 ms {} ::ffff:127.0.0.1
+anonymus GET /test 200 708 - 39.393 ms {} ::ffff:127.0.0.1
+anonymus GET /favicon.ico 404 20862 - 373.970 ms {} ::ffff:127.0.0.1
+anonymus GET /test 500 21693 - 2444.686 ms {} ::1
+anonymus GET /test 500 21715 - 449.775 ms {} ::1
+anonymus GET /test 500 21572 - 258.610 ms {} ::1
+anonymus GET /test 200 263 - 22.280 ms {} ::1
+anonymus GET /test 500 21871 - 204.717 ms {} ::1
+anonymus GET /test 200 335 - 8.819 ms {} ::1
+anonymus GET /test 304  - 9.684 ms {} ::1
+anonymus GET /test 200 270 - 11.548 ms {} ::1
+anonymus GET /test 200 286 - 14.088 ms {} ::1
+anonymus GET /test 200 255 - 15.915 ms {} ::1
+anonymus GET /login 200 22759 - 439.322 ms {} ::1
+anonymus GET /test 200 255 - 1610.239 ms {} ::1
+anonymus GET /favicon.ico 404 20862 - 497.551 ms {} ::1
+anonymus GET /test 200 1529 - 24.457 ms {} ::1
+anonymus GET /docs/images/favicon.ico 404 20862 - 285.290 ms {} ::1
+anonymus GET /test 200 1527 - 34.691 ms {} ::1
+anonymus GET /test 200 1533 - 26.946 ms {} ::1
+anonymus GET /test 200 1537 - 28.170 ms {} ::1
+anonymus GET /test 200 1536 - 23.423 ms {} ::1
+anonymus GET /test 200 1536 - 25.219 ms {} ::1
+anonymus GET /test 200 1536 - 26.833 ms {} ::1
+anonymus GET /test 200 1536 - 21.275 ms {} ::1
+anonymus GET /test 200 1268 - 19.312 ms {} ::1
+anonymus GET /test 200 1399 - 1628.945 ms {} ::1
+anonymus GET /test 500 21640 - 422.152 ms {} ::1
+anonymus GET /test 500 21648 - 343.912 ms {} ::1
+anonymus GET /test 200 1821 - 22.281 ms {} ::1
+anonymus GET /test 200 1823 - 19.639 ms {} ::1
+anonymus GET /test 200 1903 - 17.361 ms {} ::1
+anonymus GET /test 304  - 18.722 ms {} ::1
+anonymus GET /test 200 1947 - 26.524 ms {} ::1
+anonymus GET /test 304  - 22.721 ms {} ::1
+anonymus GET /test 304  - 16.649 ms {} ::1
+anonymus GET /test 304  - 14.161 ms {} ::1
+anonymus GET /test 304  - 18.341 ms {} ::1
+anonymus GET /test 304  - 15.745 ms {} ::1
+anonymus GET /test 304  - 20.604 ms {} ::1
+anonymus GET /test 304  - 14.113 ms {} ::1
+anonymus GET /test 304  - 17.436 ms {} ::1
+anonymus GET /test 200 1957 - 19.297 ms {} ::1
+anonymus GET /test 200 1947 - 21.853 ms {} ::1
+anonymus GET /test 200 1999 - 29.863 ms {} ::1
+anonymus GET /login 200 22889 - 387.399 ms {} ::1
+anonymus GET /login 304  - 278.787 ms {} ::1
+anonymus GET /login 304  - 256.133 ms {} ::1
+anonymus GET /login 304  - 274.244 ms {} ::1
+anonymus GET /test 200 2025 - 57.093 ms {} ::1
+anonymus GET /login 304  - 408.591 ms {} ::1
+anonymus GET /login 304  - 410.315 ms {} ::1
+anonymus GET /test 304  - 24.925 ms {} ::1
+anonymus GET /login 304  - 231.762 ms {} ::1
+anonymus GET /login 304  - 299.042 ms {} ::1
+anonymus GET /test 200 1984 - 21.443 ms {} ::1
+anonymus GET /login 304  - 339.781 ms {} ::1
+anonymus GET /test 304  - 20.802 ms {} ::1
+anonymus GET /login 304  - 353.482 ms {} ::1
+anonymus GET /test 200 1981 - 20.504 ms {} ::1
+anonymus GET /login 304  - 387.469 ms {} ::1
+anonymus GET /test 304  - 21.265 ms {} ::1
+anonymus GET /login 304  - 282.564 ms {} ::1
+anonymus GET /test 200 1851 - 43.298 ms {} ::1
+anonymus GET /test 304  - 50.018 ms {} ::1
+anonymus GET /test 304  - 38.846 ms {} ::1
+anonymus GET /test 200 1919 - 34.538 ms {} ::1
+anonymus GET /test 200 2077 - 30.723 ms {} ::1
+anonymus GET /test 304  - 45.485 ms {} ::1
+anonymus GET /test 200 1644 - 32.655 ms {} ::1
+anonymus GET /login 304  - 378.359 ms {} ::1
+anonymus GET /test 304  - 46.209 ms {} ::1
+anonymus GET /login 304  - 474.863 ms {} ::1
+anonymus GET /test 200 1698 - 26.332 ms {} ::1
+anonymus GET /test 200 1108 - 16.477 ms {} ::1
+anonymus GET /test 200 1108 - 24.354 ms {} ::ffff:192.168.1.35
+anonymus GET /favicon.ico 404 20992 - 168.603 ms {} ::ffff:192.168.1.35
+anonymus GET /test 200 1001 - 24.503 ms {} ::1
 anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 238.243 ms {} ::1
-test test POST /ajax/login 200 57 - 13.769 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun2@gmail.com","kullaniciParola":"gral"}} ::1
-test test GET /dashboard 200 34624 - 368.557 ms {} ::1
-test test GET /dashboard 304  - 525.598 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.396 ms {} ::1
+anonymus GET /login 304  - 397.997 ms {} ::1
+anonymus GET /login 200 22110 - 237.042 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 97.399 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 36909 - 461.301 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26174 - 343.633 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 352.546 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29050 - 494.531 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29202 - 691.490 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29202 - 345.758 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29182 - 406.116 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29182 - 355.377 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29184 - 746.055 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29184 - 414.013 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29184 - 435.726 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29563 - 472.525 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29586 - 391.238 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29586 - 755.854 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29572 - 491.992 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29590 - 479.251 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29572 - 439.727 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29794 - 731.087 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29835 - 496.374 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29845 - 361.060 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29837 - 315.024 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29828 - 367.722 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29853 - 839.556 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29742 - 537.051 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 500 21438 - 455.185 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29917 - 474.911 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29904 - 809.242 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29904 - 440.654 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29924 - 430.071 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29991 - 861.111 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30077 - 510.494 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30138 - 526.538 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30057 - 464.577 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 27586 - 331.187 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 55922 - 264.621 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26253 - 263.476 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30057 - 311.873 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30174 - 761.539 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30270 - 559.686 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30294 - 443.769 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30294 - 437.237 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30270 - 1021.744 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30269 - 528.792 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30389 - 443.822 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30320 - 827.306 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30311 - 490.839 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30317 - 404.066 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30411 - 851.984 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30410 - 510.500 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30411 - 771.802 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 489.365 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 443.474 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 799.569 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 28.868 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"ac696ed191df2206f00cc86b9bc07d1c"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 287 - 20.275 ms {"kdata":{"where":{"bolgeID":"3"},"hash":"ac696ed191df2206f00cc86b9bc07d1c"}} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 56121 - 384.614 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 27785 - 294.906 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 309.301 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26452 - 428.305 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 31013 - 342.153 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 287.933 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 316.730 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 456.177 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 404.483 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30412 - 438.987 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30350 - 774.621 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30350 - 401.257 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30449 - 454.205 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30449 - 370.634 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30449 - 416.279 ms {} ::1
+anonymus GET /login 200 22388 - 3031.469 ms {} ::1
+anonymus GET /test 200 1096 - 14.981 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 68.758 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37233 - 503.720 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26498 - 295.412 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 30973 - 478.849 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 304.694 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30372 - 406.736 ms {} ::1
+anonymus GET /login 304  - 2383.273 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 63.612 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 514.016 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 316.325 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30456 - 468.021 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30475 - 928.354 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30516 - 647.318 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30539 - 800.015 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30571 - 440.767 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30541 - 413.540 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31411 - 840.074 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31198 - 730.193 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31194 - 439.997 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31194 - 418.569 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31194 - 470.416 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31171 - 413.195 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31171 - 422.563 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31171 - 350.160 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31212 - 888.206 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 22.451 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"fccb2c0808675638c077f05a6f6d6779"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31333 - 660.739 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 26.606 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"5a473442971bdb19109b2a81ee9d472e"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31303 - 870.809 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 31.288 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"e9cdb4fdb1800c898f453fd105a590df"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31304 - 460.811 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 16.768 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"434f9c2ffb6fbf8e3cd31d14ba057426"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31314 - 546.623 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 26.540 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"aba88a98fffcf8565044055eefdfa184"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31314 - 445.692 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 22.545 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"b52fded63fc645f8f83b26777fb8aaca"}} ::1
+anonymus GET /register 200 33832 - 600.828 ms {} ::ffff:192.168.1.35
+anonymus GET /login 200 22243 - 224.239 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 37.343 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37088 - 389.194 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/table   -  ms {} ::ffff:192.168.1.35
+anonymus GET /login 200 22243 - 2090.057 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 65.673 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37088 - 472.967 ms {} ::1
+anonymus GET /login 304  - 2518.476 ms {} ::1
+anonymus GET /login 200 22243 - 527.431 ms {} ::ffff:127.0.0.1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 68.620 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37088 - 540.839 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25742 - 334.764 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31314 - 467.844 ms {} ::1
+anonymus GET /login 304  - 200.535 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 25.644 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37088 - 353.150 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25742 - 248.965 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31314 - 324.011 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 12.594 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"657f967abaf926ae41be2e17cf905567"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31371 - 760.136 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31359 - 517.557 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31359 - 455.219 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26491 - 336.267 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 11.810 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"8efabc5058fcb7fa40b103b333ae682b"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31369 - 429.922 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 14.558 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"1f235116c62d0950f1a73497914cea33"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 573.420 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31369 - 464.703 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31363 - 522.189 ms {} ::1
+anonymus GET /login 304  - 2114.555 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 74.215 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 434.970 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 274.467 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31408 - 499.379 ms {} ::1
+anonymus GET /login 304  - 2297.767 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 65.321 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 587.351 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 344.019 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31408 - 548.209 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 25.490 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"0b8e59f329e287984b488d24f6b332aa"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/cariler   -  ms {"kdata":{"cariLogo":"","cariAdi":"test1","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"test4@hotmail.com","cariFaks":"test5","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","bolgeId":"2","cariIliId":"7","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","carilerKoordinat":"39.862562,32.6475903"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 45 - 27.190 ms {"kdata":{"cariLogo":"","cariAdi":"test1","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"test4@hotmail.com","cariFaks":"test5","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","bolgeId":"2","cariIli":"7","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","carilerKoordinat":"39.862562,32.6475903"},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 1667.005 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 74.785 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 2657.155 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26322 - 358.347 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32219 - 451.079 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 72.402 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32219 - 851.213 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32222 - 522.086 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 46.507 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 25.254 ms {"kdata":{"cariLogo":"2-ad9488468df737327ed5b31fbab8a3fa.jpg","cariAdi":"test1","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"test4@hotmail.com","cariFaks":"test5","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","bolgeId":"2","cariIli":"7","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","carilerKoordinat":"39.862562,32.6475903"},"ndata":{"id":1,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 426.788 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32222 - 440.883 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32222 - 416.867 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32231 - 816.103 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 33125 - 464.872 ms {} ::1
+anonymus GET /login 304  - 2360.358 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.597 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 534.654 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 285.642 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32286 - 505.952 ms {} ::1
+anonymus GET /login 304  - 1781.006 ms {} ::1
+anonymus GET /login 304  - 425.035 ms {} ::ffff:192.168.1.35
+anonymus GET /register 304  - 470.601 ms {} ::ffff:192.168.1.35
+anonymus GET /login 304  - 226.149 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 80.814 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 441.752 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 56022 - 298.186 ms {} ::ffff:192.168.1.35
+anonymus GET /login 304  - 212.929 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 23.880 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 394.632 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 247.275 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32486 - 529.233 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32486 - 400.117 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32486 - 344.427 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32485 - 819.364 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32487 - 500.869 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32486 - 438.317 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32489 - 806.548 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32488 - 960.969 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32488 - 859.901 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26322 - 366.033 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32488 - 468.673 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 20.272 ms {"kdata":{"cariLogo":"2-ad9488468df737327ed5b31fbab8a3fa.jpg","cariAdi":"test1","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"test4@hotmail.com","cariFaks":"test5","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","bolgeId":"2","cariIli":"7","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","carilerKoordinat":"39.86323957516573,32.65548706054688"},"ndata":{"id":1,"method":"update"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 286.377 ms {} ::ffff:192.168.1.35
+anonymus GET /login 304  - 2549.343 ms {} ::1
+anonymus GET /login 200 22369 - 217.904 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 64.335 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37214 - 900.604 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26448 - 336.335 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 500 21761 - 253.221 ms {} ::1
+anonymus GET /login 304  - 2053.546 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 68.495 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 464.186 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 332.955 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 500 21761 - 293.086 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 33604 - 810.848 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32880 - 834.566 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32880 - 609.676 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32695 - 727.237 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32694 - 929.878 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32689 - 483.378 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32838 - 828.935 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32838 - 535.120 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32954 - 848.550 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32954 - 773.956 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 24.428 ms {"kdata":{"cariLogo":"2-ad9488468df737327ed5b31fbab8a3fa.jpg","cariAdi":"test1","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"test4@hotmail.com","cariFaks":"test5","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","bolgeId":"2","cariIli":"7","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariKoorCap":"374"},"ndata":{"id":1,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26322 - 336.044 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32954 - 355.959 ms {} ::1
+anonymus GET /login 200 22243 - 2122.186 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 64.310 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37088 - 502.564 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 390.060 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32956 - 519.173 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32960 - 875.022 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32960 - 510.811 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32970 - 486.784 ms {} ::1
+anonymus GET /login 304  - 183.093 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 38.978 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 359.983 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26322 - 291.507 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32970 - 359.257 ms {} ::ffff:192.168.1.35
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32970 - 780.356 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/2 302 56 - 29.669 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 466.743 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 332.118 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32970 - 355.226 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 656.721 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/1 200 32971 - 476.370 ms {} ::ffff:192.168.1.35
+anonymus GET /login 200 22243 - 2051.222 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 63.418 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37392 - 583.214 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 27990 - 351.647 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /iller/table 200 56326 - 318.113 ms {} ::1
+anonymus GET /login 304  - 2194.524 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 67.074 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37528 - 581.375 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32501 - 516.938 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32501 - 747.352 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32511 - 500.978 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32511 - 392.053 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32507 - 433.513 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32575 - 400.716 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26762 - 595.879 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1179 - 23.125 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1478 - 13.374 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1461 - 11.635 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1542 - 11.914 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1546 - 15.287 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1547 - 17.410 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1121 - 13.333 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 304  - 11.472 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 1217 - 17.877 ms {} ::1
+anonymus GET /test 200 1084 - 1544.485 ms {} ::1
+anonymus GET /test 200 1079 - 11.083 ms {} ::1
+anonymus GET /test 200 1136 - 12.459 ms {} ::1
+anonymus GET /test 200 899 - 1576.449 ms {} ::1
+anonymus GET /login 200 22374 - 522.032 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 72.691 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37801 - 679.091 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 500 20725 - 183.728 ms {} ::1
+anonymus GET /login 304  - 2099.503 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 71.108 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 741.002 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26935 - 394.122 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 304  - 17.734 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26927 - 320.676 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26937 - 546.116 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26937 - 255.749 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26937 - 621.551 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26959 - 301.174 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 304  - 10.705 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26947 - 290.495 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26947 - 596.929 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26955 - 321.402 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26951 - 277.177 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26962 - 349.929 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 678.130 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26951 - 449.333 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 295.237 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26951 - 299.728 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26951 - 251.707 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 266.384 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26961 - 281.505 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26961 - 274.828 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26941 - 301.488 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26981 - 668.496 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 264.255 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26950 - 293.557 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26956 - 314.405 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 597.888 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26957 - 312.214 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26876 - 273.350 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26890 - 425.183 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26868 - 634.591 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26948 - 340.146 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 315.407 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26948 - 364.928 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26948 - 311.051 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26960 - 320.614 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26944 - 586.897 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 360.596 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26919 - 279.800 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26921 - 374.757 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 304  - 19.329 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26926 - 688.078 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26920 - 264.001 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 291.043 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 26952 - 994.725 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27040 - 608.542 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 330.547 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27359 - 321.444 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27383 - 591.514 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27535 - 658.481 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27526 - 305.438 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 346.610 ms {} ::1
+anonymus GET /test 304  - 1729.628 ms {} ::1
 anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 561.669 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 21.636 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 468.384 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 275.600 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 379.295 ms {} ::1
-anonymus GET /ajax/exit 304  - 1.096 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 196.656 ms {} ::1
-anonymus GET /login 304  - 301.385 ms {} ::1
-test test POST /ajax/login 200 57 - 26.278 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun2@gmail.com","kullaniciParola":"gral"}} ::1
-test test GET /dashboard 200 34624 - 371.228 ms {} ::1
-test test GET /dashboard 304  - 504.714 ms {} ::1
-test test GET /dashboard 304  - 373.630 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 2223.295 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 67.571 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 838.554 ms {} ::1
-YUNUS EMRAH DURSUN GET /kullanicilar/table 200 23758 - 347.927 ms {} ::1
-YUNUS EMRAH DURSUN GET /profile/24 304  - 488.666 ms {} ::1
-anonymus GET /ajax/exit 304  - 4.714 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 306.610 ms {} ::1
-anonymus GET /login 304  - 324.993 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 72.042 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 2405.147 ms {} ::1
-YUNUS EMRAH DURSUN GET /test 200  - 20.998 ms {} ::1
-anonymus GET /login 304  - 2445.027 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 72.840 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 668.863 ms {} ::1
-YUNUS EMRAH DURSUN GET /test 200  - 19.515 ms {} ::1
-anonymus GET /login 304  - 2794.002 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 65.542 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 746.856 ms {} ::1
-anonymus GET /login 304  - 2132.494 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 74.528 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 200 34633 - 687.578 ms {} ::1
-YUNUS EMRAH DURSUN GET /test 200  - 49381.531 ms {} ::1
-anonymus GET /login 304  - 2187.640 ms {} ::1
-YUNUS EMRAH DURSUN POST /ajax/login 200 57 - 69.656 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS EMRAH DURSUN GET /dashboard 304  - 659.156 ms {} ::1
-YUNUS EMRAH DURSUN GET /test 200  - 71.373 ms {} ::1
-anonymus GET /test 200  - 7.025 ms {} ::1
-anonymus GET /test 200  - 11.831 ms {} ::1
-anonymus GET /test 200  - 10.343 ms {} ::1
-anonymus GET /test 200  - 26.725 ms {} ::1
-anonymus GET /test 200  - 13.799 ms {} ::1
-anonymus GET /test 200  - 54.172 ms {} ::1
-anonymus GET /test 200  - 193.288 ms {} ::1
-anonymus GET /test 200  - 30.033 ms {} ::1
-anonymus GET /test 200  - 25.633 ms {} ::1
-anonymus GET /test 200  - 10.641 ms {} ::1
-anonymus GET /register 200 31772 - 2606.720 ms {} ::1
-anonymus POST /ajax/register 200 177 - 345.422 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"turay","firmaTel":"(111) 111-1111","firmaFaks":"131313","firmaVergiDairesi":"13123131","firmaVergiNo":"1311231","firmaIli":"6","firmaAdres":"aadadas","odemeTipi":"1"}} ::1
-anonymus GET /login 304  - 454.186 ms {} ::1
-anonymus GET /login 304  - 363.759 ms {} ::1
-AAAAA AAAAAAAAAA POST /ajax/login 200 57 - 22.002 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-AAAAA AAAAAAAAAA GET /dashboard 200 34631 - 584.089 ms {} ::1
-anonymus GET /ajax/exit 304  - 2.963 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 689.752 ms {} ::1
-anonymus GET /register 304  - 530.825 ms {} ::1
-anonymus POST /ajax/register 200 72 - 42831.213 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 72 - 60048.832 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 66 - 20761.257 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 66 - 5353.158 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 68 - 10186.705 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 177 - 32879.706 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"aaaaa","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus POST /ajax/register 200 177 - 257.860 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234","ckullaniciParola":"1234","kullaniciIsim":"yunus","kullaniciSoyisim":"aaaaaaaaaaaaa","kullaniciTel":"(111) 111-1111","paketTercihi":"1","firmaAdi":"aaaaaa","firmaTel":"(111) 111-1111","firmaFaks":"aaaaaaaaaaaaaaa","firmaVergiDairesi":"aaaaaa","firmaVergiNo":"aaaaaaaaa","firmaIli":"3","firmaAdres":"aaaaaaa","odemeTipi":"1"}} ::1
-anonymus GET /login 304  - 535.573 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 27.108 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34634 - 682.614 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 23760 - 340.346 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 200 24816 - 625.104 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 402.636 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 583.085 ms {} ::1
-anonymus GET /login 200 20183 - 2605.884 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 85.708 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 674.956 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 200 24816 - 501.410 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 304  - 835.902 ms {} ::1
-anonymus GET /login 304  - 2576.585 ms {} ::1
-anonymus POST /ajax/login 200 64 - 79.376 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 28.511 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 694.054 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1012.946 ms {} ::1
-anonymus GET /login 304  - 1255.239 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 72.380 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34951 - 569.230 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 154.395 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 179.277 ms {} ::1
-anonymus GET /login 304  - 2010.107 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 67.118 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 558.133 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 160.898 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 420.300 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 156.372 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 177.268 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler 404 18416 - 443.652 ms {} ::1
-anonymus GET /login 304  - 2090.276 ms {} ::1
-anonymus POST /ajax/login 200 64 - 79.141 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 37.771 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34957 - 622.326 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table   -  ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 808.823 ms {} ::1
-anonymus GET /login 304  - 1974.752 ms {} ::1
-anonymus GET /login 304  - 443.528 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 75.061 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 526.926 ms {} ::1
-anonymus GET /login 304  - 1848.985 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 66.645 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 807.887 ms {} ::1
-anonymus GET /login 304  - 2057.596 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 79.756 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 814.390 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 23526 - 2248.791 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 200 25139 - 752.361 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 407.855 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 500 19629 - 541.079 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 500 19609 - 639.369 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 25692 - 745.052 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27362 - 454.935 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27962 - 411.653 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 500 20027 - 261.903 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28318 - 384.721 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 478.815 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 304  - 501.389 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 497.170 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28330 - 408.087 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28416 - 420.920 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28442 - 487.333 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 304  - 341.720 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 304  - 655.852 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28452 - 526.174 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28445 - 378.865 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28452 - 494.127 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28452 - 358.189 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28457 - 846.824 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 143 - 71.423 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 143 - 32.513 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 349.868 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 200 20183 - 2145.968 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 74.987 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 601.425 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 390.139 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 304  - 412.445 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 24083 - 697.064 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/39 200 24893 - 380.778 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 287.573 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24608 - 299.760 ms {} ::1
-anonymus GET /login 304  - 2059.860 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 57.360 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 532.717 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 347.872 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 305.093 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24608 - 336.442 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24600 - 663.103 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 63 - 20.622 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 1996.077 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 62.125 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 585.811 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 355.421 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 304  - 453.423 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 344.211 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24600 - 308.427 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 63 - 21.310 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2093.197 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 75.718 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 519.340 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 309.264 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24600 - 383.700 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 58 - 19.793 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"test","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":""},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /test 200  - 15.011 ms {} ::1
-anonymus GET /favicon.ico 404 18416 - 1729.992 ms {} ::1
-anonymus GET /test 200  - 8.626 ms {} ::1
-anonymus GET /test 200  - 6.249 ms {} ::1
-anonymus GET /test 200  - 94739.642 ms {} ::1
-anonymus GET /test 200  - 7.830 ms {} ::1
-anonymus GET /test 200  - 6.818 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 2080.446 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 65.703 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 649.264 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 300.852 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 344.051 ms {} ::1
-anonymus GET /login 304  - 2114.286 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 67.270 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 425.002 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 287.466 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 341.692 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 79 - 28.206 ms {"kdata":{"kullaniciIsim":"","kullaniciSoyisim":"asdada","kullaniciTel":"(123) 131-2313","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2248.698 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 59.791 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 494.807 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 264.093 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 357.780 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 66 - 19.397 ms {"kdata":{"kullaniciIsim":"","kullaniciSoyisim":"asdadad","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2320.388 ms {} ::1
-anonymus GET /login 304  - 330.157 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 76.006 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 416.865 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 276.801 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 328.659 ms {} ::1
-anonymus GET /login 304  - 2348.929 ms {} ::1
-anonymus GET /login 304  - 342.857 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 62.349 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 398.997 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 595.442 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 484.183 ms {} ::1
-anonymus GET /login 304  - 2255.826 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 70.206 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 461.677 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 265.038 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 315.838 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 75 - 17190.798 ms {"kdata":{"kullaniciIsim":"","kullaniciSoyisim":"asdadas","kullaniciTel":"(123) 131-2313","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2034.426 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 72.871 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 477.354 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 292.375 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 24589 - 377.425 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 74 - 5401.321 ms {"kdata":{"kullaniciIsim":"","kullaniciSoyisim":"adada","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 77 - 174830.117 ms {"kdata":{"kullaniciIsim":"aa","kullaniciSoyisim":"adada","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciUnvan":"1","kullaniciParola":"1111"},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /ajax/exit 304  - 2.966 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 530.456 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 88.918 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 2514.492 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 443.576 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28448 - 778.215 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 143 - 53.212 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 58 - 2.521 ms {"kdata":{"cariAdi":"asdada","cariYetkiliKisiAdi":"asdada","cariYetkiliKisiSoyadi":"adadsa","cariTel":"(111) 111-1111","cariYetkiliKisiTel":"(111) 111-1111","cariEPosta":"asdasd@hotmail.com","cariFaks":"11111111111111","cariVergiDairesi":"1111111111","cariVergiNo":"111111111111111","cariMernis":"11111111111111111111","bolgeId":"1","cariIliId":"AYDIN","cariAdres":"asdadadasas","cariLogo":"33-631b006d5ab43c40d8b1513d169c44ab.jpg"},"ndata":{"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2684.865 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 66.122 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 714.201 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 403.716 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 332.885 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28448 - 475.343 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 143 - 53.958 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 58 - 28.411 ms {"kdata":{"cariAdi":"asdasda","cariYetkiliKisiAdi":"adada","cariYetkiliKisiSoyadi":"asdad","cariTel":"","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"1","cariIliId":"BAYBURT","cariAdres":"asdasdas","cariLogo":"33-7dc3b16806a1f12e4b65e96ff5eca1d7.jpg"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29330 - 946.106 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 143 - 42.537 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 63 - 31.911 ms {"kdata":{"cariAdi":"asdsadasd","cariYetkiliKisiAdi":"","cariYetkiliKisiSoyadi":"","cariTel":"","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"2","cariIliId":"8","cariAdres":"","cariLogo":"33-1f432ea481d4aa885855f0ff9737c505.jpg"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table   -  ms {} ::1
-anonymus GET /test 200  - 225.623 ms {} ::1
-anonymus GET /test 200  - 9.521 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 2012.639 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 74.432 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 640.047 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table   -  ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table   -  ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 23526 - 3606.735 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 304  - 607.906 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 142 - 40.482 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 63 - 36.195 ms {"kdata":{"cariAdi":"asda","cariYetkiliKisiAdi":"asdasd","cariYetkiliKisiSoyadi":"asdasd","cariTel":"(","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"2","cariIliId":"1","cariAdres":"asdasd","cariLogo":"2-2a94ec8675f670135f7ae24ee766f20d.jpg"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24370 - 414.785 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24368 - 364.797 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 281.108 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34955 - 406.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test 200  - 1.490 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 24081 - 293.808 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 281.620 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 279.947 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 799.912 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 629.331 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 881.790 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 572.747 ms {} ::1
-anonymus GET /login 304  - 2652.564 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 57 - 94.946 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1067.389 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24383 - 450.395 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 778.481 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24411 - 976.475 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24403 - 438.889 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34975 - 568.683 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24403 - 348.369 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24383 - 778.381 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34955 - 535.698 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 34931 - 553.447 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24359 - 357.327 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 24383 - 354.087 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 422.542 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test1 200 31503 - 345.556 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 394.789 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 421.307 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 815.033 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 353.636 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 415.628 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29343 - 894.389 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /register 304  - 441.834 ms {} ::1
-anonymus GET /login 200 21140 - 2470.795 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.233 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 35912 - 862.096 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25340 - 356.132 ms {} ::1
-anonymus GET /login 304  - 2436.206 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 67.784 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 859.472 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 404.426 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 30394 - 567.427 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27529 - 876.506 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27709 - 352.026 ms {} ::1
-anonymus GET /login 200 21375 - 2401.224 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 74.180 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 36147 - 699.333 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25575 - 335.163 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 448.719 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 342.839 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 846.667 ms {} ::1
-anonymus GET /login 304  - 2487.009 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 94.839 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 566.885 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 400.248 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 27878 - 539.880 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 406.741 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 354.884 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 404 19608 - 156.316 ms {"kdata":{"where":{"id":"2"},"hash":"401769eb5fd0c3e9473bb1598020b5ee"}} ::1
-anonymus GET /login 304  - 2374.801 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 82.508 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 616.212 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 373.769 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 426.643 ms {} ::1
-anonymus POST /ajax/dyndata 200 71 - 58.665 ms {"kdata":{"where":{"id":"1"},"hash":"3ff798e0285ebcc9379842571a2c997c"}} ::1
-anonymus GET /login 304  - 2055.496 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 52.117 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 552.325 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 331.660 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 516.280 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 50 - 31032.007 ms {"kdata":{"where":{"id":"1"},"hash":"15b514cd1a19f4939edd08c9b974bbb0"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 850.585 ms {} ::1
-anonymus POST /ajax/dyndata 200 71 - 25.643 ms {"kdata":{"where":{"id":"1"},"hash":"e3894b7e2ee8f40ae989d18c9319f933"}} ::1
-anonymus GET /login 304  - 2367.034 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 65.481 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 617.868 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 362.687 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 542.908 ms {} ::1
-anonymus POST /ajax/dyndata 200 71 - 38.682 ms {"kdata":{"where":{"id":"1"},"hash":"b24c2150148a7a405b30a9081cad7ae7"}} ::1
-anonymus GET /login 304  - 2303.478 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 45.591 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 607.222 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 344.447 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27679 - 500.479 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 63 - 1965.970 ms {"kdata":{"where":{"id":"2"},"hash":"f083d2e476950ad438d8b79529cc731c"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27756 - 838.720 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 336 - 4307.896 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"b51b32a1c704234ff1cfaaa0cdc54092"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 419 - 27.581 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"b51b32a1c704234ff1cfaaa0cdc54092"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27789 - 498.362 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 336 - 9.215 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"d13929ea7e7378e07b31e3d42a017dc9"}} ::1
-anonymus GET /login 200 21460 - 2397.118 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 72.737 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 36232 - 536.175 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25660 - 373.886 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27789 - 707.159 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 27789 - 519.246 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 336 - 19.387 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"c8d36ee323e2dd599d0af0700c87fd54"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 35 - 31.509 ms {"kdata":{"where":{"bolgeID":""},"hash":"c8d36ee323e2dd599d0af0700c87fd54"}} ::1
-anonymus GET /login 200 21766 - 2423.293 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 87.351 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 36538 - 587.442 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 25966 - 395.810 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31035 - 491.406 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31010 - 429.915 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 21.281 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"352d3d2d72f88cd5b0f38b23250a1d79"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31006 - 446.562 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 19.906 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"f47103c05b24fd2f0123be87ac6d7153"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31006 - 862.883 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31006 - 450.915 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31006 - 463.989 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31070 - 495.791 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 27.173 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"ecb5a3457493a37721be89fdfa3bced8"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31041 - 482.809 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 19.630 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"031af82fe2a00051ff91627667e5e511"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31006 - 380.397 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 32.427 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"3513467b371ba2c6300b1f2c5ecafa0e"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31083 - 869.696 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 21.268 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"8d95fcdebc39a55b38b882b391ab204f"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31080 - 465.632 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 27.207 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"b23ee38cf910373becc52cb59bbe173c"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 287 - 10.104 ms {"kdata":{"where":{"bolgeID":"3"},"hash":"b23ee38cf910373becc52cb59bbe173c"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31051 - 412.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31118 - 841.022 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 26.968 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"cdedc819fe1d26fbffa4b41efdb269e0"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 54 - 17.947 ms {"kdata":{"where":{"bolgeID":""},"hash":"cdedc819fe1d26fbffa4b41efdb269e0"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31084 - 585.865 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 17.124 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"8ad7552eb489e40363305db3e37aba42"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 31093 - 483.305 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 287 - 14.612 ms {"kdata":{"where":{"bolgeID":"3"},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 322 - 14.501 ms {"kdata":{"where":{"bolgeID":"4"},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 569 - 22.141 ms {"kdata":{"where":{"bolgeID":"5"},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 14.898 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 16.230 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 54 - 13.964 ms {"kdata":{"where":{"bolgeID":""},"hash":"f3349f303e564e521aa4c4a27faea149"}} ::1
-anonymus GET /login 200 21824 - 1211.274 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 59.130 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 36596 - 515.509 ms {} ::1
-anonymus GET /login 304  - 2705.317 ms {} ::ffff:127.0.0.1
-anonymus GET /login 200 21824 - 938.167 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 82.431 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 36596 - 817.042 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26024 - 419.535 ms {} ::1
-anonymus GET /login 304  - 1177.018 ms {} ::ffff:127.0.0.1
-anonymus GET /login 200 21824 - 393.941 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 58.181 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 505.242 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 314.063 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 28442 - 494.237 ms {} ::1
-anonymus GET /login 304  - 2263.433 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 70.237 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 581.126 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 337.447 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 28876 - 470.428 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 23.541 ms {"kdata":{"cariAdi":"asda","cariYetkiliKisiAdi":"asdasd","cariYetkiliKisiSoyadi":"asdasd","cariTel":"(","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"2","cariIliId":"7","cariAdres":"asdasd","cariLogo":""},"ndata":{"id":1,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26025 - 821.872 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28153 - 435.283 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 370.454 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 28885 - 394.508 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 60.150 ms {"kdata":{"cariAdi":"asda","cariYetkiliKisiAdi":"asdasd","cariYetkiliKisiSoyadi":"asdasd","cariTel":"(121) 235-4654","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"2","cariIliId":"7","cariAdres":"asdasd","cariLogo":""},"ndata":{"id":1,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26038 - 380.464 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 28898 - 356.324 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 322 - 24.115 ms {"kdata":{"where":{"bolgeID":"4"},"hash":"cc4ca19789574cb8007fb65376529625"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 43 - 62.251 ms {"kdata":{"cariAdi":"asda","cariYetkiliKisiAdi":"asdasd","cariYetkiliKisiSoyadi":"asdasd","cariTel":"(121) 235-4654","cariYetkiliKisiTel":"","cariEPosta":"","cariFaks":"","cariVergiDairesi":"","cariVergiNo":"","cariMernis":"","bolgeId":"4","cariIliId":"59","cariAdres":"asdasd","cariLogo":""},"ndata":{"id":1,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26029 - 473.882 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 28153 - 354.317 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 316.111 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 28754 - 417.638 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29187 - 932.053 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29187 - 538.970 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29187 - 515.524 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29187 - 1075.821 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29707 - 849.949 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29187 - 583.450 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29529 - 695.101 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29533 - 476.619 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29338 - 1275.195 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29322 - 539.736 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29687 - 486.666 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29640 - 1052.159 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29480 - 1061.693 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29480 - 641.098 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29465 - 546.025 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29428 - 656.592 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29237 - 931.849 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29237 - 471.329 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29237 - 860.609 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 500 1754 - 210.292 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 1754 - 81.861 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 500 1896 - 238.630 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29734 - 631.464 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29734 - 1073.170 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29734 - 595.205 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29734 - 606.823 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29734 - 464.433 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/1 200 29741 - 629.253 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 200 22753 - 2483.367 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 169.983 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 21091 - 574.773 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 21188 - 546.241 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 21091 - 511.328 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 1149 - 160.414 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 1149 - 6.035 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 1149 - 83.886 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 1149 - 110.699 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 1321 - 115.261 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 500 21111 - 552.457 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 737.687 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 200 27707 - 547.015 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 500 20602 - 206.708 ms {} ::1
-anonymus GET /login 500 21043 - 2031.298 ms {} ::1
-anonymus GET /login 500 21043 - 430.248 ms {} ::1
-anonymus GET /login 500 21043 - 348.035 ms {} ::1
-anonymus GET /login 200 22753 - 240.369 ms {} ::1
-anonymus GET /register 500 21049 - 319.092 ms {} ::1
-anonymus GET /register 200 34342 - 418.014 ms {} ::1
-anonymus GET /login 304  - 202.845 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 110.889 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 533.734 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test 200  - 1.167 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26651 - 327.330 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 500 21077 - 174.970 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 27157 - 713.196 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 369.208 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26651 - 356.497 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26958 - 407.568 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 29140 - 367.476 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 2471.672 ms {} ::1
-anonymus POST /ajax/login 200 47 - 90.009 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"gral"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 25.091 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 606.030 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test1 200 34073 - 659.034 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 437.450 ms {} ::1
-anonymus GET /login 304  - 2669.553 ms {} ::1
-anonymus GET /login 304  - 453.166 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 77.498 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 721.219 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 512.829 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 918.258 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 617.238 ms {} ::1
-anonymus GET /login 304  - 3606.083 ms {} ::1
-anonymus GET /login 304  - 328.366 ms {} ::1
-anonymus GET /login 304  - 549.757 ms {} ::1
-anonymus GET /login 304  - 472.267 ms {} ::1
-anonymus GET /login 304  - 304.672 ms {} ::1
-anonymus GET /login 304  - 259.846 ms {} ::1
-anonymus GET /login 304  - 2750.560 ms {} ::1
-anonymus GET /login 304  - 2631.342 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 9057.372 ms {"language":"eng"} ::1
-anonymus GET /login 200 22706 - 458.847 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 45.435 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 951.911 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 3270.250 ms {"language":"tr"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 658.217 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 2028.981 ms {"language":"eng"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 649.040 ms {} ::1
-anonymus GET /login 200 22753 - 3160.455 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.095 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 610.352 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 6581.596 ms {"language":"eng"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 659.852 ms {} ::1
-anonymus GET /login 304  - 2483.586 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.998 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 608.297 ms {} ::1
-anonymus GET /login 304  - 2439.984 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.307 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 552.951 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 5372.331 ms {"language":"eng"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 789.649 ms {} ::1
-anonymus GET /ajax/exit 200 74 - 19.510 ms {} ::1
-anonymus GET /login 304  - 3144.889 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 43826.779 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 1730.429 ms {} ::1
-anonymus GET /login 304  - 3159.561 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 21665.535 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 1461.594 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 54.006 ms {"language":"tr"} ::1
-anonymus GET /login 304  - 3276.855 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 53.878 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 996.633 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 43.137 ms {"language":"eng"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 740.818 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 38.844 ms {"language":"tr"} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37525 - 670.039 ms {} ::1
-anonymus GET /ajax/exit 200 66 - 2.152 ms {} ::1
-anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 397.786 ms {} ::1
-anonymus POST /ajax/changeLanguage 200 2 - 1.923 ms {"language":"eng"} ::1
-anonymus GET /login 200 22706 - 286.303 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 62.013 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37479 - 563.004 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 200 27661 - 988.478 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 705.455 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 304  - 452.261 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 644.712 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test1 200 34026 - 437.326 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26605 - 453.301 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 27111 - 478.397 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 419.278 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 26912 - 580.088 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 511.130 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /profile/39 304  - 907.039 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 304  - 556.592 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test1 304  - 485.227 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test 200  - 3.153 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 20939 - 241.713 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 576.547 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 475.605 ms {} ::1
-anonymus GET /login 200 22753 - 2254.851 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.208 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37564 - 726.047 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 25861 - 431.572 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 29001 - 880.198 ms {} ::1
-anonymus GET /login 304  - 2522.068 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 70.229 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37610 - 890.619 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 28857 - 452.844 ms {} ::1
-anonymus GET /login 304  - 2304.764 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.256 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 981.980 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30033 - 468.528 ms {} ::1
-anonymus GET /login 304  - 2234.345 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 123.721 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 968.003 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30033 - 509.940 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/1 200 26730 - 361.575 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/1 200 26734 - 332.009 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 26736 - 677.446 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/form 200 27242 - 429.048 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/kullanicilar 200 45 - 29.609 ms {"kdata":{"kullaniciIsim":"test","kullaniciSoyisim":"testtt","kullaniciTel":"(111) 111-1111","kullaniciEPosta":"yunusemrahdursun2@gmail.com","kullaniciUnvan":"1","kullaniciParola":"3cdf5666859f6906c283a1058cd5b9a7","firmaId":2,"kullaniciDilTercihi":"tr","kullaniciOlusturanId":39,"kullaniciAdi":"yunusemrahdursun2@gmail.com"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /kullanicilar/table 200 27459 - 493.136 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 417.940 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/6 200 26771 - 545.314 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 404 20986 - 183.806 ms {"kdata":{"bolgeAdi":"DOĞU ANADOLU BÖLGESİ","sorumluId":"40","bolgelerAciklama":"adsadas"},"ndata":{"id":6,"method":"update"}} ::1
-anonymus GET /login 304  - 2233.861 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 59.034 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 711.246 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 484.546 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/6 200 26771 - 419.455 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 43 - 24.701 ms {"kdata":{"bolgeAdi":"DOĞU ANADOLU BÖLGESİ","sorumluId":"40","bolgelerAciklama":"asas"},"ndata":{"id":6,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30044 - 376.834 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/6 200 26784 - 347.788 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 309.142 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/form 500 22271 - 518.092 ms {} ::1
-anonymus GET /login 304  - 2126.639 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 63.946 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 671.994 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 418.617 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/form 200 26533 - 450.368 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 45 - 37.419 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30629 - 440.140 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 200 26769 - 396.586 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 44 - 16.442 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":8,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 430.330 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 304  - 301.783 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 44 - 15.635 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":8,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 320.100 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 304  - 723.595 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 44 - 27.132 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":8,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 498.322 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 304  - 873.526 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/cariler 200 44 - 38.748 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":8,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 855.738 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 200 26770 - 423.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 44 - 22.826 ms {"kdata":{"bolgeAdi":"adsa","sorumluId":"39","bolgelerAciklama":"asdsazxc"},"ndata":{"id":8,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 422.501 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 500 21974 - 967.673 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 500 21974 - 987.388 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/8 500 21974 - 94295.024 ms {} ::1
-anonymus GET /login 304  - 1020.060 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 60.098 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 867.045 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30044 - 396.077 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/7 200 26778 - 383.878 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/form 304  - 674.441 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 363.028 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30044 - 356.151 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/form 304  - 309.437 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 241.510 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 457.533 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 304  - 326.371 ms {} ::1
-anonymus GET /login 304  - 2220.712 ms {} ::1
-anonymus GET /login 304  - 1596.711 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.696 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 37689 - 601.210 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 200 77452 - 356.905 ms {} ::1
-anonymus GET /login 304  - 2125.418 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 61.790 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 673.472 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 200 77371 - 380.738 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 809.377 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 66056.395 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 381.985 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 546.312 ms {} ::1
-anonymus GET /login 304  - 2072.541 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 56.940 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 594.414 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 200 79031 - 365.924 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 679.363 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 30123 - 406.323 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 347.342 ms {} ::1
-anonymus GET /login 304  - 1975.463 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 101.926 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 666.035 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 345.861 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/form 200 27008 - 344.978 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 283.534 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/1 200 27242 - 291.781 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 297.321 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/form 304  - 232.508 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 250.825 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/2 200 27245 - 273.834 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 304  - 266.363 ms {} ::1
+anonymus GET /login 304  - 736.812 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 168.373 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 714.316 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 398.745 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 637.535 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27502 - 370.301 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27593 - 451.317 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27677 - 630.706 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27681 - 364.084 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 319.125 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27680 - 333.870 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27684 - 296.585 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 625.365 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27695 - 297.348 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27691 - 309.084 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27705 - 702.112 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27748 - 428.555 ms {} ::1
+anonymus GET / 302 28 -  ms {} ::ffff:92.118.160.1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 326.201 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 567.587 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 32848 - 760.633 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33045 - 678.004 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33103 - 534.140 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33103 - 547.616 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33103 - 575.620 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 340.548 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27747 - 766.349 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 27035 - 637.054 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27783 - 419.058 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 384.562 ms {} ::1
+anonymus GET /login 304  - 2725.448 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.518 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 677.840 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 27110 - 538.177 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 900.754 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 493.832 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 507.705 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 393.209 ms {} ::1
+anonymus GET /login 200 22378 - 2237.883 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 86.557 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37805 - 581.094 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27787 - 441.805 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 505.325 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 405.376 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 574.294 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 622.653 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27795 - 323.553 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 27114 - 407.084 ms {} ::1
+anonymus GET /login 304  - 2618.946 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.214 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 617.249 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27984 - 468.099 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 45 - 26.696 ms {"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 532.317 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 382.403 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27970 - 662.009 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 45 - 17.413 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 534.295 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 364.506 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 27984 - 240.091 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 28033 - 650.046 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 28033 - 412.595 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 45 - 13.236 ms {"ndata":[{"cariAdi":"test1","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","cariIli":"Ankara","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 464.138 ms {} ::1
+anonymus GET /login 304  - 2284.552 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.825 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 479.190 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 28033 - 289.279 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 45 - 26.636 ms {"ndata":[{"cariAdi":"test1232","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","cariIli":"Ankara","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 467.635 ms {} ::1
+anonymus GET /login 304  - 2833.737 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.244 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37805 - 593.711 ms {} ::1
+anonymus GET /login 304  - 2108.409 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 90.458 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37805 - 1058.710 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 353.300 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 45 - 24.761 ms {"ndata":[{"cariAdi":"test1232","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","cariIli":"Ankara","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 544.316 ms {} ::1
+anonymus GET /test 200 899 - 1340.487 ms {} ::1
+anonymus GET /login 200 22378 - 486.815 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.871 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37805 - 518.462 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 28033 - 373.456 ms {} ::1

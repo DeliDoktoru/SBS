@@ -87,7 +87,8 @@ router.get('/test', async function(req, res, next) {
     //var a={ b: "as" , c:"cd"};
     //customValidation.removeNotAllowedProperties(["b"],a)
     //res.write(JSON.stringify(a))
-    res.end();
+    //res.end();
+    res.render('mapbox');
   } catch (error) {
     res.write(error.message || JSON.stringify(error))
     res.end();
@@ -147,9 +148,22 @@ router.get('/kullanicilar/:id',async function(req,res,next){
     default:
       data.cardHeader=l.getLanguage('kullaniciduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"kullanicilar",{id : req.params.id , firmaId:req.session.user.firmaId }))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
       res.render('kullanicilar/form',data);
   }
 });
+
+router.get('/toplucariekle',async function(req,res,next){
+  var l=res.locals.l;
+  var data={
+    title:l.getLanguage('topluCari'),
+  };
+  res.render('cariler/topluCari', data);
+
+});
+
 router.get('/cariler/:id',async function(req,res,next){
   var l=res.locals.l; 
   var session=req.session.user;
@@ -162,16 +176,16 @@ router.get('/cariler/:id',async function(req,res,next){
     bolgeler : await new db().selectAll('bolgeler',dbName),
     iller:[]
   };
-  var colNameS=["id","bolgeId","cariAdi","cariAdres","cariIliId","cariTel","cariFaks","cariEPosta","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariYetkiliKisiTel"];
+  var colNameS=["id","bolgeId","cariAdi","cariIli","cariTel","cariFaks","cariEPosta","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariYetkiliKisiTel","cariAciklama"];
   switch(req.params.id) {
     case "table":
       data.iller=await new db().selectAll('iller',dbName);
       data.tableBody= (await new db().selectWithColumn(colNameS,"cariler",null,null,dbName)).map(
         x=>{
           x.bolgeId=data.bolgeler.find(y=> y.id==x.bolgeId).bolgeAdi;
-          x.cariIliId=data.iller.find(y=> y.id==x.cariIliId).il_adi;
+          x.cariIli=data.iller.find(y=> y.id==x.cariIli).il_adi;
           return x;
-        }
+        } 
       );
       data.tableHead= colNameS;
       data.cardHeader=l.getLanguage('carilistele');
@@ -179,18 +193,25 @@ router.get('/cariler/:id',async function(req,res,next){
       break;
     case "form":
       data.illerHash=selfScript.generateHash(session,"iller",dbName,"il_adi");  
-      colNameS=colNameS.concat(["carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis"]);
+      colNameS=colNameS.concat(["carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis","cariIlce","cariMahalle","cariSok_Cad","cariBinaNo","cariDaireNo","cariLogo"]);
       data.cardHeader=l.getLanguage('cariekle');
       data.targetData={}; 
-      colNameS.map(x=> data.targetData[x]="");
+      colNameS.map(x=> data.targetData[x]=""); 
       res.render('cariler/form',data);
     break;
     default:
       data.illerHash=selfScript.generateHash(session,"iller",dbName,"il_adi");
-      colNameS=colNameS.concat(["carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis"]);
+      colNameS=colNameS.concat(["cariKoorCap","carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis","cariIlce","cariMahalle","cariSok_Cad","cariBinaNo","cariDaireNo","cariLogo"]);
       data.cardHeader=l.getLanguage('cariduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"cariler",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
       data.iller=await new db().selectQuery({bolgeId:data.targetData.bolgeId},'iller',null,dbName);
+      if(data.targetData.carilerKoordinat){
+        data.targetData.Latitude=data.targetData.carilerKoordinat.split(",")[0];
+        data.targetData.Longitude=data.targetData.carilerKoordinat.split(",")[1];
+      }
       res.render('cariler/form',data);
   }
 });
@@ -231,6 +252,9 @@ router.get('/bolgeler/:id',async function(req,res,next){
       var colNameS=["id","sorumluId","bolgeAdi","bolgelerAciklama"];
       data.cardHeader=l.getLanguage('bolgeduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"bolgeler",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
       data.kullanicilar=await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
       res.render('bolgeler/form',data);
   }
@@ -270,6 +294,9 @@ router.get('/iller/:id',async function(req,res,next){
     default:
       data.cardHeader=l.getLanguage('ilduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"iller",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
       data.bolgeler=await new db().selectAll('bolgeler',dbName);
       res.render('iller/form',data);
   }

@@ -17,11 +17,23 @@ block content
                 i.ti-direction.mr-1  
                 =l.getLanguage("vazgec") 
           .row
-            .col-md-6
-              .form-group.has-label
-                label
-                  =l.getLanguage("cariAdi")
-                input.form-control(ajax-key="f",name='cariAdi', type='text' ,enforced,max="100",value=targetData.cariAdi)
+            .col-md-4
+              .card-user.text-center
+                a(href='#',onclick=`uploadImage("[name='cariLogo']",".avatar")`)
+                  input.form-control(hidden,ajax-key="f",name='cariLogo',type='text',max="200",value=targetData.cariLogo)    
+                  img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.cariLogo || 'image_placeholder.jpg') alt='...')
+                  h5.title=l.getLanguage("cariLogo") 
+            .col-md-8
+              .row
+                .col-md-12      
+                  .form-group.has-label
+                    label
+                      =l.getLanguage("cariAdi")
+                    input.form-control(ajax-key="f",name='cariAdi', type='text' ,enforced,max="100",value=targetData.cariAdi)
+                .col-md-12
+                  .form-group
+                    label=l.getLanguage("cariAciklama")
+                    textarea.form-control.textarea(ajax-key="f",name="cariAciklama",rows='4' cols='80',max="200")=targetData.cariAciklama
             .col-md-6
               .form-group.has-label
                 label
@@ -52,53 +64,147 @@ block content
                 label
                   =l.getLanguage("cariFaks")
                 input.form-control(ajax-key="f",name='cariFaks' ,type='text' ,max="45",value=targetData.cariFaks)
-            .col-md-6
+            .col-md-4
               .form-group.has-label
                 label
                   =l.getLanguage("cariVergiDairesi")
                 input.form-control(ajax-key="f",name='cariVergiDairesi' ,type='text' ,max="100",value=targetData.cariVergiDairesi)
-            .col-md-6
+            .col-md-4
               .form-group.has-label
                 label
                   =l.getLanguage("cariVergiNo")
                 input.form-control(ajax-key="f",name='cariVergiNo' ,type='text' ,max="45",value=targetData.cariVergiNo)
-            .col-md-6
+            .col-md-4
               .form-group.has-label
                 label
                   =l.getLanguage("cariMernis")
                 input.form-control(ajax-key="f",name='cariMernis' ,type='text' ,max="45",value=targetData.cariMernis)
-            .col-md-6
+            .col-md-4
               .form-group.has-label
                 label
                   =l.getLanguage("bolgeId")
-                select.custom-select(connect-whoami="bolgeID",connect-target=`[name='cariIliId']`,connect-hash=illerHash,ajax-key="f",enforced,name="bolgeId")
+                select.custom-select(connect-whoami="bolgeID",connect-target=`[name='cariIli']`,connect-hash=illerHash,ajax-key="f",enforced,name="bolgeId")
                   option(value='',selected)=l.getLanguage("seciniz")
                     each val in bolgeler
                         option(value=val.id,selected=val.id==targetData.bolgeId?true:false) 
                             =val.bolgeAdi
+            .col-md-4
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariIli")
+                select.custom-select(ajax-key="f",mapTarget,enforced,name="cariIli")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in iller
+                        option(value=val.id,selected=val.id==targetData.cariIli?true:false) 
+                            =val.il_adi
+            .col-md-4
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariIlce")
+                input.form-control(ajax-key="f",name='cariIlce' ,type='text' ,max="100",mapTarget,value=targetData.cariIlce)
+            .col-md-3
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariMahalle")
+                input.form-control(ajax-key="f",name='cariMahalle' ,type='text' ,max="100",mapTarget,value=targetData.cariMahalle)
+            .col-md-3
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariSok_Cad")
+                input.form-control(ajax-key="f",name='cariSok_Cad' ,type='text' ,max="100",value=targetData.cariSok_Cad)
+            .col-md-3
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariBinaNo")
+                input.form-control(ajax-key="f",name='cariBinaNo' ,type='text' ,max="45",value=targetData.cariBinaNo)
+            .col-md-3
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariDaireNo")
+                input.form-control(ajax-key="f",name='cariDaireNo' ,type='text' ,max="45",value=targetData.cariDaireNo)
+            .col-md-8.m-auto
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariKoorCap")
+                .slidecontainer
+                  input.slider(ajax-key="f",name='cariKoorCap',type='range',mapCapSize, min='1', max='1000' ,value=targetData.cariKoorCap || 250)
+            .col-md-12.m-auto
+              #map
             .col-md-6
               .form-group.has-label
                 label
-                  =l.getLanguage("cariIliId")
-                select.custom-select(ajax-key="f",enforced,name="cariIliId")
-                  option(value='',selected)=l.getLanguage("seciniz")
-                    each val in iller
-                        option(value=val.id,selected=val.id==targetData.cariIliId?true:false) 
-                            =val.il_adi
-            .col-md-8
+                  =l.getLanguage("Enlem")
+                input.form-control(ajax-key="f",disabled,name='Latitude' ,type='text' ,max="45",value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[0] || 39.0100769  )
+            .col-md-6
               .form-group.has-label
                 label
-                  =l.getLanguage("cariAdres")
-                textarea.form-control.textarea(ajax-key="f",name="cariAdres",rows='4' cols='80',max="200")=targetData.cariAdres
-            .col-md-4
-              .card-user.text-center
-                a(href='#',onclick=`uploadImage("[name='cariLogo']",".avatar")`)
-                  input.form-control(hidden,ajax-key="f",name='cariLogo',type='text',max="200",value=targetData.cariLogo)    
-                  img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.cariLogo || 'image_placeholder.jpg') alt='...')
-                  h5.title=l.getLanguage("cariLogo")
-            .col-md-10.m-auto
-              #mapid
+                  =l.getLanguage("Boylam")
+                input.form-control(ajax-key="f",disabled,name='Longitude' ,type='text' ,max="45",value=targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[1] || 30.6887968 )   
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('cariler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  
-              =l.getLanguage("kaydet")       
+              =l.getLanguage("kaydet")
+  script.
+    var map=null,searchControl=null,circle=null;
+    function initMap(_x,_y){
+        if($("#map").length==0){
+          console.log("map element not found");
+          return;
+        }
+        var _x=`#{ (targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[0]) || 39.0100769 }`
+        var _y=`#{ (targetData.carilerKoordinat && targetData.carilerKoordinat.split(",")[1]) || 30.6887968 }`
+        
+        map = new L.Map('map', {zoom: 6, center: new L.latLng([_x,_y]) });
+        marker = L.marker([_x,_y]).addTo(map);
+        map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));	
+        searchControl=new L.Control.Search({
+            url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+            jsonpParam: 'json_callback',
+            propertyName: 'display_name',
+            propertyLoc: ['lat','lon'],
+            marker: marker,
+            autoCollapse: true,
+            autoType: false,
+            minLength: 2,
+        }).on('search:recordsfound', function (results) {
+            map.setZoom(12);
+            $("ul.search-tooltip>li").eq(0).click();
+            $("[name='cariAdres']").focus();
+        });
+        var circleOptions = {
+          color: '#257eca',
+          fillColor: '#f03',
+          fillOpacity: 0
+        }    
+        var circle = L.circle([_x, _y], parseInt("#{ targetData.cariKoorCap || 250 }"), circleOptions).addTo(map);
+        map.addControl(searchControl );
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            marker.setLatLng(e.latlng);
+        }
+        map.on('click', onMapClick);
+        marker.on('move',function(e){
+          var _lat=marker.getLatLng().lat;
+          var _lng=marker.getLatLng().lng;
+          $("[name='Latitude']").val(marker.getLatLng()._lat);
+          $("[name='Longitude']").val(marker.getLatLng()._lng);
+          if(circle!=null){
+                circle.setLatLng(e.latlng);
+          }
+        });
+
+        $("body").delegate("[mapTarget]","change keyup",function(){
+            var searchText=$("[name='cariIli'] :selected").text()+ " " + $("[name='cariIlce']").val() + " " + $("[name='cariMahalle']").val();
+            if(searchControl!=null){
+                searchControl.searchText(searchText);
+            }
+
+        })
+        $("body").delegate("[mapCapSize]","change",function(){
+          if(circle!=null){
+                circle.setRadius(this.value);
+          }
+        });
+    }
+    

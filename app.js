@@ -96,6 +96,7 @@ app.use(async function (req, res, next) {
         res.locals.menu = unvanPages.filter(x=>x.menudeGoster);
         res.locals.active = result.id;
         res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
+        res.locals.foto = req.session.user.kullaniciFoto;
         res.locals.kullaniciUnvan=req.session.user.kullaniciUnvan;
         res.locals.id=req.session.user.id;
       }
