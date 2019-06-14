@@ -673,3 +673,93 @@ ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:188:7)
 Thu Jun 13 2019 16:48:18 GMT+0300 (GTB Daylight Time)
+ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+->Error: ER_DUP_ENTRY: Duplicate entry 'test7asdasd' for key 'cariVergiNo_UNIQUE'
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:107:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 17:10:21 GMT+0300 (GTB Daylight Time)
+ER_NO_SUCH_TABLE: Table 'sbs_comp_2.carihareketleri' doesn't exist
+->Error: ER_NO_SUCH_TABLE: Table 'sbs_comp_2.carihareketleri' doesn't exist
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:134:25)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:559:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 18:09:50 GMT+0300 (GTB Daylight Time)
+ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect decimal value: '' for column 'b' at row 1
+->Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect decimal value: '' for column 'b' at row 1
+    at Query.Sequence._packetToError (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:201:25)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:12:29)
+    at new Promise (<anonymous>)
+    at Database.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:11:16)
+    at Database.insert (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:134:25)
+    at C:\Users\INTERSAN\Desktop\sbs\routes\ajax.js:559:24
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Thu Jun 13 2019 18:11:08 GMT+0300 (GTB Daylight Time)
+Quit inactivity timeout
+->Error: Quit inactivity timeout
+    at Quit.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Quit.emit (events.js:208:7)
+    at Quit._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:124:8)
+    at Timer._onTimeout (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.quit (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\Protocol.js:91:23)
+    at Connection.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:242:18)
+    at Promise (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:35:29)
+    at new Promise (<anonymous>)
+    at Database.close (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:34:16)
+    at Query.connection.query (C:\Users\INTERSAN\Desktop\sbs\selfContent\database.js:28:35)
+    at Query.<anonymous> (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (C:\Users\INTERSAN\Desktop\sbs\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+Fri Jun 14 2019 15:42:36 GMT+0300 (GTB Daylight Time)

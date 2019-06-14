@@ -1,0 +1,66 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('carihareketleri','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+          .row
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariId")
+                select.custom-select(connect-whoami="cariId",connect-resutType=`select2`,connect-hash=carilerHash,ajax-key="f",enforced,name="cariId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in bolgeler
+                        option(value=val.id,selected=val.id==targetData.bolgeId?true:false) 
+                            =val.bolgeAdi
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("cariId")
+                input.form-control(ajax-key="f",name='cariId', type='text' ,enforced,value=targetData.cariId)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("belgeTipId")
+                select.custom-select(ajax-key="f",enforced,name="belgeTipId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in belgeTipleri
+                        option(value=val.id,selected=val.id==targetData.belgeTipId?true:false) 
+                            =val.belgeTipAdi
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("belgeNo")
+                input.form-control(ajax-key="f",name='belgeNo', type='number' ,max="11",enforced,value=targetData.belgeNo)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("belgeTarihi")
+                input.form-control(ajax-key="f",name='belgeTarihi', type='date' ,enforced,value=targetData.belgeTarihi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("a")
+                input.form-control(ajax-key="f",name='a', type='number',step="0.01" ,max="12",value=targetData.a)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("b")
+                input.form-control(ajax-key="f",name='b', type='number',step="0.01" ,max="12",value=targetData.b)
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('carihareketleri','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")       

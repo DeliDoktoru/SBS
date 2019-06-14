@@ -1,6 +1,6 @@
 const md5 = require('md5');
 function selfScript(){
-    this.generateHash=function(session,tableName,dbName,colName){
+    this.generateHash=function(session,tableName,dbName,colNames){
         var foundIndex =session.tableNames.findIndex(x=>x.tableName==tableName && x.dbName==dbName);
         var hash=md5(Math.random());
         foundIndex==-1?session.tableNames.push(
@@ -8,7 +8,7 @@ function selfScript(){
             hash:hash,
             tableName:tableName,
             dbName:dbName,
-            colName:["id",colName]
+            colName:["id"].concat(colNames)
         }):session.tableNames[foundIndex].hash=hash;
         return hash;
     },

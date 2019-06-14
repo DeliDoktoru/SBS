@@ -192,7 +192,7 @@ router.get('/cariler/:id',async function(req,res,next){
       res.render('includes/table', data);
       break;
     case "form":
-      data.illerHash=selfScript.generateHash(session,"iller",dbName,"il_adi");  
+      data.illerHash=selfScript.generateHash(session,"iller",dbName,["il_adi"]);  
       colNameS=colNameS.concat(["carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis","cariIlce","cariMahalle","cariSok_Cad","cariBinaNo","cariDaireNo","cariLogo"]);
       data.cardHeader=l.getLanguage('cariekle');
       data.targetData={}; 
@@ -200,7 +200,7 @@ router.get('/cariler/:id',async function(req,res,next){
       res.render('cariler/form',data);
     break;
     default:
-      data.illerHash=selfScript.generateHash(session,"iller",dbName,"il_adi");
+      data.illerHash=selfScript.generateHash(session,"iller",dbName,["il_adi"]);
       colNameS=colNameS.concat(["cariKoorCap","carilerKoordinat","cariVergiDairesi","cariVergiNo","cariMernis","cariIlce","cariMahalle","cariSok_Cad","cariBinaNo","cariDaireNo","cariLogo"]);
       data.cardHeader=l.getLanguage('cariduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"cariler",{id : req.params.id  },null,dbName))[0];
@@ -301,6 +301,51 @@ router.get('/iller/:id',async function(req,res,next){
       res.render('iller/form',data);
   }
 });
-
+router.get('/carihareketleri/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('carihareketleri')
+  };
+  var colNameS=["id","cariId","belgeTipId","belgeNo","belgeTarihi","a","b"];
+  switch(req.params.id) {
+    case "table":
+      data.iller=await new db().selectAll('iller',dbName);
+      var sql=`
+      SELECT cari_hareketler.id,cariler.cariAdi AS cariId,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM ${dbName}.cari_hareketler as cari_hareketler 
+        LEFT JOIN ${dbName}.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+        LEFT JOIN ${dbName}.cariler as cariler 
+          on cari_hareketler.cariId=cariler.id 
+          WHERE cari_hareketler.silindiMi=0;
+      `; 
+      data.tableBody= (await new db().query(sql));
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('carihareketleri');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.carilerHash=selfScript.generateHash(session,"cariler",dbName,["cariLogo","cariAdi","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariAciklama"]);  
+      data.cardHeader=l.getLanguage('carihareketiekle'); 
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      data.belgeTipleri=await new db().selectAll('belge_tipleri',dbName);
+      res.render('cariler/cariHareketleriForm',data);
+    break;
+    default:
+      data.carilerHash=selfScript.generateHash(session,"cariler",dbName,["cariLogo","cariAdi","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariAciklama"]);    
+      data.cardHeader=l.getLanguage('carihareketiduzenle');
+      data.targetData=(await new db().selectWithColumn(colNameS,"cari_hareketler",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      data.belgeTipleri=await new db().selectAll('belge_tipleri',dbName);
+      res.render('cariler/cariHareketleriForm',data);
+  }
+});
 
 module.exports = router;

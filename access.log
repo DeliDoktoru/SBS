@@ -42,3 +42,127 @@ YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 29346 - 650.341 ms {} ::1
 YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 1065 - 85.886 ms {"ndata":[{"cariAdi":"test1232","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7asdasd","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"testasdaszxczxzxcd","cariMernis":"test8","cariIli":"Ankaraa","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
 YUNUS AAAAAAAAAAAAA GET /toplucariekle 200 29338 - 422.160 ms {} ::1
 YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 1065 - 73.835 ms {"ndata":[{"cariAdi":"test1232","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7asdasd","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"testasdaszxczxzxcd","cariMernis":"test8","cariIli":"Ankaraa","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 307.197 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 304  - 379.097 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33063 - 662.587 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /profile/39 200 28021 - 419.211 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 585.667 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucariekle 304  - 564.670 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/toplucariekle 200 820 - 41.348 ms {"ndata":[{"cariAdi":"test1232","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7999","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"test7asdasd","cariMernis":"test8","cariIli":7,"cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt","bolgeId":2},{"cariAdi":"test1244","cariTel":"(111) 111-1111","cariFaks":"test5","cariEPosta":"test4@hotmail.com","cariYetkiliKisiAdi":"test2","cariYetkiliKisiSoyadi":"test3","cariYetkiliKisiTel":"(111) 111-1111","cariVergiDairesi":"test6","cariVergiNo":"testasdaszxczxzxcd","cariMernis":"test8","cariIli":"Ankaraa","cariIlce":"çankaya","cariMahalle":"yaşamkent","cariSok_Cad":"test9","cariBinaNo":"test10","cariDaireNo":"test11","cariAciklama":"testtt"}]} ::1
+anonymus GET /login 304  - 1968.943 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 65.972 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 764.250 ms {} ::1
+anonymus GET /login 304  - 2042.891 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 62.015 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37957 - 710.142 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26461 - 345.841 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 500 20133 - 182.814 ms {} ::1
+anonymus GET /login 304  - 1374.266 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.134 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 820.459 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 469.336 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 0 - 26.021 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 200 22396 - 2684.561 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 146.001 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 37975 - 727.367 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26479 - 493.928 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 500 20543 - 220.226 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 500 21658 - 538.256 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27028 - 733.600 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27037 - 500.465 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27411 - 433.580 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27411 - 394.863 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27393 - 734.773 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 404 20499 - 262.823 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"1","belgeTarihi":"1990-10-10","a":"10","b":""},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 2481.491 ms {} ::1
+anonymus GET /login 304  - 2518.279 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.254 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 891.390 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 414.280 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27393 - 419.499 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 41 - 33.378 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"1","belgeTarihi":"1990-11-10","a":"10","b":""},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 1913.552 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 66.522 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 730.997 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 393.143 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27393 - 456.685 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 41 - 36.720 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"1","belgeTarihi":"1990-10-10","a":"11","b":""},"ndata":{"id":null,"method":"create"}} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 2774.907 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 103.987 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 814.061 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 395.168 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 500.421 ms {} ::1
+anonymus GET /login 304  - 2776.897 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.546 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 769.516 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 494.559 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 27393 - 530.038 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 980.018 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 678.053 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 16710.105 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"1","belgeTarihi":"2019-06-14","a":12.1,"b":0},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26942 - 878.621 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 12374.445 ms {} ::1
+anonymus GET /login 304  - 2492.698 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 76.514 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 738.363 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26907 - 21584.063 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 861.714 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 22818.268 ms {"kdata":{"cariId":"1","belgeTipId":"2","belgeNo":"2","belgeTarihi":"2019-06-20","a":12.22,"b":0},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27338 - 679.893 ms {} ::1
+anonymus GET /login 304  - 2401.731 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.659 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 867.506 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27408 - 441.782 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 39287.759 ms {} ::1
+anonymus GET /login 304  - 2447.429 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.581 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1058.542 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27340 - 8219.386 ms {} ::1
+anonymus GET /login 304  - 2422.596 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 73.236 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 687.505 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27340 - 429.368 ms {} ::1
+anonymus GET /login 304  - 2301.494 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 72.803 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 833.574 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27340 - 509.057 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/1 200 27649 - 514.807 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 343.395 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 373.916 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 8344.969 ms {"kdata":{"cariId":"1","belgeTipId":"2","belgeNo":"3","belgeTarihi":"2019-06-14","a":12.2,"b":0},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27772 - 1253.106 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 699.515 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 2731.671 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"5","belgeTarihi":"2019-06-29","a":85.4,"b":0},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 28201 - 1522.844 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 464.369 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 3598.929 ms {"kdata":{"cariId":"1","belgeTipId":"2","belgeNo":"6","belgeTarihi":"2019-06-20","a":54.65,"b":0},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 28636 - 583.764 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 509.884 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/1 304  - 425.465 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 44 - 23.307 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"1","belgeTarihi":"","a":12,"b":0},"ndata":{"id":1,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 28207 - 437.833 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/2 200 27649 - 381.328 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 44 - 34.183 ms {"kdata":{"cariId":"1","belgeTipId":"2","belgeNo":"2","belgeTarihi":"","a":12,"b":0},"ndata":{"id":2,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27775 - 439.269 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/3 200 27649 - 414.036 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 44 - 26.364 ms {"kdata":{"cariId":"1","belgeTipId":"2","belgeNo":"3","belgeTarihi":"","a":12,"b":0},"ndata":{"id":3,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27343 - 403.903 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/4 200 27649 - 511.817 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 44 - 21.665 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"5","belgeTarihi":"","a":85,"b":0},"ndata":{"id":4,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26914 - 410.238 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 387.651 ms {} ::1
+anonymus GET /login 304  - 2236.391 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.861 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 737.660 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26914 - 405.621 ms {} ::1
+anonymus GET /login 304  - 2298.460 ms {} ::ffff:127.0.0.1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 71.154 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 955.292 ms {} ::ffff:127.0.0.1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 26919 - 3812.795 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 304  - 999.436 ms {} ::1
+anonymus GET /login 200 22512 - 2069.673 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 82.722 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 38091 - 687.501 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27035 - 4730.094 ms {} ::1

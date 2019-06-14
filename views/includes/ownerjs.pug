@@ -249,21 +249,21 @@ script.
             if ($(this).attr("max") != undefined) {
             var _max = parseInt($(this).attr("max"));
 
-            if ($(this).attr("type") == "number") {
+            /*if ($(this).attr("type") == "number") {
                 var tmp = parseInt($(this).val());
                 if (!isNaN(_max) && !isNaN(tmp) && tmp > _max) {
                 $(this).css("border-bottom", "2px solid red");
                 buyuk = true;
                 result = true;
                 }
-            } else {
+            } else {*/
                 if (!isNaN(_max) && $(this).val().length > _max) {
-                $(this).css("border-bottom", "2px solid red");
-                fazlaKarakter = true;
-                result = true;
+                    $(this).css("border-bottom", "2px solid red");
+                    fazlaKarakter = true;
+                    result = true;
                 }
 
-            }
+            //}
 
             }
             if ($(this).attr("min") != undefined) {
@@ -371,7 +371,7 @@ script.
 
     $("body").delegate("[connect-target]","change",function(){
         var hash=$(this).attr("connect-hash");
-        var target=$(this).attr("connect-target");
+        var target=$(this).attr("connect-target") || $(this);
         var whoAmI=$(this).attr("connect-whoami");
         var targetTagName=$(target).prop("tagName");
         var val=$(this).val();

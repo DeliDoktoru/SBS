@@ -3,7 +3,8 @@ const config={
     host: "localhost",
     user: "sbs",
     password: "tryRoot94",
-    multipleStatements: true
+    multipleStatements: true,
+    dateStrings: 'date'
   },
   webServer:{
     port:3000

@@ -146,3 +146,635 @@
 ->[[["test1232","(111) 111-1111","test5","test4@hotmail.com","test2","test3","(111) 111-1111","test6","test7","test8",7,"çankaya","yaşamkent","test9","test10","test11","testtt",2]]]
 'INSERT INTO sbs_comp_2.cariler (cariAdi,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariVergiDairesi,cariVergiNo,cariMernis,cariIli,cariIlce,cariMahalle,cariSok_Cad,cariBinaNo,cariDaireNo,cariAciklama,bolgeId) VALUES  ?'
 ->[[["test1244","(111) 111-1111","test5","test4@hotmail.com","test2","test3","(111) 111-1111","test6","test7asdasd","test8",7,"çankaya","yaşamkent","test9","test10","test11","testtt",2]]]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariIli,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariAciklama FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cariler (cariAdi,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariVergiDairesi,cariVergiNo,cariMernis,cariIli,cariIlce,cariMahalle,cariSok_Cad,cariBinaNo,cariDaireNo,cariAciklama,bolgeId) VALUES  ?'
+->[[["test1244","(111) 111-1111","test5","test4@hotmail.com","test2","test3","(111) 111-1111","test6","test7asdasd","test8",7,"çankaya","yaşamkent","test9","test10","test11","testtt",2]]]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'INSERT INTO sbs_comp_2.cariler (cariAdi,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariVergiDairesi,cariVergiNo,cariMernis,cariIli,cariIlce,cariMahalle,cariSok_Cad,cariBinaNo,cariDaireNo,cariAciklama,bolgeId) VALUES  ?'
+->[[["test1232","(111) 111-1111","test5","test4@hotmail.com","test2","test3","(111) 111-1111","test6","test7999","test8",7,"çankaya","yaşamkent","test9","test10","test11","testtt",2]]]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.carihareketleri (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","1","1","1990-11-10","10",""]]]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","1","1","1990-10-10","11",""]]]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","1","1","2019-06-14",12.1,0]]]
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,FORMAT(cari_hareketler.belgeTarihi, 'dd/MMM/yyyy', 'en-us')  AS belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","2","2","2019-06-20",12.22,0]]]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,FORMAT(cari_hareketler.belgeTarihi, 'dd/MMM/yyyy', 'en-us')  AS belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,cariId,belgeTipId,belgeNo,belgeTarihi,a,b FROM sbs_comp_2.cari_hareketler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","2","3","2019-06-14",12.2,0]]]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","1","5","2019-06-29",85.4,0]]]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'INSERT INTO sbs_comp_2.cari_hareketler (cariId,belgeTipId,belgeNo,belgeTarihi,a,b) VALUES  ?'
+->[[["1","2","6","2019-06-20",54.65,0]]]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,cariId,belgeTipId,belgeNo,belgeTarihi,a,b FROM sbs_comp_2.cari_hareketler WHERE ( id= ?  ) AND silindiMi="0"'
+->["1"]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'UPDATE sbs_comp_2.cari_hareketler SET silindiMi="1" WHERE id= ? '
+->[1]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT id,cariId,belgeTipId,belgeNo,belgeTarihi,a,b FROM sbs_comp_2.cari_hareketler WHERE ( id= ?  ) AND silindiMi="0"'
+->["2"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'UPDATE sbs_comp_2.cari_hareketler SET silindiMi="1" WHERE id= ? '
+->[2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,cariId,belgeTipId,belgeNo,belgeTarihi,a,b FROM sbs_comp_2.cari_hareketler WHERE ( id= ?  ) AND silindiMi="0"'
+->["3"]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'UPDATE sbs_comp_2.cari_hareketler SET silindiMi="1" WHERE id= ? '
+->[3]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,cariId,belgeTipId,belgeNo,belgeTarihi,a,b FROM sbs_comp_2.cari_hareketler WHERE ( id= ?  ) AND silindiMi="0"'
+->["4"]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'UPDATE sbs_comp_2.cari_hareketler SET silindiMi="1" WHERE id= ? '
+->[4]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,cariler.cariAdi,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+        LEFT JOIN sbs_comp_2.cariler as cariler 
+          on cari_hareketler.cariId=cariler.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,cariler.cariAdi,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+        LEFT JOIN sbs_comp_2.cariler as cariler 
+          on cari_hareketler.cariId=cariler.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,cariler.cariAdi AS cariId,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+        LEFT JOIN sbs_comp_2.cariler as cariler 
+          on cari_hareketler.cariId=cariler.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'
+      SELECT cari_hareketler.id,cariler.cariAdi AS cariId,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
+        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
+          on cari_hareketler.belgeTipId=belge_tipleri.id 
+        LEFT JOIN sbs_comp_2.cariler as cariler 
+          on cari_hareketler.cariId=cariler.id 
+          WHERE cari_hareketler.silindiMi=0;
+      '
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->

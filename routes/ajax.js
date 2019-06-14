@@ -466,6 +466,116 @@ router.post('/bolgeler',
 
 });
 /* #endregion */
+/* #region  iller */
+router.post('/iller',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"iller",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"iller",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"iller",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  carihareketleri */
+router.post('/carihareketleri',
+[
+ //eklencek
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    data.a = data.a == null || data.a == "" || isNaN(data.a) ? 0 : parseFloat(data.a);
+    data.b = data.b == null || data.b == "" || isNaN(data.a) ? 0 : parseFloat(data.b);
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"cari_hareketler",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"cari_hareketler",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"cari_hareketler",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
 /* #region  profile */
 router.post('/profile',
 [

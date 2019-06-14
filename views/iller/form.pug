@@ -9,7 +9,7 @@ block content
         .card-body
           .text-right.mb-4
             if targetData && targetData.id && targetData.id != ""
-              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('iller','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
                 i.ti-check-box.mr-1    
                 =l.getLanguage("sil")    
             a(href='table')
@@ -42,6 +42,6 @@ block content
                   =l.getLanguage("tel_kod")
                 input.form-control(ajax-key="f",name='tel_kod', type='text' ,enforced,max="7",value=targetData.tel_kod)
           .text-right.mb-4
-            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('iller','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  
               =l.getLanguage("kaydet")       
