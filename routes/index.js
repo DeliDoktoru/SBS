@@ -115,7 +115,6 @@ router.get('/profile/:id',async function(req, res, next){
   data.targetData.kullaniciUnvan=unvanlar.find(y=> y.id==data.targetData.kullaniciUnvan).unvanAdi;
   res.render('profile',data);
 });
-
 router.get('/kullanicilar/:id',async function(req,res,next){
   var l=res.locals.l;
   if( !req.params.id){
@@ -153,17 +152,24 @@ router.get('/kullanicilar/:id',async function(req,res,next){
       res.render('kullanicilar/form',data);
   }
 });
-
 router.get('/toplucariekle',async function(req,res,next){
   var l=res.locals.l;
   var data={
-    title:l.getLanguage('topluCari'),
-    cardHeader:l.getLanguage('topluCariEkle')
+    title:l.getLanguage('toplucari'),
+    cardHeader:l.getLanguage('toplucariekle')
   };
-  res.render('cariler/topluCari', data);
+  res.render('cariler/toplucari', data);
 
 });
+router.get('/toplucarihareketiekle',async function(req,res,next){
+  var l=res.locals.l;
+  var data={
+    title:l.getLanguage('topluCarihareketi'),
+    cardHeader:l.getLanguage('toplucarihareketiekle')
+  };
+  res.render('cariler/topluCariHareketi', data);
 
+});
 router.get('/cariler/:id',async function(req,res,next){
   var l=res.locals.l; 
   var session=req.session.user;
@@ -259,6 +265,40 @@ router.get('/bolgeler/:id',async function(req,res,next){
       res.render('bolgeler/form',data);
   }
 });
+router.get('/belgetipleri/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('belgetipleri')
+  };
+  var colNameS=["id","belgeTipAdi","belgeTipi"];
+  switch(req.params.id) {
+    case "table":
+      belgeTipleri=await new db().selectAll('belge_tipleri',dbName);
+      data.tableBody= belgeTipleri.map(x=>{ x.belgeTipi=x.belgeTipi=="a"?"alacak":"borc";  return x});
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('belgetipleri');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.cardHeader=l.getLanguage('belgetipiekle');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      res.render('cariler/belgeTipleriForm',data);
+    break;
+    default:
+      data.cardHeader=l.getLanguage('belgetipiduzenle');
+      data.targetData=(await new db().selectWithColumn(colNameS,"belge_tipleri",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      res.render('cariler/belgeTipleriForm',data);
+  }
+});
 router.get('/iller/:id',async function(req,res,next){
   var l=res.locals.l; 
   var session=req.session.user;
@@ -329,7 +369,7 @@ router.get('/carihareketleri/:id',async function(req,res,next){
       res.render('includes/table', data);
       break;
     case "form":
-      data.carilerHash=selfScript.generateHash(session,"cariler",dbName,["cariLogo","cariAdi","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariAciklama"]);  
+      data.cariler=JSON.stringify(await new db().selectWithColumn(['id','cariAdi','cariYetkiliKisiAdi','cariYetkiliKisiSoyadi','cariAciklama'],'cariler',null,null,dbName));
       data.cardHeader=l.getLanguage('carihareketiekle'); 
       data.targetData={}; 
       colNameS.map(x=> data.targetData[x]="");
@@ -337,7 +377,7 @@ router.get('/carihareketleri/:id',async function(req,res,next){
       res.render('cariler/cariHareketleriForm',data);
     break;
     default:
-      data.carilerHash=selfScript.generateHash(session,"cariler",dbName,["cariLogo","cariAdi","cariYetkiliKisiAdi","cariYetkiliKisiSoyadi","cariAciklama"]);    
+      data.cariler=JSON.stringify(await new db().selectWithColumn(['id','cariAdi','cariYetkiliKisiAdi','cariYetkiliKisiSoyadi','cariAciklama'],'cariler',null,null,dbName));
       data.cardHeader=l.getLanguage('carihareketiduzenle');
       data.targetData=(await new db().selectWithColumn(colNameS,"cari_hareketler",{id : req.params.id  },null,dbName))[0];
       if(!data.targetData){
@@ -347,5 +387,39 @@ router.get('/carihareketleri/:id',async function(req,res,next){
       res.render('cariler/cariHareketleriForm',data);
   }
 });
-
+router.get('/anketler/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('anketler')
+  };
+  var colNameS=["id"];
+  switch(req.params.id) {
+    case "table":
+      belgeTipleri=await new db().selectAll('belge_tipleri',dbName);
+      data.tableBody= belgeTipleri.map(x=>{ x.belgeTipi=x.belgeTipi=="a"?"alacak":"borc";  return x});
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('belgetipleri');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.cardHeader=l.getLanguage('anketolustur');
+      data.soruTipleri=await new db().selectAll('anket_soru_tipleri');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      res.render('anketler/form',data); 
+    break;
+    default:
+      data.cardHeader=l.getLanguage('belgetipiduzenle');
+      data.targetData=(await new db().selectWithColumn(colNameS,"belge_tipleri",{id : req.params.id  },null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      res.render('cariler/belgeTipleriForm',data);
+  }
+});
 module.exports = router;

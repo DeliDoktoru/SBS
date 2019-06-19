@@ -10300,6 +10300,7 @@ img {
 .nav-tabs-navigation {
     text-align: center;
     border-bottom: 1px solid #f1eae0;
+    border-top: 1px solid #f1eae0;
     margin-bottom: 30px
 }
 

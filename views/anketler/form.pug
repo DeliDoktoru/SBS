@@ -1,0 +1,60 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+          .text-right
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+    .col-md-3
+      .card
+        .card-header
+          h4 sa
+        .card-body
+          .nav-tabs-navigation
+            .nav-tabs-wrapper
+              #tipler.nav.nav-tabs.flex-column.nav-stacked(role='tablist')
+                each val in soruTipleri
+                  .nav-item.ui-widget-content.dummy
+                    .cursor-pointer.nav-link(data-id=val.id,data-cevapTipi=val.cevapTipi,data-icerik=val.icerik)=val.soruTipiAdi
+    .col-md-6.min-height
+      .card
+        #droppable.p-3.ui-widget-header.card-body.min-height(style="background-color: #d6d5d5;")
+    .col-md-3
+      .card
+        .card-body.min-height(style="padding-bottom: 66px;")
+          .text-right.mb-4(style="position: absolute; bottom: 0; right: 10px;")
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")       
+    script.
+        var idGenerator=1;
+        function specialPageScript(){
+            var selectedId;
+            $( "#tipler div" ).draggable({
+                helper:function( event ) {
+                    selectedId=$(this).attr("data-id");
+                    return $( `<div class='anketDummy' >${$(this).attr("data-icerik")||""}</div>` );
+                } 
+            });
+            $( "#droppable" ).droppable({
+                accept:"#tipler div",
+                drop: function( event, ui ) {
+                    $("#droppable").append(`<div class="mainAnket" anket-id=${idGenerator}><button class="btn btn-sm btn-outline-danger" method="remove" type="button"><i class="nc-icon nc-simple-remove"></i></button>`+ $('#tipler').find(`[data-id='${selectedId}']`).attr("data-icerik") +"</div>" );
+                    idGenerator++;
+                    selectedId=null;
+                }
+                
+            }); 
+            $( "#droppable" ).sortable();   
+        }
+        

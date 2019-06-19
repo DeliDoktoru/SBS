@@ -21,16 +21,7 @@ block content
               .form-group.has-label
                 label
                   =l.getLanguage("cariId")
-                select.custom-select(connect-whoami="cariId",connect-resutType=`select2`,connect-hash=carilerHash,ajax-key="f",enforced,name="cariId")
-                  option(value='',selected)=l.getLanguage("seciniz")
-                    each val in bolgeler
-                        option(value=val.id,selected=val.id==targetData.bolgeId?true:false) 
-                            =val.bolgeAdi
-            .col-md-6
-              .form-group.has-label
-                label
-                  =l.getLanguage("cariId")
-                input.form-control(ajax-key="f",name='cariId', type='text' ,enforced,value=targetData.cariId)
+                #select2.select2(ajax-key="f",enforced,name="cariId",value=targetData.cariId)
             .col-md-6
               .form-group.has-label
                 label
@@ -63,4 +54,45 @@ block content
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('carihareketleri','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  
-              =l.getLanguage("kaydet")       
+              =l.getLanguage("kaydet")
+  script.
+    function formatResult(result) {
+        var markup = `<div class="row">
+          <div class="col-md-2">
+            <img style="width:83px;height:83px" src="/public/firmaImages/${result.cariLogo || 'image_placeholder.jpg' }" />
+          </div>
+          <div class="col-md-10 p-3" >
+            <div class="row">
+              <div class="col-md-3"> ${result.cariAdi} </div>
+              <div class="col-md-3"> ${result.cariYetkiliKisiAdi} ${result.cariYetkiliKisiSoyadi}</div>
+              <div class="col-md-3"> ${result.cariAdi} </div>
+            </div>
+          </div>`;
+        return markup;
+    }
+
+    function formatSelection(result) {
+        return result.cariAdi;
+    }
+    function initSelect(){
+      if($("#select2").length==0){
+          return;
+        }
+        var selectInitValue=$("[name='cariId']").attr("value");
+        $("#select2").select2({
+          matcher: function(term, text, opt) {
+            return opt.cariAdi.toUpperCase().indexOf(term.toUpperCase())>=0
+                || opt.cariYetkiliKisiAdi.toUpperCase().indexOf(term.toUpperCase())>=0
+                || opt.cariYetkiliKisiSoyadi.toUpperCase().indexOf(term.toUpperCase())>=0
+                || opt.cariAciklama.toUpperCase().indexOf(term.toUpperCase())>=0;
+          },
+          data:!{cariler},
+          formatResult: formatResult,  
+          formatSelection: formatSelection,   
+          dropdownCssClass: "bigdrop",  
+          escapeMarkup: function (m) { return m; }  
+        });
+        
+        $("[name='cariId']").select2("val", selectInitValue);
+    }
+                     

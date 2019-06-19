@@ -134,3 +134,54 @@
   background: #257eca;
   cursor: pointer;
 }
+
+.min-height{
+  min-height: 500px
+}
+
+.anket label{
+  font-size: 22px;
+  font-weight: bold;
+}
+.anket{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  border: 2px solid #6d839a;
+  cursor: move;
+  margin-top: 5px;
+  border-radius: 16px;
+}
+.anketDummy{
+  z-index: 99999 !important;
+  min-width: 500px !important;
+}
+.anket .form-check-label{
+  font-size: 16px !important;
+}
+.anket .form-check-radio{
+  margin-top: 5px;
+}
+.miniButton{
+  margin-left: -4px;
+  margin-top: -7px; 
+  padding-left: 0px;
+}
+.miniButton button{
+  border-radius: 0px;
+  padding: 3px !important;   
+  font-weight: bold; 
+}
+.miniButton button i{
+  font-weight: bold; 
+}
+.mainAnket{
+  position: relative;
+}
+.mainAnket > button{
+    position: absolute;
+    right: 9px;
+    top: -5px;
+    border-radius: 33px;
+    padding: 1px;
+}

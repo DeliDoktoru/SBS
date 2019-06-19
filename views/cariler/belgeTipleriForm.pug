@@ -1,0 +1,38 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('belgetipleri','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+          .row
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("belgeTipAdi")
+                input.form-control(ajax-key="f",name='belgeTipAdi',enforced ,type='text' ,max="45",value=targetData.belgeTipAdi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("belgeTipi")
+                select.custom-select(ajax-key="f",enforced,name="belgeTipi",max="1")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in [{value:"a",key:l.getLanguage("alacak")},{value:"b",key:l.getLanguage("borc")}]
+                        option(value=val.value,selected=val.value==targetData.belgeTipi?true:false) 
+                            =val.key  
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('belgetipleri','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")
+  

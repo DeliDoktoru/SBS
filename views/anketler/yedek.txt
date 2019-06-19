@@ -1,0 +1,82 @@
+          .anket.row
+            .col-sm-3
+              .row
+                .col-sm-8
+                  label Soru
+                .col-sm-4
+                  label :
+            .col-sm-9
+              input.form-control(type='text')
+            br     
+            .col-sm-3
+              .row
+                .col-sm-8
+                  label Cevap
+                .col-sm-3
+                  label : 
+                .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-success(type='button')
+                    i.nc-icon.nc-simple-add
+            .col-sm-9
+              .row
+                .col-sm-1
+                  .form-check-radio
+                    label.form-check-label
+                      input.form-check-input#exampleRadios12(type='radio'  value='option2' checked)
+                      |  
+                      span.form-check-sign
+                .col-sm-10
+                  input.form-control(type='text')            
+                .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-danger(type='button')
+                    i.nc-icon.nc-simple-remove
+              .row
+                .col-sm-1
+                  .form-check-radio
+                    label.form-check-label
+                      input.form-check-input#exampleRadios12(type='radio'  value='option2' checked)
+                      |  
+                      span.form-check-sign
+                .col-sm-10
+                  input.form-control(type='text')            
+                .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-danger(type='button')
+                    i.nc-icon.nc-simple-remove
+
+
+          .anket.row
+            .col-sm-3
+              .row
+                .col-sm-8
+                  label Soru
+                .col-sm-4
+                  label :
+            .col-sm-9
+              input.form-control(type='text')
+            br     
+            .col-sm-3
+              .row
+                .col-sm-8
+                  label Cevap
+                .col-sm-3
+                  label : 
+                .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-success(type='button')
+                    i.nc-icon.nc-simple-add
+            .col-sm-9
+              .row
+                .col-sm-3
+                  select.custom-select(disabled)
+                    option(value='',selected)=l.getLanguage("seciniz")
+                .col-sm-8
+                  input.form-control(type='text')            
+                .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-danger(type='button')
+                    i.nc-icon.nc-simple-remove
+              .row.copy
+               .col-sm-3
+               .col-sm-8
+                  input.form-control(type='text')            
+               .col-sm-1.miniButton
+                  button.btn.btn-sm.btn-outline-danger(type='button')
+                    i.nc-icon.nc-simple-remove
