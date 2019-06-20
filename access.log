@@ -336,3 +336,301 @@ YUNUS AAAAAAAAAAAAA GET /anketler/form 200 38010 - 472.473 ms {} ::1
 YUNUS AAAAAAAAAAAAA GET /anketler/form 200 38028 - 397.485 ms {} ::1
 YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40607 - 471.793 ms {} ::1
 YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39071 - 360.224 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 2563.648 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 106.184 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1103.579 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 806.199 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39262 - 841.656 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39817 - 406.696 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39842 - 409.985 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 478.443 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40382 - 838.735 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40566 - 701.700 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 462.355 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41533 - 487.153 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41715 - 937.433 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41803 - 542.371 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41809 - 517.322 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41918 - 715.986 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 475.939 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41910 - 559.105 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41933 - 541.123 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41933 - 859.856 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41953 - 461.988 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41982 - 429.508 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42012 - 329.100 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 619.522 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 510.876 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test 200 899 - 20.576 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 20774 - 151.187 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 475.634 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 491.831 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 422.617 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42228 - 397.930 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41803 - 354.949 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42051 - 706.700 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 472.134 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42053 - 420.644 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 500 22182 - 564.986 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42183 - 657.441 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42181 - 494.056 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 41 - 47.757 ms {"kdata":{"anketAdi":"aaaaaaa"},"ndata":{"anketData":"asd","id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42518 - 701.969 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42519 - 492.622 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42532 - 850.194 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42540 - 414.973 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 41 - 59.807 ms {"kdata":{"anketAdi":"aaa"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"Soru":"asdas"},{"soruTipiId":"4","cevaplar":["11111111111"],"Soru":"111"},{"soruTipiId":"5","cevaplar":["2222222222","555555"],"Soru":"222"},{"soruTipiId":"6","cevaplar":["33333333333"],"Soru":"333"}],"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 2204.798 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 80.605 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 600.256 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42852 - 490.863 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 28.382 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textttttt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberrrr"},{"soruTipiId":"5","cevaplar":["secim1"],"soru":"seçiim"}],"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 2369.727 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 83.521 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 701.535 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42852 - 548.528 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 47.624 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberr"},{"soruTipiId":"5","cevaplar":["seçim1"],"soru":"seçim"}],"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 50 - 36.961 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberr"},{"soruTipiId":"5","cevaplar":["seçim1"],"soru":"seçim"}],"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 2559.805 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 95.428 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 601.771 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42833 - 551.837 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 48 - 45.098 ms {"kdata":{"anketAdi":"test","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"text"},{"soruTipId":"4","cevaplar":["radio1"],"soru":"radioo"},{"soruTipId":"5","cevaplar":["select1"],"soru":"select"}],"id":null,"method":"create"}} ::1
+anonymus GET /login 304  - 2298.779 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 87.671 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 621.174 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42833 - 504.082 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 97.525 ms {"kdata":{"anketAdi":"test","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"}],"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27624 - 442.273 ms {} ::1
+anonymus GET /login 304  - 2528.018 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 99.439 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 600.301 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42842 - 499.003 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27536 - 341.542 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3   -  ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 833.150 ms {} ::1
+anonymus GET /login 304  - 2783.475 ms {} ::ffff:127.0.0.1
+anonymus GET /login 200 22671 - 555.993 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.586 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 616.636 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 496.784 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 456.820 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27536 - 358.979 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27797 - 379.373 ms {} ::1
+anonymus GET /login 304  - 2554.000 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.409 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 614.615 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 490.227 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 357.619 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43063 - 449.686 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43065 - 832.630 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 451.526 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43074 - 401.982 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 357.746 ms {} ::1
+anonymus GET /login 304  - 2515.078 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 67.266 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39019 - 599.222 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 511.215 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27674 - 324.961 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43212 - 461.105 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 31.490 ms {"kdata":{"anketAdi":"testtt","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipId":"6","cevaplar":["checkbox1"],"soru":"yeniii"}],"id":3,"method":"update"}} ::1
+anonymus GET /login 304  - 2374.845 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 64.328 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 566.892 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27680 - 405.801 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43214 - 452.372 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 43 - 96.427 ms {"kdata":{"anketAdi":"testtta","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"}],"id":3,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 401.450 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 691.686 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21589 - 263.322 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21849 - 652.484 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42910 - 454.570 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 413.079 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43143 - 394.064 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43519 - 813.136 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43180 - 513.866 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 481.206 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43143 - 409.717 ms {} ::1
+anonymus GET /login 304  - 1076.252 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 58.132 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 518.610 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 300.097 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43345 - 406.945 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43753 - 699.201 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43771 - 328.506 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43771 - 362.324 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44046 - 677.087 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44060 - 373.281 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 427.822 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44060 - 334.289 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 43 - 40.486 ms {"kdata":{"anketAdi":"testtta","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["1313131"],"soru":"zxcz"}],"id":3,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27681 - 391.128 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44155 - 296.156 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 284.696 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 291.646 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 574.272 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 498.052 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 406.960 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43650 - 533.983 ms {} ::1
+anonymus GET /login 304  - 2389.593 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 92.347 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 793.009 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 455.048 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43939 - 542.098 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43939 - 545.861 ms {} ::1
+anonymus GET /login 304  - 2852.050 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 76.346 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 649.058 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 344.372 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 554.295 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 8092.740 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 4546.809 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43848 - 554.797 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 556.302 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43732 - 457.159 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43669 - 448.842 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43924 - 427.366 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 62 - 24.048 ms {"kdata":{"where":{"anketId":"3"},"hash":"b1f33a3f495a9ac35f79669a1b597663"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43936 - 972.140 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 536.123 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 576.320 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 62 - 14.768 ms {"kdata":{"where":{"anketId":"3"},"hash":"d0726ea18919d70f5b71628485e1a4e6"}} ::1
+anonymus GET /login 304  - 1151.528 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.842 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 661.898 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 841.942 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 18.348 ms {"kdata":{"where":{"anketId":"3"},"hash":"ff0e144d6e05798f2ffb1f93c9ad3b79"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44341 - 969.835 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 10.674 ms {"kdata":{"where":{"anketId":"3"},"hash":"dd5ba4e17d122d400d849328b38721b7"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44388 - 443.682 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 29.717 ms {"kdata":{"where":{"anketId":"3"},"hash":"34557851948d935585fbff32631d8ca6"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44427 - 470.162 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44388 - 410.679 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44393 - 433.311 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 28.328 ms {"kdata":{"where":{"anketId":"3"},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 12.857 ms {"kdata":{"where":{"anketId":""},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 36.139 ms {"kdata":{"where":{"anketId":"3"},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44395 - 689.883 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 15.337 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 18.925 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 6.545 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 5.595 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 6.372 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 26.011 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 42.822 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
+anonymus GET /login 200 22667 - 2676.079 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 82.499 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 706.238 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 436.861 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27204 - 441.139 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 500 22196 - 588.001 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 117173 - 2358.122 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 117202 - 2232.156 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27331 - 879.363 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27356 - 488.818 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27416 - 485.101 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27416 - 433.079 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27451 - 379.801 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27427 - 382.424 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27451 - 758.201 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27480 - 549.694 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 528.318 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 398.698 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 553.636 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 440.770 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 428.216 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27486 - 349.616 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27553 - 832.138 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27543 - 445.484 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27739 - 403.177 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 807.965 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 390.188 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 421.426 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 460.401 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 730.727 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 416.927 ms {} ::1
+anonymus GET /login 304  - 2429.244 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.723 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 728.097 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 476.948 ms {} ::1
+anonymus GET /login 304  - 2353.731 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 72.351 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 741.723 ms {} ::ffff:127.0.0.1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 396.763 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21737 - 237.324 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21735 - 238.887 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28065 - 468.363 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28065 - 377.076 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21878 - 1123.522 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28414 - 543.055 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28116 - 504.796 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 861.835 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 585.904 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29658 - 942.115 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29892 - 592.142 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29889 - 527.217 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 912.698 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29567 - 511.963 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30066 - 534.368 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30495 - 522.422 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30455 - 539.036 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 376.695 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 360.985 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 794.432 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 537.793 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 463.737 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44492 - 509.417 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 28.442 ms {"kdata":{"where":{"anketId":"3"},"hash":"c51ecdb0c8ed330fe6138411da36c6bd"}} ::1
+anonymus GET /login 304  - 2388.789 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.614 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 951.570 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 446.633 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44519 - 959.701 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 587.027 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 383.014 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 438.251 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 391.225 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 400.002 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 17.585 ms {"kdata":{"where":{"anketId":"3"},"hash":"13f49bade6c6e61a27bd4cbfe5bef0eb"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 333.923 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 731.519 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 20.230 ms {"kdata":{"where":{"anketId":"3"},"hash":"d9be5474d61eaa8d6660babebc417a24"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 69.126 ms {"kdata":{"anketAdi":"xczxczc","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"3","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["evet"],"soru":"zxcz"},{"soruTipId":"1","cevaplar":[],"soru":""}],"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27972 - 505.087 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/4 200 29995 - 393.493 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 434.630 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44557 - 415.287 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 22.538 ms {"kdata":{"where":{"anketId":"3"},"hash":"d0e65aa05acd06f11afe3d78b40cbc3e"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 57.514 ms {"kdata":{"anketAdi":"qqqqqqq","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"},{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"3","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["evet","hayır"],"soru":"zxcz"}],"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 200 28267 - 339.351 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/5 200 30045 - 331.559 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 285.092 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44592 - 405.089 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 22.943 ms {"kdata":{"where":{"anketId":"5"},"hash":"61108ff0adb8bdf9c7eb45a2b07deacb"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44562 - 1382.896 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 32.076 ms {"kdata":{"where":{"anketId":"5"},"hash":"5a78de5fc6ef70f6e98f520f4bb8cf98"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44561 - 579.313 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44716 - 599.181 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 651 - 29.041 ms {"kdata":{"where":{"anketId":"4"},"hash":"786db8e326a1677593855cf662209c82"}} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 16.762 ms {"kdata":{"where":{"anketId":"5"},"hash":"786db8e326a1677593855cf662209c82"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44739 - 560.373 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 14.283 ms {"kdata":{"where":{"anketId":"5"},"hash":"69d04e2517d915397ff956b846f4a715"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 749.449 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/5 304  - 604.852 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/5 200 30061 - 506.258 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 416.392 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44739 - 435.314 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 29706 - 980.796 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 30218 - 601.238 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44768 - 699.810 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 17.879 ms {"kdata":{"where":{"anketId":"3"},"hash":"12c37c54e44a95dcc0073cd990102dbb"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44746 - 475.043 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 11.345 ms {"kdata":{"where":{"anketId":"3"},"hash":"1c459f391afb88cc20b508d2e46183c7"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44746 - 775.749 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 10.355 ms {"kdata":{"where":{"anketId":"5"},"hash":"62044d07a5ee02a9d9cfe548bfa36e8b"}} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 358.289 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/5 304  - 388.744 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 312.538 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 621.320 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 200 30694 - 396.443 ms {} ::1

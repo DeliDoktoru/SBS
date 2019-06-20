@@ -83,7 +83,7 @@ block content
               .form-group.has-label
                 label
                   =l.getLanguage("bolgeId")
-                select.custom-select(connect-whoami="bolgeID",connect-target=`[name='cariIli']`,connect-hash=illerHash,ajax-key="f",enforced,name="bolgeId")
+                select.custom-select(connect-on,connect-whoami="bolgeID",connect-target=`[name='cariIli']`,connect-hash=illerHash,ajax-key="f",enforced,name="bolgeId")
                   option(value='',selected)=l.getLanguage("seciniz")
                     each val in bolgeler
                         option(value=val.id,selected=val.id==targetData.bolgeId?true:false) 

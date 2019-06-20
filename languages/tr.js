@@ -15,6 +15,7 @@ var language={
     "sifrelereslesmedi":"Şifreler eşleşmedi!",
     "girisbilgilerinizbulunamadi":"Giriş bilgileriniz bulunamadı!",
     "cikisyapiliyor":"Çıkış Yapılıyor..",
-    "eminmisiniz":"Emin misiniz ?"
+    "eminmisiniz":"Emin misiniz ?",
+    "soru":"ii dedin gral"
 }
 module.exports = language;

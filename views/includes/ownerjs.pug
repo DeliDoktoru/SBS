@@ -375,7 +375,7 @@ script.
         
     }
 
-    $("body").delegate("[connect-target]","change",function(){
+    $("body").delegate("[connect-on]","change",function(){
         var hash=$(this).attr("connect-hash");
         var target=$(this).attr("connect-target") || $(this);
         var whoAmI=$(this).attr("connect-whoami");

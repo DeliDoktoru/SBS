@@ -478,8 +478,6 @@ router.post('/toplucarihareketiekle',
 
 });
 /* #endregion */
-
-
 /* #region  bolgeler */
 router.post('/bolgeler',
 [
@@ -534,7 +532,7 @@ router.post('/bolgeler',
 
 });
 /* #endregion */
-/* #region  bolgeler */
+/* #region  belgetipleri */
 router.post('/belgetipleri',
 [
  //eklencek
@@ -625,6 +623,69 @@ router.post('/iller',
         break;
       case "create":
         await new db().insert(data,"iller",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  anketler */
+router.post('/anketler',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var ekData=req.body.ndata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        throw "anketdegistirilemez";
+        /*var anketId=req.body.ndata.id
+        await new db().update(data,{id:anketId},"anketler",null,dbName);
+        await new db().setSilindi({anketId:anketId},"anket_sorulari",null,dbName);
+        var anketSorulari=ekData.anketData.map(x=>{ return { anketId:anketId, soruText:x.soru, soruTipId: x.soruTipId, cevapText:JSON.stringify(x.cevaplar)}})
+        await new db().insert(anketSorulari,"anket_sorulari",dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;*/
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var anketId=req.body.ndata.id
+        await new db().setSilindi({id:anketId},"anketler",null,dbName);
+        await new db().setSilindi({ankedtId:anketId},"anket_sorulari",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        var anketId=(await new db().insert(data,"anketler",dbName)).insertId;
+        var anketSorulari=ekData.anketData.map(x=>{ return { anketId:anketId, soruText:x.soru, soruTipId: x.soruTipId, cevapText:JSON.stringify(x.cevaplar)}})
+        await new db().insert(anketSorulari,"anket_sorulari",dbName);
         text=l.getLanguage("eklemeislemibasarili");
         status = 1;
         break;

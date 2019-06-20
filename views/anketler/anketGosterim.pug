@@ -1,0 +1,57 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=targetData.anketAdi
+          .text-right
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('anketler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec")
+        .card-body              
+          .row
+            .col-md-2
+            .card.col-md-8#anketSorulari
+              .card-body
+                // soruTipId cevapTipini barındırıyor 
+                each val in anketSorulari
+                  .row.anketSorusu
+                    .col-md-12.soru
+                      label=val.soruText
+                    .col-md-12.cevap  
+                      case val.soruTipId
+                        when "select"
+                          select.custom-select
+                            option(value='',selected)=l.getLanguage("seciniz")
+                              each cevap in JSON.parse(val.cevapText)
+                                option(value=cevap) 
+                                  =cevap
+                        when "radio"
+                          .row
+                            each cevap in JSON.parse(val.cevapText)
+                              .col-md-3
+                                .form-check-radio
+                                  label.form-check-label
+                                    input.form-check-input#exampleRadios12(type='radio' name=val.id value=cevap)
+                                    =  cevap
+                                    span.form-check-sign
+                        when "checkbox"
+                          .row
+                            each cevap in JSON.parse(val.cevapText)
+                              .col-md-3
+                                .form-check.form-check-inline
+                                  label.form-check-label
+                                    input.form-check-input(type='checkbox')
+                                    span.form-check-sign
+                                    =  cevap
+                        default
+                          .form-group
+                            input.form-control(type=val.soruTipId)
+            .col-md-2      

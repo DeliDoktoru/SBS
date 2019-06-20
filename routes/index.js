@@ -397,29 +397,38 @@ router.get('/anketler/:id',async function(req,res,next){
   var data={
     title: l.getLanguage('anketler')
   };
-  var colNameS=["id"];
+  var colNameS=["id","anketAdi","anketCinsi"];
   switch(req.params.id) {
     case "table":
-      belgeTipleri=await new db().selectAll('belge_tipleri',dbName);
-      data.tableBody= belgeTipleri.map(x=>{ x.belgeTipi=x.belgeTipi=="a"?"alacak":"borc";  return x});
+      data.tableBody= await new db().selectAll('anketler',dbName);
       data.tableHead= colNameS;
-      data.cardHeader=l.getLanguage('belgetipleri');
+      data.cardHeader=l.getLanguage('anketler');
       res.render('includes/table', data);
       break;
     case "form":
+      data.anketSorulariHash=selfScript.generateHash(session,"anket_sorulari",dbName,["soruText","soruTipId","cevapText"]);
+      data.anketSorulari=JSON.stringify([]);
       data.cardHeader=l.getLanguage('anketolustur');
       data.soruTipleri=await new db().selectAll('anket_soru_tipleri');
+      data.anketler=await new db().selectAll('anketler',dbName);
       data.targetData={}; 
       colNameS.map(x=> data.targetData[x]="");
       res.render('anketler/form',data); 
     break;
     default:
-      data.cardHeader=l.getLanguage('belgetipiduzenle');
-      data.targetData=(await new db().selectWithColumn(colNameS,"belge_tipleri",{id : req.params.id  },null,dbName))[0];
+      //data.cardHeader= bunun yerine anket adını gönderdim formda
+      data.soruTipleri=await new db().selectAll('anket_soru_tipleri');
+      data.targetData=(await new db().selectQuery({id : req.params.id  },"anketler",null,dbName))[0];
+      data.anketSorulari=(await new db().selectQuery({anketId : req.params.id  },"anket_sorulari",null,dbName)).map(
+        x=>{
+          x.soruTipId=data.soruTipleri.find(y=> y.id==x.soruTipId).cevapTipi;
+          return x;
+        } 
+      );
       if(!data.targetData){
         res.redirect('/login'); return;
       }
-      res.render('cariler/belgeTipleriForm',data);
+      res.render('anketler/anketGosterim',data);
   }
 });
 module.exports = router;

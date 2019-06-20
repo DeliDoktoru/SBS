@@ -8,17 +8,36 @@ block content
           h4.card-title=cardHeader
           .text-right
             if targetData && targetData.id && targetData.id != ""
-              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('anketler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
                 i.ti-check-box.mr-1    
                 =l.getLanguage("sil")    
             a(href='table')
               button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
                 i.ti-direction.mr-1  
-                =l.getLanguage("vazgec") 
+                =l.getLanguage("vazgec")
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('anketler','f',formBasarili,true,{anketData:getAnketData(),id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")
+        .card-body              
+          .row
+            .col-md-6      
+              .form-group.has-label
+                label
+                  =l.getLanguage("anketAdi")
+                input.form-control(ajax-key="f",name='anketAdi', type='text' ,enforced,max="100",value=targetData.anketAdi)
+            .col-md-6      
+              .form-group.has-label
+                label
+                  =l.getLanguage("anketCinsi")
+                select.custom-select(ajax-key="f",enforced,name="anketCinsi")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in [{value:"ozel",key:l.getLanguage("ozel")},{value:"standart",key:l.getLanguage("standart")}]
+                        option(value=val.value,selected=val.value==targetData.anketCinsi?true:false) 
+                            =val.key  
     .col-md-3
       .card
         .card-header
-          h4 sa
+          h4.text-center=l.getLanguage("sorutipleri")
         .card-body
           .nav-tabs-navigation
             .nav-tabs-wrapper
@@ -26,35 +45,114 @@ block content
                 each val in soruTipleri
                   .nav-item.ui-widget-content.dummy
                     .cursor-pointer.nav-link(data-id=val.id,data-cevapTipi=val.cevapTipi,data-icerik=val.icerik)=val.soruTipiAdi
-    .col-md-6.min-height
-      .card
-        #droppable.p-3.ui-widget-header.card-body.min-height(style="background-color: #d6d5d5;")
-    .col-md-3
-      .card
-        .card-body.min-height(style="padding-bottom: 66px;")
-          .text-right.mb-4(style="position: absolute; bottom: 0; right: 10px;")
-            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('bolgeler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
-              i.ti-check-box.mr-1  
-              =l.getLanguage("kaydet")       
+    .col-md-9.min-height
+      .card(style="background-color: #d6d5d5;")
+        .row
+          .col-md-9
+            h4.text-center=l.getLanguage("ankeettasarimi")
+          .col-md-3
+            .form-group.has-label.float-rigth.pr-2
+              label
+                =l.getLanguage("sablonlar")
+              select#sablonlar(connect-whoami="anketId",connect-hash=anketSorulariHash)
+                option(value='',selected)=l.getLanguage("seciniz")
+                  each val in anketler
+                    option(value=val.id) 
+                      =val.anketAdi
+        #droppable.p-3.ui-widget-header.card-body.min-height
     script.
-        var idGenerator=1;
+        var selectedId,idGenerator=0,cevapTipi,initAnketSorulariData=!{anketSorulari};//initAnketSorulariData düzenleme için yapılmıştı veriyi buraya basıyoduk JSON.stringify() ile
         function specialPageScript(){
-            var selectedId;
-            $( "#tipler div" ).draggable({
-                helper:function( event ) {
-                    selectedId=$(this).attr("data-id");
-                    return $( `<div class='anketDummy' >${$(this).attr("data-icerik")||""}</div>` );
-                } 
+          $("#sablonlar").select2();
+          setAnketData(initAnketSorulariData);
+          $("#droppable").delegate("[method]","click",function(){
+              var _method=$(this).attr("method");
+              if(_method=="remove"){
+                removeTarget($(this).parent());
+              }
+              else if(_method=="addItem"){
+                var html=$(this).parent().parent().parent().parent().find(".copy").html();
+                $(this).parent().parent().parent().parent().find(".items").append(`<div class="row"> ${html} </div>`);
+              }
+              else if(_method=="removeItem"){
+                removeTarget($(this).parent().parent());
+              }
+          });
+          
+          $("body").delegate("#sablonlar","change",function(){
+              var hash=$(this).attr("connect-hash");
+              var whoAmI=$(this).attr("connect-whoami");
+              var val=$(this).val();
+              DynData({[whoAmI]:val},hash,function(result){
+                setAnketData(result);
+              });
+          });
+          $( "#tipler div" ).draggable({
+            helper:function( event ) {
+                selectedId=$(this).attr("data-id");
+                cevapTipi=$(this).attr("data-cevapTipi");
+                return $( `<div class='anketDummy' >${$(this).attr("data-icerik")||""}</div>` );
+            } 
+          });
+          $( "#droppable" ).droppable({
+              accept:"#tipler div",
+              drop: function( event, ui ) {
+                  $("#droppable").append(`<div class="mainAnket" anket-soruTipiId=${selectedId} anket-id=${idGenerator}><button class="btn btn-sm btn-outline-danger" method="remove" type="button"><i class="nc-icon nc-simple-remove"></i></button>`+ $('#tipler').find(`[data-id='${selectedId}']`).attr("data-icerik") +"</div>" );
+                  idGenerator++;
+                  selectedId=null;
+              }
+              
+          }); 
+          $( "#droppable" ).sortable();   
+          }
+          function removeTarget(target){
+          $.confirm({
+                      content: "",
+                      theme: 'material',
+                      type: 'red',
+                      title: "#{l && l.getLanguage('eminmisiniz')}",
+                      buttons: {
+                        confirm: {
+                          btnClass: 'btn-red',
+                          text: 'Evet',
+                          action: function () {
+                              $(target).remove();  
+                          }
+
+                        },
+                        cancel: {
+                          btnClass: 'btn-default',
+                          text: 'Hayır',
+                          action: function () {}
+                        }
+                      }
+                  });
+          }
+          function getAnketData(){
+            var data=[];
+            $("#droppable>.mainAnket").each(function(){
+              var item={};
+              item.soruTipId=$(this).attr("anket-soruTipiId");
+              item.cevaplar=[];
+              $(this).find(".anket input[type='text']:not(:disabled):visible").each(function(index, el){
+                index==0?item.soru=$(this).val():item.cevaplar.push($(this).val());
+              });
+              data.push(item);
             });
-            $( "#droppable" ).droppable({
-                accept:"#tipler div",
-                drop: function( event, ui ) {
-                    $("#droppable").append(`<div class="mainAnket" anket-id=${idGenerator}><button class="btn btn-sm btn-outline-danger" method="remove" type="button"><i class="nc-icon nc-simple-remove"></i></button>`+ $('#tipler').find(`[data-id='${selectedId}']`).attr("data-icerik") +"</div>" );
-                    idGenerator++;
-                    selectedId=null;
-                }
-                
-            }); 
-            $( "#droppable" ).sortable();   
+            return data;
+          }  
+          function setAnketData(anketData){
+            $("#droppable").html("");
+            for(item of anketData){
+              $("#droppable").append(`<div class="mainAnket" anket-soruTipiId=${item.soruTipId} anket-id=${idGenerator}><button class="btn btn-sm btn-outline-danger" method="remove" type="button"><i class="nc-icon nc-simple-remove"></i></button>`+ $('#tipler').find(`[data-id='${item.soruTipId}']`).attr("data-icerik") +"</div>" );
+              var cevapIndex=-1;
+              for (var i = 0; i < JSON.parse(item.cevapText).length-1; i++) { 
+                $(`#droppable>.mainAnket[anket-id='${idGenerator}'] [method='addItem']`).trigger("click");
+              }
+              $(`#droppable>.mainAnket[anket-id='${idGenerator}']`).find(".anket input[type='text']:not(:disabled):visible").each(function(index, el){
+                index==0?$(this).val(item.soruText):$(this).val( JSON.parse(item.cevapText)[cevapIndex] );
+                cevapIndex++;
+              });
+              idGenerator++;
+            }
         }
-        

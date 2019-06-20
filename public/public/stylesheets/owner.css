@@ -154,7 +154,7 @@
 }
 .anketDummy{
   z-index: 99999 !important;
-  min-width: 500px !important;
+  min-width: 600px !important;
 }
 .anket .form-check-label{
   font-size: 16px !important;
@@ -185,3 +185,28 @@
     border-radius: 33px;
     padding: 1px;
 }
+.copy{
+  display: none;
+}
+#anketSorulari{
+  background-color: #f1f1f1;
+}
+.anketSorusu{
+  padding-top: 10px;
+}
+.anketSorusu:after{
+  background-color: #66615b;
+  opacity: .4;
+  content: "";
+  bottom: 0;
+  right: 15px;
+  height: 1px;
+  width: calc(100% - 30px);
+}
+.anketSorusu .soru>label{
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #555 !important;
+  font-family: Lato, sans-serif;
+  word-break: break-word;
+} 
