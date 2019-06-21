@@ -22,6 +22,8 @@ class Database {
                         rejected.colData=err.sqlMessage.substring(err.sqlMessage.search("entry ")+6,err.sqlMessage.search(" for key"));
                         rejected.message="buverihalihazirdavar";
 
+                    }else if(err.code=="ER_OPERAND_COLUMNS"){
+                        rejected.message="veriicindebulunmamasigerekverivar";
                     }
                     global.errorLoger(err);
                     if(returnRejectedData) {

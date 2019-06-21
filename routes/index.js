@@ -431,4 +431,16 @@ router.get('/anketler/:id',async function(req,res,next){
       res.render('anketler/anketGosterim',data);
   }
 });
+router.get('/duyuru',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('duyuru')
+  };
+  data.bolgelerHash=selfScript.generateHash(session,"bolgeler",dbName,["sorumluId"]); 
+  data.kullanicilar = await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
+  data.bolgeler = await new db().selectAll('bolgeler',dbName);
+  res.render('duyuru/form', data);
+});
 module.exports = router;

@@ -2,6 +2,11 @@ script.
     $(document).ready(function(){
         demo.initWizard();
         $('.phone').mask('(000) 000-0000');
+        if ($("[type='editor']").length != 0) {
+            $("[type='editor']").froalaEditor({
+                toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'fontFamily', 'fontSize',"color", '|', 'inlineStyle', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
+            });
+        }
     });
     $('form').on('keyup keypress', function(e) {
         var keyCode = e.keyCode || e.which;
@@ -103,7 +108,18 @@ script.
                 var name=$(this).attr("name");
                 if(type=="radio"){
                     kdata[name]=$(`[ajax-key=${key}][name=${name}]:checked`).attr("radio-value");
-                }else{
+                }
+                else if(type=="checkbox"){
+                    var tmpCheckbox=[];
+                    $(`[ajax-key='f'][name='duyuruGidecekIdler']:checked`).each(function () {
+                        tmpCheckbox.push( $(this).attr("value") );
+                    });
+                    kdata[name]=tmpCheckbox;
+                }
+                else if(type=="editor"){
+                    kdata[name]=$(this).froalaEditor('html.get', true);
+                }
+                else{
                     kdata[name]=$(this).val();
                 }
             });

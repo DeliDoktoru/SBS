@@ -16,6 +16,7 @@ var language={
     "girisbilgilerinizbulunamadi":"Giriş bilgileriniz bulunamadı!",
     "cikisyapiliyor":"Çıkış Yapılıyor..",
     "eminmisiniz":"Emin misiniz ?",
-    "soru":"ii dedin gral"
+    "tokenbulunamadi":"Token bulunamadı!",
+
 }
 module.exports = language;

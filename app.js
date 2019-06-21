@@ -201,16 +201,20 @@ app.use('/', indexRouter);
 app.use('/ajax', ajaxRouter);
 app.use('/users', usersRouter);
 
-
-app.use('/GraphQl', graphqlHTTP(request=>{
-  let graphqlInitData = require('./selfContent/graphql.js')(request);
+/* #region  GraphQl */
+app.use('/GraphQl', graphqlHTTP((req,res)=>{
+  let graphqlInitData = require('./selfContent/graphql.js')(req);
+  var l=res.locals.l;
   return{
     schema: graphqlInitData.schema,
     rootValue: graphqlInitData.rootValue,
-    graphiql: true
+    graphiql: true,
+    customFormatErrorFn:(err)=>{
+      return l.getLanguage(err.message);
+    }
   }
 }));
-
+/* #endregion */
 
 
 

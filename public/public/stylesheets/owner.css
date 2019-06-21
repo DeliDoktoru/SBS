@@ -213,3 +213,16 @@
 .anketSorusu .cevap{
   padding-top: 20px;
 }
+.checkboxLayer{
+  overflow: auto;
+  height: 200px;
+
+}
+.checkboxLayer > .form-check{
+  margin-left: 20px;
+}
+.prettyBorder{
+  border: .8px solid #66615b;
+  border-radius: 20px;
+  padding:30px ;
+}

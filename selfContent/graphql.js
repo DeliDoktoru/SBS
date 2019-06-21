@@ -4,7 +4,7 @@ module.exports = function(request){
   const md5 = require('md5');
   var schema = buildSchema(`
       type Query {
-          test: String 
+          test(sessionID: String): String 
           login(kullaniciEPosta: String,kullaniciParola: String): String 
       },
   `);
@@ -16,16 +16,17 @@ module.exports = function(request){
   
   async function checkSession(args){
     var functionName=arguments[2].fieldName;
-    const answer =await new Promise(function(resolve, reject){
-      request.sessionStore.get(args.sessionID,function(err,result){
-        if(result.user){
-          resolve( obj[functionName](args,result));
-        }
-        else{
-          resolve("");
-        }
-      });
-    })
+      const answer =await new Promise(function(resolve, reject){
+        request.sessionStore.get(args.sessionID,function(err,result){
+          if(result && result.user){
+            resolve( obj[functionName](args,result));
+          }
+          else{
+            reject( new Error("tokenbulunamadi") );
+          }
+        });
+      })
+    
     return answer;
   }
 
@@ -35,9 +36,13 @@ module.exports = function(request){
       kullaniciParola:md5(kullaniciParola)
     },"kullanicilar"));
     if (user && user.length==1 ) {
-      //request.sessionStore.all(function(err,result){ console.log(result)})
+      const answer =await new Promise(function(resolve, reject){
+        request.sessionStore.get(request.sessionID,function(err,result){
+            resolve( result );
+        });
+      })
       request.sessionStore.destroy(request.sessionID);
-      request.sessionStore.set(request.sessionID,{user:user[0]});
+      request.sessionStore.set(request.sessionID,{user:user[0] , cookie:answer.cookie});
       return request.sessionID;
     }
     return  "";

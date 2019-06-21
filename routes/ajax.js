@@ -862,6 +862,43 @@ router.post('/dyndata', async function (req, res, next) {
   });
 });
 /* #endregion */
+/* #region  duyuru */
+router.post('/duyuru',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "create":
+        data.duyuruGidecekIdler=JSON.stringify(data.duyuruGidecekIdler);
+        await new db().insert(data,"duyurular",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
 
+});
+/* #endregion */
 
 module.exports = router;
