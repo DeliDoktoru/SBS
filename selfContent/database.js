@@ -6,6 +6,11 @@ class Database {
     constructor() {
         this.connection = mysql.createConnection( config.databaseServer );
     }
+    createConnection(dbName){
+        var opt=config.databaseServer;
+        opt.database=dbName;
+        return mysql.createConnection(opt);
+    }
     async query( sql, args, close=true,returnRejectedData=false,ignoreError=false ) {
         sqlLog(sql,args);
         return new Promise( ( resolve, reject ) => {

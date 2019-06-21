@@ -4,6 +4,19 @@
  * Module dependencies.
  */
 
+/* #region  globaldir. global.erorLoger diye çağır,error.log dosyasına hataları yazar */
+
+errorLoger=function (err){
+  var fs = require("fs");
+  var path = require('path');
+  fs.appendFile(path.join(__dirname, '../error.log'), err.message + "\n->" + err.stack + "\n" + new Date()+"\n", function (error) {
+      console.log(error);
+    });
+    console.log(err.stack);
+}
+
+/* #endregion */
+
 var app = require('../app');
 var debug = require('debug')('sbs:server');
 var http = require('http');
@@ -22,6 +35,11 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+/* #region  GraphQLServer */
+//
+//graphRun(config.graphqlServer);
+/* #endregion */
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -93,18 +111,7 @@ function onListening() {
 
 
 
-/* #region  globaldir. global.erorLoger diye çağır,error.log dosyasına hataları yazar */
 
-errorLoger=function (err){
-  var fs = require("fs");
-  var path = require('path');
-  fs.appendFile(path.join(__dirname, '../error.log'), err.message + "\n->" + err.stack + "\n" + new Date()+"\n", function (error) {
-      console.log(error);
-    });
-    console.log(err.stack);
-}
-
-/* #endregion */
 
 
 

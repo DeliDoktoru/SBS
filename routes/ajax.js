@@ -678,7 +678,7 @@ router.post('/anketler',
         }
         var anketId=req.body.ndata.id
         await new db().setSilindi({id:anketId},"anketler",null,dbName);
-        await new db().setSilindi({ankedtId:anketId},"anket_sorulari",null,dbName);
+        await new db().setSilindi({anketId:anketId},"anket_sorulari",null,dbName);
         text=l.getLanguage("silmeislemibasarili");
         status = 1;
         break;

@@ -1,1070 +1,11 @@
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+'SELECT * FROM sbs.iller WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+'SELECT * FROM sbs.abonelik_turleri WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'UPDATE sbs_comp_2.anketler SET anketAdi= ? ,anketCinsi= ?  WHERE id= ? '
-->["testtta","ozel",3]
-'UPDATE sbs_comp_2.anket_sorulari SET silindiMi="1" WHERE anketId= ? '
-->[3]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[3,"123","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[3,"zczcz","6","[\"dfgdfdg\"]"]]]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'UPDATE sbs_comp_2.anketler SET anketAdi= ? ,anketCinsi= ?  WHERE id= ? '
-->["testtta","standart",3]
-'UPDATE sbs_comp_2.anket_sorulari SET silindiMi="1" WHERE anketId= ? '
-->[3]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[3,"123","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[3,"zczcz","6","[\"dfgdfdg\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[3,"zxcz","4","[\"1313131\"]"]]]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,anketAdi,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,anketAdi,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->[""]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->[""]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->[""]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->[""]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
-->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'INSERT INTO sbs_comp_2.anketler (anketAdi,anketCinsi) VALUES  ?'
-->[[["xczxczc","ozel"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"checkbox","6","[\"checkboxxxx\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"zczcz","6","[\"dfgdfdg\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"123","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"tesfsd","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"asdzxczzxradio","4","[\"cbcbc\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"123","3","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"zczcz","6","[\"dfgdfdg\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"zxcz","4","[\"evet\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[4,"","1","[]"]]]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["4"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["4"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'INSERT INTO sbs_comp_2.anketler (anketAdi,anketCinsi) VALUES  ?'
-->[[["qqqqqqq","ozel"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"tesfsd","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"asdzxczzxradio","4","[\"cbcbc\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"checkbox","6","[\"checkboxxxx\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"123","1","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"zczcz","6","[\"dfgdfdg\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"123","3","[]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"zczcz","6","[\"dfgdfdg\"]"]]]
-'INSERT INTO sbs_comp_2.anket_sorulari (anketId,soruText,soruTipId,cevapText) VALUES  ?'
-->[[[5,"zxcz","4","[\"evet\",\"hayır\"]"]]]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["4"]
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
-->
-'
-      SELECT cari_hareketler.id,cariler.cariAdi AS cariId,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
-        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
-          on cari_hareketler.belgeTipId=belge_tipleri.id 
-        LEFT JOIN sbs_comp_2.cariler as cariler 
-          on cari_hareketler.cariId=cariler.id 
-          WHERE cari_hareketler.silindiMi=0;
-      '
+'SELECT * FROM sbs.odeme_tipleri WHERE silindiMi="0";'
 ->
 'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
 ->[2]
-'SELECT id,cariAdi,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariAciklama FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
-->[]
 'SELECT * FROM sbs_comp_2.belge_tipleri WHERE silindiMi="0";'
 ->
 'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
@@ -1073,50 +14,755 @@
 ->
 'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
 ->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["3"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
-->
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
-->
-'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
 'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
 ->[2]
 'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs_comp_2.anketler WHERE ( id= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
-->["5"]
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
-->[2]
-'
-      SELECT cari_hareketler.id,cariler.cariAdi AS cariId,belge_tipleri.belgeTipAdi AS belgeTipId,cari_hareketler.belgeNo,cari_hareketler.belgeTarihi,cari_hareketler.a,cari_hareketler.b FROM sbs_comp_2.cari_hareketler as cari_hareketler 
-        LEFT JOIN sbs_comp_2.belge_tipleri as belge_tipleri 
-          on cari_hareketler.belgeTipId=belge_tipleri.id 
-        LEFT JOIN sbs_comp_2.cariler as cariler 
-          on cari_hareketler.cariId=cariler.id 
-          WHERE cari_hareketler.silindiMi=0;
-      '
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
 ->
-'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
 ->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["adasd","a62b4891bdee31062366b69795ac396a"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]

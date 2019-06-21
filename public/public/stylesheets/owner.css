@@ -210,3 +210,6 @@
   font-family: Lato, sans-serif;
   word-break: break-word;
 } 
+.anketSorusu .cevap{
+  padding-top: 20px;
+}

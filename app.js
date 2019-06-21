@@ -10,22 +10,30 @@ var ajaxRouter = require('./routes/ajax');
 var usersRouter = require('./routes/users');
 var app = express();
 const yetki= require('./selfContent/yetki');
+const graphqlHTTP = require('express-graphql');
+var MySQLStore = require('express-mysql-session')(session);
+const db = require('./selfContent/database');
+
 
 /* #region  session */
+
+var sessionStore = new MySQLStore({}, new db().createConnection("sbs") );
 app.use(session({
   secret: '3D75D274B997B53CFD2892F69F54BC28',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  store: sessionStore,
   //cookie: { secure: true }
 }));
+
 
 /* #endregion */
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["test1","test","ajax/dyndata","ajax/uploadImage","ajax/changeLanguage","ajax/login","ajax/exit","public/fonts","public/images","public/javascripts","public/stylesheets", "favicon.ico","register"];
+  var arr = ["/GraphQl","/test1","/test","/ajax/dyndata","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
   for (val of arr) {
-    if (txt.includes(val))
+    if (txt.indexOf(val)==0)
       return true;
   }
   return false;
@@ -189,12 +197,20 @@ app.use(function (req, res, next){
 
 /* #endregion */
 
-
-
-
 app.use('/', indexRouter);
 app.use('/ajax', ajaxRouter);
 app.use('/users', usersRouter);
+
+
+app.use('/GraphQl', graphqlHTTP(request=>{
+  let graphqlInitData = require('./selfContent/graphql.js')(request);
+  return{
+    schema: graphqlInitData.schema,
+    rootValue: graphqlInitData.rootValue,
+    graphiql: true
+  }
+}));
+
 
 
 
@@ -213,5 +229,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;

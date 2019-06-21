@@ -8,6 +8,10 @@ const config={
   },
   webServer:{
     port:3000
+  },
+  graphqlServer:{
+    port:3001,
+    playground: '/playground',
   }
 };
 

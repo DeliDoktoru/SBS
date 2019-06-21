@@ -1,636 +1,313 @@
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 232 - 73.852 ms {"ndata":[{"belgeTipi":"FATURA","belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"A":10,"a":0},{"belgeTipi":"TAHSİLAT","belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"B":20,"a":0}]} ::1
-anonymus GET /login 304  - 2629.963 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 112.668 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 628.220 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 200 29923 - 308.770 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 211 - 60.328 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"A":10,"a":0},{"belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"B":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 211 - 65121.914 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"A":10,"a":0},{"belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"B":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 211 - 46812.785 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"A":10,"a":0},{"belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"B":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 304  - 836.849 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 211 - 50.964 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"a":10,"b":0},{"belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"b":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 200 30008 - 518.850 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 211 - 85.907 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"10-14-2019","cariId":1,"belgeTipId":1,"a":10,"b":0},{"belgeNo":2,"belgeTarihi":"11-14-2019","cariId":57,"belgeTipId":2,"b":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 27711 - 501.318 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 29532 - 965.367 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/carihareketleri 200 45 - 64.595 ms {"kdata":{"cariId":"1","belgeTipId":"1","belgeNo":"111","belgeTarihi":"2019-06-05","a":1,"b":0},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 28146 - 560.168 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 864.913 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 304  - 378.762 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/toplucarihareketiekle 200 87 - 66.428 ms {"ndata":[{"belgeNo":1,"belgeTarihi":"2019-04-20","cariId":1,"belgeTipId":1,"a":10,"b":0},{"belgeNo":2,"belgeTarihi":"2019-05-20","cariId":57,"belgeTipId":2,"b":20,"a":0}]} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 29020 - 493.589 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/9 200 29789 - 392.180 ms {} ::1
-anonymus GET /test 200 899 - 2293.887 ms {} ::1
-anonymus GET /favicon.ico 404 20695 - 491.353 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /test1 200 33857 - 404.421 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27977 - 371.799 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44676 - 358.660 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 301.099 ms {} ::1
+anonymus GET / 302 28 -  ms {} ::ffff:92.118.160.33
+anonymus GET / 302 56 -  ms {} ::ffff:198.20.70.114
+anonymus GET /login 200 22667 - 1837.808 ms {} ::ffff:198.20.70.114
+anonymus GET /favicon.ico 404 20770 - 336.712 ms {} ::ffff:198.20.70.114
+anonymus GET /login 304  - 2220.871 ms {} ::1
+anonymus GET /graphql 200 3738 - 18.008 ms {} ::1
+anonymus POST /graphql? 500 276 - 40.026 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /graphql? 500 276 - 5.103 ms {"query":"\n  query IntrospectionQuery {\n    __schema {\n      queryType { name }\n      mutationType { name }\n      types {\n        ...FullType\n      }\n      directives {\n        name\n        description\n        locations\n        args {\n          ...InputValue\n        }\n      }\n    }\n  }\n\n  fragment FullType on __Type {\n    kind\n    name\n    description\n    fields(includeDeprecated: true) {\n      name\n      description\n      args {\n        ...InputValue\n      }\n      type {\n        ...TypeRef\n      }\n      isDeprecated\n      deprecationReason\n    }\n    inputFields {\n      ...InputValue\n    }\n    interfaces {\n      ...TypeRef\n    }\n    enumValues(includeDeprecated: true) {\n      name\n      description\n      isDeprecated\n      deprecationReason\n    }\n    possibleTypes {\n      ...TypeRef\n    }\n  }\n\n  fragment InputValue on __InputValue {\n    name\n    description\n    type { ...TypeRef }\n    defaultValue\n  }\n\n  fragment TypeRef on __Type {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n"} ::1
+anonymus GET /graphql 200 3738 - 27.687 ms {} ::1
+anonymus POST /graphql? 200 15563 - 116.619 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /graphql? 200 26 - 7.296 ms {"query":"{hello}","variables":null} ::1
+anonymus POST /graphql? 400 102 - 6.702 ms {"query":"hello{}","variables":null} ::1
+anonymus POST /graphql? 400 102 - 5.170 ms {"query":"hello","variables":null} ::1
+anonymus GET /graphql?query=hello 400 3942 - 3.642 ms {} ::1
+anonymus POST /graphql? 200 15563 - 32.691 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /graphql 200 3738 - 2.295 ms {} ::1
+anonymus POST /graphql? 200 15563 - 27.789 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /graphql? 200 26 - 3.107 ms {"query":"{hello}","variables":null} ::1
+anonymus GET /graphql?query={hello} 400 3956 - 43.667 ms {} ::1
+anonymus POST /graphql? 200 17278 - 156.278 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /graphql? 200 44 - 70.206 ms {"query":"{login}","variables":null} ::1
+anonymus POST /graphql? 200 38 - 11.222 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"zcz\") }","variables":null} ::1
+anonymus POST /graphql? 200 39 - 3.839 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+anonymus POST /graphql? 200 39 - 4.254 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+anonymus GET /login 304  - 2811.381 ms {} ::1
+anonymus GET /login 304  - 287.475 ms {} ::1
+anonymus GET /login 304  - 261.975 ms {} ::1
+anonymus GET /aGraphQl 200 3738 - 5.369 ms {} ::1
+anonymus POST /aGraphQl? 200 17373 - 117.847 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /aGraphQl? 200 39 - 7.766 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 62.843 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 657.416 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /nGraphQl 200 3738 - 4.555 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 17373 - 36.651 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 39 - 2.802 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 39 - 3.932 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+anonymus POST /aGraphQl 400 53 - 19.283 ms {} ::1
+anonymus POST /aGraphQl?query={ login(kullaniciEPosta:"adasd", kullaniciParola:"gral") } 200 169 - 25.457 ms {} ::1
+anonymus POST /aGraphQl?query={ login(kullaniciEPosta:"adasd", kullaniciParola:"gral") } 200 38 - 38.186 ms {} ::1
+anonymus GET /login 304  - 2490.425 ms {} ::1
+anonymus GET /nGraphQl?query={ test } 200 3780 - 7.964 ms {} ::1
+anonymus GET /login 304  - 667.606 ms {} ::1
 anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 1112.721 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 117.060 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 786.540 ms {} ::1
-anonymus GET /login 304  - 2488.556 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 87.055 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38475 - 791.377 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 500 21590 - 628.743 ms {} ::1
-anonymus GET /login 304  - 2811.874 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 62.875 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 875.227 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27437 - 407.142 ms {} ::1
-anonymus GET /login 304  - 3034.393 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 119.602 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 965.536 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27437 - 541.021 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/1 500 21980 - 792.269 ms {} ::1
-anonymus GET /login 304  - 1231.366 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 62.434 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 762.436 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 304  - 491.435 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/1 200 27415 - 476.184 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 304  - 339.909 ms {} ::1
-anonymus GET /login 304  - 2556.511 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.430 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 938.842 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27437 - 443.450 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/form 200 27180 - 439.484 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/belgetipleri 200 45 - 31.228 ms {"kdata":{"belgeTipAdi":"test","belgeTipi":"b"},"ndata":{"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27729 - 374.206 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/3 200 27413 - 370.227 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/belgetipleri 200 44 - 22.757 ms {"kdata":{"belgeTipAdi":"test","belgeTipi":"b"},"ndata":{"id":3,"method":"delete"}} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27437 - 333.331 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 200 30154 - 582.944 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 29166 - 513.884 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 304  - 352.332 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/form 200 27180 - 462.424 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 200 57409 - 645.635 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/form 200 27791 - 355.710 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /iller/table 200 57409 - 367.467 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/table 200 29073 - 296.235 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /bolgeler/form 200 27398 - 319.565 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33733 - 383.491 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 438 - 9.636 ms {"kdata":{"where":{"bolgeID":"2"},"hash":"2e9af03eed0c636002f9725e062ac41c"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 355 - 20.940 ms {"kdata":{"where":{"bolgeID":"1"},"hash":"2e9af03eed0c636002f9725e062ac41c"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 287 - 15.713 ms {"kdata":{"where":{"bolgeID":"3"},"hash":"2e9af03eed0c636002f9725e062ac41c"}} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 33733 - 510.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test1 200 33782 - 615.277 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/table 200 29024 - 472.938 ms {} ::1
-anonymus GET /login 304  - 2410.074 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 69.986 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38560 - 755.269 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 404 20695 - 223.859 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 200 27522 - 699.598 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /belgetipleri/table 304  - 444.686 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 404 20695 - 307.166 ms {} ::1
-anonymus GET /login 304  - 2550.682 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 133.248 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38802 - 918.134 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 617.965 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 609.699 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1028.631 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 593.344 ms {} ::1
-anonymus GET /login 304  - 2886.723 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 96.582 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38802 - 694.309 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 0 - 3642.712 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27188 - 916.730 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 518.500 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27292 - 411.376 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27287 - 350.318 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27256 - 391.308 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27287 - 436.721 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27258 - 323.536 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27258 - 355.576 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 378.784 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27249 - 364.312 ms {} ::1
-anonymus GET /login 200 22648 - 2809.285 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 88.154 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38858 - 725.170 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27977 - 579.431 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27964 - 1032.851 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 27957 - 527.167 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28010 - 423.567 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28043 - 388.704 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28043 - 375.548 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28074 - 621.385 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28282 - 386.051 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28372 - 438.943 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28384 - 739.300 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 453.598 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28404 - 387.587 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28405 - 357.657 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28409 - 346.932 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28513 - 797.145 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28756 - 412.117 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 322.367 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28773 - 849.884 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28809 - 520.951 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28821 - 530.309 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 362.404 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28982 - 801.562 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28939 - 469.392 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28922 - 376.756 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28926 - 869.256 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28957 - 486.249 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28960 - 385.526 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28938 - 386.175 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28977 - 890.743 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28795 - 559.813 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28812 - 521.298 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28731 - 856.257 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28740 - 486.877 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 544.992 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29069 - 966.777 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 454.856 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21620 - 227.044 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 1054 - 33.178 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38941 - 725.031 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28803 - 764.454 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29296 - 530.126 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29161 - 554.697 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29149 - 909.947 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28727 - 580.804 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28646 - 630.150 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28668 - 438.846 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28672 - 405.011 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28697 - 519.538 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28710 - 965.373 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28782 - 471.540 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28607 - 397.440 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28628 - 438.768 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28599 - 354.242 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28566 - 434.942 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 410.201 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 310.196 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21020 - 745.158 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 26898 - 429.175 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 603 - 34.413 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21790 - 256.333 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28684 - 349.672 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 421.926 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28685 - 781.448 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 562.627 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 2396 - 74.556 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21086 - 264.557 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 2315 - 60.852 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21740 - 472.903 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28915 - 441.435 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28858 - 408.106 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 2336 - 55.726 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28847 - 429.907 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28787 - 380.853 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28676 - 348.265 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28736 - 413.911 ms {} ::1
-anonymus GET /login 200 22671 - 2827.012 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 121.109 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 38881 - 870.450 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form   -  ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28532 - 627.514 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28651 - 341.683 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 28756 - 794.527 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29007 - 548.850 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 29572 - 516.985 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 30084 - 331.820 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /cariler/form 200 34139 - 1228.022 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29286 - 487.467 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29286 - 369.523 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29286 - 382.546 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29286 - 464.993 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29286 - 437.600 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29296 - 408.308 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29296 - 404.314 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29307 - 378.543 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29313 - 901.032 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29371 - 512.808 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29374 - 512.360 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29416 - 768.205 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 559.490 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29421 - 448.030 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29414 - 476.453 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29444 - 478.177 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29559 - 918.905 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29561 - 500.983 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29586 - 837.348 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29590 - 608.511 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29557 - 568.165 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 589.109 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 472.596 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29558 - 878.750 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 722.982 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 460.205 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 454.629 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29686 - 1085.981 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29690 - 432.747 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29688 - 501.202 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29725 - 500.670 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29695 - 610.978 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29912 - 877.237 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29875 - 395.814 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 510.106 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29875 - 378.194 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 907.869 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30734 - 469.193 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30765 - 463.653 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30783 - 1229.434 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30659 - 513.178 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30704 - 537.596 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30700 - 529.120 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 384.228 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 418.545 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 501.975 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 388.410 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 413.919 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 399.980 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 419.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 330.486 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30698 - 451.386 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30761 - 402.907 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 30582 - 833.548 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 457.558 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 471.182 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 29801 - 880.477 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 478.954 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32047 - 440.784 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 31975 - 403.556 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32161 - 796.778 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32181 - 447.062 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 456.884 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32369 - 798.226 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32385 - 435.670 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32369 - 408.911 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 325.664 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 357.851 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 385.422 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32533 - 372.304 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32606 - 322.840 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32659 - 348.304 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32659 - 336.800 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32606 - 384.950 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32662 - 789.966 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32749 - 504.927 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 356.249 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32730 - 422.927 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32725 - 770.892 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32726 - 378.101 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32623 - 374.655 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32623 - 367.660 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32631 - 382.621 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32630 - 405.663 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32625 - 394.847 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32624 - 308.703 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 365.540 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 931.833 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32625 - 419.290 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 407.258 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32625 - 440.229 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 467.078 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 407.564 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 431.406 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32773 - 766.063 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32774 - 639.689 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 32771 - 454.638 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 440.889 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 318.182 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 403.014 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33264 - 767.462 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33054 - 468.145 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 322.480 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 391.307 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33121 - 361.788 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 333.601 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33120 - 324.287 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33274 - 709.130 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33336 - 534.354 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33345 - 386.131 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 321.703 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33514 - 823.483 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33524 - 856.015 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 488.826 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33529 - 693.230 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33529 - 501.732 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33529 - 422.117 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 1020.075 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33529 - 434.690 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33487 - 390.473 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 462.919 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33431 - 419.722 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 485.554 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 33446 - 1035.056 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 34464 - 461.050 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 413.539 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35846 - 522.583 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35855 - 518.000 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35854 - 427.337 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35854 - 530.542 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35854 - 471.135 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21812 - 285.877 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21814 - 281.397 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35739 - 350.873 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35649 - 446.118 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35969 - 807.353 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 35974 - 503.505 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 36492 - 412.259 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 37987 - 415.616 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 37982 - 394.444 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 37980 - 378.814 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 364.548 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 37980 - 328.326 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 37980 - 837.501 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 38006 - 459.476 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 38010 - 472.473 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 38028 - 397.485 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40607 - 471.793 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39071 - 360.224 ms {} ::1
+anonymus GET /login 304  - 290.368 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.619 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1031.147 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /nGraphQl?query={ test } 200 3780 - 7.616 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 15546 - 38.175 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 24 - 2.040 ms {"query":"{ test }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 24 - 3.488 ms {"query":"{ test }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 24 - 3.992 ms {"query":"{ test }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl 200 3738 - 2.106 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 26.480 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 38 - 3.888 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+anonymus GET /aGraphQl?query={ login(kullaniciEPosta:"adasd", kullaniciParola:"gral") } 200 4065 - 43.995 ms {} ::1
+anonymus POST /aGraphQl? 200 15788 - 90.458 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /aGraphQl? 200 121 - 7.340 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
+anonymus POST /aGraphQl? 200 23 - 95.224 ms {"query":"{ login(kullaniciEPosta:\"adasd\", kullaniciParola:\"gral\") }","variables":null} ::1
 anonymus GET / 302 56 -  ms {} ::1
-anonymus GET /login 304  - 2563.648 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 106.184 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 1103.579 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 806.199 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39262 - 841.656 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39817 - 406.696 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 39842 - 409.985 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 478.443 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40382 - 838.735 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 40566 - 701.700 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 462.355 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41533 - 487.153 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41715 - 937.433 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41803 - 542.371 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41809 - 517.322 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41918 - 715.986 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 475.939 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41910 - 559.105 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41933 - 541.123 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41933 - 859.856 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41953 - 461.988 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41982 - 429.508 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42012 - 329.100 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 619.522 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 510.876 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /test 200 899 - 20.576 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 20774 - 151.187 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 475.634 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 491.831 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 422.617 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42228 - 397.930 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 41803 - 354.949 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42051 - 706.700 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 472.134 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42053 - 420.644 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 22182 - 564.986 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42183 - 657.441 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42181 - 494.056 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 41 - 47.757 ms {"kdata":{"anketAdi":"aaaaaaa"},"ndata":{"anketData":"asd","id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42518 - 701.969 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42519 - 492.622 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42532 - 850.194 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42540 - 414.973 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/bolgeler 200 41 - 59.807 ms {"kdata":{"anketAdi":"aaa"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"Soru":"asdas"},{"soruTipiId":"4","cevaplar":["11111111111"],"Soru":"111"},{"soruTipiId":"5","cevaplar":["2222222222","555555"],"Soru":"222"},{"soruTipiId":"6","cevaplar":["33333333333"],"Soru":"333"}],"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2204.798 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 80.605 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 600.256 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42852 - 490.863 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 28.382 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textttttt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberrrr"},{"soruTipiId":"5","cevaplar":["secim1"],"soru":"seçiim"}],"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2369.727 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 83.521 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 701.535 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42852 - 548.528 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 47.624 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberr"},{"soruTipiId":"5","cevaplar":["seçim1"],"soru":"seçim"}],"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 50 - 36.961 ms {"kdata":{"anketAdi":"test","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipiId":"1","cevaplar":[],"soru":"textt"},{"soruTipiId":"2","cevaplar":[],"soru":"numberr"},{"soruTipiId":"5","cevaplar":["seçim1"],"soru":"seçim"}],"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2559.805 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 95.428 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 601.771 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42833 - 551.837 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 48 - 45.098 ms {"kdata":{"anketAdi":"test","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"text"},{"soruTipId":"4","cevaplar":["radio1"],"soru":"radioo"},{"soruTipId":"5","cevaplar":["select1"],"soru":"select"}],"id":null,"method":"create"}} ::1
-anonymus GET /login 304  - 2298.779 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 87.671 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 621.174 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42833 - 504.082 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 97.525 ms {"kdata":{"anketAdi":"test","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"}],"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27624 - 442.273 ms {} ::1
-anonymus GET /login 304  - 2528.018 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 99.439 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 600.301 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42842 - 499.003 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27536 - 341.542 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3   -  ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 833.150 ms {} ::1
-anonymus GET /login 304  - 2783.475 ms {} ::ffff:127.0.0.1
-anonymus GET /login 200 22671 - 555.993 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 75.586 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 616.636 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 496.784 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 456.820 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27536 - 358.979 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27797 - 379.373 ms {} ::1
-anonymus GET /login 304  - 2554.000 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.409 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 614.615 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 304  - 490.227 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 357.619 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43063 - 449.686 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43065 - 832.630 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 451.526 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43074 - 401.982 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 357.746 ms {} ::1
-anonymus GET /login 304  - 2515.078 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 67.266 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 39019 - 599.222 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 511.215 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27674 - 324.961 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43212 - 461.105 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 41 - 31.490 ms {"kdata":{"anketAdi":"testtt","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipId":"6","cevaplar":["checkbox1"],"soru":"yeniii"}],"id":3,"method":"update"}} ::1
-anonymus GET /login 304  - 2374.845 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 64.328 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 566.892 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27680 - 405.801 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43214 - 452.372 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 43 - 96.427 ms {"kdata":{"anketAdi":"testtta","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"}],"id":3,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 401.450 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 691.686 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21589 - 263.322 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 500 21849 - 652.484 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 42910 - 454.570 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 413.079 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43143 - 394.064 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43519 - 813.136 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43180 - 513.866 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 481.206 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43143 - 409.717 ms {} ::1
-anonymus GET /login 304  - 1076.252 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 58.132 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 518.610 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 300.097 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43345 - 406.945 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43753 - 699.201 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43771 - 328.506 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 43771 - 362.324 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44046 - 677.087 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44060 - 373.281 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 427.822 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44060 - 334.289 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 43 - 40.486 ms {"kdata":{"anketAdi":"testtta","anketCinsi":"standart"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["1313131"],"soru":"zxcz"}],"id":3,"method":"update"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27681 - 391.128 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 44155 - 296.156 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 284.696 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 291.646 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 574.272 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 498.052 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 406.960 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43650 - 533.983 ms {} ::1
-anonymus GET /login 304  - 2389.593 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 92.347 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 793.009 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 455.048 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43939 - 542.098 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43939 - 545.861 ms {} ::1
-anonymus GET /login 304  - 2852.050 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 76.346 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 649.058 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 344.372 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 554.295 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 8092.740 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 4546.809 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43848 - 554.797 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43941 - 556.302 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43732 - 457.159 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43669 - 448.842 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43924 - 427.366 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 62 - 24.048 ms {"kdata":{"where":{"anketId":"3"},"hash":"b1f33a3f495a9ac35f79669a1b597663"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 43936 - 972.140 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 536.123 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 576.320 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 62 - 14.768 ms {"kdata":{"where":{"anketId":"3"},"hash":"d0726ea18919d70f5b71628485e1a4e6"}} ::1
-anonymus GET /login 304  - 1151.528 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 85.842 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 661.898 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44015 - 841.942 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 18.348 ms {"kdata":{"where":{"anketId":"3"},"hash":"ff0e144d6e05798f2ffb1f93c9ad3b79"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44341 - 969.835 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 10.674 ms {"kdata":{"where":{"anketId":"3"},"hash":"dd5ba4e17d122d400d849328b38721b7"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44388 - 443.682 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 29.717 ms {"kdata":{"where":{"anketId":"3"},"hash":"34557851948d935585fbff32631d8ca6"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44427 - 470.162 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44388 - 410.679 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44393 - 433.311 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 28.328 ms {"kdata":{"where":{"anketId":"3"},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 12.857 ms {"kdata":{"where":{"anketId":""},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 36.139 ms {"kdata":{"where":{"anketId":"3"},"hash":"3c04519e1061dbc09a3bbbce1eb6f48a"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44395 - 689.883 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 15.337 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 18.925 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 6.545 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 5.595 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 6.372 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 56 - 26.011 ms {"kdata":{"where":{"anketId":""},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 251 - 42.822 ms {"kdata":{"where":{"anketId":"3"},"hash":"abb2641753f98f4df96842828a785106"}} ::1
-anonymus GET /login 200 22667 - 2676.079 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 82.499 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 706.238 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 436.861 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27204 - 441.139 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 500 22196 - 588.001 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 117173 - 2358.122 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 117202 - 2232.156 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27331 - 879.363 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27356 - 488.818 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27416 - 485.101 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27416 - 433.079 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27451 - 379.801 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27427 - 382.424 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27451 - 758.201 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27480 - 549.694 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 528.318 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 398.698 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 553.636 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 440.770 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 428.216 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27486 - 349.616 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27553 - 832.138 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27543 - 445.484 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 27739 - 403.177 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 807.965 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 390.188 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 421.426 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 460.401 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 730.727 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 416.927 ms {} ::1
-anonymus GET /login 304  - 2429.244 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 79.723 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 728.097 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 476.948 ms {} ::1
-anonymus GET /login 304  - 2353.731 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 72.351 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 741.723 ms {} ::ffff:127.0.0.1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27677 - 396.763 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21737 - 237.324 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21735 - 238.887 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28065 - 468.363 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28065 - 377.076 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 500 21878 - 1123.522 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28414 - 543.055 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 28116 - 504.796 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 861.835 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 585.904 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29658 - 942.115 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29892 - 592.142 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29889 - 527.217 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 912.698 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 29567 - 511.963 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30066 - 534.368 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30495 - 522.422 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 200 30455 - 539.036 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 376.695 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 360.985 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 794.432 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 537.793 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 463.737 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44492 - 509.417 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 28.442 ms {"kdata":{"where":{"anketId":"3"},"hash":"c51ecdb0c8ed330fe6138411da36c6bd"}} ::1
-anonymus GET /login 304  - 2388.789 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 81.614 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
-YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 951.570 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 446.633 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44519 - 959.701 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 587.027 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 383.014 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/3 304  - 438.251 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 391.225 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 400.002 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 17.585 ms {"kdata":{"where":{"anketId":"3"},"hash":"13f49bade6c6e61a27bd4cbfe5bef0eb"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 333.923 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44522 - 731.519 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 20.230 ms {"kdata":{"where":{"anketId":"3"},"hash":"d9be5474d61eaa8d6660babebc417a24"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 69.126 ms {"kdata":{"anketAdi":"xczxczc","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"3","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["evet"],"soru":"zxcz"},{"soruTipId":"1","cevaplar":[],"soru":""}],"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 27972 - 505.087 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/4 200 29995 - 393.493 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 434.630 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44557 - 415.287 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 22.538 ms {"kdata":{"where":{"anketId":"3"},"hash":"d0e65aa05acd06f11afe3d78b40cbc3e"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/anketler 200 45 - 57.514 ms {"kdata":{"anketAdi":"qqqqqqq","anketCinsi":"ozel"},"ndata":{"anketData":[{"soruTipId":"1","cevaplar":[],"soru":"tesfsd"},{"soruTipId":"4","cevaplar":["cbcbc"],"soru":"asdzxczzxradio"},{"soruTipId":"6","cevaplar":["checkboxxxx"],"soru":"checkbox"},{"soruTipId":"1","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"3","cevaplar":[],"soru":"123"},{"soruTipId":"6","cevaplar":["dfgdfdg"],"soru":"zczcz"},{"soruTipId":"4","cevaplar":["evet","hayır"],"soru":"zxcz"}],"id":null,"method":"create"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 200 28267 - 339.351 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/5 200 30045 - 331.559 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 285.092 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44592 - 405.089 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 22.943 ms {"kdata":{"where":{"anketId":"5"},"hash":"61108ff0adb8bdf9c7eb45a2b07deacb"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44562 - 1382.896 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 32.076 ms {"kdata":{"where":{"anketId":"5"},"hash":"5a78de5fc6ef70f6e98f520f4bb8cf98"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44561 - 579.313 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44716 - 599.181 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 651 - 29.041 ms {"kdata":{"where":{"anketId":"4"},"hash":"786db8e326a1677593855cf662209c82"}} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 16.762 ms {"kdata":{"where":{"anketId":"5"},"hash":"786db8e326a1677593855cf662209c82"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44739 - 560.373 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 14.283 ms {"kdata":{"where":{"anketId":"5"},"hash":"69d04e2517d915397ff956b846f4a715"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 749.449 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/5 304  - 604.852 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/5 200 30061 - 506.258 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 416.392 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44739 - 435.314 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 200 29706 - 980.796 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/form 200 30218 - 601.238 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44768 - 699.810 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 17.879 ms {"kdata":{"where":{"anketId":"3"},"hash":"12c37c54e44a95dcc0073cd990102dbb"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44746 - 475.043 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 621 - 11.345 ms {"kdata":{"where":{"anketId":"3"},"hash":"1c459f391afb88cc20b508d2e46183c7"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/form 200 44746 - 775.749 ms {} ::1
-YUNUS AAAAAAAAAAAAA POST /ajax/dyndata 200 608 - 10.355 ms {"kdata":{"where":{"anketId":"5"},"hash":"62044d07a5ee02a9d9cfe548bfa36e8b"}} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 358.289 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/5 304  - 388.744 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /anketler/table 304  - 312.538 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /carihareketleri/table 304  - 621.320 ms {} ::1
-YUNUS AAAAAAAAAAAAA GET /toplucarihareketiekle 200 30694 - 396.443 ms {} ::1
+anonymus GET /login 304  - 2307.895 ms {} ::1
+anonymus POST /aGraphQl? 200 577 - 24.397 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 4516 - 29.425 ms {} ::1
+anonymus POST /aGraphQl? 200 15788 - 44.208 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /login 304  - 476.945 ms {} ::1
+anonymus POST /aGraphQl? 200 120 - 107.008 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /aGraphQl? 200 120 - 152.661 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 4514 - 58.075 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 90.308 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 2839.670 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 4514 - 23.523 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 34.716 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /ajax/exit 200 66 - 2.814 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 200 22667 - 736.615 ms {} ::1
+anonymus GET /login 304  - 429.760 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 56.637 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 572.602 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 21.438 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl 200 3738 - 4.193 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 29.874 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl 200 3738 - 3.313 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 24.173 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 425.334 ms {} ::1
+anonymus GET /ajax/exit 304  - 2.047 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 287.708 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 575 - 88.729 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl 200 3738 - 14.233 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 42.270 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 432.357 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /nGraphQl 200 3738 - 1.863 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 15546 - 20.086 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /ajax/exit 304  - 4.760 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 200 22667 - 407.873 ms {} ::1
+anonymus GET /login 304  - 252.928 ms {} ::1
+anonymus POST /aGraphQl? 200 15788 - 19.872 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /aGraphQl?query=login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") 400 102 - 6.987 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 22.382 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 783.959 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /bGraphQl?query={test} 404 20770 - 351.698 ms {} ::1
+anonymus POST /aGraphQl? 400 109 - 11.126 ms {"query":"{ test }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA POST /nGraphQl?query={test} 200 24 - 3.474 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 575 - 394.467 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 4514 - 305.340 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 99.381 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /favicon.ico 404 20770 - 304.319 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 575 - 28.813 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 4514 - 31.939 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 22.047 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 416.701 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 18.934 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 372.583 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 15788 - 16.277 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /nGraphQl 200 3738 - 4.434 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 15546 - 19.093 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /aGraphQl? 200 575 - 38.653 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 30.534 ms {} ::ffff:192.168.1.33
+YUNUS AAAAAAAAAAAAA POST /nGraphQl? 200 24 - 5.380 ms {"query":"{ test }","variables":null} ::ffff:192.168.1.37
+anonymus GET /nGraphQl?query={ test } 200 24 - 4.029 ms {} ::ffff:192.168.1.33
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 20.504 ms {} ::ffff:192.168.1.38
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 20.921 ms {} ::ffff:192.168.1.38
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 26.227 ms {} ::ffff:192.168.1.38
+anonymus GET /nGraphQl?query={ test } 200 24 - 4.301 ms {} ::ffff:192.168.1.33
+anonymus GET /nGraphQl?query={ test } 200 24 - 35.395 ms {} ::ffff:192.168.1.33
+anonymus GET /nGraphQl?query={ test } 200 24 - 8590.215 ms {} ::ffff:192.168.1.33
+anonymus GET /nGraphQl?query={ test } 200 24 - 60105.419 ms {} ::ffff:192.168.1.33
+anonymus GET /nGraphQl?query={ test } 200 24 - 3.701 ms {} ::ffff:192.168.1.33
+anonymus GET /login 200 22667 - 2442.597 ms {} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 91.472 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 686.749 ms {} ::ffff:192.168.1.37
+anonymus GET /ajax/exit 200 66 - 2.566 ms {} ::ffff:192.168.1.37
+anonymus GET / 302 56 -  ms {} ::ffff:192.168.1.37
+anonymus GET /login 304  - 323.463 ms {} ::ffff:192.168.1.37
+anonymus GET /login 304  - 479.591 ms {} ::ffff:192.168.1.37
+anonymus GET /login 304  - 275.983 ms {} ::ffff:192.168.1.37
+anonymus GET /login 200 22667 - 214.979 ms {} ::ffff:192.168.1.33
+YUNUS AAAAAAAAAAAAA GET /aGraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 575 - 69.806 ms {} ::ffff:192.168.1.33
+anonymus GET /login 200 22667 - 274.078 ms {} ::ffff:192.168.1.33
+anonymus GET /login 200 22667 - 547.583 ms {} ::ffff:192.168.1.33
+anonymus GET /GraphQl 500 56 - 25.170 ms {} ::1
+anonymus GET /login 200 22667 - 3285.371 ms {} ::1
+anonymus GET /login 200 22667 - 2626.709 ms {} ::1
+anonymus GET /GraphQl 500 66 - 20.089 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 56 - 25.695 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 56 - 3.604 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 35.078 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 111.066 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 52.370 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 101.235 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 64 - 18.738 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 40.873 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 99.782 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 49107.349 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 3116.013 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 78.352 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 162.174 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 83.843 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 199.340 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 50.113 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 108.794 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 71.172 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3118.120 ms {} ::1
+anonymus GET /ajax/exit 304  - 3.416 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 724.420 ms {} ::1
+anonymus GET /GraphQl 200 3738 - 10631.666 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 111.441 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 59 - 41.062 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 69 - 44.798 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 66 - 40.723 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 66 - 32207.224 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 69 - 6407.074 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 47 - 2949.976 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 3404.127 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 2517.274 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 44.435 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 3798.610 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 66 - 1900.636 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 500 66 - 2447.330 ms {} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 49.176 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 6538.538 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 47491.060 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 4369.208 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 65.530 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3396.056 ms {} ::1
+anonymus GET /GraphQl 200 3738 - 1936.797 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 1887.227 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 59.048 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 126.424 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+anonymus GET /GraphQl 200 3738 - 7861.653 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 4973.638 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 4067.101 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 777.775 ms {} ::1
+anonymus GET /ajax/exit 304  - 3.231 ms {} ::1
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 373.108 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 74.079 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 697.650 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 461.123 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3642.082 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 767.933 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3381.424 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 39015 - 908.575 ms {} ::ffff:127.0.0.1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3240.051 ms {} ::1
+anonymus GET /GraphQl 200 3738 - 3319.180 ms {} ::ffff:192.168.1.37
+anonymus POST /GraphQl? 200 15933 - 1193.019 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::ffff:192.168.1.37
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 2579.273 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /GraphQl 200 3738 - 42.475 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 15934 - 87.961 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /GraphQl 200 3738 - 47.899 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 15934 - 128.056 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 3438.083 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /GraphQl 200 3738 - 37.827 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 15934 - 158.805 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /GraphQl 200 3738 - 63.088 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 15934 - 126.813 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA GET /GraphQl 200 3738 - 4.834 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 15934 - 34.886 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+YUNUS AAAAAAAAAAAAA POST /GraphQl? 200 53 - 28.677 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 34.713 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 133.703 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 6970.909 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 4884.594 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 2528.776 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 2298.656 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus GET /GraphQl 200 3738 - 105.446 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 109.495 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 53 - 2084.097 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 500 45 - 45.690 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 148 - 164.464 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 106.346 ms {"query":"{ test }","variables":null} ::1
+anonymus GET /GraphQl?query={ test } 200 3780 - 89.425 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 80.226 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 24 - 5.359 ms {"query":"{ test }","variables":null} ::1
+anonymus GET /GraphQl?query={ test } 200 3780 - 71.156 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 107.618 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 24 - 6.997 ms {"query":"{ test }","variables":null} ::1
+anonymus GET /GraphQl?query={ test } 200 3780 - 70.235 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 102.351 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 24 - 4.882 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 190.759 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 156.525 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 500 46 - 145.458 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 159.209 ms {"query":"{ test }","variables":null} ::1
+anonymus GET /GraphQl?query={ test } 200 3776 - 147.781 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 74.631 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 22 - 9.122 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 194.878 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 12.517 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 4828.181 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 3860.256 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 76.801 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 133.584 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 7.754 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 22 - 6.378 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 20 - 88.139 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 20 - 73.382 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 20 - 321188.552 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 20 - 8507.741 ms {"query":"{ test }","variables":null} ::1
+anonymus GET /GraphQl?query={ test } 200 3780 - 69.539 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 76.603 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 24 - 11781.727 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 28.083 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 23.527 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 13.667 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 7.683 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 9.030 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 7.773 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 6.903 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 11.356 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 5.405 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 5.146 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 8.141 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 6.034 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 10.172 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 8.650 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 11.835 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 9.454 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 6.128 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 24 - 9.058 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 128 - 101.965 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 20 - 117.393 ms {"query":"{ test }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 130.492 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 13275.245 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 2350.655 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 53.353 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 44.493 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 3492.525 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 1705.367 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 3827.303 ms {} ::1
+anonymus POST /GraphQl? 200 53 - 14.183 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 21.699 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 18.448 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 33.929 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 87.038 ms {} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 18.003 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 46.388 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus POST /GraphQl? 200 53 - 26.643 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 12.100 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 20.128 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 39.622 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 32.765 ms {} ::1
+anonymus POST /GraphQl? 200 15934 - 35.970 ms {"query":"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "} ::1
+anonymus GET /GraphQl?query={ login(kullaniciEPosta:"yunusemrahdursun@gmail.com", kullaniciParola:"1234") } 200 3884 - 160.424 ms {} ::1
+anonymus POST /GraphQl? 200 53 - 68.975 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 20.248 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 124.435 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
+anonymus POST /GraphQl? 200 53 - 14.295 ms {"query":"{ login(kullaniciEPosta:\"yunusemrahdursun@gmail.com\", kullaniciParola:\"1234\") }","variables":null} ::1
