@@ -1,4 +1,4 @@
 select#languages.custom-select
   each val in languages
-    option(value=val.id ,selected= val == (l && l.language) ? true:false)
+    option(value=val.id ,selected = val.id == (l && l.language) ? true:false)
       =val.dilKodu.toUpperCase()

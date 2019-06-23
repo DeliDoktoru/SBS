@@ -1,0 +1,9 @@
+YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 52.092 ms {"language":"2"} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 40304 - 483.829 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 22.725 ms {"language":"2"} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 444.954 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 66007.673 ms {"language":"2"} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 848.039 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 40313 - 573.462 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/changeLanguage 200 2 - 2463.894 ms {"language":"1"} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 40361 - 564.863 ms {} ::1
