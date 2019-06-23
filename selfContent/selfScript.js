@@ -2,6 +2,8 @@ const md5 = require('md5');
 function selfScript(){
     this.yetkiler={};
     this.sayfalar={};
+    this.diller=[];
+    this.dilDosyalari={};
     _this=this;
     this.generateHash=function(session,tableName,dbName,colNames){
         var foundIndex =session.tableNames.findIndex(x=>x.tableName==tableName && x.dbName==dbName);
@@ -46,7 +48,7 @@ function selfScript(){
         }
         return obj;
     }
-    this.initYetkiVeSayfalar=function(db){
+    this.initDatas=function(db){
         new db().selectAll( 'kullanici_unvanlar' ).then(kullaniciUnvanlar=> {
             new db().selectAll("sayfalar").then(sayfalar=> {
                 new db().selectAll("yetkiler").then(yetkiler=>{
@@ -65,7 +67,18 @@ function selfScript(){
                 })
             })
         }); 
+        new db().selectAll("diller").then(diller=>{
+            _this.diller = diller;
+            for(item of diller){
+                _this.dilDosyalari[item.id]=require(`../languages/${item.dilKodu}.js`);
+            }
+        });
     }
-    
+    this.language=function(language){
+        this.language=language;
+        this.getLanguage=function(languageParam){
+            return _this.dilDosyalari[language][languageParam]||languageParam;
+        } 
+    }
   }
   module.exports = new selfScript();

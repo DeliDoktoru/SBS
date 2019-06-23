@@ -13,7 +13,7 @@ const graphqlHTTP = require('express-graphql');
 var MySQLStore = require('express-mysql-session')(session);
 const db = require('./selfContent/database');
 const selfScript = require('./selfContent/selfScript');
-selfScript.initYetkiVeSayfalar(db);
+selfScript.initDatas(db);
 /* #region  session */
 
 var sessionStore = new MySQLStore({}, new db().createConnection("sbs") );
@@ -42,8 +42,6 @@ app.use(async function (req, res, next) {
     next(); 
     return;
   }
-  //console.log(selfScript.yetkiler);
-  //console.log(selfScript.sayfalar);
   if (req.url == "/" || req.url == "/login" ) {
     if (req.session.user == undefined || req.session.user.id == undefined) {
       if(req.url == "/"){
@@ -185,8 +183,8 @@ app.use(function (req, res, next) {
     next();
     return;
   }
-  const l= require('./selfContent/language');
-  res.locals.l= new l(req.session.language||(req.session.user&&req.session.user.kullaniciDilTercihi)||"tr");
+  res.locals.languages=selfScript.diller;
+  res.locals.l= new selfScript.language(req.session.language||(req.session.user&&req.session.user.kullaniciDilTercihi)||1);
   next();
 });
 app.use(function (req, res, next){

@@ -446,4 +446,5 @@ router.get('/duyuru',async function(req,res,next){
   data.bolgeler = await new db().selectAll('bolgeler',dbName);
   res.render('duyuru/form', data);
 });
+
 module.exports = router;

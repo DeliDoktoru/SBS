@@ -40,7 +40,12 @@ module.exports = function(request){
         request.sessionStore.get(request.sessionID,function(err,result){
             resolve( result );
         });
-      })
+      });
+      /*
+        session öldürmedende bu işlem yapılabilirdi şöyle
+        request.session.user=user;
+        ama şimdilik kalsın böyle
+      */
       request.sessionStore.destroy(request.sessionID);
       request.sessionStore.set(request.sessionID,{user:user[0] , cookie:answer.cookie});
       return request.sessionID;

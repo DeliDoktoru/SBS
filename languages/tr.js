@@ -17,6 +17,7 @@ var language={
     "cikisyapiliyor":"Çıkış Yapılıyor..",
     "eminmisiniz":"Emin misiniz ?",
     "tokenbulunamadi":"Token bulunamadı!",
+    "kullaniciekle":"Kullanıcı Ekle"
 
 }
 module.exports = language;
