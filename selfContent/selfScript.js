@@ -1,5 +1,8 @@
 const md5 = require('md5');
 function selfScript(){
+    this.yetkiler={};
+    this.sayfalar={};
+    _this=this;
     this.generateHash=function(session,tableName,dbName,colNames){
         var foundIndex =session.tableNames.findIndex(x=>x.tableName==tableName && x.dbName==dbName);
         var hash=md5(Math.random());
@@ -43,5 +46,26 @@ function selfScript(){
         }
         return obj;
     }
+    this.initYetkiVeSayfalar=function(db){
+        new db().selectAll( 'kullanici_unvanlar' ).then(kullaniciUnvanlar=> {
+            new db().selectAll("sayfalar").then(sayfalar=> {
+                new db().selectAll("yetkiler").then(yetkiler=>{
+                    for(item of kullaniciUnvanlar){
+                        if(item.sayfalar && item.sayfalar!=""){
+                            _this.yetkiler[item.id]={};
+                            _this.sayfalar[item.id]=[];
+                            JSON.parse(item.sayfalar).map(y=> {
+                                var tmpResultYetki = yetkiler.find(z=> y==z.id);
+                                tmpResultYetki && tmpResultYetki!=-1 ? _this.yetkiler[item.id][tmpResultYetki.yetkiAdi]=true:null;
+                                var tmpResultSayfa = sayfalar.filter(z=> y==z.yetkiId);
+                                tmpResultSayfa && tmpResultSayfa!=-1 ? _this.sayfalar[item.id]=_this.sayfalar[item.id].concat(tmpResultSayfa):null;
+                            });
+                        } 
+                    }
+                })
+            })
+        }); 
+    }
+    
   }
   module.exports = new selfScript();

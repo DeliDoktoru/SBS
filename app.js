@@ -9,12 +9,11 @@ var indexRouter = require('./routes/index');
 var ajaxRouter = require('./routes/ajax');
 var usersRouter = require('./routes/users');
 var app = express();
-const yetki= require('./selfContent/yetki');
 const graphqlHTTP = require('express-graphql');
 var MySQLStore = require('express-mysql-session')(session);
 const db = require('./selfContent/database');
-
-
+const selfScript = require('./selfContent/selfScript');
+selfScript.initYetkiVeSayfalar(db);
 /* #region  session */
 
 var sessionStore = new MySQLStore({}, new db().createConnection("sbs") );
@@ -43,6 +42,8 @@ app.use(async function (req, res, next) {
     next(); 
     return;
   }
+  //console.log(selfScript.yetkiler);
+  //console.log(selfScript.sayfalar);
   if (req.url == "/" || req.url == "/login" ) {
     if (req.session.user == undefined || req.session.user.id == undefined) {
       if(req.url == "/"){
@@ -67,12 +68,13 @@ app.use(async function (req, res, next) {
         res.redirect('/login');
         return;
       }
-      var unvanPages=yetki.unvans[unvanId];
-      if (unvanPages == null) {
+      //var unvanPages=yetki.unvans[unvanId];
+      if (selfScript.yetkiler[unvanId]  == null || selfScript.sayfalar[unvanId] == null) {
         res.redirect('/login');
         return;
-      } 
-      var str = decodeURIComponent(req.url);
+      }
+      var url= decodeURIComponent(req.url);
+      var str = url ;
       var skipMenu=false;
       if(str.indexOf("/ajax")==0){
         str=str.substring(5,str.length);
@@ -94,15 +96,17 @@ app.use(async function (req, res, next) {
         }
         
       }
-
-      var result=unvanPages.find(x=>x.yetkiAdi && x.yetkiAdi!="" && str.indexOf(x.yetkiAdi)==0 );
-      if (result == null) {
+      slashIndex=str.substr(1).indexOf("/");
+      slashIndex!=-1?str=str.substring(0,slashIndex+1):null;
+      //var result=unvanPages.find(x=>x.yetkiAdi && x.yetkiAdi!="" && str.indexOf(x.yetkiAdi)==0 );
+      if (selfScript.yetkiler[unvanId][str] == null) {
         res.redirect('/');
         return;
       }
       if(!skipMenu){ 
-        res.locals.menu = unvanPages.filter(x=>x.menudeGoster);
-        res.locals.active = result.id;
+        res.locals.menu = selfScript.sayfalar[unvanId];
+        var tmpActive=selfScript.sayfalar[unvanId].find(x=> x.url==url)
+        res.locals.active = tmpActive && tmpActive!=-1 ? tmpActive.id : -1;
         res.locals.name = req.session.user.kullaniciIsim + " " +req.session.user.kullaniciSoyisim;
         res.locals.foto = req.session.user.kullaniciFoto;
         res.locals.kullaniciUnvan=req.session.user.kullaniciUnvan;

@@ -233,15 +233,16 @@ router.get('/bolgeler/:id',async function(req,res,next){
   };
   switch(req.params.id) {
     case "table":
-      var colNameS=["id","sorumluId","bolgeAdi"];
+      var colNameS=["id","bolgeAdi"];
       data.iller=await new db().selectAll('iller',dbName);
-      var sql=`
+      /*var sql=`
       SELECT bolgeler.id,CONCAT(kullanicilar.kullaniciIsim,' ',kullanicilar.kullaniciSoyisim) AS sorumluId,bolgeler.bolgeAdi FROM ${dbName}.bolgeler as bolgeler 
         LEFT JOIN sbs.kullanicilar as kullanicilar 
           on kullanicilar.id=bolgeler.sorumluId 
           WHERE bolgeler.silindiMi=0;
       `;
-      data.tableBody= (await new db().query(sql));
+      data.tableBody= (await new db().query(sql));*/
+      data.tableBody=await new db().selectWithColumn(colNameS,"bolgeler",null,null,dbName);
       data.tableHead= colNameS;
       data.cardHeader=l.getLanguage('bolgeler');
       res.render('includes/table', data);
@@ -261,6 +262,8 @@ router.get('/bolgeler/:id',async function(req,res,next){
       if(!data.targetData){
         res.redirect('/login'); return;
       }
+      var tmpSorumlular=data.targetData.sorumluId;
+      data.targetData.sorumluId=tmpSorumlular && JSON.parse(tmpSorumlular);
       data.kullanicilar=await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
       res.render('bolgeler/form',data);
   }
