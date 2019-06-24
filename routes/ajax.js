@@ -93,8 +93,8 @@ check('kdata.kullaniciParola').exists().not().isEmpty().withMessage("paraloalani
     else if (user && user.length==1 ) {
       req.session.user = user[0];
       req.session.user.tableNames=[];
-      if(req.session.user.kullaniciDilTercihi != (req.session.language|| "tr")){
-        await new db().update({kullaniciDilTercihi:(req.session.language|| "tr")},{id:req.session.user.id},"kullanicilar");  
+      if(req.session.user.kullaniciDilTercihi != (req.session.language|| 1)){
+        await new db().update({kullaniciDilTercihi:(req.session.language|| 1)},{id:req.session.user.id},"kullanicilar");  
       }
     }
     else{
@@ -373,7 +373,7 @@ router.post('/toplucariekle',
   var dataLength=data.length;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
-  var rejectedCariler=[];
+  var rejected=[];
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -389,13 +389,13 @@ router.post('/toplucariekle',
           return true;
         }
       }
-      rejectedCariler.push({ title:"ilceeslesmedi",data:x})
+      rejected.push({ title:"ilceeslesmedi",data:x})
       return false;
     })
     if(data && data.length){
       var couldntInserted = await new db().insert(data,"cariler",dbName);
       if(couldntInserted && couldntInserted.length){
-        rejectedCariler = rejectedCariler.concat(couldntInserted);
+        rejected = rejected.concat(couldntInserted);
       }
       text=l.getLanguage("eklemeislemibasarili");
     }
@@ -406,8 +406,8 @@ router.post('/toplucariekle',
   res.send({
     message: text,
     status: status,
-    rejectedCariler:rejectedCariler.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
-    insertedRowCount:dataLength-rejectedCariler.length
+    rejected:rejected.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
+    insertedRowCount:dataLength-rejected.length
   });
 
 });
@@ -422,7 +422,7 @@ router.post('/toplucarihareketiekle',
   var dataLength=data.length;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
-  var rejectedCariler=[];
+  var rejected=[];
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -439,7 +439,7 @@ router.post('/toplucarihareketiekle',
           return true;
         }
       }
-      rejectedCariler.push({ title:"carieslesmedi",data:x})
+      rejected.push({ title:"carieslesmedi",data:x})
       return false;
     });
     data=data.filter(x=> { 
@@ -455,13 +455,13 @@ router.post('/toplucarihareketiekle',
           return true;
         }
       }
-      rejectedCariler.push({ title:"belgetipieslesmedi",data:x})
+      rejected.push({ title:"belgetipieslesmedi",data:x})
       return false;
     });
     if(data && data.length){
       var couldntInserted = await new db().insert(data,"cari_hareketler",dbName);
       if(couldntInserted && couldntInserted.length){
-        rejectedCariler = rejectedCariler.concat(couldntInserted);
+        rejected = rejected.concat(couldntInserted);
       }
       text=l.getLanguage("eklemeislemibasarili");
     }
@@ -472,8 +472,8 @@ router.post('/toplucarihareketiekle',
   res.send({
     message: text,
     status: status,
-    rejectedCariler:rejectedCariler.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
-    insertedRowCount:dataLength-rejectedCariler.length
+    rejected:rejected.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
+    insertedRowCount:dataLength-rejected.length
   });
 
 });
@@ -900,5 +900,214 @@ router.post('/duyuru',
 
 });
 /* #endregion */
+/* #region  anakategoriler */
+router.post('/anakategoriler',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"ana_kategoriler",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"ana_kategoriler",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"ana_kategoriler",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
 
+});
+/* #endregion */
+/* #region  altkategoriler */
+router.post('/altkategoriler',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"alt_kategoriler",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"alt_kategoriler",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"alt_kategoriler",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  urunler */
+router.post('/urunler',
+[
+ 
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.kdata;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  selfScript.removeNotAllowedProperties([
+    "id","silindiMi"
+  ],data); 
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    switch (req.body.ndata.method) {
+      case "update":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        await new db().update(data,{id:req.body.ndata.id},"urunler",null,dbName);
+        text=l.getLanguage("guncellemebasarili");
+        status = 1;
+        break;
+      case "delete":
+        if(!req.body.ndata.id){
+          throw "idbulunamadi";
+        }
+        var tmpData={id:req.body.ndata.id}
+        await new db().setSilindi(tmpData,"urunler",null,dbName);
+        text=l.getLanguage("silmeislemibasarili");
+        status = 1;
+        break;
+      case "create":
+        await new db().insert(data,"urunler",dbName);
+        text=l.getLanguage("eklemeislemibasarili");
+        status = 1;
+        break;
+      default:
+        text = "Eksik bilgi!";
+        status = 0;
+    }
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+  });
+
+});
+/* #endregion */
+/* #region  toplurunekle */
+router.post('/topluurunekle',
+[
+  //eklencek
+],async function(req, res, next){
+  var l=res.locals.l;
+  var data=req.body.ndata;
+  var dataLength=data.length;
+  var text="", status=0 ;
+  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+  var rejected=[];
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      throw errors.array();
+    }
+    var altKategoriler =await new db().selectAll('alt_kategoriler',dbName);
+    data=data.filter(x=> { 
+      if(x.altKategoriId && x.altKategoriId!=""){
+        var findedKategori=altKategoriler.find(f=>f.altKategoriAdi && f.altKategoriAdi.toUpperCase()==x.altKategoriId.toUpperCase() );
+        if(findedKategori){
+          x.altKategoriId=findedKategori.id;
+          return true;
+        }
+      }
+      rejected.push({ title:"kategorieslesmedi",data:x})
+      return false;
+    })
+    if(data && data.length){
+      var couldntInserted = await new db().insert(data,"urunler",dbName);
+      if(couldntInserted && couldntInserted.length){
+        rejected = rejected.concat(couldntInserted);
+      }
+      text=l.getLanguage("eklemeislemibasarili");
+    }
+    status = 1;
+  } catch (error) {
+    text=selfScript.catchConverterError(error,l);
+  }
+  res.send({
+    message: text,
+    status: status,
+    rejected:rejected.map(x=> { x.title = selfScript.catchConverterError(x.title ,l); return x;}),
+    insertedRowCount:dataLength-rejected.length
+  });
+
+});
+/* #endregion */
 module.exports = router;

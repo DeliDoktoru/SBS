@@ -51,6 +51,15 @@ block content
                 label
                   =l.getLanguage("kullaniciParola")
                 input.form-control(ajax-key="f",name='kullaniciParola', type='password' ,max="45",min="4")&attributes({[targetData && targetData.id?null:"enforced"]: ''})              
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("kullaniciBolgeId")
+                select.custom-select(ajax-key="f",enforced,name="kullaniciBolgeId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in bolgeler
+                        option(value=val.id,selected = val.id==targetData.kullaniciBolgeId ?true:false) 
+                            =val.bolgeAdi
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('kullanicilar','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  

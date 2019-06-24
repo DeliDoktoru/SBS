@@ -100,7 +100,7 @@ app.use(async function (req, res, next) {
       if (selfScript.yetkiler[unvanId][str] == null) {
         res.redirect('/');
         return;
-      }
+      }  
       if(!skipMenu){ 
         res.locals.menu = selfScript.sayfalar[unvanId];
         var tmpActive=selfScript.sayfalar[unvanId].find(x=> x.url==url)

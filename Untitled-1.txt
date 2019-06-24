@@ -13,12 +13,5 @@ if (this.files && this.files[0]) {
                 
                 reader.readAsDataURL(this.files[0]);
             }
---ünvanlarda değişiklik olduğunda servera yeniden başlatmadan güncelleme
---kullanıcıları dil tercihi kaydetmeli
---ana firma için profil
---email uniqe olmalı
---sql join yazılcak
---yüklenmiş gereksiz resimleri silme
--validations 
---formları crossscript engelleme
+
 

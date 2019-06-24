@@ -1,0 +1,46 @@
+            .col-md-4
+              .row
+                .col-md-11
+                  .form-group.has-label
+                    label
+                      =l.getLanguage("bolgeId")
+                    select#bolgeler.custom-select(connect-whoami="id",connect-hash=bolgelerHash)
+                      option(value='',selected)=l.getLanguage("seciniz")
+                        each val in bolgeler
+                            option(value=val.id) 
+                                =val.bolgeAdi
+                .col-md-11.prettyBorder
+                  .form-group.has-label
+                    .form-check
+                      label.form-check-label
+                        input.form-check-input(type='checkbox' value="selectAll")
+                        span.form-check-sign=l.getLanguage("kullanicilar")
+                  .checkboxLayer
+                    each val in kullanicilar
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(ajax-key="f",type='checkbox', value=val.id, name="duyuruGidecekIdler")
+                          span.form-check-sign=val.kullaniciIsim+" "+val.kullaniciSoyisim
+
+  script.
+    function specialPageScript(){
+      $("body").delegate("#bolgeler","change",function(){
+          var hash=$(this).attr("connect-hash");
+          var whoAmI=$(this).attr("connect-whoami");
+          var val=$(this).val();
+          DynData({[whoAmI]:val},hash,function(result){
+            $(`.checkboxLayer input[type='checkbox']`).prop('checked', false);
+            try{
+              for(item of JSON.parse(result[0].sorumluId)){
+                $(`.checkboxLayer input[type='checkbox'][value='${item}']`).prop('checked', true);
+              }
+            }catch(err){
+
+            }
+          });
+      });
+      $("input[type='checkbox'][value='selectAll']").click(function(){
+        $(`.checkboxLayer input[type='checkbox']`).prop('checked', $(this).prop('checked'));
+      });
+    }
+      

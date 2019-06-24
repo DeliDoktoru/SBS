@@ -26,10 +26,11 @@ block content
               .form-group.has-label
                 label
                   =l.getLanguage("sorumluId")
-                select(multiple="multiple",ajax-key="f",enforced,name="sorumluId",type="multipleSelect",placeholder=l.getLanguage("seciniz"))
-                  each val in kullanicilar
-                      option(value=val.id, selected = targetData.sorumluId && targetData.sorumluId.findIndex( x=> val.id==x )!=-1?true:false) 
-                          =val.kullaniciIsim+" "+val.kullaniciSoyisim
+                select.custom-select(ajax-key="f",enforced,name="sorumluId",placeholder=l.getLanguage("seciniz"))
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in kullanicilar
+                        option(value=val.id, selected =  targetData.sorumluId==val.id?true:false) 
+                            =val.kullaniciIsim+" "+val.kullaniciSoyisim
             .col-md-12
               .form-group.has-label
                 label

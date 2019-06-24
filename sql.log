@@ -1,8 +1,0 @@
-'UPDATE sbs.kullanicilar SET kullaniciDilTercihi= ?  WHERE id= ? '
-->["2",39]
-'UPDATE sbs.kullanicilar SET kullaniciDilTercihi= ?  WHERE id= ? '
-->["2",39]
-'UPDATE sbs.kullanicilar SET kullaniciDilTercihi= ?  WHERE id= ? '
-->["2",39]
-'UPDATE sbs.kullanicilar SET kullaniciDilTercihi= ?  WHERE id= ? '
-->["1",39]

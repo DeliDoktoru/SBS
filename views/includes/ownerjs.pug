@@ -114,7 +114,7 @@ script.
                 }
                 else if(type=="checkbox"){
                     var tmpCheckbox=[];
-                    $(`[ajax-key='f'][name='duyuruGidecekIdler']:checked`).each(function () {
+                    $(`[ajax-key=${key}][name=${name}]:checked`).each(function () {
                         tmpCheckbox.push( $(this).attr("value") );
                     });
                     kdata[name]=tmpCheckbox;
@@ -123,6 +123,7 @@ script.
                     kdata[name]=$(this).froalaEditor('html.get', true);
                 }
                 else if(type=="multipleSelect"){
+                    //multipleselect kütüphanesini incele
                     kdata[name]=JSON.stringify($(this).val());
                 }
                 else{

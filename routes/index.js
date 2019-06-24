@@ -117,17 +117,19 @@ router.get('/profile/:id',async function(req, res, next){
 });
 router.get('/kullanicilar/:id',async function(req,res,next){
   var l=res.locals.l;
+  var session=req.session.user;
   if( !req.params.id){
     res.redirect('/login'); return;
   }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
   var data={
     title: l.getLanguage('kullanicilar'),
     unvanlar : await new db().selectAll('kullanici_unvanlar')
   };
-  var colNameS=["id","kullaniciIsim","kullaniciSoyisim","kullaniciUnvan","kullaniciTel","kullaniciEPosta"];
+  var colNameS=["id","kullaniciIsim","kullaniciBolgeId","kullaniciSoyisim","kullaniciUnvan","kullaniciTel","kullaniciEPosta"];
   switch(req.params.id) {
     case "table":
-      data.tableBody= (await new db().selectWithColumn(colNameS,"kullanicilar",{firmaId:req.session.user.firmaId})).map(
+      data.tableBody= (await new db().selectWithColumn(colNameS,"kullanicilar",{firmaId:session.firmaId})).map(
         x=>{
           x.kullaniciUnvan=data.unvanlar.find(y=> y.id==x.kullaniciUnvan).unvanAdi;
           return x;
@@ -138,14 +140,16 @@ router.get('/kullanicilar/:id',async function(req,res,next){
       res.render('includes/table', data);
       break;
     case "form":
+      data.bolgeler=await new db().selectAll('bolgeler',dbName);
       data.cardHeader=l.getLanguage('kullaniciekle');
       data.targetData={}; 
       colNameS.map(x=> data.targetData[x]="");
       res.render('kullanicilar/form',data);
     break;
     default:
+      data.bolgeler=await new db().selectAll('bolgeler',dbName);
       data.cardHeader=l.getLanguage('kullaniciduzenle');
-      data.targetData=(await new db().selectWithColumn(colNameS,"kullanicilar",{id : req.params.id , firmaId:req.session.user.firmaId }))[0];
+      data.targetData=(await new db().selectWithColumn(colNameS,"kullanicilar",{id : req.params.id , firmaId:session.firmaId }))[0];
       if(!data.targetData){
         res.redirect('/login'); return;
       }
@@ -262,8 +266,6 @@ router.get('/bolgeler/:id',async function(req,res,next){
       if(!data.targetData){
         res.redirect('/login'); return;
       }
-      var tmpSorumlular=data.targetData.sorumluId;
-      data.targetData.sorumluId=tmpSorumlular && JSON.parse(tmpSorumlular);
       data.kullanicilar=await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
       res.render('bolgeler/form',data);
   }
@@ -441,10 +443,128 @@ router.get('/duyuru',async function(req,res,next){
   var data={
     title: l.getLanguage('duyuru')
   };
-  data.bolgelerHash=selfScript.generateHash(session,"bolgeler",dbName,["sorumluId"]); 
+  //data.bolgelerHash=selfScript.generateHash(session,"bolgeler",dbName,["sorumluId"]); 
   data.kullanicilar = await new db().selectQuery({firmaId:session.firmaId},'kullanicilar');
   data.bolgeler = await new db().selectAll('bolgeler',dbName);
   res.render('duyuru/form', data);
 });
+router.get('/anakategoriler/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('anakategoriler')
+  };
+  var colNameS=["id","anaKategoriAdi"];
+  switch(req.params.id) {
+    case "table":
+      data.tableBody= await new db().selectAll('ana_kategoriler',dbName);
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('anakategoriler');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.cardHeader=l.getLanguage('anakategoriekle');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      res.render('kategoriler/anaKategoriForm',data); 
+    break;
+    default:
+      data.cardHeader=l.getLanguage('anakategoriduzenle');
+      data.targetData=(await new db().selectQuery({id : req.params.id  },"ana_kategoriler",null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      res.render('kategoriler/anaKategoriForm',data);
+  }
+});
+router.get('/altkategoriler/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('altkategoriler'),
+    anaKategoriler:await new db().selectAll('ana_kategoriler',dbName)
+    
+  };
+  var colNameS=["id","anaKategoriId","altKategoriAdi"];
+  switch(req.params.id) {
+    case "table":
+      data.tableBody= (await new db().selectAll('alt_kategoriler',dbName)).map(
+        x=>{
+          x.anaKategoriId=data.anaKategoriler.find(y=> y.id==x.anaKategoriId).anaKategoriAdi;
+          return x;
+        } 
+      );
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('altkategoriler');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      data.cardHeader=l.getLanguage('altkategoriekle');
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      res.render('kategoriler/altKategoriForm',data); 
+    break; 
+    default:
+      data.cardHeader=l.getLanguage('altkategoriduzenle');
+      data.targetData=(await new db().selectQuery({id : req.params.id  },"alt_kategoriler",null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      res.render('kategoriler/altKategoriForm',data);
+  }
+});
+router.get('/urunler/:id',async function(req,res,next){
+  var l=res.locals.l; 
+  var session=req.session.user;
+  if(  !req.params.id){
+    res.redirect('/login'); return;
+  }
+  var dbName=(await new db().selectQuery({firmaId:session.firmaId},"dbler"))[0].dbAdi;
+  var data={
+    title: l.getLanguage('urunler')
+  };
+  var colNameS=["id","urunAdi","urunKodu"];
+  switch(req.params.id) {
+    case "table":
+      data.tableBody= await new db().selectAll('urunler',dbName);
+      data.tableHead= colNameS;
+      data.cardHeader=l.getLanguage('urunler');
+      res.render('includes/table', data);
+      break;
+    case "form":
+      colNameS=colNameS.concat(["altKategoriId","urunAciklama","urunFoto","urunDosyalar"]);
+      data.cardHeader=l.getLanguage('urunekle');
+      data.altKategoriler=await new db().selectAll('alt_kategoriler',dbName);
+      data.targetData={}; 
+      colNameS.map(x=> data.targetData[x]="");
+      res.render('kategoriler/urunForm',data); 
+    break; 
+    default:
+      colNameS=colNameS.concat(["altKategoriId","urunAciklama","urunFoto","urunDosyalar"]);
+      data.cardHeader=l.getLanguage('urunduzenle');
+      data.altKategoriler=await new db().selectAll('alt_kategoriler',dbName);
+      data.targetData=(await new db().selectQuery({id : req.params.id  },"urunler",null,dbName))[0];
+      if(!data.targetData){
+        res.redirect('/login'); return;
+      }
+      res.render('kategoriler/urunForm',data);
+  }
+});
+router.get('/topluurunekle',async function(req,res,next){
+  var l=res.locals.l;
+  var data={
+    title:l.getLanguage('topluurun'),
+    cardHeader:l.getLanguage('topluUrunEkle')
+  };
+  res.render('kategoriler/topluUrunEkle', data);
 
+});
 module.exports = router;

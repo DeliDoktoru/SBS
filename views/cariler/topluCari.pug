@@ -82,13 +82,13 @@ block content
       });
     }
     function topluCariEkleCallback(obj){
-      if(obj.rejectedCariler && obj.rejectedCariler.length){
+      if(obj.rejected && obj.rejected.length){
         if(table){
           table.destroy();
         }
         //$("#outputImport").html("");
         var tableBody="";
-        for(item of obj.rejectedCariler){
+        for(item of obj.rejected){
           tableBody+=`<tr class="table-danger"><td>${ item.data[Object.keys(item.data)[0]]}</td><td>${item.title}</td> </tr>`;
         }
         var yuklenenVeriText=`
@@ -123,5 +123,5 @@ block content
         showNotification('top','right',"success",obj.message);
         location.href="cariler/table";
       }
-      console.log(result.rejectedCariler)
+      console.log(result.rejected)
     }

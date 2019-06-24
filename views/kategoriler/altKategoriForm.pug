@@ -1,0 +1,37 @@
+extends ../includes/defaultBody
+
+block content
+  .row
+    .col-md-12
+      .card
+        .card-header
+          h4.card-title=cardHeader
+        .card-body
+          .text-right.mb-4
+            if targetData && targetData.id && targetData.id != ""
+              button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('altkategoriler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
+                i.ti-check-box.mr-1    
+                =l.getLanguage("sil")    
+            a(href='/table')
+              button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
+                i.ti-direction.mr-1  
+                =l.getLanguage("vazgec") 
+          .row
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("altKategoriAdi")
+                input.form-control(ajax-key="f",name='altKategoriAdi',enforced,max=45, type='text',value=targetData.altKategoriAdi)
+            .col-md-6
+              .form-group.has-label
+                label
+                  =l.getLanguage("anaKategoriId")
+                select.custom-select(ajax-key="f",enforced,name="anaKategoriId")
+                  option(value='',selected)=l.getLanguage("seciniz")
+                    each val in anaKategoriler
+                        option(value=val.id,selected=val.id==targetData.anaKategoriId?true:false) 
+                            =val.anaKategoriAdi
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('altkategoriler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")

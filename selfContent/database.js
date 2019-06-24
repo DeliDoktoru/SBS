@@ -22,8 +22,12 @@ class Database {
                         rejected.colData=err.sqlMessage.substring(err.sqlMessage.search("entry ")+6,err.sqlMessage.search(" for key"));
                         rejected.message="buverihalihazirdavar";
 
-                    }else if(err.code=="ER_OPERAND_COLUMNS"){
+                    }
+                    else if(err.code=="ER_OPERAND_COLUMNS"){
                         rejected.message="veriicindebulunmamasigerekverivar";
+                    }
+                    else if(err.code=="ER_NO_SUCH_TABLE"){
+                        rejected.message="tablobulunamadi";
                     }
                     global.errorLoger(err);
                     if(returnRejectedData) {

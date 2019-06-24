@@ -8,7 +8,7 @@ block content
           h4.card-title=cardHeader
         .card-body
           .text-right.mb-4  
-            a(href='carihareketleri/table')
+            a(href='urunler/table')
               button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
                 i.ti-direction.mr-1  
                 =l.getLanguage("vazgec")
@@ -23,7 +23,7 @@ block content
                 table#outputImport.table.table-striped.table-bordered  
               #rejectedCariler
           .text-right.mb-4
-            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('toplucarihareketiekle','',topluCariHareketiEkleCallback,false,getResult())`) 
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('topluurunekle','',topluUrunEkleCallback,false,getResult())`) 
               i.ti-check-box.mr-1  
               =l.getLanguage("kaydet")
   script.
@@ -81,7 +81,7 @@ block content
           reader.readAsBinaryString(oFile);
       });
     }
-    function topluCariHareketiEkleCallback(obj){
+    function topluUrunEkleCallback(obj){
       if(obj.rejected && obj.rejected.length){
         if(table){
           table.destroy();
@@ -103,7 +103,7 @@ block content
         `;
         $("#rejectedCariler").html( `
           <br>
-             ${obj.insertedRowCount ?yuklenenVeriText:""}
+            ${obj.insertedRowCount ?yuklenenVeriText:""}
             <h3><b>#{l && l.getLanguage('asagidakiverileryuklenemedi')}</b></h3>
           <br>
           <table class="table">
@@ -121,7 +121,7 @@ block content
       }
       else{
         showNotification('top','right',"success",obj.message);
-        location.href="carihareketleri/table";
+        location.href="urunler/table";
       }
       console.log(result.rejected)
     }
