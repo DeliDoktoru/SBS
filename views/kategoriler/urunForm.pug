@@ -48,9 +48,134 @@ block content
               .form-group
                 label=l.getLanguage("urunAciklama")
                 textarea.form-control.textarea(ajax-key="f",name="urunAciklama",rows='4' cols='80',max="200")=targetData.urunAciklama
-            .col-md-12    
-
+            .col-md-2    
+              input.form-control(hidden,ajax-key="f",name='urunDosyalar',type='text',max="200",value=targetData.urunDosyalar,multiple)   
+              button.mt-4.btn.btn-sm.btn-info.btn-outline-info.btn-round(type='button',onclick=`uploadPdf("[name='urunDosyalar']","#resultPdf")`)
+                i.ti-import.mr-1  
+                =l.getLanguage("pdfyukle")
+            .col-md-4
+              .form-group
+                label=l.getLanguage("yuklenendosyalar")
+              ol.listStyle#resultPdf 
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('urunler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  
               =l.getLanguage("kaydet")
+  script.
+    function initPdfData(data,target){
+      var item="";
+      data.map((x,i)=>{
+        item+=`
+              <li>
+                <div class="row">
+                  <div class="col-md-10">
+                    <a href="/public/firmaPdfs/${x}" target="_blank">${x}</a></div>
+                  <div class="col-md-2"> 
+                    <button class="pdfMiniButton btn btn-sm btn-outline-danger" method="remove" type="button">
+                      <i class="nc-icon nc-simple-remove"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              `;
+      });
+      $(target).append(item);
+      
+    }
+    function removeTarget(target){
+          $.confirm({
+                      content: "",
+                      theme: 'material',
+                      type: 'red',
+                      title: "#{l && l.getLanguage('eminmisiniz')}",
+                      buttons: {
+                        confirm: {
+                          btnClass: 'btn-red',
+                          text: 'Evet',
+                          action: function () {
+                              var _deleteIndex=$(target).index();
+                              var _target=$("[name='urunDosyalar']");
+                              var _targetData=JSON.parse($(_target).val());
+                              var _result=_targetData.filter((x,i)=> { 
+                                if(i!=_deleteIndex) {
+                                  return true;
+                                }
+                                else{
+                                  return false;
+                                }
+                              });
+                              $(_target).val(JSON.stringify(_result));
+                              $(target).remove();  
+                          }
+
+                        },
+                        cancel: {
+                          btnClass: 'btn-default',
+                          text: 'Hayır',
+                          action: function () {}
+                        }
+                      }
+                  });
+    }
+    function specialPageScript(){
+      initPdfData(!{ targetData.urunDosyalar || "[]"},"#resultPdf")
+      $("#resultPdf").delegate("[method]","click",function(){
+        var _method=$(this).attr("method");
+        if(_method=="remove"){
+          removeTarget($(this).parent().parent().parent());
+        }
+      });
+    }
+    function uploadPdf(target,dynamicTarget){
+        if(!target || target==""){
+            return;
+        }
+        $("body").eq(0).prepend(`<input hidden id="dummyPdfInput" type="file" multiple>`);
+        $("#dummyPdfInput").change(function(){
+            var formData = new FormData();
+            Object.keys(document.getElementById("dummyPdfInput").files).map(x=>
+                formData.append("file",document.getElementById("dummyPdfInput").files[x])
+            )
+            jQuery.ajax({
+                url: '/ajax/uploadPdf',
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if(!result){
+                        showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
+                        return;
+                    }
+                    if (result.status){
+                        var TargetVal=$(target).val();
+                        if(TargetVal!=""){
+                            var tmp=JSON.parse($(target).val());
+                            $(target).val(JSON.stringify(tmp.concat(result.fileName)));
+                        }
+                        else{
+                            $(target).val(JSON.stringify(result.fileName));
+                        }
+                        if(dynamicTarget){
+                            initPdfData(result.fileName,dynamicTarget);
+                        }
+                        showNotification('top', 'right', "success", result.message);
+                    }
+                    else{
+                        showNotification('top', 'right', "danger", result.message || "#{l && l.getLanguage('birhatameydanageldi')}");
+                    } 
+                    
+                    $("#dummyPdfInput").remove();
+
+                },
+                error: function (jqXHR, exception) {
+                    console.log(jqXHR);
+                    console.log(exception);
+                    $("#dummyPdfInput").remove();
+                }
+            });
+        });
+        $("#dummyPdfInput").click();
+
+    }
+    

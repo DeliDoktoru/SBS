@@ -42,24 +42,25 @@ script.
                             if(dynamicTarget){
                                 $(dynamicTarget).attr("src","/public/firmaImages/"+result.fileName)
                             }
-                            showNotification('top', 'right', "succes", result.message);
+                            showNotification('top', 'right', "success", result.message);
                         }
                         else{
-                            showNotification('top', 'right', "danger", result.message);
+                            showNotification('top', 'right', "danger", result.message || "#{l && l.getLanguage('birhatameydanageldi')}" );
                         } 
-                        
                         $("#dummyImageInput").remove();
 
                     },
                     error: function (jqXHR, exception) {
                         console.log(jqXHR);
                         console.log(exception);
+                        $("#dummyImageInput").remove();
                     }
                 });
         });
         $("#dummyImageInput").click();
 
     }
+    
     function toDashboard(obj){
         if(obj){
             showNotification('top','right',"success",obj.message);

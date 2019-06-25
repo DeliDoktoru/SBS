@@ -1,0 +1,8 @@
+                each val,index in targetData.urunDosyalar
+                  li
+                    .row
+                      .col-md-10
+                        a(href="/public/firmaPdfs/"+val, target="_blank")=val  
+                      .col-md-2 
+                        button.pdfMiniButton.btn.btn-sm.btn-outline-danger(method='remove' type='button' data-id=index)
+                          i.nc-icon.nc-simple-remove

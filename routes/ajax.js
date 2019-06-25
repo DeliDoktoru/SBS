@@ -22,7 +22,8 @@ var storageImage = multer.diskStorage({
     }
   }
 });
-var uploadImage = multer({ storage: storageImage, limits: { fileSize: 1024 * 1024 * 1024 } ,
+
+var uploadImage = multer({ storage: storageImage, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 1 } ,
   fileFilter: function (req, file, cb) {
   if (req.session.user && req.session.user.firmaId ) {
     cb(null, true)
@@ -33,10 +34,43 @@ var uploadImage = multer({ storage: storageImage, limits: { fileSize: 1024 * 102
   }
   
 }});
+
+var storagePdf = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/public/firmaPdfs/')
+  },
+  filename: function (req, file, cb) {
+    if(req.session.user && req.session.user.firmaId){
+      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+".pdf";
+      if(!req.fileName){
+        req.fileName=[];
+      }
+      req.fileName.push(fileName);
+      
+      cb(null, fileName) ;
+    }
+    else{
+      req.fileValidationError='yetkibulunamadi';
+      return cb(null, false)
+    }
+  }
+});
+
+var uploadPdf = multer({ storage: storagePdf, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 5 } ,
+    fileFilter: function (req, file, cb) {
+      if (req.session.user && req.session.user.firmaId ) {
+        cb(null, true)
+      }
+      else{
+        req.fileValidationError='yetkibulunamadi';
+        return cb(null, false)
+      }  
+  }
+});
 /* #endregion */
 /* #region  uploadImage*/
 router.post('/uploadImage',uploadImage.single('file'), async function(req, res, next) {
-  var text="", status=0,fileName="" ;
+  var text="", status=0,fileName="" ; 
   var l=res.locals.l;
   if(req.fileValidationError){
     text=l.getLanguage(req.fileValidationError);
@@ -46,7 +80,25 @@ router.post('/uploadImage',uploadImage.single('file'), async function(req, res, 
     fileName=req.fileName;
     text=l.getLanguage("resimbasariylayuklendikaydetebasmayiunutmayiniz");
   }
-  
+  res.send({
+    message: text,
+    status: status,
+    fileName:fileName
+  });
+});
+/* #endregion */
+/* #region  uploadPdf*/
+router.post('/uploadPdf',uploadPdf.array('file',5), async function(req, res, next) {
+  var text="", status=0,fileName="" ; 
+  var l=res.locals.l;
+  if(req.fileValidationError){
+    text=l.getLanguage(req.fileValidationError);
+  }
+  else{
+    status=1;
+    fileName=req.fileName;
+    text=l.getLanguage("pdfbasariylayuklendikaydetebasmayiunutmayiniz");
+  }
   res.send({
     message: text,
     status: status,

@@ -30,7 +30,7 @@ app.use(session({
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["/GraphQl","/test1","/test","/ajax/dyndata","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
+  var arr = ["/GraphQl","/test1","/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
   for (val of arr) {
     if (txt.indexOf(val)==0)
       return true;
@@ -78,8 +78,16 @@ app.use(async function (req, res, next) {
         str=str.substring(5,str.length);
         skipMenu=true;
       }
-      if(str.indexOf("/public/firmaImages")==0){
+      var dosyaErisimBoolean=false;
+      if(str.indexOf("/public/firmaImages/" )==0  ){
         str=str.substring(20,str.length);
+        dosyaErisimBoolean=true;
+      }
+      else if(str.indexOf("/public/firmaPdfs/" )==0){
+        str=str.substring(18,str.length);
+        dosyaErisimBoolean=true;
+      }
+      if(dosyaErisimBoolean){
         if(str=="image_placeholder.jpg"){
           next();
           return;  
@@ -92,7 +100,6 @@ app.use(async function (req, res, next) {
           res.redirect('/login');
           return;
         }
-        
       }
       slashIndex=str.substr(1).indexOf("/");
       slashIndex!=-1?str=str.substring(0,slashIndex+1):null;

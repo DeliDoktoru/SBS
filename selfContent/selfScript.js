@@ -6,6 +6,9 @@ function selfScript(){
     this.dilDosyalari={};
     _this=this;
     this.generateHash=function(session,tableName,dbName,colNames){
+        if(!session.tableNames){
+            session.tableNames=[];
+        }
         var foundIndex =session.tableNames.findIndex(x=>x.tableName==tableName && x.dbName==dbName);
         var hash=md5(Math.random());
         foundIndex==-1?session.tableNames.push(

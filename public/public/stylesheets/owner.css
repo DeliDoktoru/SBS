@@ -226,3 +226,13 @@
   border-radius: 20px;
   padding:30px ;
 }
+.listStyle{
+  list-style: decimal !important; 
+}
+.pdfMiniButton{
+  border-width: 0px !important;
+  padding: 3px !important;
+}
+.jconfirm-content{
+  overflow: hidden !important;
+}
