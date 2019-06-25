@@ -12,40 +12,44 @@ block content
               button.ml-4.btn.btn-sm.btn-outline-danger.btn-round.float-left(type='button',onclick=`Dynajax('urunler','f',formBasarili,false,{id:${targetData.id},method:'delete'},true)`) 
                 i.ti-check-box.mr-1    
                 =l.getLanguage("sil")    
-            a(href='/table')
+            a(href='table')
               button.ml-4.btn.btn-sm.btn-info.btn-outline-primary.btn-round(type='button') 
                 i.ti-direction.mr-1  
                 =l.getLanguage("vazgec") 
           .row
-            .col-md-6
-              .form-group.has-label
-                label
-                  =l.getLanguage("urunAdi")
-                input.form-control(ajax-key="f",name='urunAdi',enforced,max=200, type='text',value=targetData.urunAdi)
-            .col-md-6
-              .form-group.has-label
-                label
-                  =l.getLanguage("urunKodu")
-                input.form-control(ajax-key="f",name='urunKodu',enforced,max=45, type='text',value=targetData.urunKodu)
-            .col-md-12
-              .form-group
-                label=l.getLanguage("urunAciklama")
-                textarea.form-control.textarea(ajax-key="f",name="urunAciklama",rows='4' cols='80',max="200")=targetData.urunAciklama
-            .col-md-6
+            .col-md-4
               .card-user.text-center
                 a(href='#',onclick=`uploadImage("[name='urunFoto']",".avatar")`)
                   input.form-control(hidden,ajax-key="f",name='urunFoto',type='text',max="200",value=targetData.urunFoto)    
                   img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.urunFoto || 'image_placeholder.jpg') alt='...')
                   h5.title=l.getLanguage("urunFoto") 
-            .col-md-6
-              .form-group.has-label
-                label
-                  =l.getLanguage("altKategoriId")
-                select.custom-select(ajax-key="f",enforced,name="altKategoriId")
-                  option(value='',selected)=l.getLanguage("seciniz")
-                    each val in altKategoriler
-                        option(value=val.id,selected=val.id==targetData.altKategoriId?true:false) 
-                            =val.altKategoriAdi
+            .col-md-8
+              .row
+                .col-md-12
+                  .form-group.has-label
+                    label
+                      =l.getLanguage("urunAdi")
+                    input.form-control(ajax-key="f",name='urunAdi',enforced,max=200, type='text',value=targetData.urunAdi)
+                .col-md-12
+                  .form-group.has-label
+                    label
+                      =l.getLanguage("urunKodu")
+                    input.form-control(ajax-key="f",name='urunKodu',enforced,max=45, type='text',value=targetData.urunKodu)
+                .col-md-12
+                  .form-group.has-label
+                    label
+                      =l.getLanguage("altKategoriId")
+                    select.custom-select(ajax-key="f",enforced,name="altKategoriId")
+                      option(value='',selected)=l.getLanguage("seciniz")
+                        each val in altKategoriler
+                            option(value=val.id,selected=val.id==targetData.altKategoriId?true:false) 
+                                =val.altKategoriAdi
+            .col-md-12
+              .form-group
+                label=l.getLanguage("urunAciklama")
+                textarea.form-control.textarea(ajax-key="f",name="urunAciklama",rows='4' cols='80',max="200")=targetData.urunAciklama
+            .col-md-12    
+
           .text-right.mb-4
             button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('urunler','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
               i.ti-check-box.mr-1  

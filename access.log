@@ -1,0 +1,67 @@
+anonymus GET / 302 56 -  ms {} ::1
+anonymus GET /login 304  - 2141.206 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/login 200 39 - 98.976 ms {"kdata":{"kullaniciEPosta":"yunusemrahdursun@gmail.com","kullaniciParola":"1234"}} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 786.741 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 789.329 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /topluurunekle 304  - 618.165 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/form 304  - 542.039 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 304  - 514.464 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 370.750 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30961 - 378.234 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 304  - 362.361 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 24.167 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 43 - 39.615 ms {"kdata":{"urunAdi":"test1","urunKodu":"adada","urunAciklama":"zczczc","urunFoto":"2-0bc0d46ad9adf537d9141269410a8468.jpg","altKategoriId":"1"},"ndata":{"id":4,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 393.105 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30995 - 396.201 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /topluurunekle 304  - 268.769 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/topluurunekle 200 80 - 57.855 ms {"ndata":[{"urunAdi":"test1","urunKodu":"adada","urunAciklama":"zczczc","altKategoriId":1}]} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 30246 - 326.726 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /altkategoriler/table 200 29977 - 317.480 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /altkategoriler/form 200 29973 - 355.842 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anakategoriler/table 200 29901 - 323.921 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /anakategoriler/table 200 29527 - 2707.626 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /topluurunekle 200 32529 - 756.695 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 29872 - 436.713 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30621 - 577.942 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /dashboard 200 40926 - 517.998 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 414.464 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30620 - 417.816 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 317.297 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 304  - 328.644 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/table 200 31478 - 458.930 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /cariler/form 200 36198 - 462.874 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30673 - 769.578 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30672 - 523.597 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 43 - 48.666 ms {"kdata":{"urunFoto":"2-0bc0d46ad9adf537d9141269410a8468.jpg","urunAdi":"test1","urunKodu":"adada","urunAciklama":"zczczc","altKategoriId":"1"},"ndata":{"id":4,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 500.279 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 304  - 415.907 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 304  - 2793.487 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 304  - 813.693 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/4 200 30706 - 409.020 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 5093.230 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 13.339 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 20.624 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 44 - 57.388 ms {"kdata":{"urunFoto":"2-f8a950c7aa22916e79fde8e303dce0d2.jpg","urunAdi":"test1","urunKodu":"adada","altKategoriId":"1","urunAciklama":"zczczc"},"ndata":{"id":4,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 29578 - 784.813 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/5 200 30672 - 471.222 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 113.983 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 43 - 23.442 ms {"kdata":{"urunFoto":"2-0b6892c04976e85b2559c1b6b9c82d62.jpg","urunAdi":"test1","urunKodu":"adada","altKategoriId":"1","urunAciklama":"zczczc"},"ndata":{"id":5,"method":"update"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 464.537 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/5 200 30706 - 371.056 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 347.144 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/5 304  - 334.955 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 304  - 341.252 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/form 200 30411 - 343.067 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 16.375 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 45 - 24.229 ms {"kdata":{"urunFoto":"2-e4a9fd009e01b4902e792719630504a2.jpg","urunAdi":"adada","urunKodu":"adad","altKategoriId":"1","urunAciklama":"zczc"},"ndata":{"id":null,"method":"create"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 29871 - 454.139 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/5 304  - 363.363 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 44 - 23.943 ms {"kdata":{"urunFoto":"2-0b6892c04976e85b2559c1b6b9c82d62.jpg","urunAdi":"test1","urunKodu":"adada","altKategoriId":"1","urunAciklama":"zczczc"},"ndata":{"id":5,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 29577 - 381.523 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/6 200 30703 - 392.288 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/6 304  - 383.780 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/urunler 200 44 - 18.774 ms {"kdata":{"urunFoto":"2-e4a9fd009e01b4902e792719630504a2.jpg","urunAdi":"adada","urunKodu":"adad","altKategoriId":"1","urunAciklama":"zczc"},"ndata":{"id":6,"method":"delete"}} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/table 200 29284 - 444.908 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/form 304  - 342.703 ms {} ::1
+YUNUS AAAAAAAAAAAAA POST /ajax/uploadImage 200 124 - 15.970 ms {} ::1
+YUNUS AAAAAAAAAAAAA GET /urunler/form 304  - 815.220 ms {} ::1

@@ -34,7 +34,7 @@ function checkAllowed(txt) {
   for (val of arr) {
     if (txt.indexOf(val)==0)
       return true;
-  }
+  } 
   return false;
 }
 app.use(async function (req, res, next) {
