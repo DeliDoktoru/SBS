@@ -10,6 +10,22 @@ script.
         if($("[type='multipleSelect']").length != 0){
             $("[type='multipleSelect']").multipleSelect()
         }
+        if ($(".datepicker").length != 0) {
+            $('.datepicker').datetimepicker({
+                format: 'DD/MM/YYYY',
+                icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+                }
+            });
+        }
     });
     $('form').on('keyup keypress', function(e) {
         var keyCode = e.keyCode || e.which;
@@ -18,48 +34,7 @@ script.
         return false;
         }
     });
-    function uploadImage(target,dynamicTarget){
-        if(!target || target==""){
-            return;
-        }
-        $("body").eq(0).prepend(`<input hidden id="dummyImageInput" type="file">`);
-        $("#dummyImageInput").change(function(){
-            var formData = new FormData();
-                formData.append("file", document.getElementById("dummyImageInput").files[0]);
-                jQuery.ajax({
-                    url: '/ajax/uploadImage',
-                    type: "POST",
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function (result) {
-                        if(!result){
-                            showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
-                            return;
-                        }
-                        if (result.status){
-                            $(target).val(result.fileName);
-                            if(dynamicTarget){
-                                $(dynamicTarget).attr("src","/public/firmaImages/"+result.fileName)
-                            }
-                            showNotification('top', 'right', "success", result.message);
-                        }
-                        else{
-                            showNotification('top', 'right', "danger", result.message || "#{l && l.getLanguage('birhatameydanageldi')}" );
-                        } 
-                        $("#dummyImageInput").remove();
-
-                    },
-                    error: function (jqXHR, exception) {
-                        console.log(jqXHR);
-                        console.log(exception);
-                        $("#dummyImageInput").remove();
-                    }
-                });
-        });
-        $("#dummyImageInput").click();
-
-    }
+    
     
     function toDashboard(obj){
         if(obj){
@@ -101,10 +76,12 @@ script.
 
     }
     function Dynajax(link,key="",callback,checkControls=true,data,ask=false){
+        maskOpen();
         if(checkControls){
-        if(controls()) return;
+            if(controls()) return;
         }
-        var _data={};
+        //var _data={};
+        var formData = new FormData();
         if(key!=""){
             kdata={};
             $(`[ajax-key=${key}]`).each(function(){
@@ -127,20 +104,34 @@ script.
                     //multipleselect kütüphanesini incele
                     kdata[name]=JSON.stringify($(this).val());
                 }
+                else if(type=="file"){
+                    Object.keys(this.files).map(x=>{
+                        formData.append("file",this.files[x],JSON.stringify({ name: this.files[x].name,colName:name}));
+                    });
+                    var tmpDefault=$(this).attr("default-value");
+                    if(tmpDefault && tmpDefault!="" && tmpDefault!='""'){
+                        kdata[name]=tmpDefault;
+                    }
+                    
+                }
                 else{
                     kdata[name]=$(this).val();
                 }
             });
-            _data.kdata=JSON.stringify(kdata)
+            formData.append('kdata', JSON.stringify(kdata));
         }
         if(data){
-            _data.ndata=JSON.stringify(data);
+            formData.append('ndata', JSON.stringify(data));
         }
+        
         var _ajax={
             type: "POST",
             url: "/ajax/"+link,
-            dataType: "json",
-            data: _data,
+            //dataType: "json",
+            processData: false,
+            contentType: false,
+            //data: _data,
+            data: formData,
             success: function (result) {
                 if(!result){
                     showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
@@ -154,8 +145,10 @@ script.
                 else {
                     showNotification('top', 'right', "danger", result.message);
                 }
+                maskClose();
             },
             error: function (jqXHR, exception) {
+                maskClose();
                 console.log(jqXHR);
                 console.log(exception);
             }
@@ -420,4 +413,41 @@ script.
     })
     /* #endregion */
     
-    
+    /* #region  click tetikleme */
+    $("[fire-target]").on("click",function(e){
+         e.preventDefault()
+        var target=$(this).attr("fire-target");
+        if(target && target!=""){
+            $(target).click();
+        }
+    })
+
+    /* #endregion */
+
+
+    /* #region  spinner */
+    function maskOpen(){
+        $("#spinner,#shadow-mask").css("display", "unset");
+    }
+    function maskClose(){
+        $("#spinner,#shadow-mask").css("display", "none");
+    } 
+    /* #endregion */
+    /* #region  resim önizleme */
+    $("[display-target]").on("change",function(){
+        var targetId=$(this).attr("display-target");
+        var target=`[display-id=${targetId}]`;
+        readURL(this,target);
+    })
+    function readURL(input,target) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+            $(target).attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    /* #endregion */

@@ -1,0 +1,109 @@
+/* #region  multer storage */
+var storageImage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/public/firmaImages/')
+  },
+  filename: function (req, file, cb) {
+    if(req.session.user && req.session.user.firmaId){
+      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+".jpg";
+      req.fileName=fileName;
+      cb(null, fileName) ;
+    }
+    else{
+      req.fileValidationError='yetkibulunamadi';
+      return cb(null, false)
+    }
+  }
+});
+
+var uploadImage = multer({ storage: storageImage, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 1 } ,
+  fileFilter: function (req, file, cb) {
+  if(!file.originalname.endsWith(".jpg")){
+    req.fileValidationError='dosyajpgolmali';
+    return cb(null, false)
+  }
+  if (req.session.user && req.session.user.firmaId ) {
+    cb(null, true)
+  }
+  else{
+    req.fileValidationError='yetkibulunamadi';
+    return cb(null, false)
+  }
+  
+}});
+
+var storagePdf = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/public/firmaPdfs/')
+  },
+  filename: function (req, file, cb) {
+    if(req.session.user && req.session.user.firmaId){
+      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+".pdf";
+      if(!req.fileName){
+        req.fileName=[];
+      }
+      req.fileName.push({ "fileName":file.originalname,"pathName":fileName});
+      
+      cb(null, fileName) ;
+    }
+    else{
+      req.fileValidationError='yetkibulunamadi';
+      return cb(null, false)
+    }
+  }
+});
+
+var uploadPdf = multer({ storage: storagePdf, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 10 } ,
+    fileFilter: function (req, file, cb) {
+      if(!file.originalname.endsWith(".pdf")){
+        req.fileValidationError='dosyapdfolmali';
+        return cb(null, false)
+      }
+      if (req.session.user && req.session.user.firmaId ) {
+        cb(null, true)
+      }
+      else{
+        req.fileValidationError='yetkibulunamadi';
+        return cb(null, false)
+      }  
+  }
+});
+/* #endregion */
+/* #region  uploadImage*/
+router.post('/uploadImage',uploadImage.single('file'), async function(req, res, next) {
+  var text="", status=0,fileName="" ; 
+  var l=res.locals.l;
+  if(req.fileValidationError){
+    text=l.getLanguage(req.fileValidationError);
+  }
+  else{
+    status=1;
+    fileName=req.fileName;
+    text=l.getLanguage("resimbasariylayuklendikaydetebasmayiunutmayiniz");
+  }
+  res.send({
+    message: text,
+    status: status,
+    fileName:fileName
+  });
+});
+/* #endregion */
+/* #region  uploadPdf*/
+router.post('/uploadPdf',uploadPdf.array('file',10), async function(req, res, next) {
+  var text="", status=0,fileName="" ; 
+  var l=res.locals.l;
+  if(req.fileValidationError){
+    text=l.getLanguage(req.fileValidationError);
+  }
+  else{
+    status=1;
+    fileName=req.fileName;
+    text=l.getLanguage("pdfbasariylayuklendikaydetebasmayiunutmayiniz");
+  }
+  res.send({
+    message: text,
+    status: status,
+    fileName:fileName
+  });
+});
+/* #endregion */

@@ -17,17 +17,24 @@ class Database {
             this.connection.query( sql, args, ( err, rows ) => {
                 if ( err )  {
                     var rejected={message:"veritabanihatasi" };
-                    if(err.code=="ER_DUP_ENTRY"){
-                        rejected.colName=err.sqlMessage.substring(err.sqlMessage.search("key ")+5,err.sqlMessage.search("_UNIQUE"));
-                        rejected.colData=err.sqlMessage.substring(err.sqlMessage.search("entry ")+6,err.sqlMessage.search(" for key"));
-                        rejected.message="buverihalihazirdavar";
+                    switch (err.code) {
+                        case "ER_DUP_ENTRY":
+                            rejected.colName=err.sqlMessage.substring(err.sqlMessage.search("key ")+5,err.sqlMessage.search("_UNIQUE"));
+                            rejected.colData=err.sqlMessage.substring(err.sqlMessage.search("entry ")+6,err.sqlMessage.search(" for key"));
+                            rejected.message="buverihalihazirdavar";
+                            break;
+                        case "ER_OPERAND_COLUMNS":
+                            rejected.message="veriicindebulunmamasigerekverivar";
+                            break;
+                        case "ER_NO_SUCH_TABLE":
+                            rejected.message="tablobulunamadi";
+                            break;
+                        case "ER_TRUNCATED_WRONG_VALUE":
+                            rejected.message="hatalideger";
+                            break;
 
-                    }
-                    else if(err.code=="ER_OPERAND_COLUMNS"){
-                        rejected.message="veriicindebulunmamasigerekverivar";
-                    }
-                    else if(err.code=="ER_NO_SUCH_TABLE"){
-                        rejected.message="tablobulunamadi";
+                        default:
+                            break;
                     }
                     global.errorLoger(err);
                     if(returnRejectedData) {

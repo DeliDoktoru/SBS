@@ -1,31 +1,18 @@
-input#my_file_input(type='file')
-table#my_file_output
-script(src='/public/javascripts/jquery.min.js')
-script(src='/public/javascripts/xlsx.full.min.js')
-script.
-	var oFileIn;
-	    oFileIn = document.getElementById('my_file_input');
-	    if(oFileIn.addEventListener) {
-	        oFileIn.addEventListener('change', filePicked, false);
-	    }
-	
-	function filePicked(oEvent) {
-	var oFile = oEvent.target.files[0];
-	var sFilename = oFile.name;
-	var reader = new FileReader();
-	reader.onload = function(e) {
-		var data = e.target.result;
-		var cfb = XLSX.read(data, {type: 'binary'});
-		console.log(cfb)
-		cfb.SheetNames.forEach(function(sheetName) {
-			var sCSV = XLS.utils.make_csv(cfb.Sheets[sheetName]);   
-			var oJS = XLS.utils.sheet_to_json(cfb.Sheets[sheetName]);   
+extends ./includes/defaultBody
 
-			$("#my_file_output").html(sCSV);
-			console.log(oJS)
-		});
-	};
+block content
+  .row
+    .col-md-12
+          .row
+            .col-md-4
+                  input.form-control(ajax-key="f",name='urunFoto',type='file',max="200",accept="image/gif, image/jpeg, image/png")    
+            .col-md-8
+                .form-group.has-label
+                  label
+                    =l.getLanguage("urunAdi")
+                  input.form-control(ajax-key="f",name='urunAdi',enforced,max=200, type='text')
 
-	reader.readAsBinaryString(oFile);
-	}
-		
+          .text-right.mb-4
+            button.ml-4.btn.btn-sm.btn-success.btn-outline-success.btn-round(type='button',onclick=`Dynajax('test','f',formBasarili,true,{id:${targetData && targetData.id?targetData.id:null},method:'${targetData && targetData.id?'update':'create'}'})`) 
+              i.ti-check-box.mr-1  
+              =l.getLanguage("kaydet")

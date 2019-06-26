@@ -3,109 +3,8 @@ const router = express.Router();
 const { check , validationResult } = require('express-validator/check');
 const db= require('../selfContent/database');
 const md5 = require('md5');
-const multer  = require('multer');
 const selfScript= require('../selfContent/selfScript');
-/* #region  multer storage */
-var storageImage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'public/public/firmaImages/')
-  },
-  filename: function (req, file, cb) {
-    if(req.session.user && req.session.user.firmaId){
-      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+".jpg";
-      req.fileName=fileName;
-      cb(null, fileName) ;
-    }
-    else{
-      req.fileValidationError='yetkibulunamadi';
-      return cb(null, false)
-    }
-  }
-});
 
-var uploadImage = multer({ storage: storageImage, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 1 } ,
-  fileFilter: function (req, file, cb) {
-  if (req.session.user && req.session.user.firmaId ) {
-    cb(null, true)
-  }
-  else{
-    req.fileValidationError='yetkibulunamadi';
-    return cb(null, false)
-  }
-  
-}});
-
-var storagePdf = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'public/public/firmaPdfs/')
-  },
-  filename: function (req, file, cb) {
-    if(req.session.user && req.session.user.firmaId){
-      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+".pdf";
-      if(!req.fileName){
-        req.fileName=[];
-      }
-      req.fileName.push(fileName);
-      
-      cb(null, fileName) ;
-    }
-    else{
-      req.fileValidationError='yetkibulunamadi';
-      return cb(null, false)
-    }
-  }
-});
-
-var uploadPdf = multer({ storage: storagePdf, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 5 } ,
-    fileFilter: function (req, file, cb) {
-      if (req.session.user && req.session.user.firmaId ) {
-        cb(null, true)
-      }
-      else{
-        req.fileValidationError='yetkibulunamadi';
-        return cb(null, false)
-      }  
-  }
-});
-/* #endregion */
-/* #region  uploadImage*/
-router.post('/uploadImage',uploadImage.single('file'), async function(req, res, next) {
-  var text="", status=0,fileName="" ; 
-  var l=res.locals.l;
-  if(req.fileValidationError){
-    text=l.getLanguage(req.fileValidationError);
-  }
-  else{
-    status=1;
-    fileName=req.fileName;
-    text=l.getLanguage("resimbasariylayuklendikaydetebasmayiunutmayiniz");
-  }
-  res.send({
-    message: text,
-    status: status,
-    fileName:fileName
-  });
-});
-/* #endregion */
-/* #region  uploadPdf*/
-router.post('/uploadPdf',uploadPdf.array('file',5), async function(req, res, next) {
-  var text="", status=0,fileName="" ; 
-  var l=res.locals.l;
-  if(req.fileValidationError){
-    text=l.getLanguage(req.fileValidationError);
-  }
-  else{
-    status=1;
-    fileName=req.fileName;
-    text=l.getLanguage("pdfbasariylayuklendikaydetebasmayiunutmayiniz");
-  }
-  res.send({
-    message: text,
-    status: status,
-    fileName:fileName
-  });
-});
-/* #endregion */
 /* #region  changeLanguage */
 router.post('/changeLanguage', async function(req, res, next) {
   req.session.language = req.body.language;
@@ -366,14 +265,19 @@ router.post('/cariler',
   var data=req.body.kdata;
   var text="", status=0 ;
   var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
-  if(data.Latitude && data.Longitude)
-  {
-    data.carilerKoordinat=data.Latitude+","+data.Longitude;
-  }
-  selfScript.removeNotAllowedProperties([
-    "id","silindiMi","Latitude","Longitude"
-  ],data); 
+  
   try {
+    if(req.fileName){
+      req.fileName.map(x=>{
+        data[x.colName]=x.pathName;
+      })
+    }
+    if(data.Latitude && data.Longitude){
+        data.carilerKoordinat=data.Latitude+","+data.Longitude;
+      }
+    selfScript.removeNotAllowedProperties([
+      "id","silindiMi","Latitude","Longitude"
+    ],data); 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       throw errors.array();
@@ -825,8 +729,16 @@ router.post('/profile',
   var l=res.locals.l;
   var data=req.body.kdata;
   var text="", status=0 ;
-  var session=req.session.user; 
+  var session=req.session.user;
   try {
+    if(req.fileName){
+      req.fileName.map(x=>{
+        data[x.colName]=x.pathName;
+      })
+    }
+    selfScript.removeNotAllowedProperties([
+      "id","silindiMi"
+    ],data);  
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       throw errors.array();
@@ -1068,11 +980,28 @@ router.post('/urunler',
   var l=res.locals.l;
   var data=req.body.kdata;
   var text="", status=0 ;
-  var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
-  selfScript.removeNotAllowedProperties([
-    "id","silindiMi"
-  ],data); 
   try {
+    var dbName=(await new db().selectQuery({firmaId:req.session.user.firmaId},"dbler"))[0].dbAdi;
+    selfScript.removeNotAllowedProperties([
+      "id","silindiMi"
+    ],data);
+    if(req.fileName){
+      var tmpUrunDosyalar=[];
+      req.fileName.map(x=>{
+        if(x.colName=="urunFoto"){
+          data[x.colName]=x.pathName;
+        }
+        else if(x.colName=="urunDosyalar"){
+          tmpUrunDosyalar.push({fileName:x.fileName ,pathName:x.pathName });
+        }
+      });
+      if(!data.urunDosyalar && tmpUrunDosyalar.length){
+        data.urunDosyalar=JSON.stringify(tmpUrunDosyalar);
+      }
+      else if(data.urunDosyalar && tmpUrunDosyalar.length){
+        data.urunDosyalar=JSON.stringify(JSON.parse(data.urunDosyalar).concat(tmpUrunDosyalar));
+      }
+    } 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       throw errors.array();
@@ -1162,4 +1091,6 @@ router.post('/topluurunekle',
 
 });
 /* #endregion */
+
+
 module.exports = router;

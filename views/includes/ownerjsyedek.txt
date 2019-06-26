@@ -1,0 +1,42 @@
+function uploadImage(target,dynamicTarget){
+        if(!target || target==""){
+            return;
+        }
+        $("body").eq(0).prepend(`<input hidden id="dummyImageInput" type="file" accept="image/gif, image/jpeg, image/png">`);
+        $("#dummyImageInput").change(function(){
+            var formData = new FormData();
+            formData.append("file", document.getElementById("dummyImageInput").files[0]);
+            jQuery.ajax({
+                url: '/ajax/uploadImage',
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if(!result){
+                        showNotification('top', 'right', 'danger', "#{l && l.getLanguage('birhatameydanageldi')}");
+                        return;
+                    }
+                    if (result.status){
+                        $(target).val(result.fileName);
+                        if(dynamicTarget){
+                            $(dynamicTarget).attr("src","/public/firmaImages/"+result.fileName)
+                        }
+                        showNotification('top', 'right', "success", result.message);
+                    }
+                    else{
+                        showNotification('top', 'right', "danger", result.message || "#{l && l.getLanguage('birhatameydanageldi')}" );
+                    } 
+                    $("#dummyImageInput").remove();
+
+                },
+                error: function (jqXHR, exception) {
+                    console.log(jqXHR);
+                    console.log(exception);
+                    $("#dummyImageInput").remove();
+                }
+            });
+        });
+        $("#dummyImageInput").click();
+
+    }

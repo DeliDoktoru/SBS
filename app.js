@@ -13,10 +13,14 @@ const graphqlHTTP = require('express-graphql');
 var MySQLStore = require('express-mysql-session')(session);
 const db = require('./selfContent/database');
 const selfScript = require('./selfContent/selfScript');
+const multer  = require('multer');
+const md5 = require('md5');
 selfScript.initDatas(db);
+
+
 /* #region  session */
 
-var sessionStore = new MySQLStore({}, new db().createConnection("sbs") );
+var sessionStore = new MySQLStore({checkExpirationInterval: 900000,expiration: 86400000,clearExpired: true,}, new db().createConnection("sbs") );
 app.use(session({
   secret: '3D75D274B997B53CFD2892F69F54BC28',
   resave: false,
@@ -30,7 +34,7 @@ app.use(session({
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["/GraphQl","/test1","/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
+  var arr = ["/GraphQl","/test1","/test","/ajax/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
   for (val of arr) {
     if (txt.indexOf(val)==0)
       return true;
@@ -194,6 +198,67 @@ app.use(function (req, res, next) {
   res.locals.l= new selfScript.language(req.session.language||(req.session.user&&req.session.user.kullaniciDilTercihi)||1);
   next();
 });
+
+/* #endregion */
+
+
+/* #region  multer  */
+var storageFile = multer.diskStorage({
+  destination: function (req, file, cb) {
+    var ext=file.originalname.substr(file.originalname.lastIndexOf("."));
+    if(ext==".pdf"){
+      cb(null, 'public/public/firmaPdfs/');
+    }
+    else {
+      cb(null, 'public/public/firmaImages/');
+    }
+  },
+  filename: function (req, file, cb) {
+    if(req.session.user && req.session.user.firmaId){
+      var ext=file.originalname.substr(file.originalname.lastIndexOf("."));
+      var fileName=req.session.user.firmaId+"-"+md5(Math.random())+ext;
+      if(!req.fileName){
+        req.fileName=[];
+      }
+      if(ext==".pdf"){
+        req.fileName.push({ "fileName":file.originalname,"pathName":fileName,"colName":file.colName});
+      }
+      else{
+        req.fileName.push({"pathName":fileName,"colName":file.colName});
+      }
+      cb(null, fileName) ;
+    }
+    else{
+      req.fileValidationError='yetkibulunamadi';
+      return cb(null, false)
+    }
+  }
+});
+const accessFiles=['jpg', 'png', 'pdf','jpeg'];
+var uploadFile = multer({ storage: storageFile, limits: { fileSize: 10 * 1024 * 1024 /*10MB*/ ,files: 10 } ,
+  fileFilter: function (req, file, cb) {
+    var obj=JSON.parse(decodeURIComponent(file.originalname));
+    file.originalname=obj.name;
+    file.colName=obj.colName;
+    if(!accessFiles.some(ext => file.originalname.endsWith("." + ext))){
+    req.fileValidationError='dosyatipigecersiz';
+    return cb(null, false)
+  }
+  if (req.session.user && req.session.user.firmaId ) {
+    cb(null, true)
+  }
+  else{
+    req.fileValidationError='yetkibulunamadi';
+    return cb(null, false)
+  }
+  
+}});
+app.use('/ajax',uploadFile.array('file',10),function(req,res,next){
+  next();
+}); 
+/* #endregion */
+
+/* #region  data arakatmanı */
 app.use(function (req, res, next){
   if(req.body.kdata){
     req.body.kdata=JSON.parse(req.body.kdata);
@@ -203,7 +268,6 @@ app.use(function (req, res, next){
   }
   next();
 })
-
 /* #endregion */
 
 app.use('/', indexRouter);
