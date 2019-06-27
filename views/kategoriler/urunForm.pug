@@ -21,7 +21,7 @@ block content
               .card-user.text-center
                 input.form-control(hidden,ajax-key="f",name='urunFoto',type='file',max="200",accept="image/gif, image/jpeg, image/png",display-target="1")    
                 a(href='#',fire-target="[name='urunFoto']")
-                  img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.urunFoto || 'image_placeholder.jpg') alt='...' display-id="1")
+                  img.border-radios-0.avatar.border-gray(src='/public/firmaImages/'+ (targetData.urunFoto || 'image_placeholder.jpg') alt='...' display-id="1")
                   h5.title=l.getLanguage("urunFoto") 
             .col-md-8
               .row
@@ -53,7 +53,7 @@ block content
               button.mt-4.btn.btn-sm.btn-info.btn-outline-info.btn-round(type='button',fire-target="[name='urunDosyalar']")
                 i.ti-import.mr-1  
                 =l.getLanguage("pdfyukle")
-            .col-md-6
+            .col-md-10
               .form-group
                 label=l.getLanguage("yuklenendosyalar")
               ul#resultPdf 
@@ -109,7 +109,7 @@ block content
       $(target).remove();  
     }
     function specialPageScript(){
-      initPdfData(!{ targetData.urunDosyalar },"#resultPdf",true)
+      initPdfData(!{ targetData.urunDosyalar || "''" },"#resultPdf",true)
       $("#resultPdf").delegate("[method]","click",function(e){
         var _method=$(this).attr("method");
         var _this=this;

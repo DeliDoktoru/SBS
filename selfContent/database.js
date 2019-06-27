@@ -32,7 +32,6 @@ class Database {
                         case "ER_TRUNCATED_WRONG_VALUE":
                             rejected.message="hatalideger";
                             break;
-
                         default:
                             break;
                     }

@@ -6056,7 +6056,7 @@ button.close {
     border-radius: .25rem
 }
 
-.popover {
+/*.popover {
     position: absolute;
     top: 0;
     left: 0;
@@ -6083,7 +6083,7 @@ button.close {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .3rem
-}
+}*/
 
 .popover .arrow {
     position: absolute;

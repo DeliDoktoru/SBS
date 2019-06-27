@@ -3,9 +3,10 @@ script.
         demo.initWizard();
         $('.phone').mask('(000) 000-0000');
         if ($("[type='editor']").length != 0) {
-            $("[type='editor']").froalaEditor({
+            $("[type='editor']").summernote();
+            /*.froalaEditor({
                 toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'fontFamily', 'fontSize',"color", '|', 'inlineStyle', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
-            });
+            });*/
         }
         if($("[type='multipleSelect']").length != 0){
             $("[type='multipleSelect']").multipleSelect()
@@ -98,7 +99,8 @@ script.
                     kdata[name]=tmpCheckbox;
                 }
                 else if(type=="editor"){
-                    kdata[name]=$(this).froalaEditor('html.get', true);
+                    //kdata[name]=$(this).froalaEditor('html.get', true);
+                    kdata[name]=$(this).summernote('code');
                 }
                 else if(type=="multipleSelect"){
                     //multipleselect kütüphanesini incele

@@ -20,7 +20,7 @@ selfScript.initDatas(db);
 
 /* #region  session */
 
-var sessionStore = new MySQLStore({checkExpirationInterval: 900000,expiration: 86400000,clearExpired: true,}, new db().createConnection("sbs") );
+var sessionStore = new MySQLStore({checkExpirationInterval: 900000,expiration: 86400000,clearExpired: true}, new db().createConnection("sbs") );
 app.use(session({
   secret: '3D75D274B997B53CFD2892F69F54BC28',
   resave: false,
@@ -32,7 +32,7 @@ app.use(session({
 
 /* #endregion */
 
-/* #region  permission control */
+/* #region  firewall */
 function checkAllowed(txt) {
   var arr = ["/GraphQl","/test1","/test","/ajax/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/excelExamples","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
   for (val of arr) {
