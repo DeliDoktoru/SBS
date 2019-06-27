@@ -19,7 +19,7 @@ block content
           .row
             .col-md-4
               .card-user.text-center
-                input.form-control(hidden,ajax-key="f",name='cariLogo',type='file',max="200",accept="image/jpeg,image/jpg",display-target="1")    
+                input.form-control(hidden,ajax-key="f",name='cariLogo',type='file',max="200",accept="image/jpeg,image/jpg,image/png",display-target="1")    
                 a(href='#',fire-target="[name='cariLogo']")
                   img.avatar.border-gray(src='/public/firmaImages/'+ (targetData.cariLogo || 'image_placeholder.jpg') alt='...' display-id="1")
                   h5.title=l.getLanguage("cariLogo") 

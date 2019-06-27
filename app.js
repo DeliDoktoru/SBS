@@ -34,7 +34,7 @@ app.use(session({
 
 /* #region  permission control */
 function checkAllowed(txt) {
-  var arr = ["/GraphQl","/test1","/test","/ajax/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
+  var arr = ["/GraphQl","/test1","/test","/ajax/test","/ajax/dyndata","/ajax/uploadPdf","/ajax/uploadImage","/ajax/changeLanguage","/ajax/login","/ajax/exit","/public/fonts","/public/excelExamples","/public/images","/public/javascripts","/public/stylesheets", "/favicon.ico","/register"];
   for (val of arr) {
     if (txt.indexOf(val)==0)
       return true;
@@ -42,7 +42,7 @@ function checkAllowed(txt) {
   return false;
 }
 app.use(async function (req, res, next) {
-  if (checkAllowed(req.url)) {
+  if (checkAllowed(req.url)) { 
     next(); 
     return;
   }

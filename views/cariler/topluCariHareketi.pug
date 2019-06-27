@@ -14,6 +14,10 @@ block content
                 =l.getLanguage("vazgec")
           .row
             .col-md-12
+              a(target="_blank",href="/public/excelExamples/cariHareketleri.xlsx")
+                button.btn.btn-warning.btn-round
+                  i.nc-icon.nc-paper 
+                  =l.getLanguage("ornekdosya")
               button.btn.btn-info.btn-round#topluEkle(onclick='$("#importInput").click()')
                 i.nc-icon.nc-share-66.mr-1 
                 =l.getLanguage("topluEkle")

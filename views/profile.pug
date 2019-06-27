@@ -9,7 +9,7 @@ block content
           .card-body
             .author
               if(editable)
-                input.form-control(hidden,display-target="1",ajax-key="p",name='kullaniciFoto',type='file',max="200",accept="image/jpeg,image/jpg")    
+                input.form-control(hidden,display-target="1",ajax-key="p",name='kullaniciFoto',type='file',max="200",accept="image/jpeg,image/jpg,image/png")    
               a(href='#',class=editable?"":"cursor-default",fire-target=editable?"[name='kullaniciFoto']":"")
                 img.avatar.border-gray(src='/public/firmaImages/'+ targetData.kullaniciFoto alt='...' display-id="1")
                 h5.title=targetData.kullaniciIsim+" "+targetData.kullaniciSoyisim

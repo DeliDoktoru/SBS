@@ -4041,3 +4041,201 @@
 ->
 'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
 ->["39",2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariIli,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariAciklama FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+->
+'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
+->["3"]
+'SELECT id,soruText,soruTipId,cevapText FROM sbs_comp_2.anket_sorulari WHERE ( anketId= ?  ) AND silindiMi="0"'
+->[""]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.anket_soru_tipleri WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.anketler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeAdi FROM sbs_comp_2.bolgeler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariIli,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariAciklama FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT id,kullaniciIsim,kullaniciBolgeId,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.diller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.yetkiler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.diller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.yetkiler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","bb7946e7d85c81a9e69fee1cea4a087c"]
+'SELECT * FROM sbs.kullanicilar WHERE ( kullaniciEPosta= ? AND kullaniciParola= ?  ) AND silindiMi="0"'
+->["yunusemrahdursun@gmail.com","81dc9bdb52d04dc20036dbd8313ed055"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.urunler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.alt_kategoriler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.urunler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.alt_kategoriler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.urunler WHERE ( id= ?  ) AND silindiMi="0"'
+->["7"]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.bolgeler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs_comp_2.iller WHERE silindiMi="0";'
+->
+'SELECT id,bolgeId,cariAdi,cariIli,cariTel,cariFaks,cariEPosta,cariYetkiliKisiAdi,cariYetkiliKisiSoyadi,cariYetkiliKisiTel,cariAciklama FROM sbs_comp_2.cariler WHERE ( 1=1 ) AND silindiMi="0"'
+->[]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs_comp_2.urunler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.diller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.yetkiler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.diller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.yetkiler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.diller WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.sayfalar WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.yetkiler WHERE silindiMi="0";'
+->
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'UPDATE sbs.kullanicilar SET kullaniciIsim= ? ,kullaniciSoyisim= ? ,kullaniciEPosta= ? ,kullaniciTel= ? ,hakkinda= ? ,kullaniciFoto= ? ,firmaId= ?  WHERE id= ? '
+->["YUNUS","AAAAAAAAAAAAA","yunusemrahdursun@gmail.com","(111) 111-1111","asdada","2-97acdea76d607c08ac3f8437f6a528e5.png",2,39]
+'SELECT * FROM sbs.kullanicilar WHERE ( id= ?  ) AND silindiMi="0"'
+->[39]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
+'SELECT * FROM sbs.dbler WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciBolgeId,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta FROM sbs.kullanicilar WHERE ( firmaId= ?  ) AND silindiMi="0"'
+->[2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["40",2]
+'SELECT * FROM sbs.kullanici_unvanlar WHERE silindiMi="0";'
+->
+'SELECT id,kullaniciIsim,kullaniciSoyisim,kullaniciUnvan,kullaniciTel,kullaniciEPosta,kullaniciFoto,hakkinda FROM sbs.kullanicilar WHERE ( id= ? AND firmaId= ?  ) AND silindiMi="0"'
+->["39",2]
